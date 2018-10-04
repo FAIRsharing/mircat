@@ -1,0 +1,42 @@
+{
+  "id": "https://w3id.org/MIRcat/miaca/open_cv_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIACA open_cv_schema",
+  "description": "Allows to reference an external controlled vocabulary, or to directly include a value if no suitable external definition is available.",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+
+    "name": {
+      "description": "This contains the controlled vocabulary term",
+      "type": "string"
+    },
+    "xref": {
+      "description": "Refers to the term of the controlled vocabulary in an external database",
+      "$ref": "xref_schema.json#"
+    }
+  }
+}

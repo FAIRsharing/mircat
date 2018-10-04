@@ -1,0 +1,125 @@
+{
+  "id" : "https://w3id.org/MIRcat/miaca/cell_line_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIACA cell line schema",
+  "description": "a element to describe the cell line used during the project.",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+    "ID": {
+      "type": "string"
+    },
+    "cellLineName": {
+      "description": "Description of the cell line used. (e.g. HeLa ATTC CCL2)",
+      "$ref":  "ontology_annotation_schema.json"
+    },
+    "cellSource": {
+      "type": "object",
+      "properties": {
+        "provider": {
+          "description": "e.g. ATCC",
+          "@type": { "type": "string", "enum": [ "Organization","Person" ]},
+          "items": {
+            "$ref": ["organization_schema.json#", "person_schema.json#"]
+          }
+        },
+        "cellLineID": {
+          "description": "Description of the cell line used. (e.g. HeLa ATTC CCL2)",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "species": {
+          "description": "e.g. human",
+          "type": "string"
+        },
+        "organ": {
+          "description": "e.g. kidney",
+          "type": "string"
+        },
+        "cellType": {
+          "description": "e.g. totipotent stem cell (CL:0000723)",
+          "type": "array",
+          "@type": { "type": "string", "enum": [ "Ontology Annotation" ]},
+          "items": {
+            "$ref": "ontology_annotation_schema.json#"
+          }
+        },
+        "strain": {
+          "description": "a variant of a cellType",
+          "type": "string"
+        },
+        "tissue": {
+          "description": "",
+          "type": "string"
+        },
+        "reference": {
+          "description": "reference to publication",
+          "type": "array",
+          "@type": { "type": "string", "enum": [ "Publication" ]},
+          "items": {
+            "$ref": "publication_schema.json#"
+          }
+        }
+      },
+      "source": {
+        "description": "contact details refering to the CellLine",
+        "$ref": "source_schema.json"
+      }
+    }
+  },
+  "passageNo": {
+    "description": "is the number of generation of a CellLine due to passaging and growing",
+    "type": "array",
+    "items": {
+      "type": "number"
+    }
+  },
+  "modifications": {
+    "description": "transgene/genetic manipulations, e.g. stably transfected, induced resistance",
+    "type": "array",
+    "items": {
+      "type": "string"
+    }
+  },
+  "validation": {
+    "description": "measures undertaken to validate cell line, e.g. DNA fingerprinting, genotyping, morphology testing",
+    "type": "array",
+    "items": {
+      "type": "string"
+    }
+  },
+  "lineQC": {
+    "description": "Mycoplasma test (Y/N) and other measures for quality control, e.g. virus testing",
+    "type": "array",
+    "items": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [ "cellLineIdentifier", "cellLineName", "species", "tissue", "reference", "provider"]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "http://fairsharing.github.io/MIRcat/miaca/reagent_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIACA reagent schema",
+  "description": "A reagent as defined by MIACA, Reagents are media, media supplements, kits, buffers and solutions, water and so on. ",
+  "type": "object",
+  "properties": {
+       "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+    "reagentName": {
+      "description": "the name of the chemical used as reagent",
+      "type": "string"
+    },
+    "reagentID": {
+      "description": "the identifier of the chemical used as reagent",
+      "type": "string"
+    },
+    "reagentType": {
+      "description": "reagent type, e. g. cDNA, small molecule, siRNA. If available, reference to a controlled vocabulary.",
+      "type": "string",
+      "@type": { "type": "string", "enum": [ "MoleculeType" ]}
+    },
+    "targetSpecies": {
+      "description": "Target Species e.g. if siRNA",
+      "type": "string"
+    },
+    "targetID": {
+      "description": "e.g. geneID of target gene in case of siRNA",
+      "type": "string"
+    },
+    "stockConc": {
+      "description": "The value of the reagent stock concentration",
+      "type": "number",
+      "enum": [ "litres" ]
+    },
+    "stockConcUnit": {
+      "description": "The unit of the stock concentration of the reagent",
+      "type": "string",
+      "enum": [ "mol/L", "mmol/L", "nmol/L" ]
+    },
+    "solvent": {
+      "description": "Solvent",
+      "type": "string"
+    },
+    "vendor": {
+      "$ref": "vendor_schema.json"
+    },
+    "efficiency": {
+      "description": "e.g., transfection/transduction efficiency of 'cell type' (average, cv) with ‘Perturbator’ (library)",
+      "type": "string"
+    },
+    "reagentOrderNumber": {
+      "description": "e.g., transfection/transduction efficiency of 'cell type' (average, cv) with ‘Perturbator’ (library)",
+      "type": "string"
+    },
+    "array": {
+      "description": "description of array type and array support type/vessel",
+      "type": "string"
+    },
+    "libraryRef": {
+      "$ref": "library_type_schema.json"
+    },
+    "perturbagenType": {
+      "anyOf": [
+        {
+           "$ref": "compound_schema.json"
+        },
+        {
+          "type": "object",
+          "properties":{
+
+            "type": {
+              "description": "% of compounds with &gt;80% purity",
+              "type": "string"
+            },
+            "titer": {
+              "description": "% of compound comply with Lipinski rule-of-5",
+              "type": "string"
+            }
+        }
+        }
+        ]
+      }
+  },
+  "required": ["ReagentName", "ReagentID","vendor"]
+}

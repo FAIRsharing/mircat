@@ -1,0 +1,50 @@
+{
+  "id" : "https://w3id.org/MIRcat/miaca/vendor_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIACA vendor type schema",
+  "description": "Details to the vendor or manufacturer",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+
+    "name" : {
+      "description": "name of the company",
+      "type" : "string"
+    },
+    "orderNo" : {
+      "description": "OrderNr",
+      "type" : "string"
+    },
+    "serialNo" : {
+      "description": "serialNo ",
+      "type" : "string"
+    },
+    "lotNo" : {
+      "description": "LotNo ",
+      "type" : "string"
+    }
+  }
+}

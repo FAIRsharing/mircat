@@ -1,0 +1,72 @@
+{
+  "id": "https://w3id.org/MIRcat/miaca/project_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIACA (Minimum Information about a Cellular Assay) project schema",
+  "description": "JSON-schema representing MIACA reporting guideline.",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+     "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+    "ID": {
+      "type": "string"
+    },
+    "source": {
+      "description": "Contact details of researcher/person/laboratory/institution in charge of the project",
+      "$ref": "source_schema.json#"
+    },
+    "projectDescription": {
+      "description": "Description of biological process that is addressed and description of measured effect.",
+      "$ref": "project_description_schema.json#"
+    },
+    "application": {
+      "description": "Description of the specific application of this project within a larger context, if applicable.",
+      "$ref": "application_schema.json#"
+    },
+    "arraySupport": {
+      "description": "Array supports (reaction vessels where perturbations are carried out) that are used during the project",
+      "$ref": "array_support_schema.json#"
+    },
+    "materialList": {
+      "description": "Description of the materials that are utilized in the project.",
+      "$ref": "material_list_schema.json#"
+    },
+    "instrument": {
+      "description": "Description of the instruments required for the assay, e.g. data acquisition station. Detailed descriptions of such instruments and their settings could be part of spezialized documents or be given in Treatment, Post-Treatment, or Data Acquisition.",
+      "$ref": "instrument_schema.json#"
+    },
+    "cellAssay": {
+      "description": "The actual experimental part decribing the performed steps, like  treatments, perturbation(s) and data acquisition in necessary detail.",
+      "$ref": "cell_assay_schema.json#"
+    },
+    "dataProcessing": {
+      "description": "Description of the processes applied to analyze the raw-data in order to generate a hit list. Data analysis is usually carried out sequentially, applying a number of algorithms and analysis tools",
+      "$ref": "data_acquisition_schema.json#"
+    },
+    "processLine": {
+      "description": "The experiment workflow",
+      "$ref": "process_line_schema.json#"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "https://w3id.org/MIRcat/miaca/dbreference_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIACA dbreference schema",
+  "description": "",
+  "type": "object",
+  "properties" : {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+    "db": {
+      "description": "Name of the external database. Taken from the controlled vocabulary of databases.",
+      "type": "string"
+    },
+    "dbAc": {
+      "description": "Accession number of the database in the database CV. This element is controlled by the PSI-MI controlled vocabulary 'database citation', root term ID MI:0444.",
+      "type": "string",
+      "minLength": 1
+    },
+    "ID": {
+      "description": "Primary Identifier of the object in the external database, e.g. UniProt accession number.",
+      "type": "string"
+    },
+    "secondary": {
+      "description": "Primary Identifier of the object in the external database, e.g. UniProt accession number.",
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "description": "The version number of the object in the external database.",
+      "type": "string",
+      "minLength": 1
+    },
+    "refType": {
+      "description": "Reference type, e.g. 'Identity' if this reference referes to an Identical object in the external database, or 'see-also' for additional information. Controlled by CV.",
+      "type": "string",
+      "minLength": 1
+    },
+    "refTypeAc": {
+      "description": "Reference type accession number from the CV of reference types. This element is controlled by the PSI-MI controlled vocabulary 'xref type', root term ID MI:0353. ",
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": ["db", "ID"]
+}

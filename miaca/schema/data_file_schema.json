@@ -1,0 +1,87 @@
+{
+  "id": "https://w3id.org/MIRcat/miaca/data_file_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIACA data file schema",
+  "description": "Detection of the effect(s) induced by the perturbation",
+  "definitions": {
+    "file": {
+      "type" : "object",
+      "properties": {
+        "file_identifier": {
+          "description" : "a UUID for an instance of file",
+          "type" : "string"
+        },
+        "file_name": {
+          "description" : "a name for an instance of file",
+          "type" : "string"
+        },
+        "data_content_type": {
+          "description": "",
+          "type" : "string",
+          "enum" : [ "movie","image","other"]
+        },
+        "format": {
+          "description": "",
+          "type" : "string",
+          "enum" : [ "ASCII", "TIFF", "WMA","other"]
+        },
+        "file_address" : {
+          "description": "a url to the file",
+          "type" : "string"
+        }
+      }
+    }
+  },
+  "type": "object",
+  "properties" : {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+    "data_file": {
+      "allOf": [
+        { "$ref": "#/definitions/file" },
+        { "properties":
+        { "type": { "enum": [ "raw data", "processed data", "metadata", "phenotypic data" ] } },
+          "required": ["type"]
+        }
+      ]
+    },
+    "software" : {
+      "description" : "the name of the software used to generate the file",
+      "type": "string"
+    },
+    "version" : {
+      "description" : "the version of the softwareused to generate the file",
+      "type": "string"
+    },
+    "algorithm" : {
+      "description" : "",
+      "type": "string"
+    },
+    "softwareParamaters" : {
+      "description" : "the list of parameter settings used to run the software used to generate the file",
+      "type": "array"
+    }
+  }
+}

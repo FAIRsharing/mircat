@@ -1,0 +1,42 @@
+{
+  "id": "https://w3id.org/MIRcat/miaca/xref_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIACA xref schema",
+  "description": "Crossreference to an external database. Crossreferences to literature databases, e.g. PubMed, should not be put into this structure, but into the bibRef element where possible",
+  "type": "object",
+  "properties" : {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+
+    "primaryRef": {
+      "description": "Primary reference to an external database.",
+      "$ref": "dbreference_schema.json#"
+    },
+    "secondaryRef": {
+      "description": "Further external objects describing the object.",
+      "$ref": "dbreference_schema.json#"
+    }
+  }
+}

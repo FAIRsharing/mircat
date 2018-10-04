@@ -1,0 +1,83 @@
+{
+  "id": "https://w3id.org/MIRcat/miaca/data_acquisition_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIACA data acquisition schema",
+  "description": "Detection of the effect(s) induced by the perturbation",
+  "provenance": {
+    "prov:wasAttributedTo": {
+      "prov:agent": "http://orcid.org/0000-0001-9853-5668",
+      "_comment": "an ORCID for now, need to check foaf:Person"
+    }
+  },
+  "type": "object",
+  "properties" : {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+    "dataAcquisitionID": {
+      "description" : "a UUID for an instance of data acquisition process",
+      "type" : "string"
+    },
+    "DataAcquisitionInstrument": {
+      "description" : "a reference to an instrument used during the data acquisition",
+      "type" : "string",
+      "@type": { "type": "string", "enum": [ "instrumentName" ]}
+    },
+    "DataAcquisitionInstrumentSettings" : {
+      "description" : "a reference to an instrument used during the data acquisition",
+      "type" : "object",
+      "AnyOf": [
+        { "$ref": "#/definitions/lampEnergy" },
+        { "$ref": "#/definitions/excitation" },
+        { "$ref": "#/definitions/excitationFilter" },
+        { "$ref": "#/definitions/emission" },
+        { "$ref": "#/definitions/emissionFilter" },
+        { "$ref": "#/definitions/measurement" },
+        { "$ref": "#/definitions/operationMode" },
+        { "$ref": "#/definitions/acquisitionTime" }
+      ]
+    },
+    "DataAcquisitionPublicationReference": {
+      "description" : "a reference to an publication about the data acquisition",
+      "type" : "string",
+      "@type": { "type": "string", "enum": [ "publicationIdentifier" ]}
+    }
+  },
+
+  "definitions" : {
+    "lampEnergy" : { "description": "" , "type" : "string" },
+    "excitation" : { "description": "" , "type" : "string" },
+    "excitationFilter" : { "description": "" , "type" : "string" },
+    "emission" : { "description": "" , "type" : "string" },
+    "emissionFilter" : { "description": "" , "type" : "string" },
+    "measurement" : { "description": "" , "type" : "string" },
+    "operationMode" : { "description": "" , "type" : "string" },
+    "acquisitionTime" : { "description": "" , "type" : "string" },
+    "acquisitionTimeUnit": {
+      "description": "The  time unit used to measure the duration of the data acquisition",
+      "type": "string",
+      "enum": [ "s", "min", "hour" ]
+    }
+  }
+}  

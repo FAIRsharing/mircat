@@ -1,0 +1,49 @@
+{
+  "id": "https://w3id.org/MIRcat/miaca/application_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIACA application schema",
+  "description": "JSON-schema representing MIACA application type.",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+    "ID": {
+      "type": "string"
+    },
+    "abstract": {
+      "description": "Application abstract, e. g. as taken from a publication",
+      "type": "string"
+    },
+    "pubref": {
+      "description": "reference to publication",
+      "type": "string"
+    },
+    "bibref": {
+      "description": "Bibliographic reference for the data generated during the project. Cross reference for the data source. Example: Entry in a database of databases.",
+      "$ref": "open_cv_schema.json#"
+    }
+  },
+  "additionalProperties": false
+}
