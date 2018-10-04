@@ -1,5 +1,5 @@
 {
-  "id": "https://w3id.org/MIRcat/miaca/composite_reagent_schema.json",
+  "id": "https://w3id.org/MIRcat/miaca/schema/composite_reagent_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACA composite reagenet schema",
   "description": "a element to describe the cell line used during the project.",

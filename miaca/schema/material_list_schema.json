@@ -1,5 +1,5 @@
 {
-  "id": "https://w3id.org/MIRcat/miaca/material_list_schema.json",
+  "id": "https://w3id.org/MIRcat/miaca/schema/material_list_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACA material list chema",
   "description": "JSON-schema representing MIACA material list.",
