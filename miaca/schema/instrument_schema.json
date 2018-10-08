@@ -1,5 +1,5 @@
 {
-  "id": "https://w3id.org/MIRcat/miaca/schema/instrument_schema.json",
+  "id": "https://w3id.org/mircat/miaca/schema/instrument_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACA instrument schema",
   "description": "Description of the instruments required for the assay, e.g. data acquisition station. Detailed descriptions of such instruments and their settings could be part of spezialized documents or be given in Treatment, Post-Treatment, or Data Acquisition.",

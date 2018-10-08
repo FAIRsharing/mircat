@@ -1,5 +1,5 @@
 {
-  "id": "http://w3id.org/mircat/miaca/schema/schema.json",
+  "id": "https://w3id.org/mircat/miaca/schema/schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACA (Minimum Information about a Cellular Assay) schema",
   "description": "JSON-schema representing MIACA reporting guideline.",

@@ -1,5 +1,5 @@
 {
-  "id": "https://w3id.org/MIRcat/miaca/schema/data_acquisition_schema.json",
+  "id": "https://w3id.org/mircat/miaca/schema/data_acquisition_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACA data acquisition schema",
   "description": "Detection of the effect(s) induced by the perturbation",

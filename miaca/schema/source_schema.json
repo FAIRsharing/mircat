@@ -1,5 +1,5 @@
 {
-  "id": "https://w3id.org/MIRcat/miaca/schema/source_schema.json",
+  "id": "https://w3id.org/mircat/miaca/schema/source_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACA Source - corresponding to a person and their organization",
   "description": "Contact details of researcher/person/laboratory/institution in charge of the project -Used to describe the contact details of the scientist - corresponds to MIACA XSD sourceType",

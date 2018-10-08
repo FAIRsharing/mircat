@@ -1,5 +1,5 @@
 {
-  "id": "https://w3id.org/MIRcat/miaca/schema/treatment_schema.json",
+  "id": "https://w3id.org/mircat/miaca/schema/treatment_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACA treatment schema",
   "description": "Description of the conditions that are applied to CellLine during culturing of cells. ‘Treatment* also covers the perturbation. More than one perturbator can be applied in the same ‘Treatment’. ",

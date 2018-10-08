@@ -1,5 +1,5 @@
 {
-  "id" : "https://w3id.org/MIRcat/miaca/cell_assay_schema.json",
+  "id" : "https://w3id.org/mircat/miaca/cell_assay_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACA cell assay schema",
   "description": "The actual experimental part describing the performed steps, like  treatments, perturbation(s) and data acquisition in necessary detail.",

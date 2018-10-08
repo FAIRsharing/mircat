@@ -1,5 +1,5 @@
 {
-  "id": "https://w3id.org/MIRcat/miaca/schema/open_cv_schema.json",
+  "id": "https://w3id.org/mircat/miaca/schema/open_cv_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACA open_cv_schema",
   "description": "Allows to reference an external controlled vocabulary, or to directly include a value if no suitable external definition is available.",
