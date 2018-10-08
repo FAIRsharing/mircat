@@ -63,7 +63,7 @@
     },
     "dataProcessing": {
       "description": "Description of the processes applied to analyze the raw-data in order to generate a hit list. Data analysis is usually carried out sequentially, applying a number of algorithms and analysis tools",
-      "$ref": "data_acquisition_schema.json#"
+      "$ref": "da_schema.json#"
     },
     "processLine": {
       "description": "The experiment workflow",
