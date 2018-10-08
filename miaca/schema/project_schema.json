@@ -30,6 +30,7 @@
       "format": "uri"
     },
     "ID": {
+      "description": "The project identifier",
       "type": "string"
     },
     "source": {

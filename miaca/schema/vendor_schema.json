@@ -29,7 +29,6 @@
       "type": "string",
       "format": "uri"
     },
-
     "name" : {
       "description": "name of the company",
       "type" : "string"

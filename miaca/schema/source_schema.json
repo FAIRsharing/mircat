@@ -30,6 +30,7 @@
       "format": "uri"
     },
     "ID": {
+      "description": "The source identifier",
       "type": "string"
     },
     "name": {

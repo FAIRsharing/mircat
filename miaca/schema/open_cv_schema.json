@@ -29,7 +29,6 @@
       "type": "string",
       "format": "uri"
     },
-
     "name": {
       "description": "This contains the controlled vocabulary term",
       "type": "string"
