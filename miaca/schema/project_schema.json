@@ -67,7 +67,31 @@
     },
     "processLine": {
       "description": "The experiment workflow",
-      "$ref": "process_line_schema.json#"
+      "type": "object",
+      "properties": {
+        "ID": {
+            "description": "The identifier of the processLine",
+            "type": "string"
+        },
+        "process": {
+          "description": "a Treatment, Post-Treatment or DataAcquisition Step",
+          "type": "array",
+          "items": {
+            "processName": {
+              "description": "e.g. cell propagation, siRNA transfection",
+              "type": "string"
+            },
+            "currentID": {
+              "description": "ID of the referenced step",
+              "type": "string"
+            },
+            "successID": {
+              "description": "ID of a successor element of the process step",
+              "type": "string"
+            }
+          }
+        }
+      }
     }
   }
 }

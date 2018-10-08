@@ -30,16 +30,29 @@
       "format": "uri"
     },
     "ID": {
+      "description": "The cell assay identifier",
       "type": "string"
     },
-    "treamtment": {
-      "$ref": "treatment_schema.json"
+    "treatment": {
+      "description": "Description of the conditions that are applied to CellLine during culturing of cells. ‘Treatment’ also covers the perturbation. More than one perturbator can be applied in the same ‘Treatment’.",
+      "type": "array",
+      "items": {
+        "$ref": "treatment_schema.json#"
+      }
     },
     "postTreatment": {
-      "type": "string"
+      "description": "Description of the conditions, i.e. lysis, fixation, staining, antibody incubation, etc., that may be applied after ‘Treatment’, and prior to data acquisition",
+      "type": "array",
+      "items": {
+        "$ref": "treatment_schema.json#"
+      }
     },
     "dataAcquisition": {
-      "type": "string"
+      "description": "Detection of the effect(s) induced by the perturbation",
+      "type": "array",
+      "items": {
+        "$ref": "da_schema.json#"
+      }
     }
   }
 }

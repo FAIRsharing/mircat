@@ -35,16 +35,16 @@
       "type": "string",
       "format": "uri"
     },
-    "dataAcquisitionID": {
+    "ID": {
       "description" : "a UUID for an instance of data acquisition process",
       "type" : "string"
     },
-    "DataAcquisitionInstrument": {
+    "instrument": {
       "description" : "a reference to an instrument used during the data acquisition",
       "type" : "string",
       "@type": { "type": "string", "enum": [ "instrumentName" ]}
     },
-    "DataAcquisitionInstrumentSettings" : {
+    "settings" : {
       "description" : "a reference to an instrument used during the data acquisition",
       "type" : "object",
       "AnyOf": [
@@ -58,7 +58,7 @@
         { "$ref": "#/definitions/acquisitionTime" }
       ]
     },
-    "DataAcquisitionPublicationReference": {
+    "reference": {
       "description" : "a reference to an publication about the data acquisition",
       "type" : "string",
       "@type": { "type": "string", "enum": [ "publicationIdentifier" ]}
