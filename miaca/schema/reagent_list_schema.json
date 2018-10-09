@@ -1,5 +1,5 @@
 {
-  "id": "https://w3id.org/mircat/miaca/schema/reagent_schema.json",
+  "id": "https://w3id.org/mircat/miaca/schema/reagent_list_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACA reagent schema",
   "description": "A reagent as defined by MIACA, Reagents are media, media supplements, kits, buffers and solutions, water and so on. ",
