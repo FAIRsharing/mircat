@@ -5,7 +5,7 @@
   "description": "A reagent as defined by MIACA, Reagents are media, media supplements, kits, buffers and solutions, water and so on. ",
   "type": "object",
   "properties": {
-       "@context": {
+    "@context": {
       "description": "The JSON-LD context",
       "anyOf": [
         {
@@ -85,7 +85,7 @@
     "perturbagenType": {
       "anyOf": [
         {
-           "$ref": "compound_schema.json"
+          "$ref": "compound_schema.json"
         },
         {
           "type": "object",
@@ -99,10 +99,10 @@
               "description": "% of compound comply with Lipinski rule-of-5",
               "type": "string"
             }
+          }
         }
-        }
-        ]
-      }
+      ]
+    }
   },
   "required": ["ReagentName", "ReagentID","vendor"]
 }

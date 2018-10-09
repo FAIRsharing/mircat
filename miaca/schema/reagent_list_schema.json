@@ -1,0 +1,59 @@
+{
+  "id": "https://w3id.org/mircat/miaca/schema/reagent_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIACA reagent schema",
+  "description": "A reagent as defined by MIACA, Reagents are media, media supplements, kits, buffers and solutions, water and so on. ",
+  "type": "object",
+  "definitions" : {
+    "volume" : { "description": "" , "type" : "string" },
+    "volumeUnit" : { "description": "e.g. mL" , "type" : "string", "enum": [ "pL", "nL", "uL","ml" ] },
+    "concentration" : { "description": "" , "type" : "string" },
+    "concentrationUnit" : { "description": "e.g. mol/L" , "type" : "string" , "enum": [  "pmol/L","nmol/L", "umol/L","mmol/L" ]}
+  },
+  "_comment": "TODO: these definitions are the same as in treatment_schema, resolve duplication",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+    "ID":{
+      "description": "identifier of the reagent list",
+      "type": "string"
+    },
+    "reagents": {
+      "type": "array",
+      "items": {
+        "ID": {
+          "description": "identifier of the reagenet",
+          "type": "string"
+        },
+        "anyOf": [
+          { "$ref": "#/definitions/volume" },
+          { "$ref": "#/definitions/volumeUnit" },
+          { "$ref": "#/definitions/concentration" },
+          { "$ref": "#/definitions/concentrationUnit" }
+        ]
+      }
+    }
+  }
+}

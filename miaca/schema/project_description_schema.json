@@ -1,5 +1,5 @@
 {
-  "id": "https://w3id.org/mircat/miaca/project_description_schema.json",
+  "id": "https://w3id.org/mircat/miaca/schema/project_description_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACA project description schema",
   "description": "Description of biological process that is addressed and description of measured effect. Description (text) of the project (1) within a larger context.",

@@ -61,8 +61,11 @@
     "data_file": {
       "allOf": [
         { "$ref": "#/definitions/file" },
-        { "properties":
-        { "type": { "enum": [ "raw data", "processed data", "metadata", "phenotypic data" ] } },
+        {
+          "properties": {
+            "type": "string",
+            "enum": [ "raw data", "processed data", "metadata", "phenotypic data" ]
+          },
           "required": ["type"]
         }
       ]
