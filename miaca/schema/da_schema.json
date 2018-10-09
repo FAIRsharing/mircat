@@ -47,7 +47,7 @@
     "settings" : {
       "description" : "a reference to an instrument used during the data acquisition",
       "type" : "object",
-      "AnyOf": [
+      "anyOf": [
         { "$ref": "#/definitions/lampEnergy" },
         { "$ref": "#/definitions/excitation" },
         { "$ref": "#/definitions/excitationFilter" },
