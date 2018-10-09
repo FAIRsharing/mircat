@@ -43,7 +43,7 @@
           "description": "e.g. ATCC",
           "@type": { "type": "string", "enum": [ "Organization","Person" ]},
           "items": {
-            "$ref": ["organization_schema.json#", "person_schema.json#"]
+            "type": "string"
           }
         },
         "cellLineID": {
