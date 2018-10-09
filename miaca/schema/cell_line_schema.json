@@ -34,7 +34,7 @@
     },
     "cellLineName": {
       "description": "Description of the cell line used. (e.g. HeLa ATTC CCL2)",
-      "$ref":  "ontology_annotation_schema.json"
+      "type":  "string"
     },
     "cellSource": {
       "type": "object",
