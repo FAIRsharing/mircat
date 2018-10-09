@@ -4,6 +4,12 @@
   "title": "MIACA treatment schema",
   "description": "Description of the conditions that are applied to CellLine during culturing of cells. ‘Treatment* also covers the perturbation. More than one perturbator can be applied in the same ‘Treatment’. ",
   "type": "object",
+  "definitions" : {
+    "volume" : { "description": "" , "type" : "string" },
+    "volumeUnit" : { "description": "e.g. mL" , "type" : "string", "enum": [ "pL", "nL", "uL","ml" ] },
+    "concentration" : { "description": "" , "type" : "string" },
+    "concentrationUnit" : { "description": "e.g. mol/L" , "type" : "string" , "enum": [  "pmol/L","nmol/L", "umol/L","mmol/L" ]},
+  },
   "properties": {
     "@context": {
       "description": "The JSON-LD context",
@@ -29,69 +35,102 @@
       "type": "string",
       "format": "uri"
     },
-
-    "treatmentIdentifier": {
+    "ID": {
       "description": "a UUID for the instance of treatment process",
       "type": "string"
     },
-    "treatmentType": {
+    "conditionName": {
       "description" : "a reference to an instrument used during the data acquisition",
-      "type" : "string",
-      "@type": { "type": "string", "enum": [ "MoleculeType" ]}
+      "type" : "string"
     },
-    "arraySupportType": {
-      "description" : "a reference to an instrument used during the data acquisition",
+    "array": {
+      "description" : "description of array type and vessel",
       "type" : "string",
       "@type": { "type": "string", "enum": [ "ArraySupportType" ]}
     },
     "reagentName": {
-      "description": "the name of the chemical used as reagent",
+      "description": "the name and characteristics of the chemical used as reagent",
       "type": "object",
-      "@type": { "type": "string", "enum": [ "MoleculeType" ]},
-      "AnyOf": [
-        { "$ref": "#/definitions/volume" },
-        { "$ref": "#/definitions/volumeUnit" },
-        { "$ref": "#/definitions/concentration" },
-        { "$ref": "#/definitions/concentrationUnit" }
-      ]
+      "properties": {
+        "name": {
+          "description": "the name of the reagent",
+          "type": "string"
+        },
+        "anyOf": [
+          { "$ref": "#/definitions/volume" },
+          { "$ref": "#/definitions/volumeUnit" },
+          { "$ref": "#/definitions/concentration" },
+          { "$ref": "#/definitions/concentrationUnit" }
+        ]
+      }
     },
-    "compoundName": {
-      "description": "the identifier of the chemical used as reagent",
+    "compReagentName": {
+      "description": "the name and characteristics of the chemical used as reagent",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "the name of the reagent",
+          "type": "string"
+        },
+        "anyOf": [
+          { "$ref": "#/definitions/volume" },
+          { "$ref": "#/definitions/volumeUnit" },
+          { "$ref": "#/definitions/concentration" },
+          { "$ref": "#/definitions/concentrationUnit" }
+        ]
+      }
+    },
+    "cellLine": {
+      "description": "",
       "type": "string"
     },
-    "treatmentSettings" : {
-      "description" : "a reference to an instrument used during the data acquisition",
-      "type" : "object",
-      "anyOf": [
-        { "$ref": "../cell_line_schema.json#" },
-        { "$ref": "#/definitions/passageNo" },
-        { "$ref": "#/definitions/seedingDensity" },
-        { "$ref": "#/definitions/cellDensity" },
-        { "$ref": "#/definitions/temperature" },
-        { "$ref": "#/definitions/co2Content" },
-        { "$ref": "#/definitions/humidity" },
-        { "$ref": "#/definitions/duration" },
-        { "$ref": "#/definitions/comment" }
-      ]
-    }
-  },
-  "definitions" : {
-    "volume" : { "description": "" , "type" : "string" },
-    "volumeUnit" : { "description": "" , "type" : "string", "enum": [ "pL", "nL", "uL","ml" ] },
-    "concentration" : { "description": "" , "type" : "string" },
-    "concentrationUnit" : { "description": "" , "type" : "string" , "enum": [  "pmol/L","nmol/L", "umol/L","mmol/L" ]},
-    "passageNo" : { "description": "" , "type" : "string" },
-    "seedingDensity" : { "description": "" , "type" : "string" },
-    "cellDensity" : { "description": "" , "type" : "string" },
-    "temperature" : { "description": "" , "type" : "string" },
-    "co2Content" : { "description": "" , "type" : "string" },
-    "humidity" : { "description": "" , "type" : "string" },
-    "duration" : { "description": "" , "type" : "string" },
-    "acquisitionTimeUnit": {
-      "description": "The  time unit used to measure the duration of the treatment process",
-      "type": "string",
-      "enum": [ "s", "min", "hour" ]
+    "passageNo": {
+      "description": "",
+      "type": "string"
     },
-    "comment" : { "description": "an attribute to report observations" , "type" : "string" }
+    "seedingDensity": {
+      "description": "",
+      "type": "string"
+    },
+    "cellDensity": {
+      "description": "",
+      "type": "string"
+    },
+    "temperature": {
+      "description": "",
+      "type": "string"
+    },
+    "temperatureUnit": {
+      "description": "",
+      "type": "string"
+    },
+    "co2Content": {
+      "description": "",
+      "type": "string"
+    },
+    "co2ContentUnit": {
+      "description": "",
+      "type": "string"
+    },
+    "humidity": {
+      "description": "",
+      "type": "string"
+    },
+    "humidityUnit": {
+      "description": "e.g. %",
+      "type": "string"
+    },
+    "duration": {
+      "description": "e.g. %",
+      "type": "string"
+    },
+    "durationUnit": {
+      "description": "e.g. %",
+      "type": "string"
+    },
+    "comment": {
+      "description": "an attribute to report observations" ,
+      "type" : "string"
+    }
   }
 }
