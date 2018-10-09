@@ -8,7 +8,7 @@
     "volume" : { "description": "" , "type" : "string" },
     "volumeUnit" : { "description": "e.g. mL" , "type" : "string", "enum": [ "pL", "nL", "uL","ml" ] },
     "concentration" : { "description": "" , "type" : "string" },
-    "concentrationUnit" : { "description": "e.g. mol/L" , "type" : "string" , "enum": [  "pmol/L","nmol/L", "umol/L","mmol/L" ]},
+    "concentrationUnit" : { "description": "e.g. mol/L" , "type" : "string" , "enum": [  "pmol/L","nmol/L", "umol/L","mmol/L" ]}
   },
   "properties": {
     "@context": {

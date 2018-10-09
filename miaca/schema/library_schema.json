@@ -1,5 +1,5 @@
 {
-  "id" :  "https://w3id.org/mircat/miaca/schema/library_type_schema.json",
+  "id" :  "https://w3id.org/mircat/miaca/schema/library_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACA library type schema",
   "description": "if perturbator is part of a library, a description of the library",
@@ -35,40 +35,36 @@
       "type": "string",
       "format": "uri"
     },
-    "libraryName": {
-      "description" : "name of the library",
-      "type" : "string"
-    },
-    "libraryID" :  {
+    "ID" :  {
       "description" : "library ID as a reference",
       "type" : "string"
     },
-    "libraryType" :  {
-      "description" : "Type of library: (gain-of-function/overexpression (cDNA, ORF, other); loss of function (siRNA, shRNA, miRNA, viral, other); compound; other reference on library (if available)",
-      "type": "array",
-      "@type": { "type": "string", "enum": [ "Ontology Annotation" ]},
-      "items": {
-        "$ref": "ontology_annotation_schema.json#"
-      }
+    "name": {
+      "description" : "name of the library",
+      "type" : "string"
     },
-    "libraryFormat" :  {
+    "type" :  {
+      "description" : "Type of library: (gain-of-function/overexpression (cDNA, ORF, other); loss of function (siRNA, shRNA, miRNA, viral, other); compound; other reference on library (if available)",
+      "type": "string"
+    },
+    "format" :  {
       "description" : "single/pooled - e.g. shRNA pool",
       "type" : "string",
       "enum": [ "individual", "pool" ]
     },
-    "libraryPreparationMethod" :  {
+    "vendor": {
+      "description": "Details of the vendor or manufacturer",
+      "$ref": "vendor_schema.json"
+    },
+    "preparationMethod" :  {
       "description" : "Preparation methodology",
       "type" : "string"
     },
-    "libraryTotalNumberOfFeatures" :  {
+    "features" :  {
       "description" : "number of unique features (e.g. genes, compounds) represented in library, reference to where a list of these features can be found",
-      "type" : "number"
-    },
-    "libraryListofFeatures" :  {
-      "description" : "reference to where a list of these features can be found",
       "type" : "string"
     },
-    "libraryFeaturePosition" :  {
+    "featurePosition" :  {
       "description" : "PlateNumber and well position; mapping of individual perturbators in library format.",
       "type" : "object",
       "anyOf": [
@@ -78,10 +74,7 @@
     },
     "libraryElementCharacteristics" :  {
       "description" : "LibraryFeatures of perturbators (length of siRNA/shRNA, type of hairpin, other).",
-      "type" : "array"
-    },
-    "vendor": {
-      "$ref": "vendor_schema.json"
+      "type" : "string"
     },
     "definitions": {
       "PlateNumber" : {

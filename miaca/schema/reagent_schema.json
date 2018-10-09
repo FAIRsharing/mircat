@@ -80,7 +80,7 @@
       "type": "string"
     },
     "libraryRef": {
-      "$ref": "library_type_schema.json"
+      "$ref": "library_schema.json"
     },
     "perturbagenType": {
       "anyOf": [
