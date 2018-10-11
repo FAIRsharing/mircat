@@ -90,11 +90,11 @@
         "reference": {
           "description": "reference to publication",
           "type": "string"
+        },
+        "source": {
+          "description": "contact details refering to the CellLine",
+          "$ref": "source_schema.json"
         }
-      },
-      "source": {
-        "description": "contact details refering to the CellLine",
-        "$ref": "source_schema.json"
       }
     },
     "passageNo": {
