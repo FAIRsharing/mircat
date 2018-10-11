@@ -48,7 +48,7 @@
         },
         "cellLineID": {
           "description": "Controlled vocabulary ID. Description of the cell line used. (e.g. HeLa ATTC CCL2)",
-           "type": "string"
+          "type": "string"
         },
         "species": {
           "description": "e.g. human",
@@ -96,34 +96,34 @@
         "description": "contact details refering to the CellLine",
         "$ref": "source_schema.json"
       }
-    }
-  },
-  "passageNo": {
-    "description": "is the number of generation of a CellLine due to passaging and growing",
-    "type": "array",
-    "items": {
-      "type": "number"
-    }
-  },
-  "modifications": {
-    "description": "transgene/genetic manipulations, e.g. stably transfected, induced resistance",
-    "type": "array",
-    "items": {
-      "type": "string"
-    }
-  },
-  "validation": {
-    "description": "measures undertaken to validate cell line, e.g. DNA fingerprinting, genotyping, morphology testing",
-    "type": "array",
-    "items": {
-      "type": "string"
-    }
-  },
-  "lineQC": {
-    "description": "Mycoplasma test (Y/N) and other measures for quality control, e.g. virus testing",
-    "type": "array",
-    "items": {
-      "type": "string"
+    },
+    "passageNo": {
+      "description": "is the number of generation of a CellLine due to passaging and growing",
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "modifications": {
+      "description": "transgene/genetic manipulations, e.g. stably transfected, induced resistance",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "validation": {
+      "description": "measures undertaken to validate cell line, e.g. DNA fingerprinting, genotyping, morphology testing",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "lineQC": {
+      "description": "Mycoplasma test (Y/N) and other measures for quality control, e.g. virus testing",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
   },
   "additionalProperties": false,
