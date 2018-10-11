@@ -47,15 +47,26 @@
           }
         },
         "cellLineID": {
-          "description": "Description of the cell line used. (e.g. HeLa ATTC CCL2)",
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
+          "description": "Controlled vocabulary ID. Description of the cell line used. (e.g. HeLa ATTC CCL2)",
+           "type": "string"
         },
         "species": {
           "description": "e.g. human",
-          "type": "string"
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+            },
+            "ontologyValue": {
+              "type": "string"
+            },
+            "ontologySource": {
+              "type": "string"
+            },
+            "comment": {
+              "type": "string"
+            }
+          }
         },
         "organ": {
           "description": "e.g. kidney",
@@ -78,11 +89,7 @@
         },
         "reference": {
           "description": "reference to publication",
-          "type": "array",
-          "@type": { "type": "string", "enum": [ "Publication" ]},
-          "items": {
-            "$ref": "publication_schema.json#"
-          }
+          "type": "string"
         }
       },
       "source": {
