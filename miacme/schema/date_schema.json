@@ -1,4 +1,5 @@
 {
+  "id": "https://w3id.org/mircat/miacme/schema/date_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACME date schema",
   "description": "Information about a calendar date or timestamp indicating day, month, year and time of an event.",

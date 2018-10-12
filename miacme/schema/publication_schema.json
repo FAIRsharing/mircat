@@ -1,8 +1,8 @@
 {
+  "id": "https://w3id.org/mircat/miacme/schema/publication_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "Publication as JSON schema",
   "description": "A schema describing a publication.",
-  "id" : "http://localhost:8080/schemas/publication_schema.json",
   "type": "object",
   "properties": {
     "@context": {
