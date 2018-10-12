@@ -3,7 +3,6 @@
     "sdo": "https://schema.org/",
     "Person": "sdo:Person",
     "identifier": "sdo:identifier",
-     "identifierSource": "",
     "lastName": "sdo:lastName",
     "firstName": "sdo:givenName",
     "address": "sdo:address",

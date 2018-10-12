@@ -1,6 +1,6 @@
 {
   "@context": {
     "sdo": "https://schema.org/",
-    "Miaca": "sdo:CreativeWork"
+    "Miacme": "sdo:CreativeWork"
   }
 }
