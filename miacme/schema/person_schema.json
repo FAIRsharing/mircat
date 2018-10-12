@@ -20,7 +20,7 @@
       ]
     },
     "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": "Person" },
+    "@type": { "type": "string", "enum": [ "Person" },
     "identifier" : {
       "description": "A persistent identifier of the person, it should be an ORCID.",
       "type" : "string"

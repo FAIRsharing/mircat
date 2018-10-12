@@ -20,7 +20,7 @@
       ]
     },
     "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": "Investigation"},
+    "@type": { "type": "string", "enum": [ "Investigation" ]},
     "identifier" : {
       "description": "Primary identifier for the investigation. Ideally, a persistent identifier but an internal user identifier at a minimum.",
       "type" : "string"

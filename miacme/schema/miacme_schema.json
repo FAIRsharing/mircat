@@ -20,7 +20,7 @@
       ]
     },
     "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": "Miacme"},
+    "@type": { "type": "string", "enum": [ "Miacme" ]},
     "investigation": {
       "$ref": "investigation_schema.json#"
     }
