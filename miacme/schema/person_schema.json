@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title" : "MIACME person schema. A human being.",
+  "version" : "0.3",
+  "description" : "JSON-schema representing a person in MIACME",
+  "type" : "object",
+  "properties" : {
+    "@context": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": { "type": "string", "format": "uri" },
+    "@type": { "type": "string", "enum": "Person" },
+    "identifier" : {
+      "description": "A persistent identifier of the person, it should be an ORCID.",
+      "type" : "string"
+    },
+    "identifierSource" : {
+      "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier.",
+      "type" : "string"
+    },
+    "lastName" : {
+      "description": "The family name.",
+      "type" : "string",
+    },
+    "firstName" : {
+      "description": "The given name.",
+      "type" : "string"
+    },
+    "midInitials" : { "type" : "string" },
+    "email" : {
+      "description": "The email address.",
+      "type" : "string", "format" : "email",
+    },
+    "phone" : { "type": "string"},
+    "fax" : { "type" : "string" },
+    "address" : { "type" : "string" },
+    "affiliation" : {
+      "description": "The organizations to which the person is associated with.",
+      "type": "array",
+      "items": {
+        "$ref": "organization_schema.json#"
+      }
+    },
+    "roles": {
+      "description": "The roles assumed by the person. Ideally from a controlled vocabulary or ontology.",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

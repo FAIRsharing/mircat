@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIACME grant schema",
+  "description": "An allocated sum of funds given by a government or other organization for a particular purpose.",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": { "type": "string", "format": "uri" },
+    "@type": { "type": "string", "enum": [ "Grant" ]},
+    "identifier": {
+      "description": "Primary identifier for the grant.",
+      "type": "string"
+    },
+    "identifierSource": {
+      "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier.",
+      "type" : "string"
+    },
+    "name": {
+      "description": "The name of the grant and its funding program.",
+      "type" :  "string"
+    },
+    "funders" : {
+      "description": "The person(s) or organization(s) which has awarded the funds supporting the project.",
+      "type" : "array",
+      "items" : {
+        "oneOf": [
+          {"$ref" : "person_schema.json#"},
+          {"$ref" : "organization_schema.json#"}
+        ]
+      },
+      "minItems" : 1
+    }
+  }
+}

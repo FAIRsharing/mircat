@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title" : "MIACME investigation schema",
+  "version" : "0.3",
+  "description" : "JSON-schema representing an investigation in MIACME. A planned activity that involves one or more studies.",
+  "type" : "object",
+  "properties" : {
+    "@context": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": { "type": "string", "format": "uri" },
+    "@type": { "type": "string" },
+    "identifier" : {
+      "description": "Primary identifier for the investigation. Ideally, a persistent identifier but an internal user identifier at a minimum.",
+      "type" : "string"
+    },
+    "identifierSource" : {
+      "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier.",
+      "type" : "string"
+    },
+    "title" : {
+      "description": "The title of the investigation.",
+      "type" : "string"
+    },
+    "description" : {
+      "description": "A textual narrative comprised of one or more statements about the investigation.",
+      "type" : "string"
+    },
+    "contacts" : {
+      "description": "The person(s) who contributed to the investigation, such as the Principal Investigator, corresponding author in related publications or other researchers involved.",
+      "type" : "array",
+      "items" : {
+        "$ref": "person_schema.json#"
+
+      }
+    },
+    "studies" : {
+      "description": "The studies associated with the Investigation.",
+      "type" : "array",
+      "items" : {
+        "$ref": "study_schema.json#"
+
+      }
+    },
+    "publications" : {
+      "description": "Scholarly articles associated with the investigation, usually describing the methods applied and conclusions reached by the investigation.",
+      "type" : "array",
+      "items" : {
+        "$ref": "publication_schema.json#"
+      }
+    },
+    "acknowledges" : {
+      "description": "The grant(s) which funded and supported the investigation.",
+      "type": "array",
+      "items": {
+        "$ref": "grant_schema.json#"
+      }
+    },
+    "conclusions" : {
+      "description": "A set of statements summarizing the findings of the investigation. It could be a URI referring to a nanopublication.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "MIACMEversion": {
+      "description": "The version of MIACME this dataset description should be compliant with.",
+      "type": "string"
+    },
+    "MIACMEcompliance": {
+      "description": "The result of the validation for MIACME compliance.",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

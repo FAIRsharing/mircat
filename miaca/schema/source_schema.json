@@ -27,7 +27,8 @@
     "@type": {
       "description": "The JSON-LD type",
       "type": "string",
-      "format": "uri"
+      "enum": [ "Source" ]
+
     },
     "ID": {
       "description": "The source identifier",

@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title" : "MIACME experimental setup schema",
+  "version" : "0.3",
+  "description" : "JSON-schema representing the experimental setup in a cell migration experiment.",
+  "type" : "object",
+  "properties" : {
+    "@context": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": { "type": "string", "format": "uri" },
+    "@type": { "type": "string" },
+    "assayType": {
+      "type": "string",
+      "description": "The type of assay. For example: single-cell migration, developmental assay, immune response, chemotaxic, microfluidic, wound-healing, spheroid"
+    },
+    "interference" : {
+      "type": "string",
+       "description": "Representing the interference or perturbation in the experiment. For example: RNAi, gene construct, chemicals, serum, substrate, stiffness, specific protein"
+    },
+    "microenvironment": {
+      "anyOf": [
+      {
+        "microenvironmentSubstrate": {
+          "type": "string",
+          "description": "The microenvironment for in vitro experiments, description of the substrate. For example: glass, plastic, ECM, gel or collagen, fibronectin"
+        }
+      },
+      {
+        "microenvironmentTissue": {
+          "type": "string",
+          "description": "The microenvironment for in vivo experiments, description of the tissue. For example: mouse, dermis, Zebrafish, embryo."
+        }
+      }
+    ]
+    },
+    "cellType" : {
+      "type": "string",
+      "description": "The type of cell used in the experiment. For example: cell line, primary cell, endogenous cell."
+    },
+    "medium" : {
+      "type": "string",
+      "description": "The medium of the experiment. "
+    }
+  },
+  "required": [ "assayType", "interference", "microenvironment", "cellType" ]
+}

@@ -1,0 +1,12 @@
+{
+  "fairsharingID": "https://doi.org/10.25504/FAIRsharing.vh2ye1",
+  "abbreviation": "MIACME",
+  "version" : "0.3",
+  "fullName": "Minimum Information About a Cell Migration Experiment",
+  "generalInformation": "",
+  "homepage": "http://cmso.science",
+  "developedIn": [],
+  "createdIn": 2017,
+  "taxonomicRange": ["All"],
+  "domains": []
+}

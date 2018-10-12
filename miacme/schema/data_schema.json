@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title" : "MIACME data schema",
+  "version" : "0.3",
+  "description" : "JSON-schema representing an investigation in MIACME",
+  "type" : "object",
+  "properties" : {
+    "@context": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": { "type": "string", "format": "uri" },
+    "@type": { "type": "string" },
+    "rawImages": {
+      "type": "string"
+    },
+    "processedImages": {
+      "type": "string"
+    },
+    "extractedFeatures": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

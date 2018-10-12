@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "Publication as JSON schema",
+  "description": "A schema describing a publication.",
+  "id" : "http://localhost:8080/schemas/publication_schema.json",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": { "type": "string", "format": "uri" },
+    "@type": { "type": "string" },
+    "identifier": {
+      "description": "A persistent identifier for the publication, it should be a DOI or pubmed identifier",
+      "type": "string"
+    },
+    "identifierSource": {
+      "description": "Information about the organisation or namespace responsible for minting the identifier.",
+      "type": "string"
+    },
+    "title": {
+      "description" : "The title of the publication.",
+      "type" : "string"
+    },
+    "publicationVenue": {
+      "description": "The venue where the publication appears (journal, publishing platform etc).",
+      "type": "string"
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "$ref": "person_schema.json#"
+      }
+    },
+    "date": {
+      "description": "The publication date.",
+      "$ref": "date_schema.json#"
+    }
+  }
+}

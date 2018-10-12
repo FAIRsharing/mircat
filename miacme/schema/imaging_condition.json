@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIACME investigation schema",
+  "version": "0.3",
+  "description": "JSON-schema representing an investigation in MIACME",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": { "type": "string", "format": "uri" },
+    "@type": { "type": "string" },
+    "imagingModality" : {
+      "type": "string",
+      "description": "The modality. For example: confocal, microscopy, spinning disk, wide-field, multi-phonon, light-sheet, super-resolution, "
+    },
+    "temporalInformation": {
+       "oneOf": [
+         {
+        "properties": {
+          "temporalResolution": {
+            "type": "string",
+            "description": "The type of temporal acquisition",
+            "enum": [ "endpoint"]
+          }
+        },
+        "additionalProperties": false
+         },
+        {
+        "properties": {
+          "temporalResolution": {
+            "type": "string",
+            "description": "The type of temporal acquisition",
+            "enum": [ "time-lapse" ]
+          },
+          "duration": {
+            "type": "string"
+          },
+          "frequency": {
+            "type": "string"
+          }
+        }
+      }
+    ]
+    },
+    "channelReadout": {
+      "type": "string"
+    }
+  },
+  "required": [ "imagingModality", "temporalInformation", "channelReadout"]
+}

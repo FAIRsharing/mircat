@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title" : "MIACME organization schema",
+  "version" : "0.3",
+  "description" : "JSON-schema representing an organization in MIACME. Legal or physical entity corresponding to a business or administration",
+  "type" : "object",
+  "properties" : {
+    "@context": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": { "type": "string", "format": "uri" },
+    "@type": { "type": "string" },
+    "identifier": {
+      "description": "Primary identifier for the organisation.",
+      "type": "string"
+    },
+    "identifierSource": {
+      "description": "Information about the organisation or namespace responsible for minting the identifier.",
+      "type": "string"
+    },
+    "name" : {
+      "type" : "string"
+    }
+  },
+  "additionalProperties": false
+}

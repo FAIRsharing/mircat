@@ -2,7 +2,7 @@
   "id": "https://w3id.org/mircat/miaca/schema/project_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACA (Minimum Information about a Cellular Assay) project schema",
-  "description": "JSON-schema representing MIACA reporting guideline.",
+  "description": "Conditions that have been established to measure effects which are induced in cells in response to a perturbation, together with data that have been acquired in these measurements in order to address the biological question this project was designed for.",
   "type": "object",
   "properties": {
     "@context": {

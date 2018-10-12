@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "sdo": "https://schema.org/",
+    "Project": "sdo:Project",
+    "ID": "sdo:identifier",
+    "source": "sdo:member",
+    "projectDescription": "sdo:description",
+    "instrument": "sdo:instrument"
+  }
+}

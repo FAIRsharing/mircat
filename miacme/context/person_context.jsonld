@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "sdo": "https://schema.org/",
+    "Person": "sdo:Person",
+    "identifier": "sdo:identifier",
+     "identifierSource": "",
+    "lastName": "sdo:lastName",
+    "firstName": "sdo:givenName",
+    "address": "sdo:address",
+    "affiliation": "sdo:affiliation",
+    "email": "sdo:email",
+    "phone": "sdo:telephone",
+    "fax": "sdo:faxNumber"
+  }
+}

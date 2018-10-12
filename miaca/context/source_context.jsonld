@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "sdo": "https://schema.org/",
+    "Source": "sdo:Person",
+    "ID": "sdo:identifier",
+    "name": "sdo:name",
+    "institution": "sdo:affiliation",
+    "address": "sdo:address",
+    "country": "sdo:addressCountry",
+    "email": "sdo:email"
+  }
+}

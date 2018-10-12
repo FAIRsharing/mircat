@@ -1,10 +1,10 @@
 {
-  "id": "https://w3id.org/mircat/miaca/schema/schema.json",
+  "id": "https://w3id.org/mircat/miaca/schema/miaca_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACA (Minimum Information about a Cellular Assay) schema",
   "description": "JSON-schema representing MIACA reporting guideline.",
   "type": "object",
-  "provenance": {
+  "_provenance": {
     "url": "http://w3id.org/mircat/miaca/provenance.json"
   },
   "properties": {
@@ -30,9 +30,10 @@
     "@type": {
       "description": "The JSON-LD type",
       "type": "string",
-      "format": "uri"
+       "enum": "Miaca"
     },
     "project": {
+      "description": "Conditions that have been established to measure effects which are induced in cells in response to a perturbation, together with data that have been acquired in these measurements in order to address the biological question this project was designed for.",
       "$ref": "project_schema.json#"
     }
   }
