@@ -62,11 +62,8 @@
       "allOf": [
         { "$ref": "#/definitions/file" },
         {
-          "properties": {
             "type": "string",
             "enum": [ "raw data", "processed data", "metadata", "phenotypic data" ]
-          },
-          "required": ["type"]
         }
       ]
     },
