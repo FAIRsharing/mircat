@@ -1,5 +1,5 @@
 {
-  "id": "http://w3id.org/mircat/miflowcyt/fluorescence_reagent_schema.json",
+  "id": "https://w3id.org/mircat/miflowcyt/schema/fluorescence_reagent_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIFlowCyt Fluorescence Reagent",
   "description": "The expected and possible types of cells or other particles in the sample material, and their expected and possible measurable characteristics should be noted as these represent the key information for choosing appropriate reagents with respect to the experimental goal. The following information shall be provided about each fluorescence reagent used. Information about the characteristic(s) being measured, as well as details about what plays the role of analyte, analyte detector, and analyte reporter should be descriptive enough to allow for accurate interpretation of the experiment data. Table 1 lists some examples of reagent descriptions.",

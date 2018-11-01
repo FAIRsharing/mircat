@@ -1,5 +1,5 @@
 {
-  "id": "http://fairsharing.github.io/MIRcat/miflowcyt/sample_schema.json",
+  "id": "https://w3id.org/mircat/miflowcyt/schema/sample_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIFlowCyt Flow Sample schema",
   "description": "The flow sample details shall include a description of each sample material used in the experiment (2.1), (2.2), how they were treated (2.3) and what reagents were used (2.4) to fluorescently label the material. Relations between samples, aliquots, different treatments, and replicates shall be unambiguously described.",

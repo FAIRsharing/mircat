@@ -1,5 +1,5 @@
 {
-  "id": "http://w3id.org/mircat/miflowcyt/data_analysis_schema.json",
+  "id": "https://w3id.org/mircat/miflowcyt/schema/data_analysis_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIFlowCyt Data Analysis",
   "description": "",

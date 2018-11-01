@@ -1,5 +1,5 @@
 {
-  "id": "http://fairsharing.github.io/MIRcat/miflowcyt/primary_contact_schema.json",
+  "id": "https://w3id.org/mircat/miflowcyt/schema/primary_contact_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIFlowCyt Primary Contact",
   "description": "The description may include information for additional individuals involved in the experiment, including their contact details and their role.",

@@ -1,5 +1,5 @@
 {
-  "id": "http://fairsharing.github.io/MIRcat/miflowcyt/organization_schema.json",
+  "id": "https://w3id.org/mircat/miflowcyt/schema/organization_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIFlowCyt Organzation",
   "description": "Organization performing the experiment",

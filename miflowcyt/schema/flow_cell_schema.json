@@ -1,5 +1,5 @@
 {
-  "id": "http://w3id.org/mircat/miflowcyt/flow_cell_schema.json",
+  "id": "https://w3id.org/mircat/miflowcyt/schema/flow_cell_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIFlowCyt Flow Cell",
   "description": "The flow cell of the instrument",

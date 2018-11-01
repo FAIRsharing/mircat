@@ -1,5 +1,5 @@
 {
-  "id": "http://fairsharing.github.io/MIRcat/miflowcyt/light_source_instrument_schema.json",
+  "id": "https://w3id.org/mircat/miflowcyt/schema/light_source_instrument_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIFlowCyt Light Source Instrument",
   "description": "The following details shall be specified about instruments used to analyze samples. It is expected that this information will be automatically provided by flow cytometry instruments in instrumentation description files along with list-mode data files, such as FCS files [18]. For instrument components that are not user configurable and that are part of a standard model, the instrument manufacturer and model number shall be sufficient if this uniquely specifies the required information. For all other cases where the make and model number is not sufficient to specify the required information, the individual component description shall be specified as described below..",
