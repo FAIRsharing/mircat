@@ -1,5 +1,5 @@
 {
-  "id": "http://w3id.org/mircat/miflowcyt/schema/miflowcyt_schema.json",
+  "id": "https://w3id.org/mircat/miflowcyt/schema/miflowcyt_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIFlowCyt (Minimum Information about a Flow Cytometry Experiment) main schema",
   "description": "The main JSON-schema representing MIFlowCyt reporting guideline.",
