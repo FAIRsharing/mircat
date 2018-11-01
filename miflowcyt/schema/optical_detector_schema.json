@@ -1,0 +1,48 @@
+{
+  "id": "http://fairsharing.github.io/MIRcat/miflowcyt/optical_filter_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIFlowCyt Optical Filter",
+  "description": "Each optical filter of the instrument shall be described.",
+  "type": "object",
+  "properties": {
+     "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+     "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+    "name": {
+      "description": "The optical detector name (e.g., FSC, SSC, FL1, FL2, FL3, FL4, etc.) shall be specified."
+    },
+    "type": {
+      "description": "The type of the optical detector shall be provided (e.g., photodiode, photomultiplier tube)."
+    },
+    "voltage": {
+      "description": "The optical detector voltage shall be specified (e.g., 300V, 700V)."
+    },
+    "amplificationType": {
+      "description": "The optical detector amplification type shall be specified (e.g., linear, log). For log amplification, the number of decades shall be provided (e.g., 4 decades). For a linear amplification, the linear gain shall be provided (e.g., linear gain of 2.0). Additional details including the actual amplifier profile may be provided."
+    },
+    "other": {
+      "description": "Additional relevant optical detector details should be provided and may include the optical detector manufacturer name and model number (e.g., MIFlowCyt Photonics Inc., PMT #R9220), minimal, maximal, and peak wavelength sensitivity (e.g., 185 nm, 900 nm, and 650 nm), the internal gain (e.g., 107), or the rise time (e.g., 2.2ns)."
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "http://fairsharing.github.io/MIRcat/miflowcyt/instrument_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIFlowCyt Instrument",
+  "description": "The following details shall be specified about instruments used to analyze samples. It is expected that this information will be automatically provided by flow cytometry instruments in instrumentation description files along with list-mode data files, such as FCS files [18]. For instrument components that are not user configurable and that are part of a standard model, the instrument manufacturer and model number shall be sufficient if this uniquely specifies the required information. For all other cases where the make and model number is not sufficient to specify the required information, the individual component description shall be specified as described below.",
+  "type": "object",
+  "properties": {
+     "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+     "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+    "manufacturer": {
+      "description": "The instrument manufacturer shall be specified by stating its name (e.g., MIFlowCyt Cytometry Systems, Inc.). A URL pointing to manufacturer web pages may also be provided."
+    },
+    "model": {
+      "description": "The instrument model shall be specified (e.g., CytMeter Elite-2000). It may include the instrument serial number."
+    },
+    "configurationAndSettings": {
+      "description": "The system and its configurations have significant impact on experimental results and as such the following shall be provided",
+      "flowCellAndFluidics": {
+        "$ref": "flow_cell_schema.json"
+      },
+      "lightSources": {
+        "description": "Each light source (e.g., laser) shall be described stating the following:",
+        "type": "array",
+        "items": {
+          "$ref": "light_source_instrument_schema.json"
+        }
+      }
+    },
+    "other": {
+      "description": "Additional relevant instrument details should be provided and may include machine-specific information such as information about automated agitation, temperature control, controlled volume dispensing, sampling from microtiter plates, auto-boost, auto-flush, etc. Other custom settings shall be provided if relevant and may include setting name, description, and value."
+    }
+  }
+}

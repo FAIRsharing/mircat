@@ -1,0 +1,45 @@
+{
+  "id": "http://fairsharing.github.io/MIRcat/miflowcyt/optical_filter_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIFlowCyt Optical Filter",
+  "description": "Each optical filter of the instrument shall be described.",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+     "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+    "type": {
+      "description": "The optical filter type shall be specified (e.g., band pass filter, long pass filter, dichroic long pass filters, short pass filter, dichroic short pass filter, polarizer excitation filter, grating, prism)."
+    },
+    "transmittedWavelengths": {
+      "description": "Light wavelengths transmitted by the filter shall be specified (e.g., 488/25 nm, >670 nm, <620 nm)."
+    },
+    "installationDate": {
+      "description": "As optical filters of all types are subject to degradation, filter performance needs to be monitored at intervals to verify continued performance at an acceptable level [19]. The optical filter installation date shall be specified (e.g., January 15, 2007)."
+    },
+    "other": {
+      "description": "Other relevant optical filter details should be provided."
+    }
+  }
+}

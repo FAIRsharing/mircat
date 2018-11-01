@@ -1,9 +1,9 @@
 {
   "id": "https://w3id.org/mircat/miacme/schema/miacme_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
-  "title": "MIACA (Minimum Information about a Cellular Assay) schema",
+  "title": "MIACME schema",
   "version": "0.3",
-  "description": "JSON-schema representing MIACA reporting guideline.",
+  "description": "JSON-schema representing MIACME reporting guideline.",
   "type": "object",
   "properties": {
     "@context": {

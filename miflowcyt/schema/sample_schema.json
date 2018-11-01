@@ -1,0 +1,66 @@
+{
+  "id": "http://fairsharing.github.io/MIRcat/miflowcyt/sample_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIFlowCyt Flow Sample schema",
+  "description": "The flow sample details shall include a description of each sample material used in the experiment (2.1), (2.2), how they were treated (2.3) and what reagents were used (2.4) to fluorescently label the material. Relations between samples, aliquots, different treatments, and replicates shall be unambiguously described.",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+    "materialDescription": {
+      "description": "Sample materials shall be described according to 2.1.1, 2.1.2, or 2.1.3, based on the type of the sample material. Each sample shall be distinguished from other samples within the same experiment.",
+      "oneOf": [
+        {
+          "$ref": "biological_sample_schema.json"
+        },
+        {
+          "$ref": "environmental_sample_schema.json"
+        },
+        {
+          "description": "A description of the sample shall be provided. The description shall include information about the nature of the material in the sample (e.g., dyed plastic beads).",
+          "ref": "other_sample_schema.json"
+        }
+      ]
+    },
+    "sampleCharacteristics": {
+      "description": "Key information about the possible and expected sample characteristics should be noted as they provide the rationale for the experimental design, including the choice of appropriate reagents. Sample characteristics description should include the expected and possible types of cells or other particles in the sample material.",
+      "type": "object",
+      "properties": {
+        "possibleSampleCharacteristics": {}
+      }
+    },
+    "sampleTreatmentsDescription": {
+      "description": "The description shall include details about treatment agents, which play the role of experiment variables, or shall specify that samples were untreated. For example, a sample treated with an agent might be compared to an untreated sample; when reproducing and interpreting such an experiment, having access to details on treatment agents and conditions is essential in order to query and retrieve samples for further analysis. The treatment description should also contain other relevant treatment details such as, but not limited to, time, temperature, and concentration."
+    },
+    "fluorescentReagentsDescription":{
+      "description": "The expected and possible types of cells or other particles in the sample material, and their expected and possible measurable characteristics should be noted as these represent the key information for choosing appropriate reagents with respect to the experimental goal. The following information shall be provided about each fluorescence reagent used. Information about the characteristic(s) being measured, as well as details about what plays the role of analyte, analyte detector, and analyte reporter should be descriptive enough to allow for accurate interpretation of the experiment data. Table 1 lists some examples of reagent descriptions.",
+      "$ref": "fluorescence_reagent_schema.json"
+    }
+  }
+}
+
+
+
+

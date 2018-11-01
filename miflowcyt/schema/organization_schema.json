@@ -1,0 +1,41 @@
+{
+  "id": "http://fairsharing.github.io/MIRcat/miflowcyt/organization_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIFlowCyt Organzation",
+  "description": "Organization performing the experiment",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+     "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+    "name": {
+      "description": "Name of the organization.",
+      "type": "string"
+    },
+    "address": {
+      "description": "Address of the organization.",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "http://fairsharing.github.io/MIRcat/miflowcyt/primary_contact_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIFlowCyt Primary Contact",
+  "description": "The description may include information for additional individuals involved in the experiment, including their contact details and their role.",
+  "type": "object",
+  "properties": {
+     "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+     "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+    "name": {
+      "description": "Name"
+    },
+    "emailAddress": {
+      "description": ""
+    }
+  }
+}
