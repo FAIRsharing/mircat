@@ -33,15 +33,19 @@
       "format": "uri"
     },
     "experimentOverview": {
+      "description": "An overview of the experiment",
       "$ref": "experiment_schema.json#"
     },
     "flowSampleDetails": {
+      "description": "The flow sample details shall include a description of each sample material used in the experiment (2.1), (2.2), how they were treated (2.3) and what reagents were used (2.4) to fluorescently label the material. Relations between samples, aliquots, different treatments, and replicates shall be unambiguously described.",
       "$ref": "sample_schema.json#"
     },
     "instrumentDetails": {
+      "description": "The following details shall be specified about instruments used to analyze samples. It is expected that this information will be automatically provided by flow cytometry instruments in instrumentation description files along with list-mode data files, such as FCS files [18]. For instrument components that are not user configurable and that are part of a standard model, the instrument manufacturer and model number shall be sufficient if this uniquely specifies the required information. For all other cases where the make and model number is not sufficient to specify the required information, the individual component description shall be specified as described below.",
       "$ref": "instrument_schema.json#"
     },
     "dataAnalysis": {
+      "description": "Information about the data analysis performed.",
       "$ref": "data_analysis_schema.json#"
     }
   }

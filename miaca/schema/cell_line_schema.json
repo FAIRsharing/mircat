@@ -4,6 +4,8 @@
   "title": "MIACA cell line schema",
   "description": "a element to describe the cell line used during the project.",
   "type": "object",
+  "additionalProperties": false,
+  "required": [ "cellLineIdentifier", "cellLineName", "species", "tissue", "reference", "provider"]
   "properties": {
     "@context": {
       "description": "The JSON-LD context",
@@ -125,7 +127,5 @@
         "type": "string"
       }
     }
-  },
-  "additionalProperties": false,
-  "required": [ "cellLineIdentifier", "cellLineName", "species", "tissue", "reference", "provider"]
+  }
 }

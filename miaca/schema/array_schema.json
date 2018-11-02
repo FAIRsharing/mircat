@@ -4,6 +4,7 @@
   "title": "MIACA array schema",
   "description": "JSON-schema representing MIACA array type.",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "@context": {
       "description": "The JSON-LD context",
@@ -49,6 +50,5 @@
      "description": "description of array type and vessel",
      "$ref": "array_schema.json#"
    }
-  },
-  "additionalProperties": false
+  }
 }

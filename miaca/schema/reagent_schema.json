@@ -4,6 +4,7 @@
   "title": "MIACA reagent schema",
   "description": "A reagent as defined by MIACA, Reagents are media, media supplements, kits, buffers and solutions, water and so on. ",
   "type": "object",
+  "required": ["ReagentName", "ReagentID","vendor"]
   "properties": {
     "@context": {
       "description": "The JSON-LD context",
@@ -103,6 +104,5 @@
         }
       ]
     }
-  },
-  "required": ["ReagentName", "ReagentID","vendor"]
+  }
 }

@@ -3,6 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACA dbreference schema",
   "description": "",
+  "required": ["db", "ID"],
   "type": "object",
   "properties" : {
     "@context": {
@@ -62,6 +63,5 @@
       "type": "string",
       "minLength": 1
     }
-  },
-  "required": ["db", "ID"]
+  }
 }

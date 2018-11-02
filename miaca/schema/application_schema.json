@@ -4,6 +4,7 @@
   "title": "MIACA application schema",
   "description": "JSON-schema representing MIACA application type.",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "@context": {
       "description": "The JSON-LD context",
@@ -44,6 +45,5 @@
       "description": "Bibliographic reference for the data generated during the project. Cross reference for the data source. Example: Entry in a database of databases.",
       "$ref": "open_cv_schema.json#"
     }
-  },
-  "additionalProperties": false
+  }
 }

@@ -43,6 +43,5 @@
         "$ref": "reagent_list_schema.json"
       }
     }
-
   }
 }
