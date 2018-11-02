@@ -8,7 +8,7 @@
     "url": "http://w3id.org/mircat/miflowcyt/provenance/provenance.json"
   },
   "properties": {
-     "@context": {
+    "@context": {
       "description": "The JSON-LD context",
       "anyOf": [
         {
@@ -22,7 +22,7 @@
         }
       ]
     },
-     "@id": {
+    "@id": {
       "description": "The JSON-LD identifier",
       "type": "string",
       "format": "uri"

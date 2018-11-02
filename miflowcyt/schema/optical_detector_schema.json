@@ -5,7 +5,7 @@
   "description": "Each optical filter of the instrument shall be described.",
   "type": "object",
   "properties": {
-     "@context": {
+    "@context": {
       "description": "The JSON-LD context",
       "anyOf": [
         {
@@ -19,7 +19,7 @@
         }
       ]
     },
-     "@id": {
+    "@id": {
       "description": "The JSON-LD identifier",
       "type": "string",
       "format": "uri"

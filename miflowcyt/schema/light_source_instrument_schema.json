@@ -5,7 +5,7 @@
   "description": "The following details shall be specified about instruments used to analyze samples. It is expected that this information will be automatically provided by flow cytometry instruments in instrumentation description files along with list-mode data files, such as FCS files [18]. For instrument components that are not user configurable and that are part of a standard model, the instrument manufacturer and model number shall be sufficient if this uniquely specifies the required information. For all other cases where the make and model number is not sufficient to specify the required information, the individual component description shall be specified as described below..",
   "type": "object",
   "properties": {
-     "@context": {
+    "@context": {
       "description": "The JSON-LD context",
       "anyOf": [
         {
@@ -19,7 +19,7 @@
         }
       ]
     },
-     "@id": {
+    "@id": {
       "description": "The JSON-LD identifier",
       "type": "string",
       "format": "uri"

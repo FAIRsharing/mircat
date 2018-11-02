@@ -19,7 +19,7 @@
         }
       ]
     },
-     "@id": {
+    "@id": {
       "description": "The JSON-LD identifier",
       "type": "string",
       "format": "uri"
@@ -30,15 +30,20 @@
       "format": "uri"
     },
     "sampleDescription": {
-      "description": "A description of the biological sample shall be provided, including the sample type, if relevant (e.g., C57BL/6 spleen, purified CD4+ lymphocytes, BALB/c thymocyte DNA, control patient PBMCs, protein lysate from lung cancer biopsy, peripheral blood from patient with Type I diabetes, liver biopsy, etc.)"
+      "description": "A description of the biological sample shall be provided, including the sample type, if relevant (e.g., C57BL/6 spleen, purified CD4+ lymphocytes, BALB/c thymocyte DNA, control patient PBMCs, protein lysate from lung cancer biopsy, peripheral blood from patient with Type I diabetes, liver biopsy, etc.)",
+      "type": "string"
     },
     "sourceDescription": {
-      "description": "The source of the biological sample shall be described (e.g., wild- type mouse, C57BL/6 spleen, C57BL/6 splenocytes). If the source is a cell line the description shall include its name, ATCC [17] (or equivalent) number, and cell type."
+      "description": "The source of the biological sample shall be described (e.g., wild- type mouse, C57BL/6 spleen, C57BL/6 splenocytes). If the source is a cell line the description shall include its name, ATCC [17] (or equivalent) number, and cell type.",
+      "type": "string"
     },
     "organism": {
+      "description": "The source organism for this biological sample",
       "$ref": "http://w3id.org/mircat/miflowcyt/organism_schema.json"
     },
     "other": {
-      "description": "Additional information about the biological sample should be provided if relevant. This may include relevant information such as in vivo or in vitro treatment, stimulation, preparation / enrichment protocol, culture/growth protocol, collection time/date, whether the sample was frozen/banked/fixed, etc."
+      "description": "Additional information about the biological sample should be provided if relevant. This may include relevant information such as in vivo or in vitro treatment, stimulation, preparation / enrichment protocol, culture/growth protocol, collection time/date, whether the sample was frozen/banked/fixed, etc.",
+      "type": "string"
     }
   }
+}

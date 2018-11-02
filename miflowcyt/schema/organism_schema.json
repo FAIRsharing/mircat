@@ -19,7 +19,7 @@
         }
       ]
     },
-     "@id": {
+    "@id": {
       "description": "The JSON-LD identifier",
       "type": "string",
       "format": "uri"
@@ -30,25 +30,32 @@
       "format": "uri"
     },
     "taxonomy": {
-      "description": "The source organism shall be specified by genus and species (e.g., Mus musculus). The terms should come from an appropriate standard such as the NCBI taxonomy database [12]. Taxonomy information should also contain the type of subspecies and organism strain, if applicable. A standard taxonomy may be extended or a proprietary taxonomy may be used, especially if detailed identification is relevant and beyond the scope of standard taxonomies."
+      "description": "The source organism shall be specified by genus and species (e.g., Mus musculus). The terms should come from an appropriate standard such as the NCBI taxonomy database [12]. Taxonomy information should also contain the type of subspecies and organism strain, if applicable. A standard taxonomy may be extended or a proprietary taxonomy may be used, especially if detailed identification is relevant and beyond the scope of standard taxonomies.",
+      "type": "string"
     },
     "age": {
-      "description": "The age shall be provided if applicable for the particular organism (e.g., 6 weeks). It may also include the developmental state (e.g., Theiler stage 23)."
+      "description": "The age shall be provided if applicable for the particular organism (e.g., 6 weeks). It may also include the developmental state (e.g., Theiler stage 23).",
+      "type": "string"
     },
     "gender": {
-      "description": "The gender shall be provided if applicable for the particular organism."
+      "description": "The gender shall be provided if applicable for the particular organism.",
+      "type": "string"
     },
     "phenotype": {
-      "description": "Appropriate phenotype characteristics such as disease state shall be described (e.g., increased tumorigenesis)."
+      "description": "Appropriate phenotype characteristics such as disease state shall be described (e.g., increased tumorigenesis).",
+      "type": "string"
     },
     "genotype": {
-      "description": "Appropriate genotype characteristics shall be described (e.g., p53-/-)."
+      "description": "Appropriate genotype characteristics shall be described (e.g., p53-/-).",
+      "type": "string"
     },
     "treatment": {
-      "description": "All source organism treatments shall be described (e.g., treatment with cyclooxygenase-2 (COX-2) inhibitor)."
+      "description": "All source organism treatments shall be described (e.g., treatment with cyclooxygenase-2 (COX-2) inhibitor).",
+      "type": "string"
     },
     "other": {
-      "description": "Additional information about the source organism should be provided if relevant. This may include anatomic location of the source, visit time/date, or additional details and comments."
+      "description": "Additional information about the source organism should be provided if relevant. This may include anatomic location of the source, visit time/date, or additional details and comments.",
+      "type": "string"
     }
   }
 }
