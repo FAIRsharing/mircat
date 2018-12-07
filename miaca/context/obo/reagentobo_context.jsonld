@@ -1,0 +1,21 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Reagent": "obo:",
+        "@language": "en",
+        "reagentID": "obo:",
+        "stockConc": "obo:",
+        "targetSpecies": "obo:",
+        "libraryRef": "obo:",
+        "vendor": "obo:",
+        "solvent": "obo:",
+        "stockConcUnit": "obo:",
+        "array": "obo:",
+        "reagentName": "obo:",
+        "efficiency": "obo:",
+        "perturbagenType": "obo:",
+        "targetID": "obo:",
+        "reagentType": "obo:",
+        "reagentOrderNumber": "obo:"
+    }
+}

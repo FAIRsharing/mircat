@@ -1,0 +1,8 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Miaca": "obo:",
+        "@language": "en",
+        "project": "obo:"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Array": "obo:",
+        "@language": "en",
+        "ID": "obo:",
+        "ydim": "obo:",
+        "xdim": "obo:",
+        "array": "obo:",
+        "arraySupport": "obo:"
+    }
+}

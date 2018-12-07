@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Vendor": "obo:",
+        "@language": "en",
+        "orderNo": "obo:",
+        "serialNo": "obo:",
+        "lotNo": "obo:",
+        "name": "obo:"
+    }
+}

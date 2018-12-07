@@ -1,0 +1,25 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Treatment": "obo:",
+        "@language": "en",
+        "passageNo": "obo:",
+        "reagentName": "obo:",
+        "durationUnit": "obo:",
+        "conditionName": "obo:",
+        "ID": "obo:",
+        "comment": "obo:",
+        "cellDensity": "obo:",
+        "co2Content": "obo:",
+        "humidityUnit": "obo:",
+        "array": "obo:",
+        "humidity": "obo:",
+        "cellLine": "obo:",
+        "compReagentName": "obo:",
+        "co2ContentUnit": "obo:",
+        "seedingDensity": "obo:",
+        "temperature": "obo:",
+        "temperatureUnit": "obo:",
+        "duration": "obo:"
+    }
+}

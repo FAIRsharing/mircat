@@ -1,0 +1,12 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "DataFile": "obo:",
+        "@language": "en",
+        "version": "obo:",
+        "softwareParamaters": "obo:",
+        "software": "obo:",
+        "data_file": "obo:",
+        "algorithm": "obo:"
+    }
+}

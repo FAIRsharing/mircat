@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "CellAssay": "obo:",
+        "@language": "en",
+        "ID": "obo:",
+        "treatment": "obo:",
+        "postTreatment": "obo:",
+        "dataAcquisition": "obo:"
+    }
+}

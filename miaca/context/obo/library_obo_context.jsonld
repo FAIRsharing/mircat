@@ -1,0 +1,17 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Library": "obo:",
+        "@language": "en",
+        "type": "obo:",
+        "features": "obo:",
+        "ID": "obo:",
+        "libraryElementCharacteristics": "obo:",
+        "name": "obo:",
+        "preparationMethod": "obo:",
+        "vendor": "obo:",
+        "definitions": "obo:",
+        "format": "obo:",
+        "featurePosition": "obo:"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "MaterialList": "obo:",
+        "@language": "en",
+        "reagent": "obo:",
+        "ID": "obo:",
+        "compositeReagent": "obo:",
+        "cellLine": "obo:"
+    }
+}

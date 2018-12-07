@@ -1,0 +1,10 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "CompositeReagent": "obo:",
+        "@language": "en",
+        "comment": "obo:",
+        "compReagentName": "obo:",
+        "reagentList": "obo:"
+    }
+}

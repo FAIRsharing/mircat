@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Instrument": "obo:",
+        "@language": "en",
+        "instrumentSpec": "obo:",
+        "ID": "obo:",
+        "instrumentName": "obo:",
+        "instrumentType": "obo:",
+        "instrumentModel": "obo:",
+        "vendor": "obo:"
+    }
+}

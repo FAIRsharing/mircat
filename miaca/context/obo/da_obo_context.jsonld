@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Da": "obo:",
+        "@language": "en",
+        "ID": "obo:",
+        "settings": "obo:",
+        "reference": "obo:",
+        "instrument": "obo:"
+    }
+}
