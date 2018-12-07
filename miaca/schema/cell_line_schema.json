@@ -5,7 +5,7 @@
   "description": "a element to describe the cell line used during the project.",
   "type": "object",
   "additionalProperties": false,
-  "required": [ "cellLineIdentifier", "cellLineName", "species", "tissue", "reference", "provider"]
+  "required": [ "cellLineIdentifier", "cellLineName", "species", "tissue", "reference", "provider"],
   "properties": {
     "@context": {
       "description": "The JSON-LD context",
