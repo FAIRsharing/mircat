@@ -4,7 +4,7 @@
   "title": "MIACA Source - corresponding to a person and their organization",
   "description": "Contact details of researcher/person/laboratory/institution in charge of the project -Used to describe the contact details of the scientist - corresponds to MIACA XSD sourceType",
   "type": "object",
-  "required": ["ID", "name", "institution", "department", "address", "city", "country", "email"]
+  "required": ["ID", "name", "institution", "department", "address", "city", "country", "email"],
   "properties": {
       "@context": {
       "description": "The JSON-LD context",
