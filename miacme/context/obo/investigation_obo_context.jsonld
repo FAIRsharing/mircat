@@ -1,0 +1,18 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Investigation": "obo:",
+        "@language": "en",
+        "identifierSource": "obo:",
+        "conclusions": "obo:",
+        "MIACMEversion": "obo:",
+        "identifier": "obo:",
+        "contacts": "obo:",
+        "MIACMEcompliance": "obo:",
+        "studies": "obo:",
+        "acknowledges": "obo:",
+        "description": "obo:",
+        "publications": "obo:",
+        "title": "obo:"
+    }
+}

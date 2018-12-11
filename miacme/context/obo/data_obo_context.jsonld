@@ -1,0 +1,10 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Data": "obo:",
+        "@language": "en",
+        "extractedFeatures": "obo:",
+        "processedImages": "obo:",
+        "rawImages": "obo:"
+    }
+}

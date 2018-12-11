@@ -1,0 +1,9 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Annotation": "obo:",
+        "@language": "en",
+        "value": "obo:",
+        "valueIRI": "obo:"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Miacme": "obo:",
+        "@language": "en",
+        "investigation": "obo:"
+    }
+}

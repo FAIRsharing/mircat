@@ -1,0 +1,10 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "ImagingCondition": "obo:",
+        "@language": "en",
+        "imagingModality": "obo:",
+        "temporalInformation": "obo:",
+        "channelReadout": "obo:"
+    }
+}

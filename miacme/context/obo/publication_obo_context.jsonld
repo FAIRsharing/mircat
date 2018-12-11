@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Publication": "obo:",
+        "@language": "en",
+        "identifier": "obo:",
+        "identifierSource": "obo:",
+        "date": "obo:",
+        "authors": "obo:",
+        "publicationVenue": "obo:",
+        "title": "obo:"
+    }
+}

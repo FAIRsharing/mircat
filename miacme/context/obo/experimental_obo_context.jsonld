@@ -1,0 +1,12 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "ExperimentalSetup": "obo:",
+        "@language": "en",
+        "interference": "obo:",
+        "microenvironment": "obo:",
+        "assayType": "obo:",
+        "cellType": "obo:",
+        "medium": "obo:"
+    }
+}
