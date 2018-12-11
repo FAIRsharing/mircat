@@ -20,7 +20,7 @@
       ]
     },
     "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": [ "Person" },
+    "@type": { "type": "string", "enum": [ "Person"] },
     "identifier" : {
       "description": "A persistent identifier of the person, it should be an ORCID.",
       "type" : "string"
@@ -31,7 +31,7 @@
     },
     "lastName" : {
       "description": "The family name.",
-      "type" : "string",
+      "type" : "string"
     },
     "firstName" : {
       "description": "The given name.",
@@ -40,7 +40,7 @@
     "midInitials" : { "type" : "string" },
     "email" : {
       "description": "The email address.",
-      "type" : "string", "format" : "email",
+      "type" : "string", "format" : "email"
     },
     "phone" : { "type": "string"},
     "fax" : { "type" : "string" },
