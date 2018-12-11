@@ -2,7 +2,7 @@
   "id": "https://w3id.org/mircat/miacme/schema/experimental_setup_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title" : "MIACME experimental setup schema",
-  "version" : "0.3",
+  "version" : "1.0",
   "description" : "JSON-schema representing the experimental setup in a cell migration experiment.",
   "type" : "object",
   "properties" : {
@@ -21,6 +21,14 @@
     },
     "@id": { "type": "string", "format": "uri" },
     "@type": { "type": "string" },
+    "basicApproach": {
+      "description": "A description of the study type or approach used, such as in vitro, in vivo, in silico.",
+      "type": "string"
+    },
+    "cellModel": {
+      "description": "A description of the cells used in the experiment.",
+      "$ref": "cell_model_schema.json#"
+    },
     "assayType": {
       "type": "string",
       "description": "The type of assay. For example: single-cell migration, developmental assay, immune response, chemotaxic, microfluidic, wound-healing, spheroid"
@@ -44,10 +52,6 @@
         }
       }
     ]
-    },
-    "cellType" : {
-      "type": "string",
-      "description": "The type of cell used in the experiment. For example: cell line, primary cell, endogenous cell."
     },
     "medium" : {
       "type": "string",

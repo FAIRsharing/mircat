@@ -3,8 +3,8 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "ImagingCondition": "obo:",
         "@language": "en",
-        "imagingModality": "obo:",
-        "temporalInformation": "obo:",
+        "imagingModality": "obo:FBbi_00000222 ",
+        "temporalInformation": "obo:IAO_0000416",
         "channelReadout": "obo:"
     }
 }

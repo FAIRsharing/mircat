@@ -1,0 +1,42 @@
+{
+  "id": "https://w3id.org/mircat/miacme/schema/cell_model_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title" : "MIACME cell model schema",
+  "version" : "1.0",
+  "description" : "JSON-schema representing the experimental setup in a cell migration experiment.",
+  "type" : "object",
+  "properties" : {
+    "@context": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "string"
+    },
+    "cellType" : {
+      "type": "string",
+      "description": "The type of cell used in the experiment. For example: cell line, primary cell, endogenous cell."
+    },
+    "specificCellDetails": {
+      "description": "The specific details about the cell.",
+      "type": "string"
+    },
+    "organism": {
+      "description": "The organism of origin of the cell.",
+      "type": "string"
+    }
+  }
+}

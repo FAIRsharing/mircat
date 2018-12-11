@@ -5,8 +5,8 @@
         "@language": "en",
         "interference": "obo:EFO_0000727",
         "microenvironment": "obo:OMIT_0027850",
-        "assayType": "obo:",
-        "cellType": "obo:",
-        "medium": "obo:"
+        "assayType": "obo:FBcv_0003050",
+        "cellType": "obo:CL_0000000",
+        "medium": "obo:BTO_0000316"
     }
 }

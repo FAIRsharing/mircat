@@ -5,6 +5,7 @@
   "version" : "0.3",
   "description" : "JSON-schema representing a study in MIACME. A planned activity that consists on study planning, study design execution,  documentation and which produces conclusion(s).",
   "type" : "object",
+  "additionalProperties": false,
   "properties" : {
     "@context": {
       "anyOf": [
@@ -97,6 +98,5 @@
       "description": "The result of the validation for MIACME compliance.",
       "type": "string"
     }
-  },
-  "additionalProperties": false
+  }
 }

@@ -5,6 +5,7 @@
   "version": "0.3",
   "description": "JSON-schema representing an investigation in MIACME",
   "type": "object",
+  "required": [ "imagingModality", "temporalInformation", "channelReadout"],
   "properties": {
     "@context": {
       "anyOf": [
@@ -54,9 +55,9 @@
       }
     ]
     },
-    "channelReadout": {
+    "channelDefinition": {
+      "description": "Identification of the label or constrasts",
       "type": "string"
     }
-  },
-  "required": [ "imagingModality", "temporalInformation", "channelReadout"]
+  }
 }
