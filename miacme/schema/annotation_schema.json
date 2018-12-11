@@ -1,5 +1,5 @@
 {
-  "id": "https://w3id.org/miaca/miacme/schema/annotation_schema.json",
+  "id": "https://w3id.org/mircat/miacme/schema/annotation_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACME annotation schema",
   "description": "A pair of value (string or numeric) with a corresponding ontology term (IRI), if applicable.",
