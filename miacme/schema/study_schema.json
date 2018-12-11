@@ -31,7 +31,7 @@
     },
     "title" : {
       "description": "A short sentence naming the study.",
-      "type" : "string",
+      "type" : "string"
     },
     "description" : {
       "description": "A textual narrative comprised of one or more statements about the study.",
