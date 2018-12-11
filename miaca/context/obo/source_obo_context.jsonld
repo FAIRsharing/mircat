@@ -1,12 +1,12 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "Source": "obo:",
+        "Source": "obo:NCBITaxon_9606",
         "@language": "en",
-        "address": "obo:",
-        "ID": "obo:",
+        "address": "obo:IAO_0000422",
+        "ID": "obo:IAO_0000578",
         "country": "obo:",
-        "email": "obo:",
+        "email": "obo:IAO_0000429",
         "name": "obo:",
         "institution": "obo:",
         "department": "obo:",

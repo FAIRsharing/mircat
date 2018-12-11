@@ -1,18 +1,19 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "Investigation": "obo:",
+        "Investigation": "obo:OBI_0000011",
         "@language": "en",
-        "identifierSource": "obo:",
-        "conclusions": "obo:",
+        "identifierSource": "obo:OBI_0000245",
+        "conclusions": "obo:IAO_0000144",
         "MIACMEversion": "obo:",
-        "identifier": "obo:",
+        "identifier": "obo:IAO_0000577",
         "contacts": "obo:",
         "MIACMEcompliance": "obo:",
         "studies": "obo:",
         "acknowledges": "obo:",
-        "description": "obo:",
+        "description": "obo:OBI_0001615",
         "publications": "obo:",
-        "title": "obo:"
+        "dates": "obo:",
+        "title": "obo:OBI_0001622"
     }
 }

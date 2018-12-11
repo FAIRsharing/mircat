@@ -1,13 +1,13 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "Study": "obo:",
+        "Study": "obo:OBI_0000066",
         "@language": "en",
-        "identifierSource": "obo:",
-        "conclusions": "obo:",
-        "data": "obo:",
+        "identifierSource": "obo:OBI_0000245",
+        "conclusions": "obo:IAO_0000144",
+        "data": "obo:IAO_0000027",
         "MIACMEversion": "obo:",
-        "identifier": "obo:",
+        "identifier": "obo:IAO_0000577",
         "dates": "obo:",
         "contacts": "obo:",
         "experimental_setup": "obo:",

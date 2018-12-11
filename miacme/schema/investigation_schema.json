@@ -74,6 +74,13 @@
         "type": "string"
       }
     },
+    "dates": {
+      "description": "Dates relevant to the investigation.",
+      "type": "array",
+      "items": {
+        "$ref": "date_schema.json#"
+      }
+    },
     "MIACMEversion": {
       "description": "The version of MIACME this dataset description should be compliant with.",
       "type": "string"

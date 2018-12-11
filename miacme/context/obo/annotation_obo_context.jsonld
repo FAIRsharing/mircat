@@ -3,7 +3,7 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "Annotation": "obo:",
         "@language": "en",
-        "value": "obo:",
-        "valueIRI": "obo:"
+        "value": "obo:IAO_0000027",
+        "valueIRI": "obo:NCIT_C42743"
     }
 }

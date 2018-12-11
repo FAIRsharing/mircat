@@ -4,7 +4,7 @@
         "Person": "obo:",
         "@language": "en",
         "lastName": "obo:",
-        "identifierSource": "obo:",
+        "identifierSource": "obo:OBI_0000245",
         "affiliation": "obo:",
         "phone": "obo:",
         "address": "obo:",
