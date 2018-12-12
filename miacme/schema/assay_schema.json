@@ -1,11 +1,11 @@
 {
-  "id": "https://w3id.org/mircat/miacme/schema/miacme_schema.json",
+  "id": "https://w3id.org/mircat/miacme/schema/assay_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
-  "title": "MIACME schema",
+  "title" : "MIACME assay schema",
   "version" : "1.0",
-  "description": "JSON-schema representing MIACME reporting guideline.",
-  "type": "object",
-  "properties": {
+  "description" : "JSON-schema representing the cell model in a cell migration experiment.",
+  "type" : "object",
+  "properties" : {
     "@context": {
       "description": "The JSON-LD context",
       "anyOf": [
@@ -29,11 +29,16 @@
       "description": "The JSON-LD type",
       "type": "string",
       "enum": [
-        "Miacme"
+        "Assay"
       ]
     },
-    "investigation": {
-      "$ref": "investigation_schema.json#"
+    "type": {
+      "description": "The kind of assay.",
+      "type": "string"
+    },
+    "cellInput": {
+      "description": "The manner in which the cell population is presented at the start of the assay",
+      "type": "string"
     }
   }
 }

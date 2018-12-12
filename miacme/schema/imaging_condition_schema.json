@@ -2,12 +2,13 @@
   "id": "https://w3id.org/mircat/miacme/schema/imaging_condition_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACME investigation schema",
-  "version": "0.3",
+  "version" : "1.0",
   "description": "JSON-schema representing an investigation in MIACME",
   "type": "object",
   "required": [ "imagingModality", "temporalInformation", "channelReadout"],
   "properties": {
-    "@context": {
+     "@context": {
+      "description": "The JSON-LD context",
       "anyOf": [
         {
           "type": "string"
@@ -20,8 +21,18 @@
         }
       ]
     },
-    "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string" },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "enum": [
+        "ImagingCondition"
+      ]
+    },
     "imagingModality" : {
       "type": "string",
       "description": "The modality. For example: confocal, microscopy, spinning disk, wide-field, multi-phonon, light-sheet, super-resolution, "

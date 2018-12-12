@@ -3,6 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACME annotation schema",
   "description": "A pair of value (string or numeric) with a corresponding ontology term (IRI), if applicable.",
+  "version" : "1.0",
   "type": "object",
   "additionalProperties": false,
   "properties": {

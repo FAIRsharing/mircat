@@ -3,10 +3,11 @@
   "$schema": "http://json-schema.org/draft-04/schema",
   "title" : "MIACME cell model schema",
   "version" : "1.0",
-  "description" : "JSON-schema representing the experimental setup in a cell migration experiment.",
+  "description" : "JSON-schema representing the cell model in a cell migration experiment.",
   "type" : "object",
   "properties" : {
-    "@context": {
+   "@context": {
+      "description": "The JSON-LD context",
       "anyOf": [
         {
           "type": "string"
@@ -20,15 +21,20 @@
       ]
     },
     "@id": {
+      "description": "The JSON-LD identifier",
       "type": "string",
       "format": "uri"
     },
     "@type": {
-      "type": "string"
+      "description": "The JSON-LD type",
+      "type": "string",
+      "enum": [
+        "CellModel"
+      ]
     },
     "cellType" : {
-      "type": "string",
-      "description": "The type of cell used in the experiment. For example: cell line, primary cell, endogenous cell."
+      "description": "The type of cell used in the experiment. For example: cell line, primary cell, endogenous cell.",
+      "type": "string"
     },
     "specificCellDetails": {
       "description": "The specific details about the cell.",

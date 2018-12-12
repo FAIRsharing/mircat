@@ -2,11 +2,12 @@
   "id": "https://w3id.org/mircat/miacme/schema/investigation_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title" : "MIACME investigation schema",
-  "version" : "0.3",
+  "version" : "1.0",
   "description" : "JSON-schema representing an investigation in MIACME. A planned activity that involves one or more studies.",
   "type" : "object",
   "properties" : {
     "@context": {
+      "description": "The JSON-LD context",
       "anyOf": [
         {
           "type": "string"
@@ -19,8 +20,18 @@
         }
       ]
     },
-    "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": [ "Investigation" ]},
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "enum": [
+        "Investigation"
+      ]
+    },
     "identifier" : {
       "description": "Primary identifier for the investigation. Ideally, a persistent identifier but an internal user identifier at a minimum.",
       "type" : "string"

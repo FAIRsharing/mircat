@@ -2,11 +2,12 @@
   "id": "https://w3id.org/mircat/miacme/schema/person_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title" : "MIACME person schema. A human being.",
-  "version" : "0.3",
+  "version" : "1.0",
   "description" : "JSON-schema representing a person in MIACME",
   "type" : "object",
   "properties" : {
     "@context": {
+      "description": "The JSON-LD context",
       "anyOf": [
         {
           "type": "string"
@@ -19,8 +20,18 @@
         }
       ]
     },
-    "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": [ "Person"] },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "enum": [
+        "Person"
+      ]
+    },
     "identifier" : {
       "description": "A persistent identifier of the person, it should be an ORCID.",
       "type" : "string"

@@ -2,12 +2,13 @@
   "id": "https://w3id.org/mircat/miacme/schema/study_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title" : "MIACME study schema",
-  "version" : "0.3",
+  "version" : "1.0",
   "description" : "JSON-schema representing a study in MIACME. A planned activity that consists on study planning, study design execution,  documentation and which produces conclusion(s).",
   "type" : "object",
   "additionalProperties": false,
   "properties" : {
-    "@context": {
+     "@context": {
+      "description": "The JSON-LD context",
       "anyOf": [
         {
           "type": "string"
@@ -20,8 +21,18 @@
         }
       ]
     },
-    "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string" },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "enum": [
+        "Study"
+      ]
+    },
     "identifier" : {
       "description": "Primary identifier for the study or experiment.",
       "type" : "string"
