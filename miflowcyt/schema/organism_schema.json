@@ -2,7 +2,7 @@
   "id": "https://w3id.org/mircat/miflowcyt/schema/organism_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIFlowCyt Organism",
-  "description": "Organismt",
+  "description": "Organism",
   "type": "object",
   "properties": {
     "@context": {

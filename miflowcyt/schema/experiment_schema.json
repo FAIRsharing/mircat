@@ -41,7 +41,7 @@
       }
     },
     "experimentVariables": {
-      "description": "Variables are attribute(s) that differ between samples within an experiment due to pre-existing differences in sample states or due to experimental manipulation of the samples. If applicable, a brief description of the conditional and/or manipulated variables in the experiment shall be provided (e.g., smoker vs. nonsmoker, IL-2 treatment vs. no treatment, knockout versus wild-type, varying number of transplanted cells, varying treatment dosage, etc.). The number of instances per experimental group should also be stated."
+      "description": "Variables are attribute(s) that differ between samples within an experiment due to pre-existing differences in sample states or due to experimental manipulation of the samples. If applicable, a brief description of the conditional and/or manipulated variables in the experiment shall be provided (e.g., smoker vs. nonsmoker, IL-2 treatment vs. no treatment, knockout versus wild-type, varying number of transplanted cells, varying treatment dosage, etc.). The number of instances per experimental group should also be stated.",
       "type": "string"
     },
     "organization": {
@@ -51,19 +51,19 @@
       "$ref": "primary_contact_schema.json"
     },
     "date": {
-      "description": "The date or time period during which the investigation was performed (i.e., from collecting and treating samples to performing data analysis) shall be stated."
+      "description": "The date or time period during which the investigation was performed (i.e., from collecting and treating samples to performing data analysis) shall be stated.",
       "type": "string"
     },
     "conclusions": {
-      "description": "A brief summary of the interpretation of the results or outcome of the experiment shall be provided if available."
+      "description": "A brief summary of the interpretation of the results or outcome of the experiment shall be provided if available.",
       "type": "string"
     },
     "qualityControlMeasures": {
-      "description": "A description of the quality control measures used such as replicates, calibrations, control assays, etc. shall be provided. If another experiment was performed for the purposes of establishing quality control standards, that experiment may be referenced."
+      "description": "A description of the quality control measures used such as replicates, calibrations, control assays, etc. shall be provided. If another experiment was performed for the purposes of establishing quality control standards, that experiment may be referenced.",
       "type": "string"
     },
     "other": {
-      "description": "Additional information about the experiment should be provided if relevant. This may include funding announcements, related publications (which should be referenced by PMID), URIs, databases, etc."
+      "description": "Additional information about the experiment should be provided if relevant. This may include funding announcements, related publications (which should be referenced by PMID), URIs, databases, etc.",
       "type": "string"
     }
   }
