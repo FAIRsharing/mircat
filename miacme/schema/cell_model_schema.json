@@ -5,6 +5,7 @@
   "version" : "1.0",
   "description" : "JSON-schema representing the cell model in a cell migration experiment.",
   "type" : "object",
+  "required": [ "cellType", "specificCellDetails", "organism"],
   "properties" : {
    "@context": {
       "description": "The JSON-LD context",
