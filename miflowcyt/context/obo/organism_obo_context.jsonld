@@ -1,14 +1,14 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "Organism": "obo:",
+        "Organism": "obo:OBI_0100026",
         "@language": "en",
-        "treatment": "obo:",
-        "taxonomy": "obo:",
-        "genotype": "obo:",
-        "age": "obo:",
-        "other": "obo:",
-        "gender": "obo:",
-        "phenotype": "obo:"
+        "treatment": "obo:EFO_0000727",
+        "taxonomy": "obo:NCIT_C17469",
+        "genotype": "obo:SO_0001027",
+        "age": "obo:PATO_0000011",
+        "other": "obo:NCIT_C17649",
+        "gender": "obo:NCIT_C17357",
+        "phenotype": "obo:NCIT_C16977"
     }
 }
