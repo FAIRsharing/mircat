@@ -1,0 +1,16 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Experiment": "obo:",
+        "@language": "en",
+        "date": "obo:",
+        "conclusions": "obo:",
+        "primaryContact": "obo:",
+        "other": "obo:",
+        "purpose": "obo:",
+        "qualityControlMeasures": "obo:",
+        "organization": "obo:",
+        "experimentVariables": "obo:",
+        "keywords": "obo:"
+    }
+}

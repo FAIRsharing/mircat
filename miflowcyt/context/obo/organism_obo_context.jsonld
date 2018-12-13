@@ -1,0 +1,14 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Organism": "obo:",
+        "@language": "en",
+        "treatment": "obo:",
+        "taxonomy": "obo:",
+        "genotype": "obo:",
+        "age": "obo:",
+        "other": "obo:",
+        "gender": "obo:",
+        "phenotype": "obo:"
+    }
+}

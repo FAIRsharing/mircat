@@ -1,0 +1,15 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "FluorescenceReagent": "obo:",
+        "@language": "en",
+        "analyte": "obo:",
+        "cloneNameOrNumber": "obo:",
+        "other": "obo:",
+        "analyteDetector": "obo:",
+        "reagentCatalogueNumber": "obo:",
+        "reagentManufacturerName": "obo:",
+        "characteristicsBeingMeasured": "obo:",
+        "analyteReporter": "obo:"
+    }
+}

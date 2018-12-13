@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "BiologicalSample": "obo:",
+        "@language": "en",
+        "other": "obo:",
+        "sourceDescription": "obo:",
+        "sampleDescription": "obo:",
+        "organism": "obo:"
+    }
+}

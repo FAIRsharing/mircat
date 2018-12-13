@@ -1,0 +1,9 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "EnvironmentalSample": "obo:",
+        "@language": "en",
+        "sampleDescription": "obo:",
+        "sampleLocation": "obo:"
+    }
+}

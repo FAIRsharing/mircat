@@ -1,0 +1,9 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Organization": "obo:",
+        "@language": "en",
+        "address": "obo:",
+        "name": "obo:"
+    }
+}

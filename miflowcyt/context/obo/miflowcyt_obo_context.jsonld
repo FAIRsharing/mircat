@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Miflowcyt": "obo:",
+        "@language": "en",
+        "instrumentDetails": "obo:",
+        "experimentOverview": "obo:",
+        "dataAnalysis": "obo:",
+        "flowSampleDetails": "obo:"
+    }
+}

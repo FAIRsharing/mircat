@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Sample": "obo:",
+        "@language": "en",
+        "fluorescentReagentsDescription": "obo:",
+        "sampleTreatmentsDescription": "obo:",
+        "sampleCharacteristics": "obo:",
+        "materialDescription": "obo:"
+    }
+}
