@@ -2,7 +2,7 @@
   "id": "https://w3id.org/mircat/miflowcyt/schema/biological_sample_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIFlowCyt Biological Sample",
-  "description": "Organization performing the experiment",
+  "description": "Biological Sample",
   "type": "object",
   "properties": {
     "@context": {
@@ -39,7 +39,7 @@
     },
     "organism": {
       "description": "The source organism for this biological sample",
-      "$ref": "http://w3id.org/mircat/miflowcyt/organism_schema.json"
+      "$ref": "organism_schema.json#"
     },
     "other": {
       "description": "Additional information about the biological sample should be provided if relevant. This may include relevant information such as in vivo or in vitro treatment, stimulation, preparation / enrichment protocol, culture/growth protocol, collection time/date, whether the sample was frozen/banked/fixed, etc.",
