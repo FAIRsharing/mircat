@@ -6,17 +6,17 @@
         "identifierSource": "obo:OBI_0000245",
         "conclusions": "obo:IAO_0000144",
         "data": "obo:IAO_0000027",
-        "MIACMEversion": "obo:",
+        "MIACMEversion": "obo:IAO_0000129",
         "identifier": "obo:IAO_0000577",
-        "dates": "obo:",
+        "dates": "obo:STATO_0000093",
         "contacts": "obo:",
         "experimental_setup": "obo:",
-        "MIACMEcompliance": "obo:",
+        "MIACMEcompliance": "obo:OBI_0500023",
         "type": "obo:",
         "acknowledges": "obo:",
-        "description": "obo:",
+        "description": "obo:OBI_0001615",
         "publications": "obo:",
-        "title": "obo:",
-        "imaging_condition": "obo:"
+        "title": "obo:OBI_0001622",
+        "imaging_condition": "obo:NCIT_C17369"
     }
 }
