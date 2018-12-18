@@ -1,7 +1,7 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "ImagingCondition": "obo:",
+        "ImagingCondition": "obo:ERO_0001312",
         "@language": "en",
         "imagingModality": "obo:FBbi_00000222 ",
         "temporalInformation": "obo:IAO_0000416",
