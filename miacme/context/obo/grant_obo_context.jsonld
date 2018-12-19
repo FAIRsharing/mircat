@@ -3,7 +3,7 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "Grant": "obo:OBI_0001636",
         "@language": "en",
-        "identifier": "obo:IAO_0000577",
+        "identifier": "obo:OBI_0001629",
         "identifierSource": "obo:OBI_0000245",
         "name": "obo:IAO_0000590",
         "funders": "obo:EFO_0001736"

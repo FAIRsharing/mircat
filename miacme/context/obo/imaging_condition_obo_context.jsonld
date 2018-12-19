@@ -1,10 +1,11 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
+        "bao": "http://www.bioassayontology.org/bao#",
         "ImagingCondition": "obo:ERO_0001312",
         "@language": "en",
         "imagingModality": "obo:FBbi_00000222 ",
         "temporalInformation": "obo:IAO_0000416",
-        "channelReadout": "obo:"
+        "channelReadout": "bao:BAO_0000184"
     }
 }
