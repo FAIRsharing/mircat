@@ -33,41 +33,35 @@
         "ImagingCondition"
       ]
     },
-    "imagingModality" : {
+    "modality" : {
       "type": "string",
-      "description": "The modality. For example: confocal, microscopy, spinning disk, wide-field, multi-phonon, light-sheet, super-resolution, "
+      "description": "The type of microscopy used to acquire images. For example: confocal, microscopy, spinning disk, wide-field, multi-phonon, light-sheet, super-resolution, "
     },
-    "temporalInformation": {
-       "oneOf": [
-         {
-        "properties": {
-          "temporalResolution": {
-            "type": "string",
-            "description": "The type of temporal acquisition",
-            "enum": [ "endpoint"]
-          }
-        },
-        "additionalProperties": false
-         },
-        {
-        "properties": {
-          "temporalResolution": {
-            "type": "string",
-            "description": "The type of temporal acquisition",
-            "enum": [ "time-lapse" ]
-          },
-          "duration": {
-            "type": "string"
-          },
-          "frequency": {
-            "type": "string"
-          }
-        }
-      }
-    ]
-    },
+    "imageSequenceType": {},
+    "observationPeriod": {},
+    "observationPeriodUnit": {},
+    "timeSeriesInterval": {},
+    "timeSeriesIntervalUnit": {},
     "channelDefinition": {
       "description": "Identification of the label or constrasts",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pixels": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "pixel_schema.json#"
+      }
+    },
+    "objectiveLens": {
+      "description": "Objective manufacturer and objective acronym specifying optical correction, primary use of microscopy method and magnification (may also include immersion medium and/or working distance or field of view)",
+      "type": "string"
+    },
+    "numericalAperture": {
+      "description": "Value that indicates the light acceptance angle of the objective (\ndetermines the light gathering power, resolving power, and depth of \nfield of the objective).",
       "type": "string"
     }
   }
