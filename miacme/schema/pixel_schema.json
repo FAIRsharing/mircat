@@ -1,11 +1,12 @@
 {
+  "id": "https://w3id.org/mircat/miacme/schema/pixel_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title" : "MIACME pixel schema. A picture element. Based on OME Pixel: https://www.openmicroscopy.org/Schemas/Documentation/Generated/OME-2016-06/ome_xsd.html#Pixels",
-  "version" : "0.3",
+  "version" : "1.0",
   "description" : "JSON-schema representing a pixel in MIACME",
   "type" : "object",
   "additionalProperties": false,
-  "required": [ "identifier", "dimensionsOrder", "type", "sizeX", "sizeY", "sizeZ", "sizeC", "sizeT"],
+  "required": ["identifier", "dimensionsOrder", "type", "sizeX", "sizeY", "sizeZ", "sizeC", "sizeT"],
   "properties" : {
     "identifier": {
       "description": "An identifier for the picture element.",
