@@ -32,15 +32,29 @@
         "Organization"
       ]
     },
-    "agent": {
-      "description": "The nature of the perturbation/intervention/treatment being applied to the biological system.",
+    "factor": {
+      "description": "The nature of the perturbation/intervention/treatment being applied to the biological system. An independent variable.",
       "type": "string"
     },
-    "agentValues": {
+    "factorValues": {
       "description": "The set of values that the treatment will assume.",
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "value": {
+            "description": "A specific value assumed by the factor.",
+             "anyOf" : [
+                { "$ref": "annotation_schema.json#"},
+                { "type": "string"},
+                { "type": "number"}
+                ]
+            },
+          "unit": {
+            "description": "The unit for the factor value.",
+            "$ref": "annotation_schema.json#"
+          }
+        }
       }
     }
   }
