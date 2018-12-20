@@ -5,7 +5,7 @@
   "description" : "JSON-schema representing a pixel in MIACME",
   "type" : "object",
   "additionalProperties": false,
-  "required": [],
+  "required": [ "identifier", "dimensionsOrder", "type", "sizeX", "sizeY", "sizeZ", "sizeC", "sizeT"],
   "properties" : {
     "identifier": {
       "description": "An identifier for the picture element.",
