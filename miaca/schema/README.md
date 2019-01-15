@@ -1,0 +1,1 @@
+# MIACA JSON schemas
