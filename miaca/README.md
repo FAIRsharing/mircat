@@ -1,6 +1,8 @@
 # MIACA schemas
 
-MIACA is the Minimum Information About Cell Assays and you can find more information about it in the [FAIRsharing MIACA record](https://doi.org/10.25504/FAIRsharing.7d0yv9).
+MIACA is the Minimum Information About Cell Assays and you can find more information about it in the [FAIRsharing MIACA record](https://doi.org/10.25504/FAIRsharing.7d0yv9):
+
+FAIRsharing.org: MIACA; Minimal Information About a Cellular Assay; DOI: https://doi.org/10.25504/FAIRsharing.7d0yv9; Last edited: Jan. 8, 2019, 1:38 p.m.; Last accessed: Jan 15 2019 4:12 p.m.
 
 The schemas can be accessed through the prefix URI: https://w3id.org/mircat/miaca/schema
 
