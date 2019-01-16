@@ -3,7 +3,7 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "BiologicalSample": "obo:OBI_0000671",
         "@language": "en",
-        "other": "obo:",
+        "other": "obo:NCIT_C17649",
         "sourceDescription": "obo:NCIT_C93859",
         "sampleDescription": "obo:sep_00196",
         "organism": "obo:OBI_0100026"

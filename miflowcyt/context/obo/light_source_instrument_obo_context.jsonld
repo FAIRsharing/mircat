@@ -1,0 +1,14 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "bao": "http://www.bioassayontology.org/bao#",
+        "LightSourceInstrument": "obo:OBI_0400065",
+        "@language": "en",
+        "excitatoryWavelength": "bao:BAO_0000566",
+        "polarization": "obo:OMIT_0009913",
+        "type": "obo:PRIDE_0000163",
+        "powerAtExcitatoryWavelength": "bao:BAO_0000566",
+        "beam": "obo:NCIT_C70569",
+        "other": "obo:NCIT_C17649"
+    }
+}

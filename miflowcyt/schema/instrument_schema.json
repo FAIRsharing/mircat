@@ -30,10 +30,12 @@
       "format": "uri"
     },
     "manufacturer": {
-      "description": "The instrument manufacturer shall be specified by stating its name (e.g., MIFlowCyt Cytometry Systems, Inc.). A URL pointing to manufacturer web pages may also be provided."
+      "description": "The instrument manufacturer shall be specified by stating its name (e.g., MIFlowCyt Cytometry Systems, Inc.). A URL pointing to manufacturer web pages may also be provided.",
+      "type": "string"
     },
     "model": {
-      "description": "The instrument model shall be specified (e.g., CytMeter Elite-2000). It may include the instrument serial number."
+      "description": "The instrument model shall be specified (e.g., CytMeter Elite-2000). It may include the instrument serial number.",
+      "type": "string"
     },
     "configurationAndSettings": {
       "description": "The system and its configurations have significant impact on experimental results and as such the following shall be provided",
@@ -51,7 +53,8 @@
       }
     },
     "other": {
-      "description": "Additional relevant instrument details should be provided and may include machine-specific information such as information about automated agitation, temperature control, controlled volume dispensing, sampling from microtiter plates, auto-boost, auto-flush, etc. Other custom settings shall be provided if relevant and may include setting name, description, and value."
+      "description": "Additional relevant instrument details should be provided and may include machine-specific information such as information about automated agitation, temperature control, controlled volume dispensing, sampling from microtiter plates, auto-boost, auto-flush, etc. Other custom settings shall be provided if relevant and may include setting name, description, and value.",
+      "type": "string"
     }
   }
 }

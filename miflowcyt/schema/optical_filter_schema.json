@@ -30,16 +30,20 @@
       "format": "uri"
     },
     "type": {
-      "description": "The optical filter type shall be specified (e.g., band pass filter, long pass filter, dichroic long pass filters, short pass filter, dichroic short pass filter, polarizer excitation filter, grating, prism)."
+      "description": "The optical filter type shall be specified (e.g., band pass filter, long pass filter, dichroic long pass filters, short pass filter, dichroic short pass filter, polarizer excitation filter, grating, prism).",
+      "type": "string"
     },
     "transmittedWavelengths": {
-      "description": "Light wavelengths transmitted by the filter shall be specified (e.g., 488/25 nm, >670 nm, <620 nm)."
+      "description": "Light wavelengths transmitted by the filter shall be specified (e.g., 488/25 nm, >670 nm, <620 nm).",
+      "type": "string"
     },
     "installationDate": {
-      "description": "As optical filters of all types are subject to degradation, filter performance needs to be monitored at intervals to verify continued performance at an acceptable level [19]. The optical filter installation date shall be specified (e.g., January 15, 2007)."
+      "description": "As optical filters of all types are subject to degradation, filter performance needs to be monitored at intervals to verify continued performance at an acceptable level [19]. The optical filter installation date shall be specified (e.g., January 15, 2007).",
+      "type": "string"
     },
     "other": {
-      "description": "Other relevant optical filter details should be provided."
+      "description": "Other relevant optical filter details should be provided.",
+      "type": "string"
     }
   }
 }

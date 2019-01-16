@@ -30,10 +30,12 @@
       "format": "uri"
     },
     "sampleDescription": {
-      "description": "A description about the environmental sample shall be provided. The description should include relevant details such as collection time/date, collection protocol, type of sample (e.g., seawater), etc."
+      "description": "A description about the environmental sample shall be provided. The description should include relevant details such as collection time/date, collection protocol, type of sample (e.g., seawater), etc.",
+      "type": "string"
     },
     "sampleLocation": {
-      "description": "The location of the sample origin shall be specified. This should include longitude and latitude if relevant."
+      "description": "The location of the sample origin shall be specified. This should include longitude and latitude if relevant.",
+      "type": "string"
     }
   }
 }

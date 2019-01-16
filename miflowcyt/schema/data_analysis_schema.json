@@ -30,7 +30,8 @@
       "format": "uri"
     },
     "listModeDataFile": {
-      "description": "The list-mode data files (e.g., FCS files [18]) shall be provided directly or details on how they may be requested shall be stated."
+      "description": "The list-mode data files (e.g., FCS files [18]) shall be provided directly or details on how they may be requested shall be stated.",
+      "type": "string"
     }
   }
 }

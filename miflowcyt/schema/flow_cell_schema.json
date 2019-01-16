@@ -30,10 +30,12 @@
       "format": "uri"
     },
     "flowCellType": {
-      "description": "The flow cell type (e.g., stream-in-air, cuvette) including the material shall be provided."
+      "description": "The flow cell type (e.g., stream-in-air, cuvette) including the material shall be provided.",
+      "type": "string"
     },
     "other": {
-      "description": "Other relevant flow cell details should be provided and may include flow cell manufacturer name (e.g., MIFlowCyt Optics, Inc.) and model number (e.g., PRO-CFC-75), flow cell outside shape (e.g., rectangular with an attached sphere, spherical, square) and dimensions, flow channel shape (e.g., rectangular, circular, triangular) and dimensions, sheath flow velocity (e.g., 10 l/s), sheath flow pump type (e.g., gas pressure, vacuum, gear), sample flow velocity (e.g., 7.5 l/s) and sample flow pump (e.g., gas pressure, syringe)."
+      "description": "Other relevant flow cell details should be provided and may include flow cell manufacturer name (e.g., MIFlowCyt Optics, Inc.) and model number (e.g., PRO-CFC-75), flow cell outside shape (e.g., rectangular with an attached sphere, spherical, square) and dimensions, flow channel shape (e.g., rectangular, circular, triangular) and dimensions, sheath flow velocity (e.g., 10 l/s), sheath flow pump type (e.g., gas pressure, vacuum, gear), sample flow velocity (e.g., 7.5 l/s) and sample flow pump (e.g., gas pressure, syringe).",
+      "type": "string"
     }
   }
 }

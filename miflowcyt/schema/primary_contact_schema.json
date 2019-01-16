@@ -30,10 +30,12 @@
       "format": "uri"
     },
     "name": {
-      "description": "Name"
+      "description": "The primary contact's name",
+      "type": "string"
     },
     "emailAddress": {
-      "description": ""
+      "description": "The primary contact's email address",
+      "type": "string"
     }
   }
 }

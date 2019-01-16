@@ -30,28 +30,36 @@
       "format": "uri"
     },
     "characteristicsBeingMeasured": {
-      "description": "The relative amount of molecules, properties, or processes being evaluated (e.g., CD25, apoptosis, membrane permeability, cell viability, oxidative burst). The characteristic(s) being measured shall be provided whenever there is ambiguity about the analyte being measured, such as when sample processing affects detection of the analyte (e.g., propidium iodide example in Table 1). The optical detector (e.g., FL1) or parameter (e.g., FL1-H, see 3.3.6) used primarily for this measurement shall be indicated."
+      "description": "The relative amount of molecules, properties, or processes being evaluated (e.g., CD25, apoptosis, membrane permeability, cell viability, oxidative burst). The characteristic(s) being measured shall be provided whenever there is ambiguity about the analyte being measured, such as when sample processing affects detection of the analyte (e.g., propidium iodide example in Table 1). The optical detector (e.g., FL1) or parameter (e.g., FL1-H, see 3.3.6) used primarily for this measurement shall be indicated.",
+      "type": "string"
     },
     "analyte": {
-      "description": "What plays the role of the analyte? Which substance or chemical constituent is the subject of interest of the analytical procedure, what target is specifically bound by the analyte detector (e.g., CD25)?"
+      "description": "What plays the role of the analyte? Which substance or chemical constituent is the subject of interest of the analytical procedure, what target is specifically bound by the analyte detector (e.g., CD25)?",
+      "type": "string"
     },
     "analyteDetector": {
-      "description": "What plays the role of analyte detector? Which component of the fluorescence reagent specifically binds to the analyte to make it detectable (e.g., anti-CD25 antibody)?"
+      "description": "What plays the role of analyte detector? Which component of the fluorescence reagent specifically binds to the analyte to make it detectable (e.g., anti-CD25 antibody)?",
+      "type": "string"
     },
     "analyteReporter": {
-      "description": "(Fluorochrome) What plays the role of analyte reporter? Which component of the fluorescence reagent reports the presents of the analyte to the flow cytometer? What substance (label) is used to generate the measured signal (e.g., FITC)?"
+      "description": "(Fluorochrome) What plays the role of analyte reporter? Which component of the fluorescence reagent reports the presents of the analyte to the flow cytometer? What substance (label) is used to generate the measured signal (e.g., FITC)?",
+      "type": "string"
     },
     "cloneNameOrNumber": {
-      "description": "If the probe is a monoclonal antibody, the clone name or number shall be provided."
+      "description": "If the probe is a monoclonal antibody, the clone name or number shall be provided.",
+      "type": "string"
     },
     "reagentManufacturerName": {
-      "description": "The reagent manufacturer shall be specified (e.g., MIFlowCyt Reagent Inc.)."
+      "description": "The reagent manufacturer shall be specified (e.g., MIFlowCyt Reagent Inc.).",
+      "type": "string"
     },
     "reagentCatalogueNumber": {
-      "description": "The reagent catalogue number shall be specified."
+      "description": "The reagent catalogue number shall be specified.",
+      "type": "string"
     },
     "other": {
-      "description": "When secondary antibodies are used, the primary analyte (the analyte bound by the primary antibody) and the reporter component of the secondary antibody (the reporter that generates the measured signal) shall be clearly specified as described in 2.4.2, 2.4.3, and 2.4.4. If relevant, the primary and secondary antibodies shall be described individually (e.g., in the case that the use of a secondary antibody significantly impacts the interpretation of results because of nonspecific fluorescence, etc.). The description should also contain other relevant details which may include lot number, concentration, label incorporation method, separation technique, antibody staining procedures, and wash steps."
+      "description": "When secondary antibodies are used, the primary analyte (the analyte bound by the primary antibody) and the reporter component of the secondary antibody (the reporter that generates the measured signal) shall be clearly specified as described in 2.4.2, 2.4.3, and 2.4.4. If relevant, the primary and secondary antibodies shall be described individually (e.g., in the case that the use of a secondary antibody significantly impacts the interpretation of results because of nonspecific fluorescence, etc.). The description should also contain other relevant details which may include lot number, concentration, label incorporation method, separation technique, antibody staining procedures, and wash steps.",
+      "type": "string"
     }
   }
 }

@@ -5,7 +5,7 @@
         "@language": "en",
         "analyte": "obo:",
         "cloneNameOrNumber": "obo:",
-        "other": "obo:",
+        "other": "obo:NCIT_C17649",
         "analyteDetector": "obo:",
         "reagentCatalogueNumber": "obo:",
         "reagentManufacturerName": "obo:",

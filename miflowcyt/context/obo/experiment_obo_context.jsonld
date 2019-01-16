@@ -6,7 +6,7 @@
         "date": "obo:",
         "conclusions": "obo:",
         "primaryContact": "obo:",
-        "other": "obo:",
+        "other": "obo:NCIT_C17649",
         "purpose": "obo:",
         "qualityControlMeasures": "obo:",
         "organization": "obo:",
