@@ -37,14 +37,16 @@
     },
     "configurationAndSettings": {
       "description": "The system and its configurations have significant impact on experimental results and as such the following shall be provided",
-      "flowCellAndFluidics": {
-        "$ref": "flow_cell_schema.json"
-      },
-      "lightSources": {
-        "description": "Each light source (e.g., laser) shall be described stating the following:",
-        "type": "array",
-        "items": {
-          "$ref": "light_source_instrument_schema.json"
+      "properties": {
+        "flowCellAndFluidics": {
+          "$ref": "flow_cell_schema.json"
+        },
+        "lightSources": {
+          "description": "Each light source (e.g., laser) shall be described stating the following:",
+          "type": "array",
+          "items": {
+            "$ref": "light_source_instrument_schema.json"
+          }
         }
       }
     },
