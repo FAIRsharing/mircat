@@ -46,10 +46,7 @@
     },
     "sampleCharacteristics": {
       "description": "Key information about the possible and expected sample characteristics should be noted as they provide the rationale for the experimental design, including the choice of appropriate reagents. Sample characteristics description should include the expected and possible types of cells or other particles in the sample material.",
-      "type": "object",
-      "properties": {
-        "possibleSampleCharacteristics": {}
-      }
+      "type": "string"
     },
     "sampleTreatmentsDescription": {
       "description": "The description shall include details about treatment agents, which play the role of experiment variables, or shall specify that samples were untreated. For example, a sample treated with an agent might be compared to an untreated sample; when reproducing and interpreting such an experiment, having access to details on treatment agents and conditions is essential in order to query and retrieve samples for further analysis. The treatment description should also contain other relevant treatment details such as, but not limited to, time, temperature, and concentration.",
