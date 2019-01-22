@@ -10,7 +10,7 @@
         "physicalSizeY": "obo:NCIT_C94953",
         "sizeZ": "obo:NCIT_C94953",
         "sizeT": "obo:NCIT_C94953",
-        "dimensionsOrder": "obo:",
+        "dimensionsOrder": "obo:NCIT_C42680",
         "sizeY": "obo:NCIT_C94953",
         "physicalSizeYUnit": "obo:NCIT_C68553",
         "identifier": "obo:IAO_0000577",
