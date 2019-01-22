@@ -5,11 +5,11 @@
         "@language": "en",
         "type": "obo:",
         "features": "obo:",
-        "ID": "obo:",
+        "ID": "obo:IAO_0000578",
         "libraryElementCharacteristics": "obo:",
         "name": "obo:",
         "preparationMethod": "obo:",
-        "vendor": "obo:",
+        "vendor": "obo:NCIT_C68608",
         "definitions": "obo:",
         "format": "obo:",
         "featurePosition": "obo:"

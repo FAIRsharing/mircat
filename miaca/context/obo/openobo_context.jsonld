@@ -3,7 +3,7 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "OpenCv": "obo:",
         "@language": "en",
-        "name": "obo:",
+        "name": "obo:IAO_0000590",
         "xref": "obo:"
     }
 }

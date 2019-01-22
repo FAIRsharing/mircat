@@ -1,7 +1,7 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "Instrument": "obo:",
+        "Instrument": "obo:OBI_0000968",
         "@language": "en",
         "other": "obo:NCIT_C17649",
         "configurationAndSettings": "obo:",

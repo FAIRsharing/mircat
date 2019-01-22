@@ -3,7 +3,7 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "CellAssay": "obo:",
         "@language": "en",
-        "ID": "obo:",
+        "ID": "obo:IAO_0000578",
         "treatment": "obo:",
         "postTreatment": "obo:",
         "dataAcquisition": "obo:"

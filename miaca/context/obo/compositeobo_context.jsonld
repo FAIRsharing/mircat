@@ -4,7 +4,7 @@
         "CompositeReagent": "obo:",
         "@language": "en",
         "comment": "obo:",
-        "compReagentName": "obo:",
+        "compReagentName": "obo:IAO_0000590",
         "reagentList": "obo:"
     }
 }

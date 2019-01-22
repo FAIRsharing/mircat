@@ -8,7 +8,7 @@
         "other": "obo:NCIT_C17649",
         "analyteDetector": "obo:",
         "reagentCatalogueNumber": "obo:",
-        "reagentManufacturerName": "obo:",
+        "reagentManufacturerName": "obo:IAO_0000590",
         "characteristicsBeingMeasured": "obo:",
         "analyteReporter": "obo:"
     }

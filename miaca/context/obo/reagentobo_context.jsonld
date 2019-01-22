@@ -7,7 +7,7 @@
         "stockConc": "obo:",
         "targetSpecies": "obo:",
         "libraryRef": "obo:",
-        "vendor": "obo:",
+        "vendor": "obo:NCIT_C68608",
         "solvent": "obo:",
         "stockConcUnit": "obo:",
         "array": "obo:",

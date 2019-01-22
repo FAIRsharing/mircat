@@ -3,9 +3,9 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "Da": "obo:",
         "@language": "en",
-        "ID": "obo:",
+        "ID": "obo:IAO_0000578",
         "settings": "obo:",
         "reference": "obo:",
-        "instrument": "obo:"
+        "instrument": "obo:OBI_0000968"
     }
 }

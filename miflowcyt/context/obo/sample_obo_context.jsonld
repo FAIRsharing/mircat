@@ -3,7 +3,7 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "Sample": "obo:OBI_0000747",
         "@language": "en",
-        "fluorescentReagentsDescription": "obo:",
+        "fluorescentReagentsDescription": "obo:ERO_0000006",
         "sampleTreatmentsDescription": "obo:",
         "sampleCharacteristics": "obo:",
         "materialDescription": "obo:"

@@ -3,7 +3,7 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "Application": "obo:IAO_0000311",
         "@language": "en",
-        "ID": "obo:IAO_0000577",
+        "ID": "obo:IAO_0000578",
         "pubref": "obo:NCIT_C40976",
         "bibref": "obo:NCIT_C25474",
         "abstract": "obo:IAO_0000315"

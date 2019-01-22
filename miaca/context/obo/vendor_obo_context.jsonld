@@ -1,7 +1,7 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "Vendor": "obo:",
+        "Vendor": "obo:NCIT_C68608",
         "@language": "en",
         "orderNo": "obo:",
         "serialNo": "obo:",
