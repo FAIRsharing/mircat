@@ -1,7 +1,8 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "Treatment": "obo:",
+        "efo": "http://www.ebi.ac.uk/efo/",
+        "Treatment": "efo:EFO_0000727",
         "@language": "en",
         "passageNo": "obo:",
         "reagentName": "obo:IAO_0000590",

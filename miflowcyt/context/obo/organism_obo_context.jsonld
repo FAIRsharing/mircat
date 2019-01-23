@@ -1,9 +1,10 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
+        "efo": "http://www.ebi.ac.uk/efo/",
         "Organism": "obo:OBI_0100026",
         "@language": "en",
-        "treatment": "obo:EFO_0000727",
+        "treatment": "efo:EFO_0000727",
         "taxonomy": "obo:NCIT_C17469",
         "genotype": "obo:SO_0001027",
         "age": "obo:PATO_0000011",
