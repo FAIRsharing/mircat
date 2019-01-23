@@ -1,0 +1,10 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "CellModel": "obo:",
+        "@language": "en",
+        "specificCellDetails": "obo:",
+        "organism": "obo:OBI_0100026",
+        "cellType": "obo:CL_0000000"
+    }
+}
