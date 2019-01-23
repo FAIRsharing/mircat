@@ -2,11 +2,11 @@
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
         "efo": "http://www.ebi.ac.uk/efo/",
-        "CellAssay": "obo:",
+        "CellAssay": "obo:NCIT_C15959",
         "@language": "en",
         "ID": "obo:IAO_0000578",
         "treatment": "efo:EFO_0000727",
         "postTreatment": "obo:",
-        "dataAcquisition": "obo:"
+        "dataAcquisition": "obo:NCIT_C142469"
     }
 }

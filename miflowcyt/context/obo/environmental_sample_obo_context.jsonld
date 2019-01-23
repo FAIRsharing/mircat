@@ -4,6 +4,6 @@
         "EnvironmentalSample": "obo:NCBITaxon_1617257",
         "@language": "en",
         "sampleDescription": "obo:sep_00196",
-        "sampleLocation": "obo:"
+        "sampleLocation": "obo:NCIT_C25341"
     }
 }
