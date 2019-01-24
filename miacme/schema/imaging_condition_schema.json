@@ -5,7 +5,7 @@
   "version" : "1.0",
   "description": "JSON-schema representing an investigation in MIACME",
   "type": "object",
-  "required": [ "modality", "imageSequenceType", "observationPeriod", "observationPeriodUnit", "timeSeriesInterval". "timeSeriesIntervalUnit", "channelDefinition", "pixels"],
+  "required": [ "modality", "imageSequenceType", "observationPeriod", "observationPeriodUnit", "timeSeriesInterval", "timeSeriesIntervalUnit", "channelDefinition", "pixels"],
   "properties": {
      "@context": {
       "description": "The JSON-LD context",
