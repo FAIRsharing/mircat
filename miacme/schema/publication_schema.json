@@ -1,7 +1,7 @@
 {
   "id": "https://w3id.org/mircat/miacme/schema/publication_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
-  "title": "Publication as JSON schema",
+  "title": "MIACME publication schema",
   "version" : "1.0",
   "description": "A schema describing a publication.",
   "type": "object",

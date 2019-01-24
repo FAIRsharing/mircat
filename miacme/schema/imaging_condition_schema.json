@@ -1,11 +1,11 @@
 {
   "id": "https://w3id.org/mircat/miacme/schema/imaging_condition_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
-  "title": "MIACME investigation schema",
+  "title": "MIACME imaging condition schema",
   "version" : "1.0",
   "description": "JSON-schema representing an investigation in MIACME",
   "type": "object",
-  "required": [ "imagingModality", "temporalInformation", "channelReadout"],
+  "required": [ "modality", "imageSequenceType", "observationPeriod", "observationPeriodUnit", "timeSeriesInterval". "timeSeriesIntervalUnit", "channelDefinition", "pixels"],
   "properties": {
      "@context": {
       "description": "The JSON-LD context",
@@ -34,14 +34,30 @@
       ]
     },
     "modality" : {
-      "type": "string",
-      "description": "The type of microscopy used to acquire images. For example: confocal, microscopy, spinning disk, wide-field, multi-phonon, light-sheet, super-resolution, "
+      "description": "The type of microscopy used to acquire images. For example: confocal, microscopy, spinning disk, wide-field, multi-phonon, light-sheet, super-resolution, ",
+      "type": "string"
     },
-    "imageSequenceType": {},
-    "observationPeriod": {},
-    "observationPeriodUnit": {},
-    "timeSeriesInterval": {},
-    "timeSeriesIntervalUnit": {},
+    "imageSequenceType": {
+      "description": "Single or multiple imaging timepoints in the experiment. ",
+      "type": "string"
+
+    },
+    "observationPeriod": {
+      "description": "For time-series, it is the timespan since the imaging process starts until it ends. For endpoint, it is the timespan since the starting point until the image is taken.",
+      "type": "number"
+    },
+    "observationPeriodUnit": {
+      "description": "The unit of the observation period.",
+      "type": "string"
+    },
+    "timeSeriesInterval": {
+      "description": "The duration between two sequential frames of the time lapse series.",
+      "type": "number"
+    },
+    "timeSeriesIntervalUnit": {
+      "description": "The unit of the time series interval.",
+      "type": "string"
+    },
     "channelDefinition": {
       "description": "Identification of the label or constrasts",
       "type": "array",
@@ -50,7 +66,7 @@
       }
     },
     "pixels": {
-      "description": "",
+      "description": "The physical dimension of one picture element in your image.",
       "type": "array",
       "items": {
         "$ref": "pixel_schema.json#"
