@@ -3,9 +3,9 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "Miflowcyt": "obo:MS_1000900",
         "@language": "en",
-        "instrumentDetails": "obo:",
-        "experimentOverview": "obo:",
-        "dataAnalysis": "obo:",
-        "flowSampleDetails": "obo:"
+        "instrumentDetails": "obo:OBI_0000968",
+        "experimentOverview": "obo:OBI_0000066",
+        "dataAnalysis": "obo:ERO_0001309",
+        "flowSampleDetails": "obo:OBI_0000747"
     }
 }
