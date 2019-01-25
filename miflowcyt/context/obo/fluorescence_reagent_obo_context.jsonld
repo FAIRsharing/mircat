@@ -1,15 +1,15 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "FluorescenceReagent": "obo:",
+        "FluorescenceReagent": "obo:OBI_0001879",
         "@language": "en",
-        "analyte": "obo:",
-        "cloneNameOrNumber": "obo:",
+        "analyte": "obo:OBI_0000275",
+        "cloneNameOrNumber": "obo:SO_0000151",
         "other": "obo:NCIT_C17649",
-        "analyteDetector": "obo:",
-        "reagentCatalogueNumber": "obo:",
+        "analyteDetector": "obo:CHMO_0002244",
+        "reagentCatalogueNumber": "obo:NCIT_C112406",
         "reagentManufacturerName": "obo:IAO_0000590",
-        "characteristicsBeingMeasured": "obo:",
-        "analyteReporter": "obo:"
+        "characteristicsBeingMeasured": "obo:BFO_0000005",
+        "analyteReporter": "obo:CHEBI_35209"
     }
 }

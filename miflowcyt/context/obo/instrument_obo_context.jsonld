@@ -4,8 +4,8 @@
         "Instrument": "obo:OBI_0000968",
         "@language": "en",
         "other": "obo:NCIT_C17649",
-        "configurationAndSettings": "obo:",
-        "model": "obo:",
-        "manufacturer": "obo:"
+        "configurationAndSettings": "obo:MS_1000740",
+        "model": "obo:MS_1000031",
+        "manufacturer": "obo:OBI_0000835"
     }
 }
