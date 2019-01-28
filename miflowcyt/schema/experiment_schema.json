@@ -57,7 +57,15 @@
     },
     "date": {
       "description": "The date or time period during which the investigation was performed (i.e., from collecting and treating samples to performing data analysis) shall be stated.",
-      "type": "string"
+      "type": "object",
+      "properties": {
+        "start-date": {
+          "type": "string"
+        },
+        "end-date": {
+          "type": "string"
+        }
+      }
     },
     "conclusions": {
       "description": "A brief summary of the interpretation of the results or outcome of the experiment shall be provided if available.",
@@ -69,7 +77,20 @@
     },
     "other": {
       "description": "Additional information about the experiment should be provided if relevant. This may include funding announcements, related publications (which should be referenced by PMID), URIs, databases, etc.",
-      "type": "string"
+      "type": "object",
+      "properties": {
+        "related-publications": {
+          "type": "object",
+          "properties": {
+            "pubmed-id": {
+              "type": "string"
+            },
+            "pmc-id": {
+              "type": "string"
+            }
+          }
+        }
+      }
     }
   }
 }

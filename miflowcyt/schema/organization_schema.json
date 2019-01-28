@@ -35,7 +35,24 @@
     },
     "address": {
       "description": "Address of the organization.",
-      "type": "string"
+      "type": "object",
+      "properties": {
+        "street": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "zip": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        }
+      }
     }
   }
 }
