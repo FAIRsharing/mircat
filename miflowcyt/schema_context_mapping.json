@@ -16,18 +16,18 @@
   },
   "networkName": "MIFlowCyt",
   "contexts": {
-    "fluorescence_reagent_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/fluorescence_reagent_obo_context.json",
-    "environmental_sample_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/environmental_sample_obo_context.json",
-    "experiment_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/experiment_obo_context.json",
-    "data_analysis_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/data_analysis_obo_context.json",
-    "miflowcyt_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/miflowcyt_obo_context.json",
-    "organization_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/organization_obo_context.json",
-    "primary_contact_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/primary_contact_obo_context.json",
-    "instrument_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/instrument_obo_context.json",
-    "biological_sample_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/biological_sample_obo_context.json",
-    "organism_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/organism_obo_context.json",
-    "sample_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/sample_obo_context.json",
-    "flow_cell_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/flow_cell_obo_context.json",
-    "light_source_instrument_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/light_source_instrument_obo_context.json"
+    "fluorescence_reagent_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/fluorescence_reagent_obo_context.jsonld",
+    "environmental_sample_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/environmental_sample_obo_context.jsonld",
+    "experiment_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/experiment_obo_context.jsonld",
+    "data_analysis_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/data_analysis_obo_context.jsonld",
+    "miflowcyt_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/miflowcyt_obo_context.jsonld",
+    "organization_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/organization_obo_context.jsonld",
+    "primary_contact_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/primary_contact_obo_context.jsonld",
+    "instrument_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/instrument_obo_context.jsonld",
+    "biological_sample_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/biological_sample_obo_context.jsonld",
+    "organism_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/organism_obo_context.jsonld",
+    "sample_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/sample_obo_context.jsonld",
+    "flow_cell_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/flow_cell_obo_context.jsonld",
+    "light_source_instrument_schema.json": "https://w3id.org/mircat/miflowcyt/context/obo/light_source_instrument_obo_context.jsonld"
   }
 }
