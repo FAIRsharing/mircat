@@ -48,10 +48,11 @@
       "description": "The organizations performing the experiment.",
       "type": "array",
       "items": {
-        "$ref": "organization_schema.json",
+        "$ref": "organization_schema.json"
       }
     },
     "primaryContact": {
+      "description": "The individual who is the primary contact for this experiment.",
       "$ref": "primary_contact_schema.json"
     },
     "date": {

@@ -1,0 +1,37 @@
+{
+  "contexts": {
+    "assay_schema.json": "https://w3id.org/mircat/miacme/context/obo/assay_context_obo.json",
+    "date_schema.json": "https://w3id.org/mircat/miacme/context/obo/date_context_obo.json",
+    "study_schema.json": "https://w3id.org/mircat/miacme/context/obo/study_context_obo.json",
+    "person_schema.json": "https://w3id.org/mircat/miacme/context/obo/person_context_obo.json",
+    "annotation_schema.json": "https://w3id.org/mircat/miacme/context/obo/annotation_context_obo.json",
+    "data_schema.json": "https://w3id.org/mircat/miacme/context/obo/data_context_obo.json",
+    "cell_model_schema.json": "https://w3id.org/mircat/miacme/context/obo/cell_model_context_obo.json",
+    "experimental_setup_schema.json": "https://w3id.org/mircat/miacme/context/obo/experimental_setup_context_obo.json",
+    "investigation_schema.json": "https://w3id.org/mircat/miacme/context/obo/investigation_context_obo.json",
+    "pixel_schema.json": "https://w3id.org/mircat/miacme/context/obo/pixel_context_obo.json",
+    "organization_schema.json": "https://w3id.org/mircat/miacme/context/obo/organization_context_obo.json",
+    "miacme_schema.json": "https://w3id.org/mircat/miacme/context/obo/miacme_context_obo.json",
+    "imaging_condition_schema.json": "https://w3id.org/mircat/miacme/context/obo/imaging_condition_context_obo.json",
+    "publication_schema.json": "https://w3id.org/mircat/miacme/context/obo/publication_context_obo.json",
+    "grant_schema.json": "https://w3id.org/mircat/miacme/context/obo/grant_context_obo.json"
+  },
+  "schemas": {
+    "assay_schema.json": "https://w3id.org/mircat/miacme/schema/assay_schema.json",
+    "date_schema.json": "https://w3id.org/mircat/miacme/schema/date_schema.json",
+    "study_schema.json": "https://w3id.org/mircat/miacme/schema/study_schema.json",
+    "person_schema.json": "https://w3id.org/mircat/miacme/schema/person_schema.json",
+    "annotation_schema.json": "https://w3id.org/mircat/miacme/schema/annotation_schema.json",
+    "data_schema.json": "https://w3id.org/mircat/miacme/schema/data_schema.json",
+    "cell_model_schema.json": "https://w3id.org/mircat/miacme/schema/cell_model_schema.json",
+    "experimental_setup_schema.json": "https://w3id.org/mircat/miacme/schema/experimental_setup_schema.json",
+    "investigation_schema.json": "https://w3id.org/mircat/miacme/schema/investigation_schema.json",
+    "pixel_schema.json": "https://w3id.org/mircat/miacme/schema/pixel_schema.json",
+    "organization_schema.json": "https://w3id.org/mircat/miacme/schema/organization_schema.json",
+    "miacme_schema.json": "https://w3id.org/mircat/miacme/schema/miacme_schema.json",
+    "imaging_condition_schema.json": "https://w3id.org/mircat/miacme/schema/imaging_condition_schema.json",
+    "publication_schema.json": "https://w3id.org/mircat/miacme/schema/publication_schema.json",
+    "grant_schema.json": "https://w3id.org/mircat/miacme/schema/grant_schema.json"
+  },
+  "networkName": "MIACME"
+}
