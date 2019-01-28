@@ -45,7 +45,11 @@
       "type": "string"
     },
     "organization": {
-      "$ref": "organization_schema.json"
+      "description": "The organizations performing the experiment.",
+      "type": "array",
+      "items": {
+        "$ref": "organization_schema.json",
+      }
     },
     "primaryContact": {
       "$ref": "primary_contact_schema.json"
