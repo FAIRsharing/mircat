@@ -80,8 +80,8 @@
       "type": "object",
       "properties": {
         "related-publications": {
-          "type": "object",
-          "properties": {
+          "type": "array",
+          "items": {
             "pubmed-id": {
               "type": "string"
             },
