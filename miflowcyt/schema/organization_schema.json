@@ -44,7 +44,11 @@
           "type": "string"
         },
         "zip": {
-          "type": "string"
+          "anyOf": [
+            { "type": "string" },
+            { "type": "number" },
+            { "type": null }
+          ]
         },
         "state": {
           "type": "string"
