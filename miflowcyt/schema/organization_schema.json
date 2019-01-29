@@ -38,7 +38,10 @@
       "type": "object",
       "properties": {
         "street": {
-          "type": "string"
+          "anyOf": [
+            { "type": "string" },
+            { "type": null }
+          ]
         },
         "city": {
           "type": "string"
