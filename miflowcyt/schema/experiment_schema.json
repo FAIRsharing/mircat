@@ -79,7 +79,7 @@
       "description": "Additional information about the experiment should be provided if relevant. This may include funding announcements, related publications (which should be referenced by PMID), URIs, databases, etc.",
       "anyOf": [
         { "type": null },
-        {"type": "object",
+        { "type": "object",
           "properties": {
             "related-publications": {
               "type": "array",
@@ -92,7 +92,8 @@
                 }
               }
             }
-          }}
+          }
+        }
       ]
     }
   }
