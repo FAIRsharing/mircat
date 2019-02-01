@@ -77,20 +77,23 @@
     },
     "other": {
       "description": "Additional information about the experiment should be provided if relevant. This may include funding announcements, related publications (which should be referenced by PMID), URIs, databases, etc.",
-      "type": "object",
-      "properties": {
-        "related-publications": {
-          "type": "array",
-          "items": {
-            "pubmed-id": {
-              "type": "string"
-            },
-            "pmc-id": {
-              "type": "string"
+      "anyOf": [
+        { "type": null },
+        {"type": "object",
+          "properties": {
+            "related-publications": {
+              "type": "array",
+              "items": {
+                "pubmed-id": {
+                  "type": "string"
+                },
+                "pmc-id": {
+                  "type": "string"
+                }
+              }
             }
-          }
-        }
-      }
+          }}
+      ]
     }
   }
 }
