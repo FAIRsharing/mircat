@@ -84,10 +84,16 @@
               "type": "array",
               "items": {
                 "pubmed-id": {
-                  "type": "string"
+                  "anyOf": [
+                    { "type": "string" },
+                    { "type": "number" }
+                  ]
                 },
                 "pmc-id": {
-                  "type": "string"
+                  "anyOf": [
+                    { "type": "string" },
+                    { "type": "number" }
+                  ]
                 }
               }
             }

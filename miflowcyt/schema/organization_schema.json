@@ -38,20 +38,13 @@
       "type": "object",
       "properties": {
         "street": {
-          "anyOf": [
-            { "type": "string" },
-            { "type": null }
-          ]
+	         "type": ["string", "null"]
         },
         "city": {
           "type": "string"
         },
         "zip": {
-          "anyOf": [
-            { "type": "string" },
-            { "type": "number" },
-            { "type": null }
-          ]
+          "type": ["string","number", "null"]
         },
         "state": {
           "type": "string"
