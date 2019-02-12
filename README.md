@@ -1,4 +1,4 @@
-# MIRcat
+# MIRcat: Minimum Information Requirement Catalogue
 
 MIRCat is the Minimum Information Requirement Catalogue, which includes representations of Minimum Information Checklists or Reporting Guidelines in a machine-actionable way, relying on [JSON-schemas](https://json-schema.org/) that enable to produce and validate [JSON-LD](http://json-ld.org/) data conformant with the checklists. 
 
