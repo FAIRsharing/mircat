@@ -1,8 +1,8 @@
-# MIRcat: Minimum Information Requirement Catalogue
+# Machine-Actionable Metadata Models in MIRcat (Minimum Information Requirement Catalogue)
 
 MIRCat is the Minimum Information Requirement Catalogue, which includes representations of Minimum Information Checklists or Reporting Guidelines in a machine-actionable way, relying on [JSON-schemas](https://json-schema.org/) that enable to produce and validate [JSON-LD](http://json-ld.org/) data conformant with the checklists. 
 
-For each reporting guideline, we produced a Machine-Actionable Metadata Model represented in JSON-schemas and a set of JSON-LD context files that provide the semantic context.
+For each reporting guideline, we produced a Machine-Actionable Metadata Model represented in JSON-schemas and a set of JSON-LD context files that provide the semantic context. This was done by following a 'FAIRification' process, which works towards making the models FAIR (Findable, Accessible, Interoperable and Reusable). 
 
 The representation for each of the following reporting guidelines can be accessed through persistent identifiers using the w3id service.
 
