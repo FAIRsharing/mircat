@@ -1,11 +1,10 @@
 {
   "id" : "https://w3id.org/mircat/miaca/schema/cell_source_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
-  "title": "MIACA cell line schema",
-  "description": "Cell line used during the project. An element to describe the cell line used during the project.",
+  "title": "MIACA cell source schema",
+  "description": "Cell source schema",
   "type": "object",
   "additionalProperties": false,
-  "required": [ "cellLineIdentifier", "cellLineName", "species", "tissue", "reference", "provider"],
   "properties": {
     "@context": {
       "description": "The JSON-LD context",
