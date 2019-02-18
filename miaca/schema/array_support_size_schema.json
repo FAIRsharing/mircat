@@ -1,8 +1,8 @@
 {
-  "id": "https://w3id.org/mircat/miaca/schema/process_schema.json",
+  "id": "https://w3id.org/mircat/miaca/schema/array_support_size_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
-  "title": "MIACA process",
-  "description": "The experiment workflow.",
+  "title": "MIACA array support size type schema",
+  "description": "Size of reaction vessel, e.g. volume or surface area.",
   "type": "object",
   "properties": {
     "@context": {
@@ -29,21 +29,13 @@
       "type": "string",
       "format": "uri"
     },
-    "ID": {
-      "description": "identifier",
+    "surfaceArea": {
+      "description": "surface area in mm²",
       "type": "string"
     },
-    "processName": {
-      "description": "e.g. cell propagation, siRNA transfection",
-      "type": "string"
-    },
-    "currentID": {
-      "description": "ID of the referenced step",
-      "type": "string"
-    },
-    "successorID": {
-      "description": "ID of a successor element of the process step",
-      "type": "string"
+    "dimension": {
+      "description": "number of wells",
+      "type": "number"
     }
   }
 }

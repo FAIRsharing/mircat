@@ -39,93 +39,24 @@
       "type":  "string"
     },
     "cellSource": {
-      "type": "object",
-      "properties": {
-        "provider": {
-          "description": "e.g. ATCC",
-          "@type": { "type": "string", "enum": [ "Organization","Person" ]},
-          "items": {
-            "type": "string"
-          }
-        },
-        "cellLineID": {
-          "description": "Controlled vocabulary ID. Description of the cell line used. (e.g. HeLa ATTC CCL2)",
-          "type": "string"
-        },
-        "species": {
-          "description": "e.g. human",
-          "type": "object",
-          "properties": {
-            "name": {
-              "type": "string"
-            },
-            "ontologyValue": {
-              "type": "string"
-            },
-            "ontologySource": {
-              "type": "string"
-            },
-            "comment": {
-              "type": "string"
-            }
-          }
-        },
-        "organ": {
-          "description": "e.g. kidney",
-          "type": "string"
-        },
-        "cellType": {
-          "description": "e.g. totipotent stem cell (CL:0000723)",
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "strain": {
-          "description": "a variant of a cellType",
-          "type": "string"
-        },
-        "tissue": {
-          "description": "",
-          "type": "string"
-        },
-        "reference": {
-          "description": "reference to publication",
-          "type": "string"
-        },
-        "source": {
-          "description": "contact details refering to the CellLine",
-          "$ref": "source_schema.json"
-        }
-      }
+      "description": "Information about the cellLine if not ATCC",
+      "$ref": "cell_source_schema.json#"
     },
     "passageNo": {
       "description": "is the number of generation of a CellLine due to passaging and growing",
-      "type": "array",
-      "items": {
-        "type": "number"
-      }
+      "type": "string"
     },
     "modifications": {
       "description": "transgene/genetic manipulations, e.g. stably transfected, induced resistance",
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+      "type": "string"
     },
     "validation": {
       "description": "measures undertaken to validate cell line, e.g. DNA fingerprinting, genotyping, morphology testing",
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+      "type": "string"
     },
     "lineQC": {
       "description": "Mycoplasma test (Y/N) and other measures for quality control, e.g. virus testing",
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+      "type": "string"
     }
   }
 }

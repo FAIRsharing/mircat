@@ -34,28 +34,11 @@
     },
     "nameType": {
       "description": "Type of vessel used,: i.e. single eppendorf tube, 96-well plate, etc.",
-      "type": "object",
-      "properties": {
-        "anyOf":[
-          { "ontologyValue": { "type": "string"} },
-          { "ontologySource": { "type": "string"} },
-          { "comment": { "type": "string"} }
-        ]
-      }
+      "$ref": "ontology_value_source_schema.json#"
     },
     "size": {
       "description": "Size of reaction vessel, e.g. volume or surface area.",
-      "type": "object",
-      "properties": {
-        "surfaceArea": {
-          "description": "surface area in mm²",
-          "type": "string"
-        },
-        "dimension": {
-          "description": "number of wells",
-          "type": "number"
-        }
-      }
+      "$ref": "array_support_size_schema.json#"
     },
     "vendor": {
       "description": "Contact details of the source of the reaction vessels, e.g. company",

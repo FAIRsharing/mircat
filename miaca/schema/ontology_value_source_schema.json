@@ -1,8 +1,8 @@
 {
-  "id": "https://w3id.org/mircat/miaca/schema/process_schema.json",
+  "id": "https://w3id.org/mircat/miaca/schema/ontology_value_source_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
-  "title": "MIACA process",
-  "description": "The experiment workflow.",
+  "title": "MIACA ontology value source schema",
+  "description": "name type",
   "type": "object",
   "properties": {
     "@context": {
@@ -29,21 +29,8 @@
       "type": "string",
       "format": "uri"
     },
-    "ID": {
-      "description": "identifier",
-      "type": "string"
-    },
-    "processName": {
-      "description": "e.g. cell propagation, siRNA transfection",
-      "type": "string"
-    },
-    "currentID": {
-      "description": "ID of the referenced step",
-      "type": "string"
-    },
-    "successorID": {
-      "description": "ID of a successor element of the process step",
-      "type": "string"
-    }
+    "ontologyValue": { "type": "string"},
+    "ontologySource": { "type": "string"},
+    "comment": { "type": "string"}
   }
 }
