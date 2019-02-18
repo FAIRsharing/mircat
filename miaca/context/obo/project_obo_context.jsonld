@@ -1,7 +1,7 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "ProjectDescription": "obo:",
+        "ProjectDescription": "obo:OBI_0000011",
         "@language": "en",
         "title": "obo:",
         "ID": "obo:IAO_0000578",

@@ -1,8 +1,8 @@
 {
   "id": "https://w3id.org/mircat/miaca/schema/array_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
-  "title": "MIACA array schema",
-  "description": "JSON-schema representing MIACA array type.",
+  "title": "MIACA array JSON schema",
+  "description": "Description of array type and vessel.",
   "type": "object",
   "additionalProperties": false,
   "properties": {
@@ -44,6 +44,10 @@
    },
    "ydim": {
      "description": "row",
+     "type": "integer"
+   },
+   "number": {
+     "description": "number of feature/well if explicit",
      "type": "integer"
    },
    "array":{

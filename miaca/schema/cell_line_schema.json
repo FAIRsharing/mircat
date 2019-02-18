@@ -2,7 +2,7 @@
   "id" : "https://w3id.org/mircat/miaca/schema/cell_line_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACA cell line schema",
-  "description": "a element to describe the cell line used during the project.",
+  "description": "Cell line used during the project. An element to describe the cell line used during the project.",
   "type": "object",
   "additionalProperties": false,
   "required": [ "cellLineIdentifier", "cellLineName", "species", "tissue", "reference", "provider"],

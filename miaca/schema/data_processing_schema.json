@@ -1,0 +1,153 @@
+{
+  "id": "https://w3id.org/mircat/miaca/schema/data_processing_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIACA (Minimum Information about a Cellular Assay) data processing schema",
+  "description": "Description of the processes applied to analyze the raw-data in order to generate a hit list. Data analysis is usually carried out sequentially, applying a number of algorithms and analysis tools",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "enum": [
+        "DataProcessing"
+      ]
+    },
+    "ID": {
+      "description": "The identifier",
+      "type": "string"
+    },
+    "rawData": {
+      "description": "Description of raw data.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ID": {
+            "description": "The identifier",
+            "type": "string"
+          },
+          "type": {
+            "description": "number, image, movie,…",
+            "type": "string"
+          },
+          "format": {
+            "description": "ASCII, TIFF, WMA,…",
+            "type": "string"
+          },
+          "link": {
+            "description": "link to raw data",
+            "type": "string"
+          }
+        }
+      },
+      "processedData": {
+        "description": "The raw data can be processed either manually or through automated computational methods. Processing commonly generates numbers and/or phenotypic descriptions.",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "ID": {
+              "description": "The identifier",
+              "type": "string"
+            },
+            "processName": {
+              "description": "The name of the process",
+              "type": "string"
+            },
+            "software": {
+              "description": "the name of the software used to generate the file",
+              "type": "string"
+            },
+            "reference": {
+              "description": "reference to a publication",
+              "type": "string"
+            },
+            "version": {
+              "description": "the version of the softwareused to generate the file",
+              "type": "string"
+            },
+            "algorithm": {
+              "description": "algorithm",
+              "type": "string"
+            },
+            "parameters": {
+              "description": "the list of parameter settings used to run the software used to generate the file",
+              "type": "array"
+            },
+            "type": {
+              "description": "type",
+              "type": "string"
+            },
+            "format": {
+              "description": "ASCII, TIFF, WMA,…",
+              "type": "string"
+            },
+            "link": {
+              "description": "link to raw data",
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "phenoDesc": {
+      "description": "A phenotypic description is usually obtained by manual observation of images and/or interpretation of processed data.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ID": {
+            "description": "The identifier",
+            "type": "string"
+          },
+          "processName": {
+            "description": "The name of the process",
+            "type": "string"
+          },
+          "protocol": {
+            "description": "for the characterization and classification of phenotypic observation",
+            "type": "string"
+          },
+          "description": {
+            "description": "description of the phenotype",
+            "type": "string"
+          },
+          "timeSpace": {
+            "description": "Time and space parameters",
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "format": {
+            "description": "ASCII, TIFF, WMA,…",
+            "type": "string"
+          },
+          "link": {
+            "description": "link to raw data",
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

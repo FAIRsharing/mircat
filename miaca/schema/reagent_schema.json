@@ -30,18 +30,26 @@
       "type": "string",
       "format": "uri"
     },
+    "ID": {
+      "description": "the identifier of the chemical used as reagent",
+      "type": "string"
+    },
     "reagentName": {
       "description": "the name of the chemical used as reagent",
       "type": "string"
     },
-    "reagentID": {
-      "description": "the identifier of the chemical used as reagent",
-      "type": "string"
-    },
-    "reagentType": {
+    "type": {
       "description": "reagent type, e. g. cDNA, small molecule, siRNA. If available, reference to a controlled vocabulary.",
       "type": "string",
       "@type": { "type": "string", "enum": [ "MoleculeType" ]}
+    },
+    "struct": {
+      "description": "e.g. sequence of siRNA; structure/ChEBI for compound",
+      "type": "string"
+    },
+    "vendor": {
+      "description": "Details to the vendor or manufacturer",
+      "$ref": "vendor_schema.json"
     },
     "targetSpecies": {
       "description": "Target Species e.g. if siRNA",
@@ -53,8 +61,7 @@
     },
     "stockConc": {
       "description": "The value of the reagent stock concentration",
-      "type": "number",
-      "enum": [ "litres" ]
+      "type": "number"
     },
     "stockConcUnit": {
       "description": "The unit of the stock concentration of the reagent",
@@ -65,15 +72,12 @@
       "description": "Solvent",
       "type": "string"
     },
-    "vendor": {
-      "$ref": "vendor_schema.json"
-    },
     "efficiency": {
       "description": "e.g., transfection/transduction efficiency of 'cell type' (average, cv) with ‘Perturbator’ (library)",
       "type": "string"
     },
-    "reagentOrderNumber": {
-      "description": "e.g., transfection/transduction efficiency of 'cell type' (average, cv) with ‘Perturbator’ (library)",
+    "comment": {
+      "description": "Comment",
       "type": "string"
     },
     "array": {
@@ -81,28 +85,40 @@
       "type": "string"
     },
     "libraryRef": {
+      "description": "details on the library the perturbator is part of",
       "$ref": "library_schema.json"
     },
-    "perturbagenType": {
-      "anyOf": [
-        {
-          "$ref": "compound_schema.json"
+    "virusRef": {
+      "description": "details if perturbator is virus",
+      "type": "object",
+      "properties": {
+        "type": {
+          "description": "the type of virus",
+          "type": "string"
         },
-        {
-          "type": "object",
-          "properties":{
-
-            "type": {
-              "description": "% of compounds with &gt;80% purity",
-              "type": "string"
-            },
-            "titer": {
-              "description": "% of compound comply with Lipinski rule-of-5",
-              "type": "string"
-            }
-          }
+        "titer": {
+          "description": "a numerical expression of the quantity of virus in a given volume",
+          "type": "string"
         }
-      ]
+      }
+    },
+    "compoundRef": {
+      "description": "details if perturbator is chemincal compound",
+      "type": "object",
+      "properties": {
+        "purity": {
+          "description": "% of compounds with >80% purity",
+          "type": "string"
+        },
+        "lipinski": {
+          "description": "% of compound comply with Lipinski rule-of-5",
+          "type": "string"
+        },
+        "weight": {
+          "description": "Average molecular weight",
+          "type": "string"
+        }
+      }
     }
   }
 }

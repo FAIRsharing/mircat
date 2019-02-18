@@ -79,7 +79,7 @@
       "description" : "",
       "type": "string"
     },
-    "softwareParamaters" : {
+    "parameters" : {
       "description" : "the list of parameter settings used to run the software used to generate the file",
       "type": "array"
     }

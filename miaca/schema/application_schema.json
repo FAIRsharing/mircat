@@ -1,8 +1,8 @@
 {
   "id": "https://w3id.org/mircat/miaca/schema/application_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
-  "title": "MIACA application schema",
-  "description": "JSON-schema representing MIACA application type.",
+  "title": "MIACA application JSON schema",
+  "description": "Description of the specific application of this project within a larger context, if applicable. Controls are relevant in data analysis to determine the robustness and the dynamic range of the assay, and to produce the list of significant hits.",
   "type": "object",
   "additionalProperties": false,
   "properties": {
