@@ -1,0 +1,49 @@
+{
+  "id": "https://w3id.org/mircat/miaca/schema/open_cv_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIACA process",
+  "description": "The experiment workflow.",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+    "ID": {
+      "description": "identifier",
+      "type": "string"
+    },
+    "processName": {
+      "description": "e.g. cell propagation, siRNA transfection",
+      "type": "string"
+    },
+    "currentID": {
+      "description": "ID of the referenced step",
+      "type": "string"
+    },
+    "successorID": {
+      "description": "ID of a successor element of the process step",
+      "type": "string"
+    }
+  }
+}

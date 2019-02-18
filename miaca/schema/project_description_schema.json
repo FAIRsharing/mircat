@@ -49,7 +49,10 @@
     },
     "controls": {
       "description" : "controls are relevant in data analysis to determine the robustness and the dynamic range of the assay, and to produce the list of significant hits.e.g. measuring the effect of a perturbation on the induction of apoptosis (biological process), by measuring the level of activated caspase 3 (measured effect), with a antibody specific for the activated enzyme (reporter). One project consists of experiments (>=1) which are carried out in arrays (1 to n features). A proposed definition of experiment is given in The experiment concept above.",
-      "type":"string",
+      "type":"array",
+      "items": {
+        "type": "string"
+      },
       "minLength": 1
     },
     "xref": {

@@ -41,43 +41,28 @@
     },
     "instrument": {
       "description" : "a reference to an instrument used during the data acquisition",
-      "type" : "string",
-      "@type": { "type": "string", "enum": [ "instrumentName" ]}
+      "type" : "string"
     },
     "settings" : {
-      "description" : "a reference to an instrument used during the data acquisition",
+      "description" : "Reference to the instrument-settings",
       "type" : "object",
-      "anyOf": [
-        { "$ref": "#/definitions/lampEnergy" },
-        { "$ref": "#/definitions/excitation" },
-        { "$ref": "#/definitions/excitationFilter" },
-        { "$ref": "#/definitions/emission" },
-        { "$ref": "#/definitions/emissionFilter" },
-        { "$ref": "#/definitions/measurement" },
-        { "$ref": "#/definitions/operationMode" },
-        { "$ref": "#/definitions/acquisitionTime" }
-      ]
+      "properties": {
+         "lampEnergy" : { "description": "lampEnergy" , "type" : "string" },
+         "excitation" : { "description": "excitation" , "type" : "string" },
+         "excitationFilter" : { "description": "excitationFilter" , "type" : "string" },
+         "emission" : { "description": "emission" , "type" : "string" },
+         "emissionFilter" : { "description": "emissionFilter" , "type" : "string" },
+         "plateType": { "desciption":  "plateType", "type":  "string" },
+         "time": { "description":  "time", "type":  "string"},
+         "timeUnit": { "description":  "time unit, e.g. seconds", "type":  "string"},
+         "measurement" : { "description": "measurement" , "type" : "string" },
+         "operationMode" : { "description": "operationMode" , "type" : "string" }
+      }
     },
     "reference": {
       "description" : "a reference to an publication about the data acquisition",
       "type" : "string",
       "@type": { "type": "string", "enum": [ "publicationIdentifier" ]}
-    }
-  },
-
-  "definitions" : {
-    "lampEnergy" : { "description": "" , "type" : "string" },
-    "excitation" : { "description": "" , "type" : "string" },
-    "excitationFilter" : { "description": "" , "type" : "string" },
-    "emission" : { "description": "" , "type" : "string" },
-    "emissionFilter" : { "description": "" , "type" : "string" },
-    "measurement" : { "description": "" , "type" : "string" },
-    "operationMode" : { "description": "" , "type" : "string" },
-    "acquisitionTime" : { "description": "" , "type" : "string" },
-    "acquisitionTimeUnit": {
-      "description": "The  time unit used to measure the duration of the data acquisition",
-      "type": "string",
-      "enum": [ "s", "min", "hour" ]
     }
   }
 }  

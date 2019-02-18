@@ -29,7 +29,6 @@
       "type": "string",
       "format": "uri"
     },
-
     "primaryRef": {
       "description": "Primary reference to an external database.",
       "$ref": "dbreference_schema.json#"
