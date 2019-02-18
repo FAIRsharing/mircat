@@ -1,0 +1,16 @@
+{
+    "@context": {
+        "bibref": "obo:NCIT_C25474",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "identifier": "obo:IAO_0000577",
+        "@language": "en",
+        "abstract": "obo:IAO_0000315",
+        "Publication": "obo:IAO_0000311",
+        "identifierSource": "obo:OBI_0000245",
+        "title": "obo:IAO_0000305",
+        "publicationVenue": "obo:NCIT_C40976",
+        "ID": "obo:IAO_0000578",
+        "date": "obo:IAO_0000582",
+        "authors": "obo:IAO_0000442"
+    }
+}

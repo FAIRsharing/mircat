@@ -1,0 +1,87 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "description": "Description of the instruments required for the assay, e.g. data acquisition station. Detailed descriptions of such instruments and their settings could be part of spezialized documents or be given in Treatment, Post-Treatment, or Data Acquisition.",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/instrument_schema.json",
+    "provenance": {
+        "prov:wasAttributedTo": {
+            "_comment": "an ORCID for now, need to check foaf:Person",
+            "prov:agent": "http://orcid.org/0000-0001-9853-5668"
+        }
+    },
+    "title": "MIACA instrument schema",
+    "properties": {
+        "instrumentType": {
+            "type": "array",
+            "items": {
+                "$ref": "open_cv_schema.json#"
+            },
+            "description": "Instrument type, e.g. liquid handling robot, centrifuge, FACS, Plate Reader, etc. ",
+            "@type": {
+                "enum": [
+                    "OpenCV"
+                ],
+                "type": "string"
+            }
+        },
+        "instrumentName": {
+            "type": "string",
+            "description": "Instrument name",
+            "@type": {
+                "enum": [
+                    "instrumentName"
+                ],
+                "type": "string"
+            }
+        },
+        "instrumentSpec": {
+            "type": "array",
+            "description": "e.g. objective lenses, numerical aperture, filters"
+        },
+        "instrumentModel": {
+            "type": "string",
+            "description": "Instrument name"
+        },
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "ID": {
+            "type": "string",
+            "description": "Instrument identifier as stored by the database"
+        },
+        "vendor": {
+            "items": {
+                "$ref": "vendor_schema.json#"
+            },
+            "description": "Details to the vendor or manufacturer, Contact details of the source of the reaction vessels, e.g. company",
+            "@type": {
+                "enum": [
+                    "Organization",
+                    "Person"
+                ],
+                "type": "string"
+            }
+        },
+        "@id": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD identifier"
+        },
+        "@type": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD type"
+        }
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "additionalProperties": false,
+    "version": "1.0",
+    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/person_source_merged_schema.json",
+    "properties": {
+        "phone": {
+            "type": "string"
+        },
+        "department": {
+            "type": "string",
+            "minLength": 1,
+            "description": "department in the institution"
+        },
+        "address": {
+            "type": "string"
+        },
+        "identifier": {
+            "type": "string",
+            "description": "A persistent identifier of the person, it should be an ORCID."
+        },
+        "fax": {
+            "type": "string"
+        },
+        "firstName": {
+            "type": "string",
+            "description": "The given name."
+        },
+        "@id": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD identifier"
+        },
+        "@type": {
+            "enum": [
+                "Person"
+            ],
+            "type": "string",
+            "description": "The JSON-LD type"
+        },
+        "identifierSource": {
+            "type": "string",
+            "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier."
+        },
+        "midInitials": {
+            "type": "string"
+        },
+        "roles": {
+            "type": "string",
+            "description": "The roles assumed by the person. Ideally from a controlled vocabulary or ontology."
+        },
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "email": {
+            "format": "email",
+            "type": "string",
+            "description": "The email address."
+        },
+        "lastName": {
+            "type": "string",
+            "description": "The family name."
+        },
+        "affiliation": {
+            "type": "array",
+            "description": "The organizations to which the person is associated with.",
+            "items": {
+                "$ref": "organization_schema.json#"
+            }
+        },
+        "city": {
+            "type": "string",
+            "minLength": 1,
+            "description": "city the institution is placed"
+        },
+        "ID": {
+            "type": "string",
+            "description": "The source identifier"
+        }
+    },
+    "title": "MIACME person schema. A human being.",
+    "description": "JSON-schema representing a person in MIACME"
+}

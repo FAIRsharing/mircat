@@ -1,0 +1,47 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "description": "Composite Reagent. An element to describe the cell line used during the project.",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/composite_reagent_schema.json",
+    "title": "MIACA composite reagenet schema",
+    "properties": {
+        "reagentList": {
+            "type": "array",
+            "items": {
+                "$ref": "reagent_list_schema.json"
+            }
+        },
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "comment": {
+            "type": "string",
+            "description": "comment"
+        },
+        "compReagentName": {
+            "type": "string",
+            "description": "name of cell culture medium"
+        },
+        "@id": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD identifier"
+        },
+        "@type": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD type"
+        }
+    }
+}

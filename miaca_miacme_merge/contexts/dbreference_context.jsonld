@@ -1,0 +1,14 @@
+{
+    "@context": {
+        "refType": "obo:",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "version": "obo:",
+        "Dbreference": "obo:",
+        "refTypeAc": "obo:",
+        "dbAc": "obo:",
+        "ID": "obo:IAO_0000578",
+        "secondary": "obo:",
+        "db": "obo:",
+        "@language": "en"
+    }
+}

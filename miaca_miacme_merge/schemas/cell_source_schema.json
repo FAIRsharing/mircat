@@ -1,0 +1,70 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "additionalProperties": false,
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/cell_source_schema.json",
+    "properties": {
+        "organ": {
+            "$ref": "ontology_value_source_schema.json#",
+            "description": "e.g. kidney"
+        },
+        "tissue": {
+            "$ref": "ontology_value_source_schema.json#",
+            "description": "is a collection of interconnected cells that perform a similar function within an organism"
+        },
+        "source": {
+            "$ref": "source_schema.json",
+            "description": "contact details refering to the CellLine"
+        },
+        "cellType": {
+            "$ref": "CL_ontology_schema.json#",
+            "description": "e.g. totipotent stem cell (CL:0000723)"
+        },
+        "provider": {
+            "type": "string",
+            "description": "e.g. ATCC"
+        },
+        "reference": {
+            "type": "string",
+            "description": "reference to publication"
+        },
+        "@id": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD identifier"
+        },
+        "@type": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD type"
+        },
+        "species": {
+            "$ref": "ontology_value_source_schema.json#",
+            "description": "e.g. human"
+        },
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "strain": {
+            "$ref": "ontology_value_source_schema.json#",
+            "description": "a variant of a cellType"
+        },
+        "cellLineID": {
+            "type": "string",
+            "description": "Controlled vocabulary ID. Description of the cell line used. (e.g. HeLa ATTC CCL2)"
+        }
+    },
+    "title": "MIACA cell source schema",
+    "description": "Cell source schema"
+}

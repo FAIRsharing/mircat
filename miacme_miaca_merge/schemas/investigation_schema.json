@@ -1,0 +1,103 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "additionalProperties": false,
+    "version": "1.0",
+    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/investigation_schema.json",
+    "properties": {
+        "publications": {
+            "type": "array",
+            "description": "Scholarly articles associated with the investigation, usually describing the methods applied and conclusions reached by the investigation.",
+            "items": {
+                "$ref": "publication_schema.json#"
+            }
+        },
+        "MIACMEversion": {
+            "type": "string",
+            "description": "The version of MIACME this dataset description should be compliant with."
+        },
+        "identifier": {
+            "type": "string",
+            "description": "Primary identifier for the investigation. Ideally, a persistent identifier but an internal user identifier at a minimum."
+        },
+        "dates": {
+            "type": "array",
+            "description": "Dates relevant to the investigation.",
+            "items": {
+                "$ref": "date_schema.json#"
+            }
+        },
+        "description": {
+            "type": "string",
+            "description": "A textual narrative comprised of one or more statements about the investigation."
+        },
+        "@id": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD identifier"
+        },
+        "contacts": {
+            "type": "array",
+            "description": "The person(s) who contributed to the investigation, such as the Principal Investigator, corresponding author in related publications or other researchers involved.",
+            "items": {
+                "$ref": "person_schema.json#"
+            }
+        },
+        "identifierSource": {
+            "type": "string",
+            "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier."
+        },
+        "studies": {
+            "type": "array",
+            "description": "The studies associated with the Investigation.",
+            "items": {
+                "$ref": "study_schema.json#"
+            }
+        },
+        "title": {
+            "type": "string",
+            "description": "The title of the investigation."
+        },
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "acknowledges": {
+            "type": "array",
+            "description": "The grant(s) which funded and supported the investigation.",
+            "items": {
+                "$ref": "grant_schema.json#"
+            }
+        },
+        "conclusions": {
+            "type": "array",
+            "description": "A set of statements summarizing the findings of the investigation. It could be a URI referring to a nanopublication.",
+            "items": {
+                "type": "string"
+            }
+        },
+        "MIACMEcompliance": {
+            "type": "string",
+            "description": "The result of the validation for MIACME compliance."
+        },
+        "@type": {
+            "enum": [
+                "Investigation"
+            ],
+            "type": "string",
+            "description": "The JSON-LD type"
+        }
+    },
+    "title": "MIACME investigation schema",
+    "description": "JSON-schema representing an investigation in MIACME. A planned activity that involves one or more studies."
+}

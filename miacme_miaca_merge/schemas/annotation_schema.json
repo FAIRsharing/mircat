@@ -1,0 +1,61 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "additionalProperties": false,
+    "version": "1.0",
+    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/annotation_schema.json",
+    "properties": {
+        "value": {
+            "description": "The value of the annotation - it can be a string or a number (for coded values).",
+            "oneOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        "valueIRI": {
+            "description": "The IRI of a concept or ontology term associated with the value. It can also be an empty string",
+            "anyOf": [
+                {
+                    "format": "uri",
+                    "type": "string"
+                },
+                {
+                    "type": "string",
+                    "maxLength": 0
+                }
+            ]
+        },
+        "@id": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD identifier"
+        },
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "@type": {
+            "enum": [
+                "Annotation"
+            ],
+            "type": "string",
+            "description": "The JSON-LD type"
+        }
+    },
+    "title": "MIACME annotation schema",
+    "description": "A pair of value (string or numeric) with a corresponding ontology term (IRI), if applicable."
+}

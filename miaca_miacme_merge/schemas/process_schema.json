@@ -1,0 +1,49 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "description": "The experiment workflow.",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/process_schema.json",
+    "title": "MIACA process",
+    "properties": {
+        "@id": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD identifier"
+        },
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "ID": {
+            "type": "string",
+            "description": "identifier"
+        },
+        "@type": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD type"
+        },
+        "currentID": {
+            "type": "string",
+            "description": "ID of the referenced step"
+        },
+        "successorID": {
+            "type": "string",
+            "description": "ID of a successor element of the process step"
+        },
+        "processName": {
+            "type": "string",
+            "description": "e.g. cell propagation, siRNA transfection"
+        }
+    }
+}

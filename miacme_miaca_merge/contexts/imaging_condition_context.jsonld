@@ -1,0 +1,18 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "observationPeriodUnit": "obo:",
+        "observationPeriod": "obo:",
+        "bao": "http://www.bioassayontology.org/bao#",
+        "pixels": "obo:NCIT_C48367",
+        "@language": "en",
+        "objectiveLens": "obo:ERO_0000453",
+        "channelDefinition": "bao:BAO_0000184",
+        "numericalAperture": "obo:",
+        "ImagingCondition": "obo:",
+        "imageSequenceType": "obo:",
+        "timeSeriesInterval": "obo:",
+        "modality": "obo:FBbi_00000222 ",
+        "timeSeriesIntervalUnit": "obo:"
+    }
+}

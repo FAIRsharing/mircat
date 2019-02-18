@@ -1,0 +1,73 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "version": "1.0",
+    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/publication_application_merged_schema.json",
+    "properties": {
+        "bibref": {
+            "$ref": "open_cv_schema.json#",
+            "description": "Bibliographic reference for the data generated during the project. Cross reference for the data source. Example: Entry in a database of databases."
+        },
+        "identifier": {
+            "type": "string",
+            "description": "A persistent identifier for the publication, it should be a DOI or pubmed identifier"
+        },
+        "title": {
+            "type": "string",
+            "description": "The title of the publication."
+        },
+        "abstract": {
+            "type": "string",
+            "description": "Application abstract, e. g. as taken from a publication"
+        },
+        "@id": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD identifier"
+        },
+        "@type": {
+            "enum": [
+                "Publication"
+            ],
+            "type": "string",
+            "description": "The JSON-LD type"
+        },
+        "identifierSource": {
+            "type": "string",
+            "description": "Information about the organisation or namespace responsible for minting the identifier."
+        },
+        "date": {
+            "$ref": "date_schema.json#",
+            "description": "The publication date."
+        },
+        "publicationVenue": {
+            "type": "string",
+            "description": "The venue where the publication appears (journal, publishing platform etc)."
+        },
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "ID": {
+            "type": "string"
+        },
+        "authors": {
+            "type": "array",
+            "items": {
+                "$ref": "person_schema.json#"
+            }
+        }
+    },
+    "title": "MIACME publication schema",
+    "description": "A schema describing a publication."
+}
