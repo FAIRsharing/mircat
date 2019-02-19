@@ -13,11 +13,9 @@ The context files can be access through the prefix URI: https://w3id.org/mircat/
 
 The mapping file for the whole MIFlowCyt schema network is available through this URI: https://w3id.org/mircat/miflowcyt/schema_context_mapping.json
 
-Visualise the schemas with their annotations (context files) here: https://fairsharing.github.io/JSONschema-documenter/?schema_url=https://w3id.org/mircat/miflowcyt/schema/miflowcyt_schema.json
+## Visualisations
 
+Visualise the schemas here: https://fairsharing.github.io/JSONschema-documenter/?schema_url=https://w3id.org/mircat/miflowcyt/schema/miflowcyt_schema.json
 
-
-
-
-
+Visualise the schemas with the annotations (context files) here: https://fairsharing.github.io/JSONschema-documenter/?schema_url=https://w3id.org/mircat/miflowcyt/schema/miflowcyt_schema.json&context_mapping_url=https://w3id.org/mircat/miflowcyt/schema_context_mapping.json
 
