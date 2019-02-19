@@ -4,7 +4,7 @@
         "CompositeReagent": "obo:",
         "@language": "en",
         "compReagentName": "obo:",
-        "comment": "obo:",
+        "comment": "obo:NCIT_C25393",
         "reagentList": "obo:"
     }
 }

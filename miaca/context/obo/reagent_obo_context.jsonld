@@ -3,7 +3,7 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "Reagent": "obo:CHEBI_33893",
         "@language": "en",
-        "comment": "obo:",
+        "comment": "obo:NCIT_C25393",
         "solvent": "obo:CHEBI_46787",
         "array": "obo:",
         "reagentName": "obo:IAO_0000590",

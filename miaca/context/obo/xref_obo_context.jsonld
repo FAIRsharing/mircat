@@ -1,9 +1,10 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "Xref": "obo:",
+        "sio": "http://semanticscience.org/resource/",
+        "Xref": "sio:SIO_001171",
         "@language": "en",
-        "secondaryRef": "obo:",
-        "primaryRef": "obo:"
+        "secondaryRef": "obo:NCIT_C25667",
+        "primaryRef": "obo:NCIT_C25251"
     }
 }

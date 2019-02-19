@@ -1,7 +1,7 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "CellLine": "obo:",
+        "CellLine": "obo:CLO_0000031",
         "@language": "en",
         "ID": "obo:",
         "lineQC": "obo:",

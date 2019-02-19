@@ -3,9 +3,9 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "Vendor": "obo:NCIT_C68608",
         "@language": "en",
-        "orderNo": "obo:",
-        "lotNo": "obo:",
-        "serialNo": "obo:",
-        "name": "obo:"
+        "orderNo": "obo:IAO_0000028 ",
+        "lotNo": "obo:IAO_0000132",
+        "serialNo": "obo:IAO_0000131",
+        "name": "obo:IAO_0000590"
     }
 }

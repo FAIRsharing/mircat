@@ -5,7 +5,7 @@
         "Source": "obo:NCBITaxon_9606",
         "@language": "en",
         "ID": "obo:IAO_0000578",
-        "country": "obo:",
+        "country": "sio:SIO_000664",
         "email": "obo:IAO_0000429",
         "institution": "obo:ERO_0000066",
         "address": "obo:IAO_0000422",

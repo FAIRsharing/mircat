@@ -3,7 +3,7 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "OntologyValueSource": "obo:",
         "@language": "en",
-        "comment": "obo:",
+        "comment": "obo:NCIT_C25393",
         "ontologyValue": "obo:",
         "ontologySource": "obo:"
     }
