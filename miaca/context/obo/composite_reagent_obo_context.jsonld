@@ -3,8 +3,8 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "CompositeReagent": "obo:",
         "@language": "en",
+        "compReagentName": "obo:",
         "comment": "obo:",
-        "reagentList": "obo:",
-        "compReagentName": "obo:"
+        "reagentList": "obo:"
     }
 }

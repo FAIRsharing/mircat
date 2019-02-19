@@ -1,13 +1,17 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "ProjectDescription": "obo:OBI_0000011",
+        "Project": "obo:OBI_0000011",
         "@language": "en",
-        "title": "obo:",
+        "dataProcessing": "obo:",
+        "materialList": "obo:",
+        "projectDescription": "obo:",
+        "processLine": "obo:",
+        "cellAssay": "obo:",
+        "arraySupport": "obo:",
         "ID": "obo:IAO_0000578",
-        "xref": "obo:",
-        "process": "obo:",
-        "effect": "obo:",
-        "controls": "obo:"
+        "application": "obo:",
+        "instrument": "obo:",
+        "source": "obo:"
     }
 }

@@ -5,7 +5,7 @@
         "@language": "en",
         "ID": "obo:IAO_0000578",
         "pubref": "obo:NCIT_C40976",
-        "bibref": "obo:NCIT_C25474",
-        "abstract": "obo:IAO_0000315"
+        "abstract": "obo:IAO_0000315",
+        "bibref": "obo:NCIT_C25474"
     }
 }

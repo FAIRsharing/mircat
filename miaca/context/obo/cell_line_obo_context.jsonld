@@ -1,0 +1,14 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "CellLine": "obo:",
+        "@language": "en",
+        "ID": "obo:",
+        "lineQC": "obo:",
+        "validation": "obo:",
+        "cellLineName": "obo:",
+        "modifications": "obo:",
+        "passageNo": "obo:",
+        "cellSource": "obo:"
+    }
+}

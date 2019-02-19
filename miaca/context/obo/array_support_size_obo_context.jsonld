@@ -1,9 +1,9 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "OpenCv": "obo:",
+        "ArraySupportSize": "obo:",
         "@language": "en",
-        "name": "obo:",
-        "xref": "obo:"
+        "surfaceArea": "obo:",
+        "dimension": "obo:"
     }
 }

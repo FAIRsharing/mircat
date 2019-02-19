@@ -3,9 +3,9 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "MaterialList": "obo:",
         "@language": "en",
+        "ID": "obo:",
+        "cellLine": "obo:",
         "reagent": "obo:",
-        "ID": "obo:IAO_0000578",
-        "compositeReagent": "obo:",
-        "cellLine": "obo:"
+        "compositeReagent": "obo:"
     }
 }

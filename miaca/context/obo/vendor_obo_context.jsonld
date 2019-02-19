@@ -4,8 +4,8 @@
         "Vendor": "obo:NCIT_C68608",
         "@language": "en",
         "orderNo": "obo:",
-        "serialNo": "obo:",
         "lotNo": "obo:",
+        "serialNo": "obo:",
         "name": "obo:"
     }
 }

@@ -4,11 +4,11 @@
         "Dbreference": "obo:",
         "@language": "en",
         "ID": "obo:IAO_0000578",
-        "refTypeAc": "obo:",
-        "secondary": "obo:",
-        "dbAc": "obo:",
         "db": "obo:",
+        "refTypeAc": "obo:",
         "refType": "obo:",
-        "version": "obo:"
+        "secondary": "obo:",
+        "version": "obo:",
+        "dbAc": "obo:"
     }
 }

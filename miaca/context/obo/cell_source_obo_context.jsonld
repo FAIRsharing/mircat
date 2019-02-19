@@ -1,0 +1,16 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "CellSource": "obo:",
+        "@language": "en",
+        "reference": "obo:",
+        "species": "obo:",
+        "cellType": "obo:",
+        "source": "obo:",
+        "cellLineID": "obo:",
+        "tissue": "obo:",
+        "provider": "obo:",
+        "organ": "obo:",
+        "strain": "obo:"
+    }
+}

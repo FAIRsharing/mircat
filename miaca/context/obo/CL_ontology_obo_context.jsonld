@@ -1,0 +1,10 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "ClOntology": "obo:",
+        "@language": "en",
+        "ontologyName": "obo:",
+        "is_a": "obo:",
+        "ontologyID": "obo:"
+    }
+}

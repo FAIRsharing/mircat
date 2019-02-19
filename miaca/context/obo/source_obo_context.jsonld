@@ -4,12 +4,12 @@
         "sio": "http://semanticscience.org/resource/",
         "Source": "obo:NCBITaxon_9606",
         "@language": "en",
-        "address": "obo:IAO_0000422",
         "ID": "obo:IAO_0000578",
         "country": "obo:",
         "email": "obo:IAO_0000429",
-        "name": "obo:IAO_0000590",
         "institution": "obo:ERO_0000066",
+        "address": "obo:IAO_0000422",
+        "name": "obo:IAO_0000590",
         "department": "sio:SIO_000686",
         "city": "sio:SIO_000665"
     }

@@ -3,15 +3,15 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "Library": "obo:",
         "@language": "en",
-        "type": "obo:",
-        "features": "obo:",
-        "ID": "obo:IAO_0000578",
-        "libraryElementCharacteristics": "obo:",
-        "name": "obo:",
         "preparationMethod": "obo:",
-        "vendor": "obo:NCIT_C68608",
+        "features": "obo:",
+        "name": "obo:",
+        "type": "obo:",
         "definitions": "obo:",
+        "ID": "obo:IAO_0000578",
+        "featurePosition": "obo:",
+        "vendor": "obo:NCIT_C68608",
         "format": "obo:",
-        "featurePosition": "obo:"
+        "libraryElementCharacteristics": "obo:"
     }
 }

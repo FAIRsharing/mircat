@@ -1,0 +1,10 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "OntologyValueSource": "obo:",
+        "@language": "en",
+        "comment": "obo:",
+        "ontologyValue": "obo:",
+        "ontologySource": "obo:"
+    }
+}

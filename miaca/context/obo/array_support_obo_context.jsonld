@@ -1,11 +1,11 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "Da": "obo:",
+        "ArraySupport": "obo:",
         "@language": "en",
         "ID": "obo:",
-        "reference": "obo:",
-        "instrument": "obo:OBI_0000968",
-        "settings": "obo:"
+        "size": "obo:",
+        "vendor": "obo:",
+        "nameType": "obo:"
     }
 }

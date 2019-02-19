@@ -1,11 +1,11 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "Da": "obo:",
+        "Process": "obo:",
         "@language": "en",
         "ID": "obo:",
-        "reference": "obo:",
-        "instrument": "obo:OBI_0000968",
-        "settings": "obo:"
+        "currentID": "obo:",
+        "processName": "obo:",
+        "successorID": "obo:"
     }
 }

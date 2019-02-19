@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "ProjectDescription": "obo:",
+        "@language": "en",
+        "ID": "obo:",
+        "effect": "obo:",
+        "xref": "obo:",
+        "process": "obo:",
+        "title": "obo:",
+        "controls": "obo:"
+    }
+}

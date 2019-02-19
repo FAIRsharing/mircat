@@ -1,11 +1,10 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "Da": "obo:",
+        "DataProcessing": "obo:",
         "@language": "en",
         "ID": "obo:",
-        "reference": "obo:",
-        "instrument": "obo:OBI_0000968",
-        "settings": "obo:"
+        "phenoDesc": "obo:",
+        "rawData": "obo:"
     }
 }
