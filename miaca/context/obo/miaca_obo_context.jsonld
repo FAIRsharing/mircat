@@ -3,6 +3,6 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "Miaca": "obo:MS_1000900",
         "@language": "en",
-        "project": "obo:"
+        "project": "obo:OBI_0000011"
     }
 }

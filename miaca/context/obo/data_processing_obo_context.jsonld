@@ -3,7 +3,7 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "DataProcessing": "obo:",
         "@language": "en",
-        "ID": "obo:",
+        "ID": "obo:IAO_0000578",
         "phenoDesc": "obo:",
         "rawData": "obo:"
     }

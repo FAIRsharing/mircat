@@ -5,6 +5,6 @@
         "@language": "en",
         "compReagentName": "obo:",
         "comment": "obo:NCIT_C25393",
-        "reagentList": "obo:"
+        "reagentList": "obo:CHEBI_33893"
     }
 }

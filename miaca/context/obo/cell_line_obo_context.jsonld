@@ -3,12 +3,12 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "CellLine": "obo:CLO_0000031",
         "@language": "en",
-        "ID": "obo:",
-        "lineQC": "obo:",
-        "validation": "obo:",
-        "cellLineName": "obo:",
-        "modifications": "obo:",
-        "passageNo": "obo:",
-        "cellSource": "obo:"
+        "ID": "obo:IAO_0000578",
+        "lineQC": "obo:ERO_0001219",
+        "validation": "obo:ERO_0002025",
+        "cellLineName": "obo:IAO_0000590",
+        "modifications": "obo:CLO_0000004",
+        "passageNo": "obo:EFO_0007061",
+        "cellSource": "obo:CL_0000000"
     }
 }

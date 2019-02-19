@@ -1,16 +1,16 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "CellSource": "obo:",
+        "CellSource": "obo:CL_0000000",
         "@language": "en",
-        "reference": "obo:",
-        "species": "obo:",
-        "cellType": "obo:",
-        "source": "obo:",
-        "cellLineID": "obo:",
-        "tissue": "obo:",
-        "provider": "obo:",
-        "organ": "obo:",
-        "strain": "obo:"
+        "reference": "obo:PRIDE_0000400",
+        "species": "obo:OBI_0100026",
+        "cellType": "obo:CL_0000000",
+        "source": "obo:NCIT_C25683",
+        "cellLineID": "obo:IAO_0000578",
+        "tissue": "obo:UBERON_0000479",
+        "provider": "obo:NCIT_C37900",
+        "organ": "obo:UBERON_0000062",
+        "strain": "obo:PATO_0001034"
     }
 }

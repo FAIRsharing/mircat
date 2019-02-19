@@ -3,7 +3,7 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "Process": "obo:",
         "@language": "en",
-        "ID": "obo:",
+        "ID": "obo:IAO_0000578",
         "currentID": "obo:",
         "processName": "obo:",
         "successorID": "obo:"

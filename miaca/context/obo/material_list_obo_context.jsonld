@@ -3,7 +3,7 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "MaterialList": "obo:",
         "@language": "en",
-        "ID": "obo:",
+        "ID": "obo:IAO_0000578",
         "cellLine": "obo:CLO_0000031",
         "reagent": "obo:CHEBI_33893",
         "compositeReagent": "obo:REX_0000057"
