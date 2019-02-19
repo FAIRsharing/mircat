@@ -15,7 +15,7 @@ The mapping file for the whole MIACA schema network is available through this UR
 
 ## Visualisations
 
-Visualise the schemas here: https://fairsharing.github.io/JSONschema-documenter/?schema_url=https://w3id.org/mircat/miaca/schema/miaca_schema.json&
+Visualise the schemas here: https://fairsharing.github.io/JSONschema-documenter/?schema_url=https://w3id.org/mircat/miaca/schema/miaca_schema.json
 
 Visualise the schemas with the annotations (context files) here: https://fairsharing.github.io/JSONschema-documenter/?schema_url=https://w3id.org/mircat/miaca/schema/miaca_schema.json&context_mapping_url=https://w3id.org/mircat/miaca/schema_context_mapping.json
 
