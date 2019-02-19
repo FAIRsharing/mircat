@@ -3,15 +3,15 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "Project": "obo:OBI_0000011",
         "@language": "en",
-        "dataProcessing": "obo:",
-        "materialList": "obo:",
-        "projectDescription": "obo:",
-        "processLine": "obo:",
-        "cellAssay": "obo:",
-        "arraySupport": "obo:",
+        "dataProcessing": "obo:OBI_0200000",
+        "materialList": "obo:OBI_0000747",
+        "projectDescription": "obo:OBI_0001615",
+        "processLine": "obo:BFO_0000015",
+        "cellAssay": "obo:NCIT_C15959",
+        "arraySupport": "obo:OBI_0001865",
         "ID": "obo:IAO_0000578",
-        "application": "obo:",
-        "instrument": "obo:",
-        "source": "obo:"
+        "application": "obo:IAO_0000311",
+        "instrument": "obo:OBI_0000968",
+        "source": "obo:NCBITaxon_9606"
     }
 }

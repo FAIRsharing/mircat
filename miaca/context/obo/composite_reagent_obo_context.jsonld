@@ -3,7 +3,7 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "CompositeReagent": "obo:",
         "@language": "en",
-        "compReagentName": "obo:",
+        "compReagentName": "obo:IAO_0000590",
         "comment": "obo:NCIT_C25393",
         "reagentList": "obo:CHEBI_33893"
     }

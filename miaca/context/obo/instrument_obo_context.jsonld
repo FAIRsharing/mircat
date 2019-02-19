@@ -7,7 +7,7 @@
         "instrumentName": "obo:IAO_0000590",
         "instrumentModel": "obo:MS_1000031",
         "instrumentType": "obo:PRIDE_0000163",
-        "instrumentSpec": "obo:",
+        "instrumentSpec": "obo:NCIT_C44175",
         "vendor": "obo:NCIT_C68608"
     }
 }

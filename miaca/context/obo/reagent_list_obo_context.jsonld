@@ -4,6 +4,6 @@
         "ReagentList": "obo:CHEBI_33893",
         "@language": "en",
         "ID": "obo:IAO_0000578",
-        "reagents": "obo:"
+        "reagents": "obo:CHEBI_33893"
     }
 }

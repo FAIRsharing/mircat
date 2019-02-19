@@ -1,7 +1,7 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "MaterialList": "obo:",
+        "MaterialList": "obo:NCIT_C43432",
         "@language": "en",
         "ID": "obo:IAO_0000578",
         "cellLine": "obo:CLO_0000031",

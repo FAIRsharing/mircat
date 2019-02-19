@@ -5,19 +5,19 @@
         "@language": "en",
         "comment": "obo:NCIT_C25393",
         "solvent": "obo:CHEBI_46787",
-        "array": "obo:",
+        "array": "obo:OBI_0001865",
         "reagentName": "obo:IAO_0000590",
-        "virusRef": "obo:",
-        "compoundRef": "obo:",
-        "type": "obo:",
+        "virusRef": "obo:NCIT_C14283",
+        "compoundRef": "obo:MSIO_0000023",
+        "type": "obo:NCIT_C25284",
         "stockConc": "obo:CHMO_0002820",
-        "struct": "obo:",
+        "struct": "obo:NCIT_C103240",
         "ID": "obo:IAO_0000578",
-        "targetID": "obo:",
-        "stockConcUnit": "obo:",
+        "targetID": "obo:IAO_0000578",
+        "stockConcUnit": "obo:UO_0000051",
         "libraryRef": "obo:ERO_0001194",
-        "targetSpecies": "obo:",
+        "targetSpecies": "obo:OBI_0100026",
         "vendor": "obo:NCIT_C68608",
-        "efficiency": "obo:"
+        "efficiency": "obo:PATO_0001029"
     }
 }

@@ -1,14 +1,14 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "Dbreference": "obo:",
+        "Dbreference": "obo:NCIT_C15426",
         "@language": "en",
         "ID": "obo:IAO_0000578",
-        "db": "obo:",
-        "refTypeAc": "obo:",
-        "refType": "obo:",
-        "secondary": "obo:",
-        "version": "obo:",
-        "dbAc": "obo:"
+        "db": "obo:NCIT_C15426",
+        "refTypeAc": "obo:NCIT_C25396",
+        "refType": "obo:NCIT_C25284",
+        "secondary": "obo:NCIT_C25667",
+        "version": "obo:NCIT_C25714",
+        "dbAc": "obo:NCIT_C25402"
     }
 }

@@ -54,7 +54,7 @@
       "minLength": 1
     },
     "refType": {
-      "description": "Reference type, e.g. 'Identity' if this reference referes to an Identical object in the external database, or 'see-also' for additional information. Controlled by CV.",
+      "description": "Reference type, e.g. 'Identity' if this reference refers to an Identical object in the external database, or 'see-also' for additional information. Controlled by CV.",
       "type": "string",
       "minLength": 1
     },

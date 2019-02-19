@@ -1,11 +1,11 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "Da": "obo:",
+        "Da": "obo:ERO_0001309",
         "@language": "en",
         "ID": "obo:IAO_0000578",
-        "reference": "obo:",
+        "reference": "obo:NCIT_C25641",
         "instrument": "obo:OBI_0000968",
-        "settings": "obo:"
+        "settings": "obo:NCIT_C44175"
     }
 }

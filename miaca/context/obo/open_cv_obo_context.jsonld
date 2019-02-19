@@ -1,9 +1,10 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "OpenCv": "obo:",
+        "sio": "http://semanticscience.org/resource/",
+        "OpenCv": "obo:NCIT_C44272",
         "@language": "en",
         "name": "obo:IAO_0000590",
-        "xref": "obo:"
+        "xref": "sio:SIO_001171"
     }
 }
