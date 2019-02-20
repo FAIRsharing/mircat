@@ -1,11 +1,11 @@
 {
     "@context": {
-        "ontologyID": "obo:IAO_0000578",
-        "ClOntology": "obo:NCIT_C44272",
         "@language": "en",
-        "ontologyName": "obo:IAO_0000590",
-        "is_a": "rdf:type",
+        "obo": "http://purl.obolibrary.org/obo/",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "obo": "http://purl.obolibrary.org/obo/"
+        "ontologyID": "obo:IAO_0000578",
+        "is_a": "rdf:type",
+        "ClOntology": "obo:NCIT_C44272",
+        "ontologyName": "obo:IAO_0000590"
     }
 }

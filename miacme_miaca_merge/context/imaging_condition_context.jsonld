@@ -1,18 +1,18 @@
 {
     "@context": {
-        "timeSeriesInterval": "obo:IAO_0000584",
-        "pixels": "obo:NCIT_C48367",
-        "@language": "en",
-        "modality": "obo:FBbi_00000222 ",
-        "timeSeriesIntervalUnit": "obo:UO_0000003",
-        "objectiveLens": "obo:ERO_0000453",
-        "imageSequenceType": "obo:NCIT_C69268",
-        "observationPeriodUnit": "obo:UO_0000003",
-        "numericalAperture": "obo:NCIT_C44175",
-        "observationPeriod": "obo:NCIT_C25616",
-        "bao": "http://www.bioassayontology.org/bao#",
-        "channelDefinition": "bao:BAO_0000184",
         "obo": "http://purl.obolibrary.org/obo/",
-        "ImagingCondition": "obo:FBbi_00000222"
+        "bao": "http://www.bioassayontology.org/bao#",
+        "modality": "obo:FBbi_00000222 ",
+        "ImagingCondition": "obo:FBbi_00000222",
+        "observationPeriodUnit": "obo:UO_0000003",
+        "observationPeriod": "obo:NCIT_C25616",
+        "@language": "en",
+        "channelDefinition": "bao:BAO_0000184",
+        "timeSeriesInterval": "obo:IAO_0000584",
+        "timeSeriesIntervalUnit": "obo:UO_0000003",
+        "imageSequenceType": "obo:NCIT_C69268",
+        "pixels": "obo:NCIT_C48367",
+        "objectiveLens": "obo:ERO_0000453",
+        "numericalAperture": "obo:NCIT_C44175"
     }
 }

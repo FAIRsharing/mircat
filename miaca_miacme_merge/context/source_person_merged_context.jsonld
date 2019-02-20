@@ -1,0 +1,22 @@
+{
+    "@context": {
+        "email": "obo:IAO_0000429",
+        "ID": "obo:IAO_0000578",
+        "phone": "sio:SIO_001324",
+        "name": "obo:IAO_0000590",
+        "institution": "obo:ERO_0000066",
+        "roles": "obo:OBI_0000202",
+        "Source": "obo:NCBITaxon_9606",
+        "country": "sio:SIO_000664",
+        "fax": "sio:SIO_001321",
+        "@language": "en",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "city": "sio:SIO_000665",
+        "sio": "http://semanticscience.org/resource/",
+        "department": "sio:SIO_000686",
+        "address": "obo:IAO_0000422",
+        "firstName": "obo:IAO_0020016",
+        "identifier": "obo:IAO_0000577",
+        "identifierSource": "obo:OBI_0000245"
+    }
+}

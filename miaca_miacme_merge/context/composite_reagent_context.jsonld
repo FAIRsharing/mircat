@@ -1,10 +1,10 @@
 {
     "@context": {
-        "compReagentName": "obo:IAO_0000590",
         "@language": "en",
+        "compReagentName": "obo:IAO_0000590",
         "obo": "http://purl.obolibrary.org/obo/",
-        "CompositeReagent": "obo:",
         "reagentList": "obo:CHEBI_33893",
-        "comment": "obo:NCIT_C25393"
+        "comment": "obo:NCIT_C25393",
+        "CompositeReagent": "obo:"
     }
 }

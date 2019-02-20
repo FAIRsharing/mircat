@@ -1,24 +1,11 @@
 {
+    "description": "JSON-schema representing an investigation in MIACME",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/data_schema.json",
     "version": "1.0",
     "properties": {
-        "extractedFeatures": {
-            "items": {
-                "type": "string"
-            },
-            "type": "array"
-        },
-        "@id": {
-            "format": "uri",
-            "type": "string",
-            "description": "The JSON-LD identifier"
-        },
-        "processedImages": {
-            "type": "string"
-        },
-        "rawImages": {
-            "type": "string"
-        },
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -29,20 +16,33 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
+            ]
         },
         "@type": {
-            "type": "string",
+            "description": "The JSON-LD type",
             "enum": [
                 "Data"
             ],
-            "description": "The JSON-LD type"
+            "type": "string"
+        },
+        "processedImages": {
+            "type": "string"
+        },
+        "rawImages": {
+            "type": "string"
+        },
+        "extractedFeatures": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "format": "uri",
+            "type": "string"
         }
     },
-    "title": "MIACME data schema",
     "type": "object",
-    "description": "JSON-schema representing an investigation in MIACME",
-    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/data_schema.json",
-    "$schema": "http://json-schema.org/draft-04/schema"
+    "title": "MIACME data schema"
 }

@@ -6,11 +6,12 @@
         "source": "obo:NCIT_C25683",
         "cellLineID": "obo:IAO_0000578",
         "cellType": "obo:CL_0000000",
-        "species": "obo:OBI_0100026",
+        "specificCellDetails": "obo:CL_0000000",
         "@language": "en",
-        "CellSource": "obo:CL_0000000",
         "organ": "obo:UBERON_0000062",
+        "CellModel": "obo:CL_0000000",
         "reference": "obo:PRIDE_0000400",
+        "organism": "obo:OBI_0100026",
         "tissue": "obo:UBERON_0000479"
     }
 }

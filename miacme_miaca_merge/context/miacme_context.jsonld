@@ -1,8 +1,8 @@
 {
     "@context": {
-        "Miacme": "obo:MS_1000900",
         "investigation": "obo:OBI_0000011",
         "@language": "en",
-        "obo": "http://purl.obolibrary.org/obo/"
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Miacme": "obo:MS_1000900"
     }
 }

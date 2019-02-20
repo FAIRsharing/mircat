@@ -1,7 +1,11 @@
 {
-    "version": "1.0",
+    "description": "Information about a calendar date or timestamp indicating day, month, year and time of an event.",
+    "additionalProperties": false,
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/date_schema.json",
     "properties": {
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -12,39 +16,35 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
-        },
-        "date": {
-            "format": "date-time",
-            "type": "string",
-            "description": "A date following the ISO8601 standard."
-        },
-        "@id": {
-            "format": "uri",
-            "type": "string",
-            "description": "The JSON-LD identifier"
-        },
-        "type": {
-            "$ref": "annotation_schema.json#",
-            "description": "The type of date, used to specify the process which is being timestamped by the date attribute value, ideally comes from a controlled terminology."
+            ]
         },
         "@type": {
-            "type": "string",
+            "description": "The JSON-LD type",
             "enum": [
                 "Date"
             ],
-            "description": "The JSON-LD type"
+            "type": "string"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "format": "uri",
+            "type": "string"
+        },
+        "type": {
+            "description": "The type of date, used to specify the process which is being timestamped by the date attribute value, ideally comes from a controlled terminology.",
+            "$ref": "annotation_schema.json#"
+        },
+        "date": {
+            "description": "A date following the ISO8601 standard.",
+            "format": "date-time",
+            "type": "string"
         }
     },
-    "title": "MIACME date schema",
-    "additionalProperties": false,
-    "type": "object",
-    "description": "Information about a calendar date or timestamp indicating day, month, year and time of an event.",
-    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/date_schema.json",
+    "version": "1.0",
     "required": [
         "date",
         "type"
     ],
-    "$schema": "http://json-schema.org/draft-04/schema"
+    "type": "object",
+    "title": "MIACME date schema"
 }

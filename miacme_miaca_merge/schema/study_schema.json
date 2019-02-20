@@ -1,45 +1,71 @@
 {
+    "description": "JSON-schema representing a study in MIACME. A planned activity that consists on study planning, study design execution,  documentation and which produces conclusion(s).",
+    "additionalProperties": false,
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/study_schema.json",
     "version": "1.0",
     "properties": {
-        "data": {
-            "$ref": "data_schema.json#",
-            "description": "The data generated in this study."
-        },
-        "title": {
-            "type": "string",
-            "description": "A short sentence naming the study."
-        },
-        "imaging_condition": {
-            "$ref": "imaging_condition_schema.json#",
-            "description": "The settings used for imaging."
-        },
-        "type": {
-            "type": "string",
-            "description": "The type of study"
-        },
-        "description": {
-            "type": "string",
-            "description": "A textual narrative comprised of one or more statements about the study."
-        },
         "conclusions": {
+            "description": "A set of statements summarizing the findings of the study. It could be a URI referring to a nanopublication.",
             "items": {
                 "type": "string"
             },
-            "type": "array",
-            "description": "A set of statements summarizing the findings of the study. It could be a URI referring to a nanopublication."
+            "type": "array"
         },
-        "identifierSource": {
-            "type": "string",
-            "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier."
+        "publications": {
+            "description": "Scholarly articles associated with the investigation, usually describing the methods applied and conclusions reached by the investigation.",
+            "items": {
+                "$ref": "publication_schema.json#"
+            },
+            "type": "array"
+        },
+        "dates": {
+            "description": "Dates relevant to the study.",
+            "items": {
+                "$ref": "date_schema.json#"
+            },
+            "type": "array"
+        },
+        "contacts": {
+            "description": "The person(s) which contributed to the study, such as the Principal Investigator/corresponding author in publications or other researchers involved.",
+            "items": {
+                "$ref": "person_schema.json#"
+            },
+            "type": "array"
+        },
+        "experimental_setup": {
+            "description": "Set of properties that in combination describe the experiment or experiments in the study.",
+            "$ref": "experimental_setup_schema.json#"
+        },
+        "data": {
+            "description": "The data generated in this study.",
+            "$ref": "data_schema.json#"
+        },
+        "type": {
+            "description": "The type of study",
+            "type": "string"
+        },
+        "title": {
+            "description": "A short sentence naming the study.",
+            "type": "string"
         },
         "acknowledges": {
+            "description": "The grant(s) which funded and supported the investigation.",
             "items": {
                 "$ref": "grant_schema.json#"
             },
-            "type": "array",
-            "description": "The grant(s) which funded and supported the investigation."
+            "type": "array"
+        },
+        "MIACMEversion": {
+            "description": "The version of MIACME this dataset description should be compliant with.",
+            "type": "string"
+        },
+        "identifierSource": {
+            "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier.",
+            "type": "string"
         },
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -50,63 +76,37 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
+            ]
+        },
+        "description": {
+            "description": "A textual narrative comprised of one or more statements about the study.",
+            "type": "string"
+        },
+        "identifier": {
+            "description": "Primary identifier for the study or experiment.",
+            "type": "string"
+        },
+        "imaging_condition": {
+            "description": "The settings used for imaging.",
+            "$ref": "imaging_condition_schema.json#"
         },
         "@type": {
-            "type": "string",
+            "description": "The JSON-LD type",
             "enum": [
                 "Study"
             ],
-            "description": "The JSON-LD type"
-        },
-        "MIACMEversion": {
-            "type": "string",
-            "description": "The version of MIACME this dataset description should be compliant with."
-        },
-        "@id": {
-            "format": "uri",
-            "type": "string",
-            "description": "The JSON-LD identifier"
-        },
-        "identifier": {
-            "type": "string",
-            "description": "Primary identifier for the study or experiment."
-        },
-        "publications": {
-            "items": {
-                "$ref": "publication_schema.json#"
-            },
-            "type": "array",
-            "description": "Scholarly articles associated with the investigation, usually describing the methods applied and conclusions reached by the investigation."
+            "type": "string"
         },
         "MIACMEcompliance": {
-            "type": "string",
-            "description": "The result of the validation for MIACME compliance."
+            "description": "The result of the validation for MIACME compliance.",
+            "type": "string"
         },
-        "contacts": {
-            "items": {
-                "$ref": "person_schema.json#"
-            },
-            "type": "array",
-            "description": "The person(s) which contributed to the study, such as the Principal Investigator/corresponding author in publications or other researchers involved."
-        },
-        "experimental_setup": {
-            "$ref": "experimental_setup_schema.json#",
-            "description": "Set of properties that in combination describe the experiment or experiments in the study."
-        },
-        "dates": {
-            "items": {
-                "$ref": "date_schema.json#"
-            },
-            "type": "array",
-            "description": "Dates relevant to the study."
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "format": "uri",
+            "type": "string"
         }
     },
-    "title": "MIACME study schema",
-    "additionalProperties": false,
     "type": "object",
-    "description": "JSON-schema representing a study in MIACME. A planned activity that consists on study planning, study design execution,  documentation and which produces conclusion(s).",
-    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/study_schema.json",
-    "$schema": "http://json-schema.org/draft-04/schema"
+    "title": "MIACME study schema"
 }

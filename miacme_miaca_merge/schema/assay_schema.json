@@ -1,14 +1,10 @@
 {
-    "version": "1.0",
+    "description": "JSON-schema representing the cell model in a cell migration experiment.",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/assay_schema.json",
     "properties": {
-        "@type": {
-            "type": "string",
-            "enum": [
-                "Assay"
-            ],
-            "description": "The JSON-LD type"
-        },
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -19,30 +15,34 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
-        },
-        "type": {
-            "type": "string",
-            "description": "The kind of assay."
-        },
-        "cellInput": {
-            "type": "string",
-            "description": "The manner in which the cell population is presented at the start of the assay"
+            ]
         },
         "@id": {
+            "description": "The JSON-LD identifier",
             "format": "uri",
-            "type": "string",
-            "description": "The JSON-LD identifier"
+            "type": "string"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "enum": [
+                "Assay"
+            ],
+            "type": "string"
+        },
+        "cellInput": {
+            "description": "The manner in which the cell population is presented at the start of the assay",
+            "type": "string"
+        },
+        "type": {
+            "description": "The kind of assay.",
+            "type": "string"
         }
     },
-    "title": "MIACME assay schema",
-    "type": "object",
-    "description": "JSON-schema representing the cell model in a cell migration experiment.",
-    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/assay_schema.json",
+    "version": "1.0",
     "required": [
         "type",
         "cellInput"
     ],
-    "$schema": "http://json-schema.org/draft-04/schema"
+    "type": "object",
+    "title": "MIACME assay schema"
 }

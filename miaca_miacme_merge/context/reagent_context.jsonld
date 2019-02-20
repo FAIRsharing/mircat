@@ -1,23 +1,23 @@
 {
     "@context": {
-        "efficiency": "obo:PATO_0001029",
-        "stockConcUnit": "obo:UO_0000051",
-        "array": "obo:OBI_0001865",
-        "@language": "en",
-        "type": "obo:NCIT_C25284",
-        "targetID": "obo:IAO_0000578",
-        "struct": "obo:NCIT_C103240",
-        "Reagent": "obo:CHEBI_33893",
-        "reagentName": "obo:IAO_0000590",
-        "ID": "obo:IAO_0000578",
         "vendor": "obo:NCIT_C68608",
-        "targetSpecies": "obo:OBI_0100026",
-        "comment": "obo:NCIT_C25393",
-        "virusRef": "obo:NCIT_C14283",
+        "struct": "obo:NCIT_C103240",
+        "ID": "obo:IAO_0000578",
         "solvent": "obo:CHEBI_46787",
-        "libraryRef": "obo:ERO_0001194",
+        "reagentName": "obo:IAO_0000590",
+        "stockConc": "obo:CHMO_0002820",
+        "type": "obo:NCIT_C25284",
         "compoundRef": "obo:MSIO_0000023",
+        "@language": "en",
+        "targetID": "obo:IAO_0000578",
+        "stockConcUnit": "obo:UO_0000051",
         "obo": "http://purl.obolibrary.org/obo/",
-        "stockConc": "obo:CHMO_0002820"
+        "libraryRef": "obo:ERO_0001194",
+        "Reagent": "obo:CHEBI_33893",
+        "virusRef": "obo:NCIT_C14283",
+        "array": "obo:OBI_0001865",
+        "efficiency": "obo:PATO_0001029",
+        "targetSpecies": "obo:OBI_0100026",
+        "comment": "obo:NCIT_C25393"
     }
 }
