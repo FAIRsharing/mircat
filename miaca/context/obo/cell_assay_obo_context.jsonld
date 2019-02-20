@@ -1,6 +1,7 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
+        "efo": "http://www.ebi.ac.uk/efo/",
         "CellAssay": "obo:NCIT_C15959",
         "@language": "en",
         "ID": "obo:IAO_0000578",
