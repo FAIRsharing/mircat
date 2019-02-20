@@ -1,46 +1,10 @@
 {
+    "description": "Description of the processes applied to analyze the raw-data in order to generate a hit list. Data analysis is usually carried out sequentially, applying a number of algorithms and analysis tools",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/data_processing_schema.json",
     "properties": {
-        "phenoDesc": {
-            "items": {
-                "properties": {
-                    "link": {
-                        "type": "string",
-                        "description": "link to raw data"
-                    },
-                    "processName": {
-                        "type": "string",
-                        "description": "The name of the process"
-                    },
-                    "type": {
-                        "type": "string"
-                    },
-                    "description": {
-                        "type": "string",
-                        "description": "description of the phenotype"
-                    },
-                    "format": {
-                        "type": "string",
-                        "description": "ASCII, TIFF, WMA,\u2026"
-                    },
-                    "protocol": {
-                        "type": "string",
-                        "description": "for the characterization and classification of phenotypic observation"
-                    },
-                    "timeSpace": {
-                        "type": "string",
-                        "description": "Time and space parameters"
-                    },
-                    "ID": {
-                        "type": "string",
-                        "description": "The identifier"
-                    }
-                },
-                "type": "object"
-            },
-            "type": "array",
-            "description": "A phenotypic description is usually obtained by manual observation of images and/or interpretation of processed data."
-        },
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -51,103 +15,139 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
-        },
-        "@id": {
-            "format": "uri",
-            "type": "string",
-            "description": "The JSON-LD identifier"
-        },
-        "rawData": {
-            "processedData": {
-                "items": {
-                    "properties": {
-                        "version": {
-                            "type": "string",
-                            "description": "the version of the softwareused to generate the file"
-                        },
-                        "reference": {
-                            "type": "string",
-                            "description": "reference to a publication"
-                        },
-                        "processName": {
-                            "type": "string",
-                            "description": "The name of the process"
-                        },
-                        "type": {
-                            "type": "string",
-                            "description": "type"
-                        },
-                        "parameters": {
-                            "type": "array",
-                            "description": "the list of parameter settings used to run the software used to generate the file"
-                        },
-                        "format": {
-                            "type": "string",
-                            "description": "ASCII, TIFF, WMA,\u2026"
-                        },
-                        "link": {
-                            "type": "string",
-                            "description": "link to raw data"
-                        },
-                        "software": {
-                            "type": "string",
-                            "description": "the name of the software used to generate the file"
-                        },
-                        "ID": {
-                            "type": "string",
-                            "description": "The identifier"
-                        },
-                        "algorithm": {
-                            "type": "string",
-                            "description": "algorithm"
-                        }
-                    },
-                    "type": "object"
-                },
-                "type": "array",
-                "description": "The raw data can be processed either manually or through automated computational methods. Processing commonly generates numbers and/or phenotypic descriptions."
-            },
-            "items": {
-                "properties": {
-                    "format": {
-                        "type": "string",
-                        "description": "ASCII, TIFF, WMA,\u2026"
-                    },
-                    "link": {
-                        "type": "string",
-                        "description": "link to raw data"
-                    },
-                    "ID": {
-                        "type": "string",
-                        "description": "The identifier"
-                    },
-                    "type": {
-                        "type": "string",
-                        "description": "number, image, movie,\u2026"
-                    }
-                },
-                "type": "object"
-            },
-            "type": "array",
-            "description": "Description of raw data."
-        },
-        "ID": {
-            "type": "string",
-            "description": "The identifier"
+            ]
         },
         "@type": {
-            "type": "string",
+            "description": "The JSON-LD type",
             "enum": [
                 "DataProcessing"
             ],
-            "description": "The JSON-LD type"
+            "type": "string"
+        },
+        "rawData": {
+            "description": "Description of raw data.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "link": {
+                        "description": "link to raw data",
+                        "type": "string"
+                    },
+                    "format": {
+                        "description": "ASCII, TIFF, WMA,\u2026",
+                        "type": "string"
+                    },
+                    "ID": {
+                        "description": "The identifier",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "number, image, movie,\u2026",
+                        "type": "string"
+                    }
+                }
+            },
+            "type": "array",
+            "processedData": {
+                "description": "The raw data can be processed either manually or through automated computational methods. Processing commonly generates numbers and/or phenotypic descriptions.",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "ID": {
+                            "description": "The identifier",
+                            "type": "string"
+                        },
+                        "parameters": {
+                            "description": "the list of parameter settings used to run the software used to generate the file",
+                            "type": "array"
+                        },
+                        "software": {
+                            "description": "the name of the software used to generate the file",
+                            "type": "string"
+                        },
+                        "processName": {
+                            "description": "The name of the process",
+                            "type": "string"
+                        },
+                        "link": {
+                            "description": "link to raw data",
+                            "type": "string"
+                        },
+                        "reference": {
+                            "description": "reference to a publication",
+                            "type": "string"
+                        },
+                        "version": {
+                            "description": "the version of the softwareused to generate the file",
+                            "type": "string"
+                        },
+                        "algorithm": {
+                            "description": "algorithm",
+                            "type": "string"
+                        },
+                        "format": {
+                            "description": "ASCII, TIFF, WMA,\u2026",
+                            "type": "string"
+                        },
+                        "type": {
+                            "description": "type",
+                            "type": "string"
+                        }
+                    }
+                },
+                "type": "array"
+            }
+        },
+        "ID": {
+            "description": "The identifier",
+            "type": "string"
+        },
+        "phenoDesc": {
+            "description": "A phenotypic description is usually obtained by manual observation of images and/or interpretation of processed data.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "description": "description of the phenotype",
+                        "type": "string"
+                    },
+                    "timeSpace": {
+                        "description": "Time and space parameters",
+                        "type": "string"
+                    },
+                    "ID": {
+                        "description": "The identifier",
+                        "type": "string"
+                    },
+                    "processName": {
+                        "description": "The name of the process",
+                        "type": "string"
+                    },
+                    "link": {
+                        "description": "link to raw data",
+                        "type": "string"
+                    },
+                    "format": {
+                        "description": "ASCII, TIFF, WMA,\u2026",
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "protocol": {
+                        "description": "for the characterization and classification of phenotypic observation",
+                        "type": "string"
+                    }
+                }
+            },
+            "type": "array"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "format": "uri",
+            "type": "string"
         }
     },
-    "title": "MIACA (Minimum Information about a Cellular Assay) data processing schema",
     "type": "object",
-    "description": "Description of the processes applied to analyze the raw-data in order to generate a hit list. Data analysis is usually carried out sequentially, applying a number of algorithms and analysis tools",
-    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/data_processing_schema.json",
-    "$schema": "http://json-schema.org/draft-04/schema"
+    "title": "MIACA (Minimum Information about a Cellular Assay) data processing schema"
 }

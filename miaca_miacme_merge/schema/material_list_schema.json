@@ -1,23 +1,10 @@
 {
+    "description": "JSON-schema representing MIACA material list.",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/material_list_schema.json",
     "properties": {
-        "compositeReagent": {
-            "$ref": "composite_reagent_schema.json#"
-        },
-        "@id": {
-            "format": "uri",
-            "type": "string",
-            "description": "The JSON-LD identifier"
-        },
-        "ID": {
-            "type": "string"
-        },
-        "reagent": {
-            "$ref": "reagent_schema.json#"
-        },
-        "cellLine": {
-            "$ref": "cell_line_schema.json#"
-        },
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -28,18 +15,31 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
+            ]
+        },
+        "cellLine": {
+            "$ref": "cell_line_schema.json#"
         },
         "@type": {
+            "description": "The JSON-LD type",
             "format": "uri",
-            "type": "string",
-            "description": "The JSON-LD type"
+            "type": "string"
+        },
+        "ID": {
+            "type": "string"
+        },
+        "reagent": {
+            "$ref": "reagent_schema.json#"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "format": "uri",
+            "type": "string"
+        },
+        "compositeReagent": {
+            "$ref": "composite_reagent_schema.json#"
         }
     },
-    "title": "MIACA material list chema",
     "type": "object",
-    "description": "JSON-schema representing MIACA material list.",
-    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/material_list_schema.json",
-    "$schema": "http://json-schema.org/draft-04/schema"
+    "title": "MIACA material list chema"
 }

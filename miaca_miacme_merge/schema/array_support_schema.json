@@ -1,31 +1,10 @@
 {
+    "description": "Description of array support types (reaction vessels) that are used during the project: i.e. single eppendorf tube, 96-well plazes, or [glass] slides, with details such as manufacturer, order number; size.",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/array_support_schema.json",
     "properties": {
-        "vendor": {
-            "$ref": "vendor_schema.json",
-            "description": "Contact details of the source of the reaction vessels, e.g. company"
-        },
-        "size": {
-            "$ref": "array_support_size_schema.json#",
-            "description": "Size of reaction vessel, e.g. volume or surface area."
-        },
-        "nameType": {
-            "$ref": "ontology_value_source_schema.json#",
-            "description": "Type of vessel used,: i.e. single eppendorf tube, 96-well plate, etc."
-        },
-        "@id": {
-            "format": "uri",
-            "type": "string",
-            "description": "The JSON-LD identifier"
-        },
-        "@type": {
-            "format": "uri",
-            "type": "string",
-            "description": "The JSON-LD type"
-        },
-        "ID": {
-            "type": "string"
-        },
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -36,13 +15,34 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
+            ]
+        },
+        "vendor": {
+            "description": "Contact details of the source of the reaction vessels, e.g. company",
+            "$ref": "vendor_schema.json"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "format": "uri",
+            "type": "string"
+        },
+        "ID": {
+            "type": "string"
+        },
+        "size": {
+            "description": "Size of reaction vessel, e.g. volume or surface area.",
+            "$ref": "array_support_size_schema.json#"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "format": "uri",
+            "type": "string"
+        },
+        "nameType": {
+            "description": "Type of vessel used,: i.e. single eppendorf tube, 96-well plate, etc.",
+            "$ref": "ontology_value_source_schema.json#"
         }
     },
-    "title": "MIACA array support type schema",
     "type": "object",
-    "description": "Description of array support types (reaction vessels) that are used during the project: i.e. single eppendorf tube, 96-well plazes, or [glass] slides, with details such as manufacturer, order number; size.",
-    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/array_support_schema.json",
-    "$schema": "http://json-schema.org/draft-04/schema"
+    "title": "MIACA array support type schema"
 }

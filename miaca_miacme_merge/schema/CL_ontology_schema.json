@@ -1,26 +1,11 @@
 {
+    "description": "Controlled vocabulary for celltypes",
+    "additionalProperties": false,
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/CL_ontology_schema.json",
     "properties": {
-        "ontologyID": {
-            "type": "string",
-            "description": "ID of cell.obo"
-        },
-        "@id": {
-            "format": "uri",
-            "type": "string",
-            "description": "The JSON-LD identifier"
-        },
-        "ontologyName": {
-            "type": "string",
-            "description": "name"
-        },
-        "is_a": {
-            "items": {
-                "type": "string"
-            },
-            "type": "array",
-            "description": "derived from other ontologyID"
-        },
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -31,19 +16,34 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
+            ]
         },
         "@type": {
+            "description": "The JSON-LD type",
             "format": "uri",
-            "type": "string",
-            "description": "The JSON-LD type"
+            "type": "string"
+        },
+        "ontologyID": {
+            "description": "ID of cell.obo",
+            "type": "string"
+        },
+        "is_a": {
+            "description": "derived from other ontologyID",
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "format": "uri",
+            "type": "string"
+        },
+        "ontologyName": {
+            "description": "name",
+            "type": "string"
         }
     },
-    "title": "MIACA CL ontology schema",
-    "additionalProperties": false,
     "type": "object",
-    "description": "Controlled vocabulary for celltypes",
-    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/CL_ontology_schema.json",
-    "$schema": "http://json-schema.org/draft-04/schema"
+    "title": "MIACA CL ontology schema"
 }

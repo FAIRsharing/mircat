@@ -1,0 +1,71 @@
+{
+    "description": "Merge between the MIACA application JSON schema and the MIACME publication schema",
+    "additionalProperties": false,
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/application_publication_merged_schema.json",
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "format": "uri",
+            "type": "string"
+        },
+        "ID": {
+            "type": "string"
+        },
+        "authors": {
+            "items": {
+                "$ref": "person_schema.json#"
+            },
+            "type": "array"
+        },
+        "pubref": {
+            "description": "reference to publication",
+            "type": "string"
+        },
+        "bibref": {
+            "description": "Bibliographic reference for the data generated during the project. Cross reference for the data source. Example: Entry in a database of databases.",
+            "$ref": "open_cv_schema.json#"
+        },
+        "title": {
+            "description": "The title of the publication.",
+            "type": "string"
+        },
+        "abstract": {
+            "description": "Application abstract, e. g. as taken from a publication",
+            "type": "string"
+        },
+        "identifierSource": {
+            "description": "Information about the organisation or namespace responsible for minting the identifier.",
+            "type": "string"
+        },
+        "date": {
+            "description": "The publication date.",
+            "$ref": "date_schema.json#"
+        },
+        "identifier": {
+            "description": "A persistent identifier for the publication, it should be a DOI or pubmed identifier",
+            "type": "string"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "format": "uri",
+            "type": "string"
+        }
+    },
+    "type": "object",
+    "title": "MIACA application JSON schema - MIACME publication schema merging"
+}

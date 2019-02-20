@@ -1,46 +1,10 @@
 {
+    "description": "A reagent as defined by MIACA, Reagents are media, media supplements, kits, buffers and solutions, water and so on. ",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/reagent_schema.json",
     "properties": {
-        "efficiency": {
-            "type": "string",
-            "description": "e.g., transfection/transduction efficiency of 'cell type' (average, cv) with \u2018Perturbator\u2019 (library)"
-        },
-        "stockConcUnit": {
-            "type": "string",
-            "enum": [
-                "mol/L",
-                "mmol/L",
-                "nmol/L"
-            ],
-            "description": "The unit of the stock concentration of the reagent"
-        },
-        "array": {
-            "type": "string",
-            "description": "description of array type and array support type/vessel"
-        },
-        "@id": {
-            "format": "uri",
-            "type": "string",
-            "description": "The JSON-LD identifier"
-        },
-        "type": {
-            "description": "reagent type, e. g. cDNA, small molecule, siRNA. If available, reference to a controlled vocabulary.",
-            "type": "string",
-            "@type": {
-                "type": "string",
-                "enum": [
-                    "MoleculeType"
-                ]
-            }
-        },
-        "targetID": {
-            "type": "string",
-            "description": "e.g. geneID of target gene in case of siRNA"
-        },
-        "struct": {
-            "type": "string",
-            "description": "e.g. sequence of siRNA; structure/ChEBI for compound"
-        },
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -51,87 +15,123 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
+            ]
         },
-        "reagentName": {
-            "type": "string",
-            "description": "the name of the chemical used as reagent"
-        },
-        "ID": {
-            "type": "string",
-            "description": "the identifier of the chemical used as reagent"
+        "struct": {
+            "description": "e.g. sequence of siRNA; structure/ChEBI for compound",
+            "type": "string"
         },
         "@type": {
+            "description": "The JSON-LD type",
             "format": "uri",
-            "type": "string",
-            "description": "The JSON-LD type"
+            "type": "string"
+        },
+        "ID": {
+            "description": "the identifier of the chemical used as reagent",
+            "type": "string"
+        },
+        "reagentName": {
+            "description": "the name of the chemical used as reagent",
+            "type": "string"
         },
         "vendor": {
-            "$ref": "vendor_schema.json",
-            "description": "Details to the vendor or manufacturer"
-        },
-        "targetSpecies": {
-            "type": "string",
-            "description": "Target Species e.g. if siRNA"
-        },
-        "comment": {
-            "type": "string",
-            "description": "Comment"
-        },
-        "virusRef": {
-            "properties": {
-                "titer": {
-                    "type": "string",
-                    "description": "a numerical expression of the quantity of virus in a given volume"
-                },
-                "type": {
-                    "type": "string",
-                    "description": "the type of virus"
-                }
-            },
-            "type": "object",
-            "description": "details if perturbator is virus"
+            "description": "Details to the vendor or manufacturer",
+            "$ref": "vendor_schema.json"
         },
         "stockConc": {
-            "type": "number",
-            "description": "The value of the reagent stock concentration"
+            "description": "The value of the reagent stock concentration",
+            "type": "number"
+        },
+        "type": {
+            "description": "reagent type, e. g. cDNA, small molecule, siRNA. If available, reference to a controlled vocabulary.",
+            "@type": {
+                "enum": [
+                    "MoleculeType"
+                ],
+                "type": "string"
+            },
+            "type": "string"
+        },
+        "array": {
+            "description": "description of array type and array support type/vessel",
+            "type": "string"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "format": "uri",
+            "type": "string"
+        },
+        "targetID": {
+            "description": "e.g. geneID of target gene in case of siRNA",
+            "type": "string"
+        },
+        "stockConcUnit": {
+            "description": "The unit of the stock concentration of the reagent",
+            "enum": [
+                "mol/L",
+                "mmol/L",
+                "nmol/L"
+            ],
+            "type": "string"
         },
         "solvent": {
-            "type": "string",
-            "description": "Solvent"
-        },
-        "compoundRef": {
-            "properties": {
-                "purity": {
-                    "type": "string",
-                    "description": "% of compounds with >80% purity"
-                },
-                "weight": {
-                    "type": "string",
-                    "description": "Average molecular weight"
-                },
-                "lipinski": {
-                    "type": "string",
-                    "description": "% of compound comply with Lipinski rule-of-5"
-                }
-            },
-            "type": "object",
-            "description": "details if perturbator is chemincal compound"
+            "description": "Solvent",
+            "type": "string"
         },
         "libraryRef": {
-            "$ref": "library_schema.json",
-            "description": "details on the library the perturbator is part of"
+            "description": "details on the library the perturbator is part of",
+            "$ref": "library_schema.json"
+        },
+        "virusRef": {
+            "description": "details if perturbator is virus",
+            "type": "object",
+            "properties": {
+                "titer": {
+                    "description": "a numerical expression of the quantity of virus in a given volume",
+                    "type": "string"
+                },
+                "type": {
+                    "description": "the type of virus",
+                    "type": "string"
+                }
+            }
+        },
+        "compoundRef": {
+            "description": "details if perturbator is chemincal compound",
+            "type": "object",
+            "properties": {
+                "lipinski": {
+                    "description": "% of compound comply with Lipinski rule-of-5",
+                    "type": "string"
+                },
+                "purity": {
+                    "description": "% of compounds with >80% purity",
+                    "type": "string"
+                },
+                "weight": {
+                    "description": "Average molecular weight",
+                    "type": "string"
+                }
+            }
+        },
+        "efficiency": {
+            "description": "e.g., transfection/transduction efficiency of 'cell type' (average, cv) with \u2018Perturbator\u2019 (library)",
+            "type": "string"
+        },
+        "targetSpecies": {
+            "description": "Target Species e.g. if siRNA",
+            "type": "string"
+        },
+        "comment": {
+            "description": "Comment",
+            "type": "string"
         }
     },
-    "title": "MIACA reagent schema",
-    "type": "object",
-    "description": "A reagent as defined by MIACA, Reagents are media, media supplements, kits, buffers and solutions, water and so on. ",
-    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/reagent_schema.json",
     "required": [
         "ReagentName",
         "ReagentID",
         "vendor"
     ],
-    "$schema": "http://json-schema.org/draft-04/schema"
+    "type": "object",
+    "title": "MIACA reagent schema"
 }

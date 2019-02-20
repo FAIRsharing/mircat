@@ -1,27 +1,10 @@
 {
+    "description": "Details to the vendor or manufacturer",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/vendor_schema.json",
     "properties": {
-        "lotNo": {
-            "type": "string",
-            "description": "LotNo "
-        },
-        "orderNo": {
-            "type": "string",
-            "description": "OrderNr"
-        },
-        "serialNo": {
-            "type": "string",
-            "description": "serialNo "
-        },
-        "@type": {
-            "format": "uri",
-            "type": "string",
-            "description": "The JSON-LD type"
-        },
-        "name": {
-            "type": "string",
-            "description": "name of the company"
-        },
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -32,18 +15,35 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
+            ]
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "format": "uri",
+            "type": "string"
+        },
+        "name": {
+            "description": "name of the company",
+            "type": "string"
+        },
+        "serialNo": {
+            "description": "serialNo ",
+            "type": "string"
+        },
+        "lotNo": {
+            "description": "LotNo ",
+            "type": "string"
+        },
+        "orderNo": {
+            "description": "OrderNr",
+            "type": "string"
         },
         "@id": {
+            "description": "The JSON-LD identifier",
             "format": "uri",
-            "type": "string",
-            "description": "The JSON-LD identifier"
+            "type": "string"
         }
     },
-    "title": "MIACA vendor type schema",
     "type": "object",
-    "description": "Details to the vendor or manufacturer",
-    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/vendor_schema.json",
-    "$schema": "http://json-schema.org/draft-04/schema"
+    "title": "MIACA vendor type schema"
 }

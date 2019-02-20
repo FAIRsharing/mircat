@@ -1,106 +1,40 @@
 {
+    "definitions": {
+        "concentration": {
+            "description": "",
+            "type": "string"
+        },
+        "volumeUnit": {
+            "description": "e.g. mL",
+            "enum": [
+                "pL",
+                "nL",
+                "uL",
+                "ml"
+            ],
+            "type": "string"
+        },
+        "volume": {
+            "description": "",
+            "type": "string"
+        },
+        "concentrationUnit": {
+            "description": "e.g. mol/L",
+            "enum": [
+                "pmol/L",
+                "nmol/L",
+                "umol/L",
+                "mmol/L"
+            ],
+            "type": "string"
+        }
+    },
+    "description": "Description of the conditions that are applied to CellLine during culturing of cells. \u2018Treatment* also covers the perturbation. More than one perturbator can be applied in the same \u2018Treatment\u2019. ",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/treatment_schema.json",
     "properties": {
-        "humidity": {
-            "type": "string",
-            "description": ""
-        },
-        "co2ContentUnit": {
-            "type": "string",
-            "description": ""
-        },
-        "conditionName": {
-            "type": "string",
-            "description": "a reference to an instrument used during the data acquisition"
-        },
-        "array": {
-            "description": "description of array type and vessel",
-            "type": "string",
-            "@type": {
-                "type": "string",
-                "enum": [
-                    "ArraySupportType"
-                ]
-            }
-        },
-        "@id": {
-            "format": "uri",
-            "type": "string",
-            "description": "The JSON-LD identifier"
-        },
-        "durationUnit": {
-            "type": "string",
-            "description": "e.g. %"
-        },
-        "co2Content": {
-            "type": "string",
-            "description": ""
-        },
-        "humidityUnit": {
-            "type": "string",
-            "description": "e.g. %"
-        },
-        "reagentName": {
-            "properties": {
-                "name": {
-                    "type": "string",
-                    "description": "the name of the reagent"
-                },
-                "anyOf": [
-                    {
-                        "$ref": "#/definitions/volume"
-                    },
-                    {
-                        "$ref": "#/definitions/volumeUnit"
-                    },
-                    {
-                        "$ref": "#/definitions/concentration"
-                    },
-                    {
-                        "$ref": "#/definitions/concentrationUnit"
-                    }
-                ]
-            },
-            "type": "object",
-            "description": "the name and characteristics of the chemical used as reagent"
-        },
-        "ID": {
-            "type": "string",
-            "description": "a UUID for the instance of treatment process"
-        },
-        "@type": {
-            "format": "uri",
-            "type": "string",
-            "description": "The JSON-LD type"
-        },
-        "duration": {
-            "type": "string",
-            "description": "e.g. %"
-        },
-        "compReagentName": {
-            "properties": {
-                "name": {
-                    "type": "string",
-                    "description": "the name of the reagent"
-                },
-                "anyOf": [
-                    {
-                        "$ref": "#/definitions/volume"
-                    },
-                    {
-                        "$ref": "#/definitions/volumeUnit"
-                    },
-                    {
-                        "$ref": "#/definitions/concentration"
-                    },
-                    {
-                        "$ref": "#/definitions/concentrationUnit"
-                    }
-                ]
-            },
-            "type": "object",
-            "description": "the name and characteristics of the chemical used as reagent"
-        },
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -111,71 +45,137 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
+            ]
         },
-        "cellDensity": {
-            "type": "string",
-            "description": ""
+        "@type": {
+            "description": "The JSON-LD type",
+            "format": "uri",
+            "type": "string"
+        },
+        "conditionName": {
+            "description": "a reference to an instrument used during the data acquisition",
+            "type": "string"
+        },
+        "durationUnit": {
+            "description": "e.g. %",
+            "type": "string"
         },
         "passageNo": {
-            "type": "string",
-            "description": ""
+            "description": "",
+            "type": "string"
+        },
+        "reagentName": {
+            "description": "the name and characteristics of the chemical used as reagent",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "description": "the name of the reagent",
+                    "type": "string"
+                },
+                "anyOf": [
+                    {
+                        "$ref": "#/definitions/volume"
+                    },
+                    {
+                        "$ref": "#/definitions/volumeUnit"
+                    },
+                    {
+                        "$ref": "#/definitions/concentration"
+                    },
+                    {
+                        "$ref": "#/definitions/concentrationUnit"
+                    }
+                ]
+            }
         },
         "temperature": {
-            "type": "string",
-            "description": ""
+            "description": "",
+            "type": "string"
         },
-        "comment": {
-            "type": "string",
-            "description": "an attribute to report observations"
+        "humidity": {
+            "description": "",
+            "type": "string"
+        },
+        "co2Content": {
+            "description": "",
+            "type": "string"
+        },
+        "array": {
+            "description": "description of array type and vessel",
+            "@type": {
+                "enum": [
+                    "ArraySupportType"
+                ],
+                "type": "string"
+            },
+            "type": "string"
         },
         "cellLine": {
-            "type": "string",
-            "description": ""
+            "description": "",
+            "type": "string"
+        },
+        "cellDensity": {
+            "description": "",
+            "type": "string"
+        },
+        "compReagentName": {
+            "description": "the name and characteristics of the chemical used as reagent",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "description": "the name of the reagent",
+                    "type": "string"
+                },
+                "anyOf": [
+                    {
+                        "$ref": "#/definitions/volume"
+                    },
+                    {
+                        "$ref": "#/definitions/volumeUnit"
+                    },
+                    {
+                        "$ref": "#/definitions/concentration"
+                    },
+                    {
+                        "$ref": "#/definitions/concentrationUnit"
+                    }
+                ]
+            }
+        },
+        "ID": {
+            "description": "a UUID for the instance of treatment process",
+            "type": "string"
+        },
+        "co2ContentUnit": {
+            "description": "",
+            "type": "string"
+        },
+        "humidityUnit": {
+            "description": "e.g. %",
+            "type": "string"
         },
         "temperatureUnit": {
-            "type": "string",
-            "description": ""
+            "description": "",
+            "type": "string"
+        },
+        "duration": {
+            "description": "e.g. %",
+            "type": "string"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "format": "uri",
+            "type": "string"
+        },
+        "comment": {
+            "description": "an attribute to report observations",
+            "type": "string"
         },
         "seedingDensity": {
-            "type": "string",
-            "description": ""
+            "description": "",
+            "type": "string"
         }
     },
-    "definitions": {
-        "concentration": {
-            "type": "string",
-            "description": ""
-        },
-        "concentrationUnit": {
-            "type": "string",
-            "enum": [
-                "pmol/L",
-                "nmol/L",
-                "umol/L",
-                "mmol/L"
-            ],
-            "description": "e.g. mol/L"
-        },
-        "volume": {
-            "type": "string",
-            "description": ""
-        },
-        "volumeUnit": {
-            "type": "string",
-            "enum": [
-                "pL",
-                "nL",
-                "uL",
-                "ml"
-            ],
-            "description": "e.g. mL"
-        }
-    },
-    "title": "MIACA treatment schema",
     "type": "object",
-    "description": "Description of the conditions that are applied to CellLine during culturing of cells. \u2018Treatment* also covers the perturbation. More than one perturbator can be applied in the same \u2018Treatment\u2019. ",
-    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/treatment_schema.json",
-    "$schema": "http://json-schema.org/draft-04/schema"
+    "title": "MIACA treatment schema"
 }

@@ -1,0 +1,65 @@
+{
+    "description": "Merge between the MIACA open_cv_schema and the MIACME annotation schema",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/open_cv_annotation_merged_schema.json",
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "value": {
+            "description": "The value of the annotation - it can be a string or a number (for coded values).",
+            "oneOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "format": "uri",
+            "type": "string"
+        },
+        "name": {
+            "description": "This contains the controlled vocabulary term",
+            "type": "string"
+        },
+        "xref": {
+            "description": "Refers to the term of the controlled vocabulary in an external database",
+            "$ref": "xref_schema.json#"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "format": "uri",
+            "type": "string"
+        },
+        "valueIRI": {
+            "description": "The IRI of a concept or ontology term associated with the value. It can also be an empty string",
+            "anyOf": [
+                {
+                    "format": "uri",
+                    "type": "string"
+                },
+                {
+                    "type": "string",
+                    "maxLength": 0
+                }
+            ]
+        }
+    },
+    "type": "object",
+    "title": "MIACA open_cv_schema - MIACME annotation schema merging"
+}
