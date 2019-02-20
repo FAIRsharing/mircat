@@ -1,0 +1,23 @@
+{
+    "@context": {
+        "efficiency": "obo:PATO_0001029",
+        "stockConcUnit": "obo:UO_0000051",
+        "array": "obo:OBI_0001865",
+        "@language": "en",
+        "type": "obo:NCIT_C25284",
+        "targetID": "obo:IAO_0000578",
+        "struct": "obo:NCIT_C103240",
+        "Reagent": "obo:CHEBI_33893",
+        "reagentName": "obo:IAO_0000590",
+        "ID": "obo:IAO_0000578",
+        "vendor": "obo:NCIT_C68608",
+        "targetSpecies": "obo:OBI_0100026",
+        "comment": "obo:NCIT_C25393",
+        "virusRef": "obo:NCIT_C14283",
+        "solvent": "obo:CHEBI_46787",
+        "libraryRef": "obo:ERO_0001194",
+        "compoundRef": "obo:MSIO_0000023",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "stockConc": "obo:CHMO_0002820"
+    }
+}

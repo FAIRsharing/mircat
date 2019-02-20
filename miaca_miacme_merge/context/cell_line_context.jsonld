@@ -1,0 +1,14 @@
+{
+    "@context": {
+        "CellLine": "obo:CLO_0000031",
+        "validation": "obo:ERO_0002025",
+        "cellSource": "obo:CL_0000000",
+        "cellLineName": "obo:IAO_0000590",
+        "passageNo": "obo:EFO_0007061",
+        "lineQC": "obo:ERO_0001219",
+        "ID": "obo:IAO_0000578",
+        "modifications": "obo:CLO_0000004",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "@language": "en"
+    }
+}

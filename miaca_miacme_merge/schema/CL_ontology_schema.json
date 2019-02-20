@@ -1,0 +1,49 @@
+{
+    "properties": {
+        "ontologyID": {
+            "type": "string",
+            "description": "ID of cell.obo"
+        },
+        "@id": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD identifier"
+        },
+        "ontologyName": {
+            "type": "string",
+            "description": "name"
+        },
+        "is_a": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array",
+            "description": "derived from other ontologyID"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "@type": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD type"
+        }
+    },
+    "title": "MIACA CL ontology schema",
+    "additionalProperties": false,
+    "type": "object",
+    "description": "Controlled vocabulary for celltypes",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/CL_ontology_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

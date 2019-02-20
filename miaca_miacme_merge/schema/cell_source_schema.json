@@ -1,0 +1,70 @@
+{
+    "properties": {
+        "tissue": {
+            "$ref": "ontology_value_source_schema.json#",
+            "description": "is a collection of interconnected cells that perform a similar function within an organism"
+        },
+        "@id": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD identifier"
+        },
+        "strain": {
+            "$ref": "ontology_value_source_schema.json#",
+            "description": "a variant of a cellType"
+        },
+        "species": {
+            "$ref": "ontology_value_source_schema.json#",
+            "description": "e.g. human"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "@type": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD type"
+        },
+        "cellLineID": {
+            "type": "string",
+            "description": "Controlled vocabulary ID. Description of the cell line used. (e.g. HeLa ATTC CCL2)"
+        },
+        "source": {
+            "$ref": "source_schema.json",
+            "description": "contact details refering to the CellLine"
+        },
+        "cellType": {
+            "$ref": "CL_ontology_schema.json#",
+            "description": "e.g. totipotent stem cell (CL:0000723)"
+        },
+        "provider": {
+            "type": "string",
+            "description": "e.g. ATCC"
+        },
+        "organ": {
+            "$ref": "ontology_value_source_schema.json#",
+            "description": "e.g. kidney"
+        },
+        "reference": {
+            "type": "string",
+            "description": "reference to publication"
+        }
+    },
+    "title": "MIACA cell source schema",
+    "additionalProperties": false,
+    "type": "object",
+    "description": "Cell source schema",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/cell_source_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

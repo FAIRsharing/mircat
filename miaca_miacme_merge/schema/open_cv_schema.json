@@ -1,0 +1,65 @@
+{
+    "properties": {
+        "@id": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD identifier"
+        },
+        "xref": {
+            "$ref": "xref_schema.json#",
+            "description": "Refers to the term of the controlled vocabulary in an external database"
+        },
+        "valueIRI": {
+            "anyOf": [
+                {
+                    "format": "uri",
+                    "type": "string"
+                },
+                {
+                    "maxLength": 0,
+                    "type": "string"
+                }
+            ],
+            "description": "The IRI of a concept or ontology term associated with the value. It can also be an empty string"
+        },
+        "name": {
+            "type": "string",
+            "description": "This contains the controlled vocabulary term"
+        },
+        "value": {
+            "oneOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "number"
+                }
+            ],
+            "description": "The value of the annotation - it can be a string or a number (for coded values)."
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "@type": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD type"
+        }
+    },
+    "title": "MIACA open_cv_schema - MIACME annotation schema merging",
+    "type": "object",
+    "description": "Merge between the MIACA open_cv_schema and the MIACME annotation schema",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/open_cv_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

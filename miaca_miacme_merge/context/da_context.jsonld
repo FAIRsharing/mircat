@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "Da": "obo:ERO_0000387",
+        "reference": "obo:NCIT_C25641",
+        "@language": "en",
+        "instrument": "obo:OBI_0000968",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "ID": "obo:IAO_0000578",
+        "settings": "obo:NCIT_C44175"
+    }
+}

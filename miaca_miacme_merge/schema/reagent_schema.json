@@ -1,0 +1,137 @@
+{
+    "properties": {
+        "efficiency": {
+            "type": "string",
+            "description": "e.g., transfection/transduction efficiency of 'cell type' (average, cv) with \u2018Perturbator\u2019 (library)"
+        },
+        "stockConcUnit": {
+            "type": "string",
+            "enum": [
+                "mol/L",
+                "mmol/L",
+                "nmol/L"
+            ],
+            "description": "The unit of the stock concentration of the reagent"
+        },
+        "array": {
+            "type": "string",
+            "description": "description of array type and array support type/vessel"
+        },
+        "@id": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD identifier"
+        },
+        "type": {
+            "description": "reagent type, e. g. cDNA, small molecule, siRNA. If available, reference to a controlled vocabulary.",
+            "type": "string",
+            "@type": {
+                "type": "string",
+                "enum": [
+                    "MoleculeType"
+                ]
+            }
+        },
+        "targetID": {
+            "type": "string",
+            "description": "e.g. geneID of target gene in case of siRNA"
+        },
+        "struct": {
+            "type": "string",
+            "description": "e.g. sequence of siRNA; structure/ChEBI for compound"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "reagentName": {
+            "type": "string",
+            "description": "the name of the chemical used as reagent"
+        },
+        "ID": {
+            "type": "string",
+            "description": "the identifier of the chemical used as reagent"
+        },
+        "@type": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD type"
+        },
+        "vendor": {
+            "$ref": "vendor_schema.json",
+            "description": "Details to the vendor or manufacturer"
+        },
+        "targetSpecies": {
+            "type": "string",
+            "description": "Target Species e.g. if siRNA"
+        },
+        "comment": {
+            "type": "string",
+            "description": "Comment"
+        },
+        "virusRef": {
+            "properties": {
+                "titer": {
+                    "type": "string",
+                    "description": "a numerical expression of the quantity of virus in a given volume"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "the type of virus"
+                }
+            },
+            "type": "object",
+            "description": "details if perturbator is virus"
+        },
+        "stockConc": {
+            "type": "number",
+            "description": "The value of the reagent stock concentration"
+        },
+        "solvent": {
+            "type": "string",
+            "description": "Solvent"
+        },
+        "compoundRef": {
+            "properties": {
+                "purity": {
+                    "type": "string",
+                    "description": "% of compounds with >80% purity"
+                },
+                "weight": {
+                    "type": "string",
+                    "description": "Average molecular weight"
+                },
+                "lipinski": {
+                    "type": "string",
+                    "description": "% of compound comply with Lipinski rule-of-5"
+                }
+            },
+            "type": "object",
+            "description": "details if perturbator is chemincal compound"
+        },
+        "libraryRef": {
+            "$ref": "library_schema.json",
+            "description": "details on the library the perturbator is part of"
+        }
+    },
+    "title": "MIACA reagent schema",
+    "type": "object",
+    "description": "A reagent as defined by MIACA, Reagents are media, media supplements, kits, buffers and solutions, water and so on. ",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/reagent_schema.json",
+    "required": [
+        "ReagentName",
+        "ReagentID",
+        "vendor"
+    ],
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

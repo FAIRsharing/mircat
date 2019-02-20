@@ -1,0 +1,106 @@
+{
+    "properties": {
+        "identifier": {
+            "type": "string",
+            "description": "A persistent identifier of the person, it should be an ORCID."
+        },
+        "institution": {
+            "minLength": 1,
+            "type": "string",
+            "description": "name of the institution/affiliation the researcher is working at"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "name": {
+            "minLength": 1,
+            "type": "string",
+            "description": "name of the researcher working on the project."
+        },
+        "ID": {
+            "type": "string",
+            "description": "The source identifier"
+        },
+        "address": {
+            "minLength": 1,
+            "type": "string",
+            "description": "address of the institution"
+        },
+        "firstName": {
+            "type": "string",
+            "description": "The given name."
+        },
+        "@type": {
+            "type": "string",
+            "enum": [
+                "Source"
+            ],
+            "description": "The JSON-LD type"
+        },
+        "country": {
+            "minLength": 1,
+            "type": "string",
+            "description": "country the city is placed"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "roles": {
+            "type": "string",
+            "description": "The roles assumed by the person. Ideally from a controlled vocabulary or ontology."
+        },
+        "fax": {
+            "type": "string"
+        },
+        "identifierSource": {
+            "type": "string",
+            "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier."
+        },
+        "city": {
+            "minLength": 1,
+            "type": "string",
+            "description": "city the institution is placed"
+        },
+        "email": {
+            "minLength": 1,
+            "type": "string",
+            "description": "email of the researcher"
+        },
+        "department": {
+            "minLength": 1,
+            "type": "string",
+            "description": "department in the institution"
+        },
+        "@id": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD identifier"
+        }
+    },
+    "title": "MIACA Source - corresponding to a person and their organization - MIACME person schema. A human being. merging",
+    "type": "object",
+    "description": "Merge between the MIACA Source - corresponding to a person and their organization and the MIACME person schema. A human being.",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/source_schema.json",
+    "required": [
+        "ID",
+        "name",
+        "institution",
+        "department",
+        "address",
+        "city",
+        "country",
+        "email"
+    ],
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

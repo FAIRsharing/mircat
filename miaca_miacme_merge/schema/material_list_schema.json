@@ -1,0 +1,45 @@
+{
+    "properties": {
+        "compositeReagent": {
+            "$ref": "composite_reagent_schema.json#"
+        },
+        "@id": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD identifier"
+        },
+        "ID": {
+            "type": "string"
+        },
+        "reagent": {
+            "$ref": "reagent_schema.json#"
+        },
+        "cellLine": {
+            "$ref": "cell_line_schema.json#"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "@type": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD type"
+        }
+    },
+    "title": "MIACA material list chema",
+    "type": "object",
+    "description": "JSON-schema representing MIACA material list.",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/material_list_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

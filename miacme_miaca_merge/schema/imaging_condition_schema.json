@@ -1,0 +1,92 @@
+{
+    "version": "1.0",
+    "properties": {
+        "timeSeriesInterval": {
+            "type": "number",
+            "description": "The duration between two sequential frames of the time lapse series."
+        },
+        "pixels": {
+            "items": {
+                "$ref": "pixel_schema.json#"
+            },
+            "type": "array",
+            "description": "The physical dimension of one picture element in your image."
+        },
+        "@id": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD identifier"
+        },
+        "modality": {
+            "type": "string",
+            "description": "The type of microscopy used to acquire images. For example: confocal, microscopy, spinning disk, wide-field, multi-phonon, light-sheet, super-resolution, "
+        },
+        "timeSeriesIntervalUnit": {
+            "type": "string",
+            "description": "The unit of the time series interval."
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "@type": {
+            "type": "string",
+            "enum": [
+                "ImagingCondition"
+            ],
+            "description": "The JSON-LD type"
+        },
+        "objectiveLens": {
+            "type": "string",
+            "description": "Objective manufacturer and objective acronym specifying optical correction, primary use of microscopy method and magnification (may also include immersion medium and/or working distance or field of view)"
+        },
+        "imageSequenceType": {
+            "type": "string",
+            "description": "Single or multiple imaging timepoints in the experiment. "
+        },
+        "observationPeriodUnit": {
+            "type": "string",
+            "description": "The unit of the observation period."
+        },
+        "numericalAperture": {
+            "type": "string",
+            "description": "Value that indicates the light acceptance angle of the objective (\ndetermines the light gathering power, resolving power, and depth of \nfield of the objective)."
+        },
+        "observationPeriod": {
+            "type": "number",
+            "description": "For time-series, it is the timespan since the imaging process starts until it ends. For endpoint, it is the timespan since the starting point until the image is taken."
+        },
+        "channelDefinition": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array",
+            "description": "Identification of the label or constrasts"
+        }
+    },
+    "title": "MIACME imaging condition schema",
+    "type": "object",
+    "description": "JSON-schema representing an investigation in MIACME",
+    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/imaging_condition_schema.json",
+    "required": [
+        "modality",
+        "imageSequenceType",
+        "observationPeriod",
+        "observationPeriodUnit",
+        "timeSeriesInterval",
+        "timeSeriesIntervalUnit",
+        "channelDefinition",
+        "pixels"
+    ],
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

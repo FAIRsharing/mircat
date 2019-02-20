@@ -1,0 +1,48 @@
+{
+    "version": "1.0",
+    "properties": {
+        "identifier": {
+            "type": "string",
+            "description": "Primary identifier for the organisation."
+        },
+        "@id": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD identifier"
+        },
+        "identifierSource": {
+            "type": "string",
+            "description": "Information about the organisation or namespace responsible for minting the identifier."
+        },
+        "name": {
+            "type": "string"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "@type": {
+            "type": "string",
+            "enum": [
+                "Organization"
+            ],
+            "description": "The JSON-LD type"
+        }
+    },
+    "title": "MIACME organization schema",
+    "additionalProperties": false,
+    "type": "object",
+    "description": "JSON-schema representing an organization in MIACME. Legal or physical entity corresponding to a business or administration",
+    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/organization_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

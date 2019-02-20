@@ -1,0 +1,18 @@
+{
+    "@context": {
+        "definitions": "obo:NCIT_C43680",
+        "@language": "en",
+        "type": "obo:NCIT_C25284",
+        "name": "obo:IAO_0000590",
+        "Library": "obo:ERO_0001194",
+        "ID": "obo:IAO_0000578",
+        "features": "obo:NCIT_C73619",
+        "vendor": "obo:NCIT_C68608",
+        "featurePosition": "obo:",
+        "preparationMethod": "bao:BAO_0002014",
+        "format": "obo:NCIT_C42761",
+        "bao": "http://www.bioassayontology.org/bao#",
+        "libraryElementCharacteristics": "obo:NCIT_C25447",
+        "obo": "http://purl.obolibrary.org/obo/"
+    }
+}

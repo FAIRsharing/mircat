@@ -1,0 +1,153 @@
+{
+    "properties": {
+        "phenoDesc": {
+            "items": {
+                "properties": {
+                    "link": {
+                        "type": "string",
+                        "description": "link to raw data"
+                    },
+                    "processName": {
+                        "type": "string",
+                        "description": "The name of the process"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "description of the phenotype"
+                    },
+                    "format": {
+                        "type": "string",
+                        "description": "ASCII, TIFF, WMA,\u2026"
+                    },
+                    "protocol": {
+                        "type": "string",
+                        "description": "for the characterization and classification of phenotypic observation"
+                    },
+                    "timeSpace": {
+                        "type": "string",
+                        "description": "Time and space parameters"
+                    },
+                    "ID": {
+                        "type": "string",
+                        "description": "The identifier"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array",
+            "description": "A phenotypic description is usually obtained by manual observation of images and/or interpretation of processed data."
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "@id": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD identifier"
+        },
+        "rawData": {
+            "processedData": {
+                "items": {
+                    "properties": {
+                        "version": {
+                            "type": "string",
+                            "description": "the version of the softwareused to generate the file"
+                        },
+                        "reference": {
+                            "type": "string",
+                            "description": "reference to a publication"
+                        },
+                        "processName": {
+                            "type": "string",
+                            "description": "The name of the process"
+                        },
+                        "type": {
+                            "type": "string",
+                            "description": "type"
+                        },
+                        "parameters": {
+                            "type": "array",
+                            "description": "the list of parameter settings used to run the software used to generate the file"
+                        },
+                        "format": {
+                            "type": "string",
+                            "description": "ASCII, TIFF, WMA,\u2026"
+                        },
+                        "link": {
+                            "type": "string",
+                            "description": "link to raw data"
+                        },
+                        "software": {
+                            "type": "string",
+                            "description": "the name of the software used to generate the file"
+                        },
+                        "ID": {
+                            "type": "string",
+                            "description": "The identifier"
+                        },
+                        "algorithm": {
+                            "type": "string",
+                            "description": "algorithm"
+                        }
+                    },
+                    "type": "object"
+                },
+                "type": "array",
+                "description": "The raw data can be processed either manually or through automated computational methods. Processing commonly generates numbers and/or phenotypic descriptions."
+            },
+            "items": {
+                "properties": {
+                    "format": {
+                        "type": "string",
+                        "description": "ASCII, TIFF, WMA,\u2026"
+                    },
+                    "link": {
+                        "type": "string",
+                        "description": "link to raw data"
+                    },
+                    "ID": {
+                        "type": "string",
+                        "description": "The identifier"
+                    },
+                    "type": {
+                        "type": "string",
+                        "description": "number, image, movie,\u2026"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array",
+            "description": "Description of raw data."
+        },
+        "ID": {
+            "type": "string",
+            "description": "The identifier"
+        },
+        "@type": {
+            "type": "string",
+            "enum": [
+                "DataProcessing"
+            ],
+            "description": "The JSON-LD type"
+        }
+    },
+    "title": "MIACA (Minimum Information about a Cellular Assay) data processing schema",
+    "type": "object",
+    "description": "Description of the processes applied to analyze the raw-data in order to generate a hit list. Data analysis is usually carried out sequentially, applying a number of algorithms and analysis tools",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/data_processing_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

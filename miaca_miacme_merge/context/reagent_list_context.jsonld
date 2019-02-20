@@ -1,0 +1,9 @@
+{
+    "@context": {
+        "reagents": "obo:CHEBI_33893",
+        "ID": "obo:IAO_0000578",
+        "@language": "en",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "ReagentList": "obo:CHEBI_33893"
+    }
+}

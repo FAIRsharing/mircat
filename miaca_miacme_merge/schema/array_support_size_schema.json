@@ -1,0 +1,41 @@
+{
+    "properties": {
+        "surfaceArea": {
+            "type": "string",
+            "description": "surface area in mm\u00b2"
+        },
+        "@type": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD type"
+        },
+        "dimension": {
+            "type": "number",
+            "description": "number of wells"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "@id": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD identifier"
+        }
+    },
+    "title": "MIACA array support size type schema",
+    "type": "object",
+    "description": "Size of reaction vessel, e.g. volume or surface area.",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/array_support_size_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

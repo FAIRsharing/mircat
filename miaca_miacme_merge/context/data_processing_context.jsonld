@@ -1,0 +1,10 @@
+{
+    "@context": {
+        "phenoDesc": "obo:NCIT_C16977",
+        "DataProcessing": "obo:NCIT_C43582",
+        "@language": "en",
+        "rawData": "obo:NCIT_C142663",
+        "ID": "obo:IAO_0000578",
+        "obo": "http://purl.obolibrary.org/obo/"
+    }
+}

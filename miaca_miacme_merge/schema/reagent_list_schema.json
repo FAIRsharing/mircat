@@ -1,0 +1,91 @@
+{
+    "properties": {
+        "reagents": {
+            "items": {
+                "anyOf": [
+                    {
+                        "$ref": "#/definitions/volume"
+                    },
+                    {
+                        "$ref": "#/definitions/volumeUnit"
+                    },
+                    {
+                        "$ref": "#/definitions/concentration"
+                    },
+                    {
+                        "$ref": "#/definitions/concentrationUnit"
+                    }
+                ],
+                "ID": {
+                    "type": "string",
+                    "description": "identifier of the reagenet"
+                }
+            },
+            "type": "array"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "@id": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD identifier"
+        },
+        "ID": {
+            "type": "string",
+            "description": "identifier of the reagent list"
+        },
+        "@type": {
+            "format": "uri",
+            "type": "string",
+            "description": "The JSON-LD type"
+        }
+    },
+    "_comment": "TODO: these definitions are the same as in treatment_schema, resolve duplication",
+    "title": "MIACA reagent schema",
+    "type": "object",
+    "description": "A reagent as defined by MIACA, Reagents are media, media supplements, kits, buffers and solutions, water and so on. ",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/reagent_list_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "definitions": {
+        "concentration": {
+            "type": "string",
+            "description": ""
+        },
+        "concentrationUnit": {
+            "type": "string",
+            "enum": [
+                "pmol/L",
+                "nmol/L",
+                "umol/L",
+                "mmol/L"
+            ],
+            "description": "e.g. mol/L"
+        },
+        "volume": {
+            "type": "string",
+            "description": ""
+        },
+        "volumeUnit": {
+            "type": "string",
+            "enum": [
+                "pL",
+                "nL",
+                "uL",
+                "ml"
+            ],
+            "description": "e.g. mL"
+        }
+    }
+}
