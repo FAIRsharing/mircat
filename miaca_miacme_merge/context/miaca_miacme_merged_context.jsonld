@@ -1,9 +1,0 @@
-{
-    "@context": {
-        "Miaca": "obo:MS_1000900",
-        "obo": "http://purl.obolibrary.org/obo/",
-        "project": "obo:",
-        "investigation": "obo:OBI_0000011",
-        "@language": "en"
-    }
-}

@@ -1,9 +1,0 @@
-{
-    "@context": {
-        "secondaryRef": "obo:",
-        "obo": "http://purl.obolibrary.org/obo/",
-        "primaryRef": "obo:",
-        "Xref": "obo:",
-        "@language": "en"
-    }
-}
