@@ -56,12 +56,14 @@
           "description": "the name of the reagent",
           "type": "string"
         },
-        "anyOf": [
-          { "$ref": "#/definitions/volume" },
-          { "$ref": "#/definitions/volumeUnit" },
-          { "$ref": "#/definitions/concentration" },
-          { "$ref": "#/definitions/concentrationUnit" }
-        ]
+        "characteristics": {
+          "anyOf": [
+            { "$ref": "#/definitions/volume" },
+            { "$ref": "#/definitions/volumeUnit" },
+            { "$ref": "#/definitions/concentration" },
+            { "$ref": "#/definitions/concentrationUnit" }
+          ]
+        }        
       }
     },
     "compReagentName": {
@@ -72,12 +74,14 @@
           "description": "the name of the reagent",
           "type": "string"
         },
-        "anyOf": [
-          { "$ref": "#/definitions/volume" },
-          { "$ref": "#/definitions/volumeUnit" },
-          { "$ref": "#/definitions/concentration" },
-          { "$ref": "#/definitions/concentrationUnit" }
-        ]
+        "characteristics": {
+          "anyOf": [
+            { "$ref": "#/definitions/volume" },
+            { "$ref": "#/definitions/volumeUnit" },
+            { "$ref": "#/definitions/concentration" },
+            { "$ref": "#/definitions/concentrationUnit" }
+          ]
+        }
       }
     },
     "cellLine": {
