@@ -38,19 +38,19 @@
       "type": "object",
       "properties": {
         "street": {
-	         "type": ["string", "null"]
+	         "type": [ "string", "null"]
         },
         "city": {
-          "type": "string"
+          "type": [ "string", "null"]
         },
         "zip": {
-          "type": ["string","number", "null"]
+          "type": [ "string","number", "null"]
         },
         "state": {
-          "type": "string"
+          "type": [ "string", "null"]
         },
         "country": {
-          "type": "string"
+          "type": [ "string", "null"]
         }
       }
     }
