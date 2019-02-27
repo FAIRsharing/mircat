@@ -2,7 +2,7 @@
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "CLOntology": "obo:MI_0831",
+        "ClOntology": "obo:MI_0831",
         "@language": "en",
         "ontologyName": "obo:IAO_0000590",
         "is_a": "rdf:type",

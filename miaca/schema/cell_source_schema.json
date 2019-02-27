@@ -48,7 +48,7 @@
     },
     "cellType": {
       "description": "e.g. totipotent stem cell (CL:0000723)",
-      "$ref": "CL_ontology_schema.json#"
+      "$ref": "cl_ontology_schema.json#"
     },
     "strain": {
       "description": "a variant of a cellType",
