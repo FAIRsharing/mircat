@@ -10,7 +10,7 @@
         "type": "obo:NCIT_C25284",
         "definitions": "obo:NCIT_C43680",
         "ID": "obo:IAO_0000578",
-        "featurePosition": "obo:",
+        "featurePosition": "obo:PATO_0000140",
         "vendor": "obo:NCIT_C68608",
         "format": "obo:NCIT_C42761",
         "libraryElementCharacteristics": "obo:NCIT_C25447"
