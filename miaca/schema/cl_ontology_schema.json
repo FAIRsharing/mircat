@@ -1,5 +1,5 @@
 {
-  "id": "https://w3id.org/mircat/miaca/schema/CL_ontology_schema.json",
+  "id": "https://w3id.org/mircat/miaca/schema/cl_ontology_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MIACA CL ontology schema",
   "description": "Controlled vocabulary for celltypes",
