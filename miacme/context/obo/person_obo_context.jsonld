@@ -10,7 +10,7 @@
         "phone": "sio:SIO_001324",
         "address": "obo:IAO_0000422",
         "identifier": "obo:IAO_0000578",
-        "midInitials": "obo:IAO_0000590",
+        "midInitials": "sio:SIO_001318",
         "roles": "obo:OBI_0000202",
         "email": "obo:IAO_0000429",
         "firstName": "obo:IAO_0020016",
