@@ -13,4 +13,5 @@ The representation for each of the following reporting guidelines can be accesse
 ## Contact
 
 - [Alejandra Gonzalez-Beltran](http://github.com/agbeltran)
-
+- [Philippe Rocca-Serra](http://gitub.com/proccaserra)
+- [Susanna-Assunta Sansone](http://github.com/SusannaSansone)
