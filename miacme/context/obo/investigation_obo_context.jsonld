@@ -13,7 +13,7 @@
         "studies": "obo:OBI_0000066",
         "acknowledges": "sdo:funder",
         "description": "obo:OBI_0001615",
-        "publications": "obo:IAO_0000312",
+        "publications": "obo:IAO_0000311",
         "dates": "obo:STATO_0000093",
         "title": "obo:OBI_0001622"
     }
