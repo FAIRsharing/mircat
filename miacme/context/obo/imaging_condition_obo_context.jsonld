@@ -2,7 +2,7 @@
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
         "bao": "http://www.bioassayontology.org/bao#",
-        "ImagingCondition": "obo:FBbi_00000222",
+        "ImagingCondition": "obo:FBbi_root_00000000",
         "@language": "en",
         "timeSeriesInterval": "obo:IAO_0000584",
         "imageSequenceType": "obo:NCIT_C69268",
