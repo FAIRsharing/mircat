@@ -11,7 +11,7 @@
         "numericalAperture": "obo:NCIT_C44175",
         "observationPeriodUnit": "obo:UO_0000003",
         "objectiveLens": "obo:ERO_0000453",
-        "modality": "obo:FBbi_00000222 ",
+        "modality": "obo:FBbi_00000222",
         "channelDefinition": "bao:BAO_0000184",
         "timeSeriesIntervalUnit": "obo:UO_0000003"
     }
