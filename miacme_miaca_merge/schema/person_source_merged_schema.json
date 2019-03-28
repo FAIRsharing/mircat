@@ -1,22 +1,10 @@
 {
-    "additionalProperties": false,
-    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIACME person schema. A human being. - MIACA Source - corresponding to a person and their organization merging",
+    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/person_source_merged_schema.json",
     "version": "1.0",
-    "type": "object",
     "properties": {
-        "email": {
-            "description": "The email address.",
-            "type": "string",
-            "format": "email"
-        },
-        "address": {
-            "type": "string"
-        },
-        "identifierSource": {
-            "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier.",
-            "type": "string"
-        },
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -27,70 +15,82 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
+            ]
+        },
+        "lastName": {
+            "type": "string",
+            "description": "The family name."
+        },
+        "identifierSource": {
+            "type": "string",
+            "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier."
         },
         "roles": {
-            "description": "The roles assumed by the person. Ideally from a controlled vocabulary or ontology.",
-            "type": "string"
+            "type": "string",
+            "description": "The roles assumed by the person. Ideally from a controlled vocabulary or ontology."
         },
-        "identifier": {
-            "description": "A persistent identifier of the person, it should be an ORCID.",
-            "type": "string"
+        "@type": {
+            "type": "string",
+            "description": "The JSON-LD type",
+            "enum": [
+                "PersonSource"
+            ]
         },
-        "firstName": {
-            "description": "The given name.",
-            "type": "string"
+        "email": {
+            "type": "string",
+            "format": "email",
+            "description": "The email address."
         },
-        "midInitials": {
+        "address": {
             "type": "string"
         },
         "phone": {
             "type": "string"
         },
+        "midInitials": {
+            "type": "string"
+        },
+        "firstName": {
+            "type": "string",
+            "description": "The given name."
+        },
+        "identifier": {
+            "type": "string",
+            "description": "A persistent identifier of the person, it should be an ORCID."
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
         "fax": {
             "type": "string"
         },
-        "lastName": {
-            "description": "The family name.",
-            "type": "string"
-        },
-        "@id": {
-            "description": "The JSON-LD identifier",
-            "type": "string",
-            "format": "uri"
-        },
         "affiliation": {
+            "type": "array",
+            "description": "The organizations to which the person is associated with.",
             "items": {
                 "$ref": "organization_schema.json#"
-            },
-            "description": "The organizations to which the person is associated with.",
-            "type": "array"
-        },
-        "@type": {
-            "description": "The JSON-LD type",
-            "type": "string",
-            "enum": [
-                "PersonSource"
-            ]
-        },
-        "department": {
-            "minLength": 1,
-            "description": "department in the institution",
-            "type": "string"
-        },
-        "country": {
-            "minLength": 1,
-            "description": "country the city is placed",
-            "type": "string"
+            }
         },
         "city": {
+            "type": "string",
             "minLength": 1,
-            "description": "city the institution is placed",
-            "type": "string"
+            "description": "city the institution is placed"
+        },
+        "department": {
+            "type": "string",
+            "minLength": 1,
+            "description": "department in the institution"
+        },
+        "country": {
+            "type": "string",
+            "minLength": 1,
+            "description": "country the city is placed"
         }
     },
-    "title": "MIACME person schema. A human being. - MIACA Source - corresponding to a person and their organization merging",
-    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/person_source_merged_schema.json",
-    "description": "Merge between the MIACME person schema. A human being. and the MIACA Source - corresponding to a person and their organization"
+    "type": "object",
+    "additionalProperties": false,
+    "description": "Merge between the MIACME person schema. A human being. and the MIACA Source - corresponding to a person and their organization",
+    "$schema": "http://json-schema.org/draft-04/schema"
 }

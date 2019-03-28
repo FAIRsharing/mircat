@@ -1,74 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema",
     "title": "MIACA Source - corresponding to a person and their organization",
-    "type": "object",
-    "properties": {
-        "city": {
-            "minLength": 1,
-            "description": "city the institution is placed",
-            "type": "string"
-        },
-        "address": {
-            "minLength": 1,
-            "description": "address of the institution",
-            "type": "string"
-        },
-        "email": {
-            "minLength": 1,
-            "description": "email of the researcher",
-            "type": "string"
-        },
-        "country": {
-            "minLength": 1,
-            "description": "country the city is placed",
-            "type": "string"
-        },
-        "@id": {
-            "description": "The JSON-LD identifier",
-            "type": "string",
-            "format": "uri"
-        },
-        "institution": {
-            "minLength": 1,
-            "description": "name of the institution/affiliation the researcher is working at",
-            "type": "string"
-        },
-        "@type": {
-            "description": "The JSON-LD type",
-            "type": "string",
-            "enum": [
-                "Source"
-            ]
-        },
-        "department": {
-            "minLength": 1,
-            "description": "department in the institution",
-            "type": "string"
-        },
-        "name": {
-            "minLength": 1,
-            "description": "name of the researcher working on the project.",
-            "type": "string"
-        },
-        "ID": {
-            "description": "The source identifier",
-            "type": "string"
-        },
-        "@context": {
-            "anyOf": [
-                {
-                    "type": "string"
-                },
-                {
-                    "type": "object"
-                },
-                {
-                    "type": "array"
-                }
-            ],
-            "description": "The JSON-LD context"
-        }
-    },
     "required": [
         "ID",
         "name",
@@ -79,6 +10,75 @@
         "country",
         "email"
     ],
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "country": {
+            "type": "string",
+            "minLength": 1,
+            "description": "country the city is placed"
+        },
+        "department": {
+            "type": "string",
+            "minLength": 1,
+            "description": "department in the institution"
+        },
+        "ID": {
+            "type": "string",
+            "description": "The source identifier"
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "city": {
+            "type": "string",
+            "minLength": 1,
+            "description": "city the institution is placed"
+        },
+        "name": {
+            "type": "string",
+            "minLength": 1,
+            "description": "name of the researcher working on the project."
+        },
+        "@type": {
+            "type": "string",
+            "description": "The JSON-LD type",
+            "enum": [
+                "Source"
+            ]
+        },
+        "email": {
+            "type": "string",
+            "minLength": 1,
+            "description": "email of the researcher"
+        },
+        "institution": {
+            "type": "string",
+            "minLength": 1,
+            "description": "name of the institution/affiliation the researcher is working at"
+        },
+        "address": {
+            "type": "string",
+            "minLength": 1,
+            "description": "address of the institution"
+        }
+    },
+    "type": "object",
     "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/source_schema.json",
-    "description": "Contact details of researcher/person/laboratory/institution in charge of the project -Used to describe the contact details of the scientist - corresponds to MIACA XSD sourceType"
+    "description": "Contact details of researcher/person/laboratory/institution in charge of the project -Used to describe the contact details of the scientist - corresponds to MIACA XSD sourceType",
+    "$schema": "http://json-schema.org/draft-04/schema"
 }

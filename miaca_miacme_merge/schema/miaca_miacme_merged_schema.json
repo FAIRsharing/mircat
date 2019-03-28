@@ -1,23 +1,8 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema",
-    "_provenance": {
-        "url": "http://w3id.org/mircat/miaca/provenance.json"
-    },
-    "type": "object",
+    "title": "Merge between miaca and miacme",
     "properties": {
-        "@id": {
-            "description": "The JSON-LD identifier",
-            "type": "string",
-            "format": "uri"
-        },
-        "@type": {
-            "description": "The JSON-LD type",
-            "type": "string",
-            "enum": [
-                "MiacaMiacmeMerged"
-            ]
-        },
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -28,15 +13,30 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
+            ]
+        },
+        "@type": {
+            "type": "string",
+            "description": "The JSON-LD type",
+            "enum": [
+                "MiacaMiacmeMerged"
+            ]
         },
         "project": {
             "description": "Conditions that have been established to measure effects which are induced in cells in response to a perturbation, together with data that have been acquired in these measurements in order to address the biological question this project was designed for.",
             "$ref": "project_investigation_merged_schema.json#"
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
         }
     },
-    "title": "Merge between miaca and miacme",
+    "type": "object",
+    "_provenance": {
+        "url": "http://w3id.org/mircat/miaca/provenance.json"
+    },
     "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/miaca_miacme_merged_schema.json",
-    "description": "A merge between miaca and miacme schemas"
+    "description": "A merge between miaca and miacme schemas",
+    "$schema": "http://json-schema.org/draft-04/schema"
 }

@@ -1,9 +1,9 @@
 {
     "@context": {
-        "flowCellType": "obo:CL_0000000",
-        "FlowCell": "obo:OBI_0400043",
         "obo": "http://purl.obolibrary.org/obo/",
         "@language": "en",
-        "other": "obo:NCIT_C17649"
+        "flowCellType": "obo:CL_0000000",
+        "other": "obo:NCIT_C17649",
+        "FlowCell": "obo:OBI_0400043"
     }
 }

@@ -1,13 +1,13 @@
 {
     "@context": {
-        "ExperimentalSetup": "obo:XCO_0000000",
-        "assayType": "obo:FBcv_0003050",
-        "obo": "http://purl.obolibrary.org/obo/",
-        "interference": "efo:EFO_0000727",
-        "medium": "obo:BTO_0000316",
         "microenvironment": "obo:OMIT_0027850",
+        "assayType": "obo:FBcv_0003050",
+        "medium": "obo:BTO_0000316",
         "efo": "http://www.ebi.ac.uk/efo/",
+        "ExperimentalSetup": "obo:XCO_0000000",
+        "obo": "http://purl.obolibrary.org/obo/",
         "cellType": "obo:CL_0000000",
-        "@language": "en"
+        "@language": "en",
+        "interference": "efo:EFO_0000727"
     }
 }

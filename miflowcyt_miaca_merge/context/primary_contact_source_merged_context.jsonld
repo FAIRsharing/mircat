@@ -1,16 +1,16 @@
 {
     "@context": {
-        "PrimaryContact": "obo:NCBITaxon_9606",
-        "emailAddress": "obo:IAO_0000429",
         "obo": "http://purl.obolibrary.org/obo/",
         "name": "obo:IAO_0000590",
+        "PrimaryContact": "obo:NCBITaxon_9606",
         "@language": "en",
-        "institution": "obo:ERO_0000066",
-        "department": "sio:SIO_000686",
-        "ID": "obo:IAO_0000578",
-        "country": "sio:SIO_000664",
+        "emailAddress": "obo:IAO_0000429",
         "city": "sio:SIO_000665",
+        "department": "sio:SIO_000686",
         "address": "obo:IAO_0000422",
+        "country": "sio:SIO_000664",
+        "institution": "obo:ERO_0000066",
+        "ID": "obo:IAO_0000578",
         "PrimaryContactSourceMerged": "obo:NCBITaxon_9606"
     }
 }

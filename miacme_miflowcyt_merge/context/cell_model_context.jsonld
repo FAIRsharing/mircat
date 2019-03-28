@@ -1,10 +1,10 @@
 {
     "@context": {
-        "organism": "obo:OBI_0100026",
         "CellModel": "obo:CL_0000000",
-        "specificCellDetails": "obo:CL_0000000",
+        "@language": "en",
         "obo": "http://purl.obolibrary.org/obo/",
+        "specificCellDetails": "obo:CL_0000000",
         "cellType": "obo:CL_0000000",
-        "@language": "en"
+        "organism": "obo:OBI_0100026"
     }
 }

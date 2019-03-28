@@ -1,16 +1,16 @@
 {
     "@context": {
-        "Experiment": "obo:OBI_0000066",
-        "date": "obo:STATO_0000093",
-        "organization": "obo:OBI_0000245",
         "other": "obo:NCIT_C17649",
-        "obo": "http://purl.obolibrary.org/obo/",
         "@language": "en",
-        "primaryContact": "obo:OBI_0000202",
+        "qualityControlMeasures": "obo:MSIO_0000085",
+        "organization": "obo:OBI_0000245",
         "experimentVariables": "obo:STATO_0000258",
-        "keywords": "obo:NCIT_C43513",
         "purpose": "obo:NCIT_C25634",
+        "keywords": "obo:NCIT_C43513",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Experiment": "obo:OBI_0000066",
+        "primaryContact": "obo:OBI_0000202",
         "conclusions": "obo:IAO_0000144",
-        "qualityControlMeasures": "obo:MSIO_0000085"
+        "date": "obo:STATO_0000093"
     }
 }

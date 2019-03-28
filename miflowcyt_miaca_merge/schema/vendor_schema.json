@@ -1,14 +1,8 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema",
     "title": "MIACA vendor type schema",
-    "type": "object",
     "properties": {
-        "@type": {
-            "description": "The JSON-LD type",
-            "type": "string",
-            "format": "uri"
-        },
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -19,31 +13,37 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
+            ]
+        },
+        "@type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD type"
         },
         "lotNo": {
-            "description": "LotNo ",
-            "type": "string"
+            "type": "string",
+            "description": "LotNo "
         },
         "@id": {
-            "description": "The JSON-LD identifier",
             "type": "string",
-            "format": "uri"
-        },
-        "orderNo": {
-            "description": "OrderNr",
-            "type": "string"
+            "format": "uri",
+            "description": "The JSON-LD identifier"
         },
         "name": {
-            "description": "name of the company",
-            "type": "string"
+            "type": "string",
+            "description": "name of the company"
+        },
+        "orderNo": {
+            "type": "string",
+            "description": "OrderNr"
         },
         "serialNo": {
-            "description": "serialNo ",
-            "type": "string"
+            "type": "string",
+            "description": "serialNo "
         }
     },
+    "type": "object",
     "id": "https://w3id.org/mircat/miflowcyt_miaca_merge/schema/vendor_schema.json",
-    "description": "Details to the vendor or manufacturer"
+    "description": "Details to the vendor or manufacturer",
+    "$schema": "http://json-schema.org/draft-04/schema"
 }

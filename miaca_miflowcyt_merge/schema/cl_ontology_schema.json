@@ -1,21 +1,9 @@
 {
-    "additionalProperties": false,
-    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/cl_ontology_schema.json",
     "title": "MIACA CL ontology schema",
-    "type": "object",
     "properties": {
-        "is_a": {
-            "items": {
-                "type": "string"
-            },
-            "description": "derived from other ontologyID",
-            "type": "array"
-        },
-        "ontologyID": {
-            "description": "ID of cell.obo",
-            "type": "string"
-        },
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -26,24 +14,36 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
+            ]
         },
-        "ontologyName": {
-            "description": "name",
-            "type": "string"
-        },
-        "@id": {
-            "description": "The JSON-LD identifier",
+        "ontologyID": {
             "type": "string",
-            "format": "uri"
+            "description": "ID of cell.obo"
         },
         "@type": {
-            "description": "The JSON-LD type",
             "type": "string",
-            "format": "uri"
+            "format": "uri",
+            "description": "The JSON-LD type"
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "ontologyName": {
+            "type": "string",
+            "description": "name"
+        },
+        "is_a": {
+            "type": "array",
+            "description": "derived from other ontologyID",
+            "items": {
+                "type": "string"
+            }
         }
     },
-    "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/cl_ontology_schema.json",
-    "description": "Controlled vocabulary for celltypes"
+    "type": "object",
+    "additionalProperties": false,
+    "description": "Controlled vocabulary for celltypes",
+    "$schema": "http://json-schema.org/draft-04/schema"
 }

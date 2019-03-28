@@ -1,31 +1,69 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema",
     "title": "MIACA reagent schema",
-    "type": "object",
+    "required": [
+        "ReagentName",
+        "ReagentID",
+        "vendor"
+    ],
     "properties": {
-        "virusRef": {
-            "description": "details if perturbator is virus",
-            "type": "object",
-            "properties": {
-                "type": {
-                    "description": "the type of virus",
-                    "type": "string"
-                },
-                "titer": {
-                    "description": "a numerical expression of the quantity of virus in a given volume",
-                    "type": "string"
-                }
-            }
+        "stockConcUnit": {
+            "type": "string",
+            "description": "The unit of the stock concentration of the reagent",
+            "enum": [
+                "mol/L",
+                "mmol/L",
+                "nmol/L"
+            ]
         },
-        "struct": {
-            "description": "e.g. sequence of siRNA; structure/ChEBI for compound",
-            "type": "string"
+        "stockConc": {
+            "type": "number",
+            "description": "The value of the reagent stock concentration"
+        },
+        "array": {
+            "type": "string",
+            "description": "description of array type and array support type/vessel"
+        },
+        "efficiency": {
+            "type": "string",
+            "description": "e.g., transfection/transduction efficiency of 'cell type' (average, cv) with \u2018Perturbator\u2019 (library)"
+        },
+        "libraryRef": {
+            "description": "details on the library the perturbator is part of",
+            "$ref": "library_schema.json"
         },
         "reagentName": {
-            "description": "the name of the chemical used as reagent",
-            "type": "string"
+            "type": "string",
+            "description": "the name of the chemical used as reagent"
+        },
+        "@type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD type"
+        },
+        "solvent": {
+            "type": "string",
+            "description": "Solvent"
+        },
+        "compoundRef": {
+            "properties": {
+                "purity": {
+                    "type": "string",
+                    "description": "% of compounds with >80% purity"
+                },
+                "weight": {
+                    "type": "string",
+                    "description": "Average molecular weight"
+                },
+                "lipinski": {
+                    "type": "string",
+                    "description": "% of compound comply with Lipinski rule-of-5"
+                }
+            },
+            "type": "object",
+            "description": "details if perturbator is chemincal compound"
         },
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -36,102 +74,64 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
-        },
-        "compoundRef": {
-            "description": "details if perturbator is chemincal compound",
-            "type": "object",
-            "properties": {
-                "weight": {
-                    "description": "Average molecular weight",
-                    "type": "string"
-                },
-                "purity": {
-                    "description": "% of compounds with >80% purity",
-                    "type": "string"
-                },
-                "lipinski": {
-                    "description": "% of compound comply with Lipinski rule-of-5",
-                    "type": "string"
-                }
-            }
-        },
-        "array": {
-            "description": "description of array type and array support type/vessel",
-            "type": "string"
-        },
-        "@id": {
-            "description": "The JSON-LD identifier",
-            "type": "string",
-            "format": "uri"
-        },
-        "targetSpecies": {
-            "description": "Target Species e.g. if siRNA",
-            "type": "string"
-        },
-        "libraryRef": {
-            "description": "details on the library the perturbator is part of",
-            "$ref": "library_schema.json"
-        },
-        "targetID": {
-            "description": "e.g. geneID of target gene in case of siRNA",
-            "type": "string"
-        },
-        "stockConcUnit": {
-            "description": "The unit of the stock concentration of the reagent",
-            "type": "string",
-            "enum": [
-                "mol/L",
-                "mmol/L",
-                "nmol/L"
             ]
         },
-        "efficiency": {
-            "description": "e.g., transfection/transduction efficiency of 'cell type' (average, cv) with \u2018Perturbator\u2019 (library)",
-            "type": "string"
+        "struct": {
+            "type": "string",
+            "description": "e.g. sequence of siRNA; structure/ChEBI for compound"
         },
         "vendor": {
             "description": "Details to the vendor or manufacturer",
             "$ref": "vendor_schema.json"
         },
         "comment": {
-            "description": "Comment",
-            "type": "string"
-        },
-        "stockConc": {
-            "description": "The value of the reagent stock concentration",
-            "type": "number"
-        },
-        "solvent": {
-            "description": "Solvent",
-            "type": "string"
-        },
-        "@type": {
-            "description": "The JSON-LD type",
             "type": "string",
-            "format": "uri"
+            "description": "Comment"
         },
-        "ID": {
-            "description": "the identifier of the chemical used as reagent",
-            "type": "string"
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
         },
         "type": {
+            "type": "string",
             "@type": {
                 "type": "string",
                 "enum": [
                     "MoleculeType"
                 ]
             },
-            "description": "reagent type, e. g. cDNA, small molecule, siRNA. If available, reference to a controlled vocabulary.",
-            "type": "string"
+            "description": "reagent type, e. g. cDNA, small molecule, siRNA. If available, reference to a controlled vocabulary."
+        },
+        "targetSpecies": {
+            "type": "string",
+            "description": "Target Species e.g. if siRNA"
+        },
+        "ID": {
+            "type": "string",
+            "description": "the identifier of the chemical used as reagent"
+        },
+        "targetID": {
+            "type": "string",
+            "description": "e.g. geneID of target gene in case of siRNA"
+        },
+        "virusRef": {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "the type of virus"
+                },
+                "titer": {
+                    "type": "string",
+                    "description": "a numerical expression of the quantity of virus in a given volume"
+                }
+            },
+            "type": "object",
+            "description": "details if perturbator is virus"
         }
     },
-    "required": [
-        "ReagentName",
-        "ReagentID",
-        "vendor"
-    ],
+    "type": "object",
     "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/reagent_schema.json",
-    "description": "A reagent as defined by MIACA, Reagents are media, media supplements, kits, buffers and solutions, water and so on. "
+    "description": "A reagent as defined by MIACA, Reagents are media, media supplements, kits, buffers and solutions, water and so on. ",
+    "$schema": "http://json-schema.org/draft-04/schema"
 }

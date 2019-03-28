@@ -1,13 +1,14 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIACME cell model schema - MIACA cell source schema merging",
     "version": "1.0",
-    "type": "object",
+    "required": [
+        "cellType",
+        "specificCellDetails",
+        "organism"
+    ],
     "properties": {
-        "organism": {
-            "description": "The organism of origin of the cell.",
-            "type": "string"
-        },
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -18,64 +19,63 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
+            ]
         },
         "@id": {
-            "description": "The JSON-LD identifier",
             "type": "string",
-            "format": "uri"
+            "format": "uri",
+            "description": "The JSON-LD identifier"
         },
-        "specificCellDetails": {
-            "description": "The specific details about the cell.",
-            "type": "string"
+        "cellType": {
+            "type": "string",
+            "description": "The type of cell used in the experiment. For example: cell line, primary cell, endogenous cell."
         },
         "@type": {
-            "description": "The JSON-LD type",
             "type": "string",
+            "description": "The JSON-LD type",
             "enum": [
                 "CellModel"
             ]
         },
-        "cellType": {
-            "description": "The type of cell used in the experiment. For example: cell line, primary cell, endogenous cell.",
-            "type": "string"
+        "specificCellDetails": {
+            "type": "string",
+            "description": "The specific details about the cell."
         },
-        "source": {
-            "description": "contact details refering to the CellLine",
-            "$ref": "person_source_merged_schema.json#"
-        },
-        "strain": {
-            "description": "a variant of a cellType",
-            "$ref": "ontology_value_source_schema.json#"
-        },
-        "cellLineID": {
-            "description": "Controlled vocabulary ID. Description of the cell line used. (e.g. HeLa ATTC CCL2)",
-            "type": "string"
+        "organism": {
+            "type": "string",
+            "description": "The organism of origin of the cell."
         },
         "tissue": {
             "description": "is a collection of interconnected cells that perform a similar function within an organism",
             "$ref": "ontology_value_source_schema.json#"
         },
+        "cellLineID": {
+            "type": "string",
+            "description": "Controlled vocabulary ID. Description of the cell line used. (e.g. HeLa ATTC CCL2)"
+        },
+        "source": {
+            "description": "contact details refering to the CellLine",
+            "$ref": "person_source_merged_schema.json#"
+        },
         "reference": {
-            "description": "reference to publication",
-            "type": "string"
+            "type": "string",
+            "description": "reference to publication"
         },
         "organ": {
             "description": "e.g. kidney",
             "$ref": "ontology_value_source_schema.json#"
         },
         "provider": {
-            "description": "e.g. ATCC",
-            "type": "string"
+            "type": "string",
+            "description": "e.g. ATCC"
+        },
+        "strain": {
+            "description": "a variant of a cellType",
+            "$ref": "ontology_value_source_schema.json#"
         }
     },
-    "required": [
-        "cellType",
-        "specificCellDetails",
-        "organism"
-    ],
-    "title": "MIACME cell model schema - MIACA cell source schema merging",
+    "type": "object",
     "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/cell_model_cell_source_merged_schema.json",
-    "description": "Merge between the MIACME cell model schema and the MIACA cell source schema"
+    "description": "Merge between the MIACME cell model schema and the MIACA cell source schema",
+    "$schema": "http://json-schema.org/draft-04/schema"
 }

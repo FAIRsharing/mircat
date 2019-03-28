@@ -1,9 +1,9 @@
 {
     "@context": {
-        "sampleLocation": "obo:NCIT_C25341",
-        "sampleDescription": "obo:sep_00196",
-        "EnvironmentalSample": "obo:NCBITaxon_1617257",
+        "obo": "http://purl.obolibrary.org/obo/",
         "@language": "en",
-        "obo": "http://purl.obolibrary.org/obo/"
+        "EnvironmentalSample": "obo:NCBITaxon_1617257",
+        "sampleLocation": "obo:NCIT_C25341",
+        "sampleDescription": "obo:sep_00196"
     }
 }

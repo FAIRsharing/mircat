@@ -1,17 +1,9 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema",
     "title": "MIACME grant schema",
-    "type": "object",
+    "version": "1.0",
     "properties": {
-        "identifier": {
-            "description": "Primary identifier for the grant.",
-            "type": "string"
-        },
-        "identifierSource": {
-            "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier.",
-            "type": "string"
-        },
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -22,42 +14,50 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
+            ]
         },
-        "@id": {
-            "description": "The JSON-LD identifier",
+        "identifierSource": {
             "type": "string",
-            "format": "uri"
+            "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier."
         },
         "@type": {
-            "description": "The JSON-LD type",
             "type": "string",
+            "description": "The JSON-LD type",
             "enum": [
                 "Grant"
             ]
         },
+        "identifier": {
+            "type": "string",
+            "description": "Primary identifier for the grant."
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
         "name": {
-            "description": "The name of the grant and its funding program.",
-            "type": "string"
+            "type": "string",
+            "description": "The name of the grant and its funding program."
         },
         "funders": {
+            "type": "array",
+            "minItems": 1,
+            "description": "The person(s) or organization(s) which has awarded the funds supporting the project.",
             "items": {
                 "oneOf": [
                     {
-                        "$ref": "person_schema.json#"
+                        "$ref": "person_source_merged_schema.json#"
                     },
                     {
                         "$ref": "organization_schema.json#"
                     }
                 ]
-            },
-            "description": "The person(s) or organization(s) which has awarded the funds supporting the project.",
-            "type": "array",
-            "minItems": 1
+            }
         }
     },
-    "version": "1.0",
+    "type": "object",
     "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/grant_schema.json",
-    "description": "An allocated sum of funds given by a government or other organization for a particular purpose."
+    "description": "An allocated sum of funds given by a government or other organization for a particular purpose.",
+    "$schema": "http://json-schema.org/draft-04/schema"
 }

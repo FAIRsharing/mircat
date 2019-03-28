@@ -1,11 +1,11 @@
 {
     "@context": {
-        "Vendor": "obo:NCIT_C68608",
-        "orderNo": "obo:IAO_0000028 ",
         "serialNo": "obo:IAO_0000131",
-        "lotNo": "obo:IAO_0000132",
+        "Vendor": "obo:NCIT_C68608",
+        "@language": "en",
         "obo": "http://purl.obolibrary.org/obo/",
         "name": "obo:IAO_0000590",
-        "@language": "en"
+        "orderNo": "obo:IAO_0000028 ",
+        "lotNo": "obo:IAO_0000132"
     }
 }

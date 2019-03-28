@@ -1,9 +1,9 @@
 {
     "@context": {
-        "surfaceArea": "obo:GENEPIO_0001885",
         "obo": "http://purl.obolibrary.org/obo/",
+        "ArraySupportSize": "obo:NCIT_C25681",
+        "surfaceArea": "obo:GENEPIO_0001885",
         "@language": "en",
-        "dimension": "obo:NCIT_C25483",
-        "ArraySupportSize": "obo:NCIT_C25681"
+        "dimension": "obo:NCIT_C25483"
     }
 }

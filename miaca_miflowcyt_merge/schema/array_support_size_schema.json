@@ -1,23 +1,8 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema",
     "title": "MIACA array support size type schema",
-    "type": "object",
     "properties": {
-        "@id": {
-            "description": "The JSON-LD identifier",
-            "type": "string",
-            "format": "uri"
-        },
-        "surfaceArea": {
-            "description": "surface area in mm\u00b2",
-            "type": "string"
-        },
-        "@type": {
-            "description": "The JSON-LD type",
-            "type": "string",
-            "format": "uri"
-        },
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -28,14 +13,29 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
+            ]
+        },
+        "surfaceArea": {
+            "type": "string",
+            "description": "surface area in mm\u00b2"
+        },
+        "@type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD type"
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
         },
         "dimension": {
-            "description": "number of wells",
-            "type": "number"
+            "type": "number",
+            "description": "number of wells"
         }
     },
+    "type": "object",
     "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/array_support_size_schema.json",
-    "description": "Size of reaction vessel, e.g. volume or surface area."
+    "description": "Size of reaction vessel, e.g. volume or surface area.",
+    "$schema": "http://json-schema.org/draft-04/schema"
 }

@@ -1,23 +1,8 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema",
     "title": "MIFlowCyt Primary Contact - MIACA Source - corresponding to a person and their organization merging",
-    "type": "object",
     "properties": {
-        "emailAddress": {
-            "description": "The primary contact's email address",
-            "type": "string"
-        },
-        "@id": {
-            "description": "The JSON-LD identifier",
-            "type": "string",
-            "format": "uri"
-        },
-        "@type": {
-            "description": "The JSON-LD type",
-            "type": "string",
-            "format": "uri"
-        },
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -28,43 +13,58 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
+            ]
+        },
+        "emailAddress": {
+            "type": "string",
+            "description": "The primary contact's email address"
         },
         "name": {
-            "description": "The primary contact's name",
-            "type": "string"
+            "type": "string",
+            "description": "The primary contact's name"
         },
-        "institution": {
-            "minLength": 1,
-            "description": "name of the institution/affiliation the researcher is working at",
-            "type": "string"
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
         },
-        "department": {
-            "minLength": 1,
-            "description": "department in the institution",
-            "type": "string"
-        },
-        "ID": {
-            "description": "The source identifier",
-            "type": "string"
-        },
-        "country": {
-            "minLength": 1,
-            "description": "country the city is placed",
-            "type": "string"
+        "@type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD type"
         },
         "city": {
+            "type": "string",
             "minLength": 1,
-            "description": "city the institution is placed",
-            "type": "string"
+            "description": "city the institution is placed"
+        },
+        "department": {
+            "type": "string",
+            "minLength": 1,
+            "description": "department in the institution"
         },
         "address": {
+            "type": "string",
             "minLength": 1,
-            "description": "address of the institution",
-            "type": "string"
+            "description": "address of the institution"
+        },
+        "country": {
+            "type": "string",
+            "minLength": 1,
+            "description": "country the city is placed"
+        },
+        "institution": {
+            "type": "string",
+            "minLength": 1,
+            "description": "name of the institution/affiliation the researcher is working at"
+        },
+        "ID": {
+            "type": "string",
+            "description": "The source identifier"
         }
     },
+    "type": "object",
     "id": "https://w3id.org/mircat/miflowcyt_miaca_merge/schema/primary_contact_source_merged_schema.json",
-    "description": "Merge between the MIFlowCyt Primary Contact and the MIACA Source - corresponding to a person and their organization"
+    "description": "Merge between the MIFlowCyt Primary Contact and the MIACA Source - corresponding to a person and their organization",
+    "$schema": "http://json-schema.org/draft-04/schema"
 }

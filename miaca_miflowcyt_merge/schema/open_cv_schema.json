@@ -1,23 +1,8 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema",
     "title": "MIACA open_cv_schema",
-    "type": "object",
     "properties": {
-        "@id": {
-            "description": "The JSON-LD identifier",
-            "type": "string",
-            "format": "uri"
-        },
-        "xref": {
-            "description": "Refers to the term of the controlled vocabulary in an external database",
-            "$ref": "xref_schema.json#"
-        },
-        "@type": {
-            "description": "The JSON-LD type",
-            "type": "string",
-            "format": "uri"
-        },
         "@context": {
+            "description": "The JSON-LD context",
             "anyOf": [
                 {
                     "type": "string"
@@ -28,14 +13,29 @@
                 {
                     "type": "array"
                 }
-            ],
-            "description": "The JSON-LD context"
+            ]
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
         },
         "name": {
-            "description": "This contains the controlled vocabulary term",
-            "type": "string"
+            "type": "string",
+            "description": "This contains the controlled vocabulary term"
+        },
+        "xref": {
+            "description": "Refers to the term of the controlled vocabulary in an external database",
+            "$ref": "xref_schema.json#"
+        },
+        "@type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD type"
         }
     },
+    "type": "object",
     "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/open_cv_schema.json",
-    "description": "Allows to reference an external controlled vocabulary, or to directly include a value if no suitable external definition is available."
+    "description": "Allows to reference an external controlled vocabulary, or to directly include a value if no suitable external definition is available.",
+    "$schema": "http://json-schema.org/draft-04/schema"
 }
