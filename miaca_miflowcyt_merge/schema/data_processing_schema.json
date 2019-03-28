@@ -1,0 +1,153 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIACA (Minimum Information about a Cellular Assay) data processing schema",
+    "type": "object",
+    "properties": {
+        "phenoDesc": {
+            "items": {
+                "type": "object",
+                "properties": {
+                    "protocol": {
+                        "description": "for the characterization and classification of phenotypic observation",
+                        "type": "string"
+                    },
+                    "processName": {
+                        "description": "The name of the process",
+                        "type": "string"
+                    },
+                    "format": {
+                        "description": "ASCII, TIFF, WMA,\u2026",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "description of the phenotype",
+                        "type": "string"
+                    },
+                    "timeSpace": {
+                        "description": "Time and space parameters",
+                        "type": "string"
+                    },
+                    "link": {
+                        "description": "link to raw data",
+                        "type": "string"
+                    },
+                    "ID": {
+                        "description": "The identifier",
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    }
+                }
+            },
+            "description": "A phenotypic description is usually obtained by manual observation of images and/or interpretation of processed data.",
+            "type": "array"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "rawData": {
+            "items": {
+                "type": "object",
+                "properties": {
+                    "link": {
+                        "description": "link to raw data",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "number, image, movie,\u2026",
+                        "type": "string"
+                    },
+                    "ID": {
+                        "description": "The identifier",
+                        "type": "string"
+                    },
+                    "format": {
+                        "description": "ASCII, TIFF, WMA,\u2026",
+                        "type": "string"
+                    }
+                }
+            },
+            "description": "Description of raw data.",
+            "type": "array",
+            "processedData": {
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "algorithm": {
+                            "description": "algorithm",
+                            "type": "string"
+                        },
+                        "version": {
+                            "description": "the version of the softwareused to generate the file",
+                            "type": "string"
+                        },
+                        "processName": {
+                            "description": "The name of the process",
+                            "type": "string"
+                        },
+                        "reference": {
+                            "description": "reference to a publication",
+                            "type": "string"
+                        },
+                        "software": {
+                            "description": "the name of the software used to generate the file",
+                            "type": "string"
+                        },
+                        "parameters": {
+                            "description": "the list of parameter settings used to run the software used to generate the file",
+                            "type": "array"
+                        },
+                        "format": {
+                            "description": "ASCII, TIFF, WMA,\u2026",
+                            "type": "string"
+                        },
+                        "link": {
+                            "description": "link to raw data",
+                            "type": "string"
+                        },
+                        "ID": {
+                            "description": "The identifier",
+                            "type": "string"
+                        },
+                        "type": {
+                            "description": "type",
+                            "type": "string"
+                        }
+                    }
+                },
+                "description": "The raw data can be processed either manually or through automated computational methods. Processing commonly generates numbers and/or phenotypic descriptions.",
+                "type": "array"
+            }
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "enum": [
+                "DataProcessing"
+            ]
+        },
+        "ID": {
+            "description": "The identifier",
+            "type": "string"
+        }
+    },
+    "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/data_processing_schema.json",
+    "description": "Description of the processes applied to analyze the raw-data in order to generate a hit list. Data analysis is usually carried out sequentially, applying a number of algorithms and analysis tools"
+}

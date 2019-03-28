@@ -1,0 +1,27 @@
+{
+    "@context": {
+        "dataProcessing": "obo:OBI_0200000",
+        "instrument": "obo:OBI_0000968",
+        "Project": "obo:OBI_0000011",
+        "cellAssay": "obo:NCIT_C15959",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "@language": "en",
+        "source": "obo:NCBITaxon_9606",
+        "projectDescription": "obo:OBI_0001615",
+        "processLine": "obo:BFO_0000015",
+        "materialList": "obo:OBI_0000747",
+        "application": "obo:IAO_0000311",
+        "ID": "obo:IAO_0000578",
+        "arraySupport": "obo:OBI_0001865",
+        "studies": "obo:OBI_0000066",
+        "dates": "obo:STATO_0000093",
+        "MIACMEcompliance": "obo:OBI_0500023",
+        "title": "obo:OBI_0001622",
+        "conclusions": "obo:IAO_0000144",
+        "MIACMEversion": "obo:IAO_0000129",
+        "contacts": "obo:OBI_0000202",
+        "acknowledges": "sdo:funder",
+        "identifierSource": "obo:OBI_0000245",
+        "ProjectInvestigationMerged": "obo:OBI_0000011"
+    }
+}

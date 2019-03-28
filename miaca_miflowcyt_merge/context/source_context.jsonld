@@ -1,0 +1,16 @@
+{
+    "@context": {
+        "email": "obo:IAO_0000429",
+        "address": "obo:IAO_0000422",
+        "sio": "http://semanticscience.org/resource/",
+        "country": "sio:SIO_000664",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "institution": "obo:ERO_0000066",
+        "@language": "en",
+        "city": "sio:SIO_000665",
+        "Source": "obo:NCBITaxon_9606",
+        "department": "sio:SIO_000686",
+        "name": "obo:IAO_0000590",
+        "ID": "obo:IAO_0000578"
+    }
+}

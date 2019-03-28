@@ -1,0 +1,26 @@
+{
+    "@context": {
+        "seedingDensity": "obo:MSIO_0000062",
+        "passageNo": "obo:MSIO_0000071",
+        "duration": "obo:PATO_0001309",
+        "compReagentName": "obo:IAO_0000590",
+        "efo": "http://www.ebi.ac.uk/efo/",
+        "@language": "en",
+        "humidityUnit": "obo:UO_0000052",
+        "temperature": "obo:PATO_0000146",
+        "temperatureUnit": "obo:UO_0000005",
+        "reagentName": "obo:IAO_0000590",
+        "array": "obo:EFO_0002698",
+        "Treatment": "efo:EFO_0000727",
+        "co2Content": "obo:OBA_1000957",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "comment": "obo:NCIT_C25393",
+        "cellDensity": "obo:NCIT_C120538",
+        "conditionName": "obo:IAO_0000590",
+        "cellLine": "obo:CLO_0000031",
+        "durationUnit": "obo:UO_0000003",
+        "co2ContentUnit": "obo:UO_0000052",
+        "humidity": "obo:PATO_0015009",
+        "ID": "obo:IAO_0000578"
+    }
+}

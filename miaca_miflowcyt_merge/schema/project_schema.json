@@ -1,0 +1,75 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIACA (Minimum Information about a Cellular Assay) project schema",
+    "type": "object",
+    "properties": {
+        "processLine": {
+            "description": "The experiment workflow",
+            "$ref": "process_schema.json#"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "cellAssay": {
+            "description": "The actual experimental part decribing the performed steps, like  treatments, perturbation(s) and data acquisition in necessary detail.",
+            "$ref": "cell_assay_schema.json#"
+        },
+        "instrument": {
+            "description": "Description of the instruments required for the assay, e.g. data acquisition station. Detailed descriptions of such instruments and their settings could be part of spezialized documents or be given in Treatment, Post-Treatment, or Data Acquisition.",
+            "$ref": "instrument_merged_schema.json#"
+        },
+        "source": {
+            "description": "Contact details of researcher/person/laboratory/institution in charge of the project",
+            "$ref": "source_schema.json#"
+        },
+        "dataProcessing": {
+            "description": "Description of the processes applied to analyze the raw-data in order to generate a hit list. Data analysis is usually carried out sequentially, applying a number of algorithms and analysis tools",
+            "$ref": "data_processing_schema.json#"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "projectDescription": {
+            "description": "Description of biological process that is addressed and description of measured effect.",
+            "$ref": "project_description_schema.json#"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "enum": [
+                "Project"
+            ]
+        },
+        "materialList": {
+            "description": "Description of the materials that are utilized in the project.",
+            "$ref": "material_list_schema.json#"
+        },
+        "application": {
+            "description": "Description of the specific application of this project within a larger context, if applicable.",
+            "$ref": "application_schema.json#"
+        },
+        "ID": {
+            "description": "The project identifier",
+            "type": "string"
+        },
+        "arraySupport": {
+            "description": "Array supports (reaction vessels where perturbations are carried out) that are used during the project",
+            "$ref": "array_support_schema.json#"
+        }
+    },
+    "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/project_schema.json",
+    "description": "Conditions that have been established to measure effects which are induced in cells in response to a perturbation, together with data that have been acquired in these measurements in order to address the biological question this project was designed for."
+}

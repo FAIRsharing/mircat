@@ -1,0 +1,58 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIACA cell assay schema",
+    "type": "object",
+    "properties": {
+        "treatment": {
+            "items": {
+                "$ref": "treatment_schema.json#"
+            },
+            "description": "Description of the conditions that are applied to CellLine during culturing of cells. \u2018Treatment\u2019 also covers the perturbation. More than one perturbator can be applied in the same \u2018Treatment\u2019.",
+            "type": "array"
+        },
+        "dataAcquisition": {
+            "items": {
+                "$ref": "da_schema.json#"
+            },
+            "description": "Detection of the effect(s) induced by the perturbation",
+            "type": "array"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "postTreatment": {
+            "items": {
+                "$ref": "treatment_schema.json#"
+            },
+            "description": "Description of the conditions, i.e. lysis, fixation, staining, antibody incubation, etc., that may be applied after \u2018Treatment\u2019, and prior to data acquisition",
+            "type": "array"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "format": "uri"
+        },
+        "ID": {
+            "description": "The cell assay identifier",
+            "type": "string"
+        }
+    },
+    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/cell_assay_schema.json",
+    "description": "The actual experimental part describing the performed steps, like  treatments, perturbation(s) and data acquisition in necessary detail."
+}

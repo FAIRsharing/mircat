@@ -1,0 +1,56 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIFlowCyt (Minimum Information about a Flow Cytometry Experiment) main schema - MIACA (Minimum Information about a Cellular Assay) schema merging",
+    "type": "object",
+    "properties": {
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "instrumentDetails": {
+            "description": "The following details shall be specified about instruments used to analyze samples. It is expected that this information will be automatically provided by flow cytometry instruments in instrumentation description files along with list-mode data files, such as FCS files [18]. For instrument components that are not user configurable and that are part of a standard model, the instrument manufacturer and model number shall be sufficient if this uniquely specifies the required information. For all other cases where the make and model number is not sufficient to specify the required information, the individual component description shall be specified as described below.",
+            "$ref": "instrument_merged_schema.json#"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "flowSampleDetails": {
+            "description": "The flow sample details shall include a description of each sample material used in the experiment (2.1), (2.2), how they were treated (2.3) and what reagents were used (2.4) to fluorescently label the material. Relations between samples, aliquots, different treatments, and replicates shall be unambiguously described.",
+            "$ref": "sample_schema.json#"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "format": "uri"
+        },
+        "experimentOverview": {
+            "description": "An overview of the experiment",
+            "$ref": "experiment_schema.json#"
+        },
+        "dataAnalysis": {
+            "description": "Information about the data analysis performed.",
+            "$ref": "data_analysis_schema.json#"
+        },
+        "project": {
+            "description": "Conditions that have been established to measure effects which are induced in cells in response to a perturbation, together with data that have been acquired in these measurements in order to address the biological question this project was designed for.",
+            "$ref": "project_schema.json#"
+        }
+    },
+    "id": "https://w3id.org/mircat/miflowcyt_miaca_merge/schema/miflowcyt_miaca_merged_schema.json",
+    "description": "Merge between the MIFlowCyt (Minimum Information about a Flow Cytometry Experiment) main schema and the MIACA (Minimum Information about a Cellular Assay) schema",
+    "provenance": {
+        "url": "http://w3id.org/mircat/miflowcyt/provenance/provenance.json"
+    }
+}

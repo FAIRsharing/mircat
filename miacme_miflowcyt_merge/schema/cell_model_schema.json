@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "version": "1.0",
+    "type": "object",
+    "properties": {
+        "organism": {
+            "description": "The organism of origin of the cell.",
+            "type": "string"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "specificCellDetails": {
+            "description": "The specific details about the cell.",
+            "type": "string"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "enum": [
+                "CellModel"
+            ]
+        },
+        "cellType": {
+            "description": "The type of cell used in the experiment. For example: cell line, primary cell, endogenous cell.",
+            "type": "string"
+        }
+    },
+    "required": [
+        "cellType",
+        "specificCellDetails",
+        "organism"
+    ],
+    "title": "MIACME cell model schema",
+    "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/cell_model_schema.json",
+    "description": "JSON-schema representing the cell model in a cell migration experiment."
+}

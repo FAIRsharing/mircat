@@ -1,0 +1,69 @@
+{
+    "additionalProperties": false,
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIACA cell line schema",
+    "type": "object",
+    "properties": {
+        "cellSource": {
+            "description": "Information about the cellLine if not ATCC",
+            "$ref": "cell_source_schema.json#"
+        },
+        "ID": {
+            "type": "string"
+        },
+        "passageNo": {
+            "description": "is the number of generation of a CellLine due to passaging and growing",
+            "type": "string"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "validation": {
+            "description": "measures undertaken to validate cell line, e.g. DNA fingerprinting, genotyping, morphology testing",
+            "type": "string"
+        },
+        "modifications": {
+            "description": "transgene/genetic manipulations, e.g. stably transfected, induced resistance",
+            "type": "string"
+        },
+        "lineQC": {
+            "description": "Mycoplasma test (Y/N) and other measures for quality control, e.g. virus testing",
+            "type": "string"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "format": "uri"
+        },
+        "cellLineName": {
+            "description": "Description of the cell line used. (e.g. HeLa ATTC CCL2)",
+            "type": "string"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        }
+    },
+    "required": [
+        "cellLineIdentifier",
+        "cellLineName",
+        "species",
+        "tissue",
+        "reference",
+        "provider"
+    ],
+    "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/cell_line_schema.json",
+    "description": "Cell line used during the project. An element to describe the cell line used during the project."
+}

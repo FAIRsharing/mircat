@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "instrumentDetails": "obo:OBI_0000968",
+        "experimentOverview": "obo:OBI_0000066",
+        "flowSampleDetails": "obo:OBI_0000747",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Miflowcyt": "obo:MS_1000900",
+        "@language": "en",
+        "dataAnalysis": "obo:ERO_0001309",
+        "investigation": "obo:OBI_0000011",
+        "MiflowcytMiacmeMerged": "obo:MS_1000900"
+    }
+}

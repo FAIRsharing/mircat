@@ -1,0 +1,67 @@
+{
+    "additionalProperties": false,
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIACA application JSON schema - MIACME publication schema merging",
+    "type": "object",
+    "properties": {
+        "abstract": {
+            "description": "Application abstract, e. g. as taken from a publication",
+            "type": "string"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "format": "uri"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "pubref": {
+            "description": "reference to publication",
+            "type": "string"
+        },
+        "ID": {
+            "type": "string"
+        },
+        "bibref": {
+            "description": "Bibliographic reference for the data generated during the project. Cross reference for the data source. Example: Entry in a database of databases.",
+            "$ref": "open_cv_schema.json#"
+        },
+        "date": {
+            "description": "The publication date.",
+            "$ref": "date_schema.json#"
+        },
+        "authors": {
+            "items": {
+                "$ref": "source_person_merged_schema.json#"
+            },
+            "type": "array"
+        },
+        "title": {
+            "description": "The title of the publication.",
+            "type": "string"
+        },
+        "identifierSource": {
+            "description": "Information about the organisation or namespace responsible for minting the identifier.",
+            "type": "string"
+        }
+    },
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/application_publication_merged_schema.json",
+    "description": "Merge between the MIACA application JSON schema and the MIACME publication schema"
+}

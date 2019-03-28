@@ -1,0 +1,9 @@
+{
+    "@context": {
+        "Date": "obo:STATO_0000093",
+        "date": "obo:STATO_0000093",
+        "type": "obo:NCIT_C27993",
+        "@language": "en",
+        "obo": "http://purl.obolibrary.org/obo/"
+    }
+}

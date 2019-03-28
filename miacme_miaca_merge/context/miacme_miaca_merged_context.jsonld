@@ -1,0 +1,8 @@
+{
+    "@context": {
+        "investigation": "obo:OBI_0000011",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "@language": "en",
+        "MiacmeMiacaMerged": "obo:MS_1000900"
+    }
+}

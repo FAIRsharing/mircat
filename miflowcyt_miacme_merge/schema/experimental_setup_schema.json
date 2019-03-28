@@ -1,0 +1,71 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "version": "1.0",
+    "type": "object",
+    "properties": {
+        "basicApproach": {
+            "description": "A description of the study type or approach used, such as in vitro, in vivo, in silico.",
+            "type": "string"
+        },
+        "organism": {
+            "description": "The organism corresponding to the microEnvironment, if it is a tissue.",
+            "type": "string"
+        },
+        "treatment": {
+            "description": "The manipulation/perturbation of which the (migratory) effect is being tested.",
+            "type": "string"
+        },
+        "assay": {
+            "description": "The migration/invasion assay for this investigation, and its specifications.",
+            "$ref": "assay_schema.json#"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "medium": {
+            "description": "Solution used to provide nutritives and motility-assisting additives to migrating cells",
+            "type": "string"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "microEnvironment": {
+            "description": "The nature or components of the material surrounding/contacting the cells for which migration is tested, including substrate, ECM protein or synthetic counterpart, tissue, other cells or entire organism.",
+            "type": "string"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "enum": [
+                "ExperimentalSetup"
+            ]
+        },
+        "cellModel": {
+            "description": "A description of the cells used in the experiment.",
+            "$ref": "cell_model_schema.json#"
+        }
+    },
+    "required": [
+        "basicApproach",
+        "cellModel",
+        "assay",
+        "treatment",
+        "microEnvironment"
+    ],
+    "title": "MIACME experimental setup schema",
+    "id": "https://w3id.org/mircat/miflowcyt_miacme_merge/schema/experimental_setup_schema.json",
+    "description": "JSON-schema representing the experimental setup in a cell migration experiment."
+}

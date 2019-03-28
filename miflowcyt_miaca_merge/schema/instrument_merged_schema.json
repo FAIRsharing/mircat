@@ -1,0 +1,104 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIFlowCyt Instrument - MIACA instrument schema merging",
+    "type": "object",
+    "properties": {
+        "model": {
+            "description": "The instrument model shall be specified (e.g., CytMeter Elite-2000). It may include the instrument serial number.",
+            "type": "string"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "other": {
+            "description": "Additional relevant instrument details should be provided and may include machine-specific information such as information about automated agitation, temperature control, controlled volume dispensing, sampling from microtiter plates, auto-boost, auto-flush, etc. Other custom settings shall be provided if relevant and may include setting name, description, and value.",
+            "type": "string"
+        },
+        "manufacturer": {
+            "description": "The instrument manufacturer shall be specified by stating its name (e.g., MIFlowCyt Cytometry Systems, Inc.). A URL pointing to manufacturer web pages may also be provided.",
+            "type": "string"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "format": "uri"
+        },
+        "configurationAndSettings": {
+            "description": "The system and its configurations have significant impact on experimental results and as such the following shall be provided",
+            "properties": {
+                "flowCellAndFluidics": {
+                    "$ref": "flow_cell_schema.json"
+                },
+                "lightSources": {
+                    "items": {
+                        "$ref": "light_source_instrument_schema.json"
+                    },
+                    "description": "Each light source (e.g., laser) shall be described stating the following:",
+                    "type": "array"
+                }
+            }
+        },
+        "instrumentSpec": {
+            "description": "e.g. objective lenses, numerical aperture, filters",
+            "type": "array"
+        },
+        "instrumentName": {
+            "@type": {
+                "type": "string",
+                "enum": [
+                    "instrumentName"
+                ]
+            },
+            "description": "Instrument name",
+            "type": "string"
+        },
+        "instrumentType": {
+            "items": {
+                "$ref": "open_cv_schema.json#"
+            },
+            "@type": {
+                "type": "string",
+                "enum": [
+                    "OpenCV"
+                ]
+            },
+            "description": "Instrument type, e.g. liquid handling robot, centrifuge, FACS, Plate Reader, etc. ",
+            "type": "array"
+        },
+        "vendor": {
+            "items": {
+                "$ref": "vendor_schema.json#"
+            },
+            "@type": {
+                "type": "string",
+                "enum": [
+                    "Organization",
+                    "Person"
+                ]
+            },
+            "description": "Details to the vendor or manufacturer, Contact details of the source of the reaction vessels, e.g. company"
+        },
+        "ID": {
+            "description": "Instrument identifier as stored by the database",
+            "type": "string"
+        }
+    },
+    "id": "https://w3id.org/mircat/miflowcyt_miaca_merge/schema/instrument_merged_schema.json",
+    "description": "Merge between the MIFlowCyt Instrument and the MIACA instrument schema"
+}

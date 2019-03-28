@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIFlowCyt Environmental Sample",
+    "type": "object",
+    "properties": {
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "sampleDescription": {
+            "description": "A description about the environmental sample shall be provided. The description should include relevant details such as collection time/date, collection protocol, type of sample (e.g., seawater), etc.",
+            "type": "string"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "format": "uri"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "sampleLocation": {
+            "description": "The location of the sample origin shall be specified. This should include longitude and latitude if relevant.",
+            "type": "string"
+        }
+    },
+    "id": "https://w3id.org/mircat/miflowcyt_miacme_merge/schema/environmental_sample_schema.json",
+    "description": "Organization performing the experiment"
+}

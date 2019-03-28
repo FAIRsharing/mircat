@@ -1,0 +1,97 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIACA library type schema",
+    "type": "object",
+    "properties": {
+        "libraryElementCharacteristics": {
+            "description": "LibraryFeatures of perturbators (length of siRNA/shRNA, type of hairpin, other).",
+            "type": "string"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "preparationMethod": {
+            "description": "Preparation methodology",
+            "type": "string"
+        },
+        "format": {
+            "description": "single/pooled - e.g. shRNA pool",
+            "type": "string",
+            "enum": [
+                "individual",
+                "pool"
+            ]
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "featurePosition": {
+            "anyOf": [
+                {
+                    "$ref": "#/definitions/PlateNumber"
+                },
+                {
+                    "$ref": "#/definitions/WellPosition"
+                }
+            ],
+            "description": "PlateNumber and well position; mapping of individual perturbators in library format.",
+            "type": "object"
+        },
+        "definitions": {
+            "PlateNumber": {
+                "description": "ArrayType number",
+                "type": "string"
+            },
+            "WellPosition": {
+                "description": "surface area in mm\u00b2",
+                "type": "string"
+            }
+        },
+        "type": {
+            "description": "Type of library: (gain-of-function/overexpression (cDNA, ORF, other); loss of function (siRNA, shRNA, miRNA, viral, other); compound; other reference on library (if available)",
+            "type": "string"
+        },
+        "vendor": {
+            "description": "Details of the vendor or manufacturer",
+            "$ref": "vendor_schema.json"
+        },
+        "features": {
+            "description": "number of unique features (e.g. genes, compounds) represented in library, reference to where a list of these features can be found",
+            "type": "string"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "format": "uri"
+        },
+        "name": {
+            "description": "name of the library",
+            "type": "string"
+        },
+        "ID": {
+            "description": "library ID as a reference",
+            "type": "string"
+        }
+    },
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/library_schema.json",
+    "description": "if perturbator is part of a library, a description of the library",
+    "provenance": {
+        "prov:wasAttributedTo": {
+            "prov:agent": "http://orcid.org/0000-0001-9853-5668",
+            "_comment": "an ORCID for now, need to check foaf:Person"
+        }
+    }
+}

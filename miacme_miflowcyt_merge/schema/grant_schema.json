@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIACME grant schema",
+    "type": "object",
+    "properties": {
+        "identifier": {
+            "description": "Primary identifier for the grant.",
+            "type": "string"
+        },
+        "identifierSource": {
+            "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier.",
+            "type": "string"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "enum": [
+                "Grant"
+            ]
+        },
+        "name": {
+            "description": "The name of the grant and its funding program.",
+            "type": "string"
+        },
+        "funders": {
+            "items": {
+                "oneOf": [
+                    {
+                        "$ref": "person_schema.json#"
+                    },
+                    {
+                        "$ref": "organization_schema.json#"
+                    }
+                ]
+            },
+            "description": "The person(s) or organization(s) which has awarded the funds supporting the project.",
+            "type": "array",
+            "minItems": 1
+        }
+    },
+    "version": "1.0",
+    "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/grant_schema.json",
+    "description": "An allocated sum of funds given by a government or other organization for a particular purpose."
+}

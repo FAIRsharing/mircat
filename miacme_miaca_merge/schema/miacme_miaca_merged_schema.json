@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "Merge between miacme and miaca",
+    "type": "object",
+    "properties": {
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "investigation": {
+            "$ref": "investigation_project_merged_schema.json#"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "enum": [
+                "MiacmeMiacaMerged"
+            ]
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        }
+    },
+    "version": "1.0",
+    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/miacme_miaca_merged_schema.json",
+    "description": "A merge between miacme and miaca schemas"
+}

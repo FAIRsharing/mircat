@@ -1,0 +1,118 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIFlowCyt experiment schema",
+    "type": "object",
+    "properties": {
+        "date": {
+            "description": "The date or time period during which the investigation was performed (i.e., from collecting and treating samples to performing data analysis) shall be stated.",
+            "type": "object",
+            "properties": {
+                "end-date": {
+                    "type": "string"
+                },
+                "start-date": {
+                    "type": "string"
+                }
+            }
+        },
+        "organization": {
+            "items": {
+                "$ref": "organization_schema.json"
+            },
+            "description": "The organizations performing the experiment.",
+            "type": "array"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "primaryContact": {
+            "description": "The individual who is the primary contact for this experiment.",
+            "$ref": "primary_contact_source_merged_schema.json#"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "other": {
+            "anyOf": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "related-publications": {
+                            "items": {
+                                "pubmed-id": {
+                                    "anyOf": [
+                                        {
+                                            "type": "string"
+                                        },
+                                        {
+                                            "type": "number"
+                                        }
+                                    ]
+                                },
+                                "pmc-id": {
+                                    "anyOf": [
+                                        {
+                                            "type": "string"
+                                        },
+                                        {
+                                            "type": "number"
+                                        }
+                                    ]
+                                }
+                            },
+                            "type": "array"
+                        }
+                    }
+                }
+            ],
+            "description": "Additional information about the experiment should be provided if relevant. This may include funding announcements, related publications (which should be referenced by PMID), URIs, databases, etc.",
+            "type": [
+                "object",
+                "null"
+            ]
+        },
+        "experimentVariables": {
+            "description": "Variables are attribute(s) that differ between samples within an experiment due to pre-existing differences in sample states or due to experimental manipulation of the samples. If applicable, a brief description of the conditional and/or manipulated variables in the experiment shall be provided (e.g., smoker vs. nonsmoker, IL-2 treatment vs. no treatment, knockout versus wild-type, varying number of transplanted cells, varying treatment dosage, etc.). The number of instances per experimental group should also be stated.",
+            "type": "string"
+        },
+        "qualityControlMeasures": {
+            "description": "A description of the quality control measures used such as replicates, calibrations, control assays, etc. shall be provided. If another experiment was performed for the purposes of establishing quality control standards, that experiment may be referenced.",
+            "type": "string"
+        },
+        "keywords": {
+            "items": {
+                "type": "string"
+            },
+            "description": "The keywords should include terms from an appropriate vocabulary (e.g. MeSH) to describe the experiment.",
+            "type": "array"
+        },
+        "purpose": {
+            "description": "A brief description of the goal of the experiment. This should include the rationale and hypothesis.",
+            "type": "string"
+        },
+        "conclusions": {
+            "description": "A brief summary of the interpretation of the results or outcome of the experiment shall be provided if available.",
+            "type": "string"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "format": "uri"
+        }
+    },
+    "id": "https://w3id.org/mircat/miflowcyt_miaca_merge/schema/experiment_schema.json",
+    "description": "The overview of the experiment."
+}

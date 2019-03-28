@@ -1,0 +1,87 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIACA instrument schema",
+    "type": "object",
+    "properties": {
+        "instrumentName": {
+            "@type": {
+                "type": "string",
+                "enum": [
+                    "instrumentName"
+                ]
+            },
+            "description": "Instrument name",
+            "type": "string"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "format": "uri"
+        },
+        "instrumentSpec": {
+            "description": "e.g. objective lenses, numerical aperture, filters",
+            "type": "array"
+        },
+        "vendor": {
+            "items": {
+                "$ref": "vendor_schema.json#"
+            },
+            "@type": {
+                "type": "string",
+                "enum": [
+                    "Organization",
+                    "Person"
+                ]
+            },
+            "description": "Details to the vendor or manufacturer, Contact details of the source of the reaction vessels, e.g. company"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "instrumentModel": {
+            "description": "Instrument name",
+            "type": "string"
+        },
+        "instrumentType": {
+            "items": {
+                "$ref": "open_cv_schema.json#"
+            },
+            "@type": {
+                "type": "string",
+                "enum": [
+                    "OpenCV"
+                ]
+            },
+            "description": "Instrument type, e.g. liquid handling robot, centrifuge, FACS, Plate Reader, etc. ",
+            "type": "array"
+        },
+        "ID": {
+            "description": "Instrument identifier as stored by the database",
+            "type": "string"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        }
+    },
+    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/instrument_schema.json",
+    "description": "Description of the instruments required for the assay, e.g. data acquisition station. Detailed descriptions of such instruments and their settings could be part of spezialized documents or be given in Treatment, Post-Treatment, or Data Acquisition.",
+    "provenance": {
+        "prov:wasAttributedTo": {
+            "prov:agent": "http://orcid.org/0000-0001-9853-5668",
+            "_comment": "an ORCID for now, need to check foaf:Person"
+        }
+    }
+}

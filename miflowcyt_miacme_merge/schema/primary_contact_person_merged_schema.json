@@ -1,0 +1,76 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIFlowCyt Primary Contact - MIACME person schema. A human being. merging",
+    "type": "object",
+    "properties": {
+        "emailAddress": {
+            "description": "The primary contact's email address",
+            "type": "string"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "format": "uri"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "name": {
+            "description": "The primary contact's name",
+            "type": "string"
+        },
+        "affiliation": {
+            "items": {
+                "$ref": "organization_merged_schema.json#"
+            },
+            "description": "The organizations to which the person is associated with.",
+            "type": "array"
+        },
+        "firstName": {
+            "description": "The given name.",
+            "type": "string"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "roles": {
+            "description": "The roles assumed by the person. Ideally from a controlled vocabulary or ontology.",
+            "type": "string"
+        },
+        "identifier": {
+            "description": "A persistent identifier of the person, it should be an ORCID.",
+            "type": "string"
+        },
+        "identifierSource": {
+            "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier.",
+            "type": "string"
+        },
+        "midInitials": {
+            "type": "string"
+        },
+        "fax": {
+            "type": "string"
+        },
+        "address": {
+            "type": "string"
+        }
+    },
+    "id": "https://w3id.org/mircat/miflowcyt_miacme_merge/schema/primary_contact_person_merged_schema.json",
+    "description": "Merge between the MIFlowCyt Primary Contact and the MIACME person schema. A human being."
+}

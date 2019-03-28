@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIACME publication schema",
+    "type": "object",
+    "properties": {
+        "identifier": {
+            "description": "A persistent identifier for the publication, it should be a DOI or pubmed identifier",
+            "type": "string"
+        },
+        "date": {
+            "description": "The publication date.",
+            "$ref": "date_schema.json#"
+        },
+        "title": {
+            "description": "The title of the publication.",
+            "type": "string"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "authors": {
+            "items": {
+                "$ref": "person_schema.json#"
+            },
+            "type": "array"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "enum": [
+                "Publication"
+            ]
+        },
+        "publicationVenue": {
+            "description": "The venue where the publication appears (journal, publishing platform etc).",
+            "type": "string"
+        },
+        "identifierSource": {
+            "description": "Information about the organisation or namespace responsible for minting the identifier.",
+            "type": "string"
+        }
+    },
+    "version": "1.0",
+    "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/publication_schema.json",
+    "description": "A schema describing a publication."
+}

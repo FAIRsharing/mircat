@@ -1,0 +1,15 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "treatment": "efo:EFO_0000727",
+        "genotype": "obo:SO_0001027",
+        "age": "obo:PATO_0000011",
+        "taxonomy": "obo:NCIT_C17469",
+        "other": "obo:NCIT_C17649",
+        "efo": "http://www.ebi.ac.uk/efo/",
+        "Organism": "obo:OBI_0100026",
+        "phenotype": "obo:NCIT_C16977",
+        "@language": "en",
+        "gender": "obo:NCIT_C17357"
+    }
+}

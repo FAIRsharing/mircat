@@ -1,0 +1,12 @@
+{
+    "@context": {
+        "identifier": "obo:OBI_0001629",
+        "funders": "efo:EFO_0001736",
+        "@language": "en",
+        "Grant": "obo:OBI_0001636",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "efo": "http://www.ebi.ac.uk/efo/",
+        "name": "obo:IAO_0000590",
+        "identifierSource": "obo:OBI_0000245"
+    }
+}

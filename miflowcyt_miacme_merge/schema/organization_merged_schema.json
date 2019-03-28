@@ -1,0 +1,82 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIFlowCyt Organzation - MIACME organization schema merging",
+    "type": "object",
+    "properties": {
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "format": "uri"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "name": {
+            "description": "Name of the organization.",
+            "type": "string"
+        },
+        "address": {
+            "description": "Address of the organization.",
+            "type": "object",
+            "properties": {
+                "city": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "street": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "state": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "zip": {
+                    "type": [
+                        "string",
+                        "number",
+                        "null"
+                    ]
+                },
+                "country": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "identifierSource": {
+            "description": "Information about the organisation or namespace responsible for minting the identifier.",
+            "type": "string"
+        },
+        "identifier": {
+            "description": "Primary identifier for the organisation.",
+            "type": "string"
+        }
+    },
+    "id": "https://w3id.org/mircat/miflowcyt_miacme_merge/schema/organization_merged_schema.json",
+    "description": "Merge between the MIFlowCyt Organzation and the MIACME organization schema"
+}

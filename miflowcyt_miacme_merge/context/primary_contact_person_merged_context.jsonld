@@ -1,0 +1,19 @@
+{
+    "@context": {
+        "PrimaryContact": "obo:NCBITaxon_9606",
+        "emailAddress": "obo:IAO_0000429",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "name": "obo:IAO_0000590",
+        "@language": "en",
+        "affiliation": "obo:ERO_0000066",
+        "firstName": "obo:IAO_0020016",
+        "phone": "sio:SIO_001324",
+        "roles": "obo:OBI_0000202",
+        "identifier": "obo:IAO_0000578",
+        "identifierSource": "obo:OBI_0000245",
+        "midInitials": "sio:SIO_001318",
+        "fax": "sio:SIO_001321",
+        "address": "obo:IAO_0000422",
+        "PrimaryContactPersonMerged": "obo:NCBITaxon_9606"
+    }
+}

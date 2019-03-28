@@ -1,0 +1,10 @@
+{
+    "@context": {
+        "comment": "obo:NCIT_C25393",
+        "CompositeReagent": "obo:NCIT_C61520",
+        "compReagentName": "obo:IAO_0000590",
+        "reagentList": "obo:NCIT_C43432",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "@language": "en"
+    }
+}

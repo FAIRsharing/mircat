@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIACA ontology value source schema",
+    "type": "object",
+    "properties": {
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "ontologySource": {
+            "type": "string"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "format": "uri"
+        },
+        "comment": {
+            "type": "string"
+        },
+        "ontologyValue": {
+            "type": "string"
+        }
+    },
+    "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/ontology_value_source_schema.json",
+    "description": "name type"
+}

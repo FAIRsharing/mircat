@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIACME data schema",
+    "type": "object",
+    "properties": {
+        "rawImages": {
+            "type": "string"
+        },
+        "processedImages": {
+            "type": "string"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "extractedFeatures": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "enum": [
+                "Data"
+            ]
+        }
+    },
+    "version": "1.0",
+    "id": "https://w3id.org/mircat/miflowcyt_miacme_merge/schema/data_schema.json",
+    "description": "JSON-schema representing an investigation in MIACME"
+}

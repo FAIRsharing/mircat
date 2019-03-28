@@ -1,0 +1,103 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIACA data acquisition schema",
+    "type": "object",
+    "properties": {
+        "settings": {
+            "description": "Reference to the instrument-settings",
+            "type": "object",
+            "properties": {
+                "emission": {
+                    "description": "emission",
+                    "type": "string"
+                },
+                "excitation": {
+                    "description": "excitation",
+                    "type": "string"
+                },
+                "lampEnergy": {
+                    "description": "lampEnergy",
+                    "type": "string"
+                },
+                "time": {
+                    "description": "time",
+                    "type": "string"
+                },
+                "emissionFilter": {
+                    "description": "emissionFilter",
+                    "type": "string"
+                },
+                "plateType": {
+                    "desciption": "plateType",
+                    "type": "string"
+                },
+                "operationMode": {
+                    "description": "operationMode",
+                    "type": "string"
+                },
+                "excitationFilter": {
+                    "description": "excitationFilter",
+                    "type": "string"
+                },
+                "timeUnit": {
+                    "description": "time unit, e.g. seconds",
+                    "type": "string"
+                },
+                "measurement": {
+                    "description": "measurement",
+                    "type": "string"
+                }
+            }
+        },
+        "instrument": {
+            "description": "a reference to an instrument used during the data acquisition",
+            "type": "string"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "reference": {
+            "@type": {
+                "type": "string",
+                "enum": [
+                    "publicationIdentifier"
+                ]
+            },
+            "description": "a reference to an publication about the data acquisition",
+            "type": "string"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "format": "uri"
+        },
+        "ID": {
+            "description": "a UUID for an instance of data acquisition process",
+            "type": "string"
+        }
+    },
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/da_schema.json",
+    "description": "Detection of the effect(s) induced by the perturbation",
+    "provenance": {
+        "prov:wasAttributedTo": {
+            "prov:agent": "http://orcid.org/0000-0001-9853-5668",
+            "_comment": "an ORCID for now, need to check foaf:Person"
+        }
+    }
+}

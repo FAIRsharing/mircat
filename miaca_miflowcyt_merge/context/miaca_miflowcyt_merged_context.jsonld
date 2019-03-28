@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Miaca": "obo:MS_1000900",
+        "project": "obo:OBI_0000011",
+        "@language": "en",
+        "flowSampleDetails": "obo:OBI_0000747",
+        "dataAnalysis": "obo:ERO_0001309",
+        "experimentOverview": "obo:OBI_0000066",
+        "instrumentDetails": "obo:OBI_0000968",
+        "MiacaMiflowcytMerged": "obo:MS_1000900"
+    }
+}

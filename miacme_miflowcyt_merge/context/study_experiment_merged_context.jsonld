@@ -1,0 +1,29 @@
+{
+    "@context": {
+        "sdo": "https://schema.org/",
+        "identifierSource": "obo:OBI_0000245",
+        "data": "obo:IAO_0000027",
+        "acknowledges": "sdo:funder",
+        "Study": "obo:OBI_0000066",
+        "experimental_setup": "obo:XCO_0000000",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "contacts": "obo:OBI_0000202",
+        "@language": "en",
+        "dates": "obo:STATO_0000093",
+        "identifier": "obo:IAO_0000578",
+        "imaging_condition": "obo:NCIT_C17369",
+        "title": "obo:OBI_0001622",
+        "type": "obo:PRIDE_0000457",
+        "MIACMEcompliance": "obo:OBI_0500023",
+        "publications": "obo:IAO_0000312",
+        "conclusions": "obo:IAO_0000144",
+        "description": "obo:OBI_0001615",
+        "MIACMEversion": "obo:IAO_0000129",
+        "other": "obo:NCIT_C17649",
+        "experimentVariables": "obo:STATO_0000258",
+        "qualityControlMeasures": "obo:MSIO_0000085",
+        "purpose": "obo:NCIT_C25634",
+        "keywords": "obo:NCIT_C43513",
+        "StudyExperimentMerged": "obo:OBI_0000066"
+    }
+}

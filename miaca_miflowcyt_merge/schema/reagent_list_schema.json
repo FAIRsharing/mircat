@@ -1,0 +1,91 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "definitions": {
+        "concentration": {
+            "description": "",
+            "type": "string"
+        },
+        "volume": {
+            "description": "",
+            "type": "string"
+        },
+        "concentrationUnit": {
+            "description": "e.g. mol/L",
+            "type": "string",
+            "enum": [
+                "pmol/L",
+                "nmol/L",
+                "umol/L",
+                "mmol/L"
+            ]
+        },
+        "volumeUnit": {
+            "description": "e.g. mL",
+            "type": "string",
+            "enum": [
+                "pL",
+                "nL",
+                "uL",
+                "ml"
+            ]
+        }
+    },
+    "type": "object",
+    "properties": {
+        "reagents": {
+            "items": {
+                "anyOf": [
+                    {
+                        "$ref": "#/definitions/volume"
+                    },
+                    {
+                        "$ref": "#/definitions/volumeUnit"
+                    },
+                    {
+                        "$ref": "#/definitions/concentration"
+                    },
+                    {
+                        "$ref": "#/definitions/concentrationUnit"
+                    }
+                ],
+                "ID": {
+                    "description": "identifier of the reagenet",
+                    "type": "string"
+                }
+            },
+            "type": "array"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "format": "uri"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "ID": {
+            "description": "identifier of the reagent list",
+            "type": "string"
+        }
+    },
+    "title": "MIACA reagent list schema",
+    "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/reagent_list_schema.json",
+    "description": "One or more reagents in a composite reagent, e.g., a cell culture medium.",
+    "_comment": "TODO: these definitions are the same as in treatment_schema, resolve duplication"
+}

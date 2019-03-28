@@ -1,0 +1,70 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIACME publication schema - MIACA application JSON schema merging",
+    "type": "object",
+    "properties": {
+        "identifier": {
+            "description": "A persistent identifier for the publication, it should be a DOI or pubmed identifier",
+            "type": "string"
+        },
+        "date": {
+            "description": "The publication date.",
+            "$ref": "date_schema.json#"
+        },
+        "title": {
+            "description": "The title of the publication.",
+            "type": "string"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "authors": {
+            "items": {
+                "$ref": "person_source_merged_schema.json#"
+            },
+            "type": "array"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "enum": [
+                "PublicationApplication"
+            ]
+        },
+        "publicationVenue": {
+            "description": "The venue where the publication appears (journal, publishing platform etc).",
+            "type": "string"
+        },
+        "identifierSource": {
+            "description": "Information about the organisation or namespace responsible for minting the identifier.",
+            "type": "string"
+        },
+        "bibref": {
+            "description": "Bibliographic reference for the data generated during the project. Cross reference for the data source. Example: Entry in a database of databases.",
+            "$ref": "open_cv_schema.json#"
+        },
+        "abstract": {
+            "description": "Application abstract, e. g. as taken from a publication",
+            "type": "string"
+        }
+    },
+    "version": "1.0",
+    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/publication_application_merged_schema.json",
+    "description": "Merge between the MIACME publication schema and the MIACA application JSON schema"
+}

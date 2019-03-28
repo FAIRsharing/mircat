@@ -1,0 +1,105 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIACA Source - corresponding to a person and their organization - MIACME person schema. A human being. merging",
+    "type": "object",
+    "properties": {
+        "city": {
+            "minLength": 1,
+            "description": "city the institution is placed",
+            "type": "string"
+        },
+        "address": {
+            "minLength": 1,
+            "description": "address of the institution",
+            "type": "string"
+        },
+        "email": {
+            "minLength": 1,
+            "description": "email of the researcher",
+            "type": "string"
+        },
+        "country": {
+            "minLength": 1,
+            "description": "country the city is placed",
+            "type": "string"
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "institution": {
+            "minLength": 1,
+            "description": "name of the institution/affiliation the researcher is working at",
+            "type": "string"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "enum": [
+                "SourcePerson"
+            ]
+        },
+        "department": {
+            "minLength": 1,
+            "description": "department in the institution",
+            "type": "string"
+        },
+        "name": {
+            "minLength": 1,
+            "description": "name of the researcher working on the project.",
+            "type": "string"
+        },
+        "ID": {
+            "description": "The source identifier",
+            "type": "string"
+        },
+        "@context": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ],
+            "description": "The JSON-LD context"
+        },
+        "firstName": {
+            "description": "The given name.",
+            "type": "string"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "roles": {
+            "description": "The roles assumed by the person. Ideally from a controlled vocabulary or ontology.",
+            "type": "string"
+        },
+        "identifierSource": {
+            "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier.",
+            "type": "string"
+        },
+        "midInitials": {
+            "type": "string"
+        },
+        "fax": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "ID",
+        "name",
+        "institution",
+        "department",
+        "address",
+        "city",
+        "country",
+        "email"
+    ],
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/source_person_merged_schema.json",
+    "description": "Merge between the MIACA Source - corresponding to a person and their organization and the MIACME person schema. A human being."
+}
