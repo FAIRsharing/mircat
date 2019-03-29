@@ -22,6 +22,7 @@
         "data": "obo:IAO_0000027",
         "MIACMEversion": "obo:IAO_0000129",
         "acknowledges": "sdo:funder",
+        "sdo": "https://schema.org/",
         "description": "obo:OBI_0001615",
         "ExperimentStudyMerged": "obo:OBI_0000066"
     }

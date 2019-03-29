@@ -6,6 +6,7 @@
         "@language": "en",
         "emailAddress": "obo:IAO_0000429",
         "phone": "sio:SIO_001324",
+        "sio": "http://semanticscience.org/resource/",
         "address": "obo:IAO_0000422",
         "fax": "sio:SIO_001321",
         "midInitials": "sio:SIO_001318",
