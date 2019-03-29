@@ -1,0 +1,70 @@
+{
+    "title": "MIACA dbreference schema",
+    "required": [
+        "db",
+        "ID"
+    ],
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "secondary": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Primary Identifier of the object in the external database, e.g. UniProt accession number."
+        },
+        "dbAc": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Accession number of the database in the database CV. This element is controlled by the PSI-MI controlled vocabulary 'database citation', root term ID MI:0444."
+        },
+        "@type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD type"
+        },
+        "version": {
+            "type": "string",
+            "minLength": 1,
+            "description": "The version number of the object in the external database."
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "refType": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Reference type, e.g. 'Identity' if this reference refers to an Identical object in the external database, or 'see-also' for additional information. Controlled by CV."
+        },
+        "refTypeAc": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Reference type accession number from the CV of reference types. This element is controlled by the PSI-MI controlled vocabulary 'xref type', root term ID MI:0353. "
+        },
+        "ID": {
+            "type": "string",
+            "description": "Primary Identifier of the object in the external database, e.g. UniProt accession number."
+        },
+        "db": {
+            "type": "string",
+            "description": "Name of the external database. Taken from the controlled vocabulary of databases."
+        }
+    },
+    "type": "object",
+    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/dbreference_schema.json",
+    "description": "",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

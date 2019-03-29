@@ -1,0 +1,70 @@
+{
+    "id": "https://w3id.org/mircat/miflowcyt_miaca_merge/schema/cell_source_schema.json",
+    "title": "MIACA cell source schema",
+    "properties": {
+        "provider": {
+            "type": "string",
+            "description": "e.g. ATCC"
+        },
+        "reference": {
+            "type": "string",
+            "description": "reference to publication"
+        },
+        "@type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD type"
+        },
+        "source": {
+            "description": "contact details refering to the CellLine",
+            "$ref": "primary_contact_source_merged_schema.json#"
+        },
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "cellLineID": {
+            "type": "string",
+            "description": "Controlled vocabulary ID. Description of the cell line used. (e.g. HeLa ATTC CCL2)"
+        },
+        "tissue": {
+            "description": "is a collection of interconnected cells that perform a similar function within an organism",
+            "$ref": "ontology_value_source_schema.json#"
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "strain": {
+            "description": "a variant of a cellType",
+            "$ref": "ontology_value_source_schema.json#"
+        },
+        "cellType": {
+            "description": "e.g. totipotent stem cell (CL:0000723)",
+            "$ref": "cl_ontology_schema.json#"
+        },
+        "species": {
+            "description": "e.g. human",
+            "$ref": "ontology_value_source_schema.json#"
+        },
+        "organ": {
+            "description": "e.g. kidney",
+            "$ref": "ontology_value_source_schema.json#"
+        }
+    },
+    "type": "object",
+    "additionalProperties": false,
+    "description": "Cell source schema",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

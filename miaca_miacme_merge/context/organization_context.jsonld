@@ -1,0 +1,10 @@
+{
+    "@context": {
+        "identifier": "obo:IAO_0000578",
+        "identifierSource": "obo:OBI_0000245",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "name": "obo:IAO_0000590",
+        "Organization": "obo:OBI_0000245",
+        "@language": "en"
+    }
+}

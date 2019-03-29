@@ -1,0 +1,9 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Assay": "obo:OBI_0000070",
+        "cellInput": "obo:CL_0000000",
+        "@language": "en",
+        "type": "obo:FBcv_0003050"
+    }
+}

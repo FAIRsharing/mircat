@@ -1,0 +1,12 @@
+{
+    "@context": {
+        "@language": "en",
+        "postTreatment": "efo:EFO_0000727",
+        "ID": "obo:IAO_0000578",
+        "efo": "http://www.ebi.ac.uk/efo/",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "dataAcquisition": "obo:NCIT_C142469",
+        "CellAssay": "obo:NCIT_C15959",
+        "treatment": "efo:EFO_0000727"
+    }
+}

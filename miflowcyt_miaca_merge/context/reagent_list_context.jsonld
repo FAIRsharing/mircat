@@ -1,0 +1,9 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "ReagentList": "obo:NCIT_C43432",
+        "@language": "en",
+        "ID": "obo:IAO_0000578",
+        "reagents": "obo:CHEBI_33893"
+    }
+}

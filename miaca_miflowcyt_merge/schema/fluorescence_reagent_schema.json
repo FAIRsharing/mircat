@@ -1,0 +1,65 @@
+{
+    "title": "MIFlowCyt Fluorescence Reagent",
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "cloneNameOrNumber": {
+            "type": "string",
+            "description": "If the probe is a monoclonal antibody, the clone name or number shall be provided."
+        },
+        "reagentCatalogueNumber": {
+            "type": "string",
+            "description": "The reagent catalogue number shall be specified."
+        },
+        "characteristicsBeingMeasured": {
+            "type": "string",
+            "description": "The relative amount of molecules, properties, or processes being evaluated (e.g., CD25, apoptosis, membrane permeability, cell viability, oxidative burst). The characteristic(s) being measured shall be provided whenever there is ambiguity about the analyte being measured, such as when sample processing affects detection of the analyte (e.g., propidium iodide example in Table 1). The optical detector (e.g., FL1) or parameter (e.g., FL1-H, see 3.3.6) used primarily for this measurement shall be indicated."
+        },
+        "analyteReporter": {
+            "type": "string",
+            "description": "(Fluorochrome) What plays the role of analyte reporter? Which component of the fluorescence reagent reports the presents of the analyte to the flow cytometer? What substance (label) is used to generate the measured signal (e.g., FITC)?"
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "other": {
+            "type": "string",
+            "description": "When secondary antibodies are used, the primary analyte (the analyte bound by the primary antibody) and the reporter component of the secondary antibody (the reporter that generates the measured signal) shall be clearly specified as described in 2.4.2, 2.4.3, and 2.4.4. If relevant, the primary and secondary antibodies shall be described individually (e.g., in the case that the use of a secondary antibody significantly impacts the interpretation of results because of nonspecific fluorescence, etc.). The description should also contain other relevant details which may include lot number, concentration, label incorporation method, separation technique, antibody staining procedures, and wash steps."
+        },
+        "reagentManufacturerName": {
+            "type": "string",
+            "description": "The reagent manufacturer shall be specified (e.g., MIFlowCyt Reagent Inc.)."
+        },
+        "@type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD type"
+        },
+        "analyteDetector": {
+            "type": "string",
+            "description": "What plays the role of analyte detector? Which component of the fluorescence reagent specifically binds to the analyte to make it detectable (e.g., anti-CD25 antibody)?"
+        },
+        "analyte": {
+            "type": "string",
+            "description": "What plays the role of the analyte? Which substance or chemical constituent is the subject of interest of the analytical procedure, what target is specifically bound by the analyte detector (e.g., CD25)?"
+        }
+    },
+    "type": "object",
+    "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/fluorescence_reagent_schema.json",
+    "description": "The expected and possible types of cells or other particles in the sample material, and their expected and possible measurable characteristics should be noted as these represent the key information for choosing appropriate reagents with respect to the experimental goal. The following information shall be provided about each fluorescence reagent used. Information about the characteristic(s) being measured, as well as details about what plays the role of analyte, analyte detector, and analyte reporter should be descriptive enough to allow for accurate interpretation of the experiment data. Table 1 lists some examples of reagent descriptions.",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

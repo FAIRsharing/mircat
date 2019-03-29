@@ -1,0 +1,214 @@
+{
+    "title": "MIACME pixel schema. A picture element. Based on OME Pixel: https://www.openmicroscopy.org/Schemas/Documentation/Generated/OME-2016-06/ome_xsd.html#Pixels",
+    "id": "https://w3id.org/mircat/miflowcyt_miacme_merge/schema/pixel_schema.json",
+    "version": "1.0",
+    "required": [
+        "identifier",
+        "dimensionsOrder",
+        "type",
+        "sizeX",
+        "sizeY",
+        "sizeZ",
+        "sizeC",
+        "sizeT"
+    ],
+    "properties": {
+        "sizeC": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "The number of channels of the picture element."
+        },
+        "physicalSizeZUnit": {
+            "type": "string",
+            "description": "The unit of the physical size of the pixel in the depth dimension.",
+            "enum": [
+                "Ym",
+                "Zm",
+                "Em",
+                "Pm",
+                "Tm",
+                "Gm",
+                "Mm",
+                "km",
+                "hm",
+                "dam",
+                "m",
+                "dm",
+                "cm",
+                "mm",
+                "\u00b5m",
+                "nm",
+                "pm",
+                "fm",
+                "am",
+                "zm",
+                "ym",
+                "\u00c5",
+                "thou",
+                "li",
+                "in",
+                "ft",
+                "yd",
+                "mi",
+                "ua",
+                "ly",
+                "pc",
+                "pt",
+                "pixel",
+                "reference frame"
+            ]
+        },
+        "physicalSizeYUnit": {
+            "type": "string",
+            "description": "The unit of the physical size of the pixel in the height dimension.",
+            "enum": [
+                "Ym",
+                "Zm",
+                "Em",
+                "Pm",
+                "Tm",
+                "Gm",
+                "Mm",
+                "km",
+                "hm",
+                "dam",
+                "m",
+                "dm",
+                "cm",
+                "mm",
+                "\u00b5m",
+                "nm",
+                "pm",
+                "fm",
+                "am",
+                "zm",
+                "ym",
+                "\u00c5",
+                "thou",
+                "li",
+                "in",
+                "ft",
+                "yd",
+                "mi",
+                "ua",
+                "ly",
+                "pc",
+                "pt",
+                "pixel",
+                "reference frame"
+            ]
+        },
+        "sizeX": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "The range one picture element in the image spans in the width dimension. "
+        },
+        "sizeY": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "The range one picture element in the image spans in the height dimension."
+        },
+        "physicalSizeZ": {
+            "type": "number",
+            "minimum": 0,
+            "description": "The physical size of the pixel in the depth dimension."
+        },
+        "dimensionsOrder": {
+            "type": "string",
+            "description": "The order of the dimensions.",
+            "enum": [
+                "XYZCT",
+                "XYZTC",
+                "XYCTZ",
+                "XYCZT",
+                "XYTCZ",
+                "XYTZC"
+            ]
+        },
+        "sizeZ": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "The range one picture element in the image spans in the depth dimension."
+        },
+        "physicalSizeXUnit": {
+            "type": "string",
+            "description": "The unit of the physical size of the pixel in the width dimension.",
+            "enum": [
+                "Ym",
+                "Zm",
+                "Em",
+                "Pm",
+                "Tm",
+                "Gm",
+                "Mm",
+                "km",
+                "hm",
+                "dam",
+                "m",
+                "dm",
+                "cm",
+                "mm",
+                "\u00b5m",
+                "nm",
+                "pm",
+                "fm",
+                "am",
+                "zm",
+                "ym",
+                "\u00c5",
+                "thou",
+                "li",
+                "in",
+                "ft",
+                "yd",
+                "mi",
+                "ua",
+                "ly",
+                "pc",
+                "pt",
+                "pixel",
+                "reference frame"
+            ]
+        },
+        "identifier": {
+            "type": "string",
+            "description": "An identifier for the picture element."
+        },
+        "physicalSizeX": {
+            "type": "number",
+            "minimum": 0,
+            "description": "The physical size of the pixel in the width dimension."
+        },
+        "type": {
+            "type": "string",
+            "description": "The type of picture element.",
+            "enum": [
+                "int8",
+                "int16",
+                "int32",
+                "uint8",
+                "uint16",
+                "uint32",
+                "float",
+                "double",
+                "complex",
+                "double-complex",
+                "bit"
+            ]
+        },
+        "sizeT": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "The number of time points."
+        },
+        "physicalSizeY": {
+            "type": "number",
+            "minimum": 0,
+            "description": "The physical size of the pixel in the height dimension."
+        }
+    },
+    "type": "object",
+    "additionalProperties": false,
+    "description": "JSON-schema representing a pixel in MIACME",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

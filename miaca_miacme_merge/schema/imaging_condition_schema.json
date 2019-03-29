@@ -1,0 +1,92 @@
+{
+    "title": "MIACME imaging condition schema",
+    "version": "1.0",
+    "required": [
+        "modality",
+        "imageSequenceType",
+        "observationPeriod",
+        "observationPeriodUnit",
+        "timeSeriesInterval",
+        "timeSeriesIntervalUnit",
+        "channelDefinition",
+        "pixels"
+    ],
+    "properties": {
+        "imageSequenceType": {
+            "type": "string",
+            "description": "Single or multiple imaging timepoints in the experiment. "
+        },
+        "timeSeriesInterval": {
+            "type": "number",
+            "description": "The duration between two sequential frames of the time lapse series."
+        },
+        "observationPeriodUnit": {
+            "type": "string",
+            "description": "The unit of the observation period."
+        },
+        "@type": {
+            "type": "string",
+            "description": "The JSON-LD type",
+            "enum": [
+                "ImagingCondition"
+            ]
+        },
+        "observationPeriod": {
+            "type": "number",
+            "description": "For time-series, it is the timespan since the imaging process starts until it ends. For endpoint, it is the timespan since the starting point until the image is taken."
+        },
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "pixels": {
+            "type": "array",
+            "description": "The physical dimension of one picture element in your image.",
+            "items": {
+                "$ref": "pixel_schema.json#"
+            }
+        },
+        "numericalAperture": {
+            "type": "string",
+            "description": "Value that indicates the light acceptance angle of the objective (\ndetermines the light gathering power, resolving power, and depth of \nfield of the objective)."
+        },
+        "timeSeriesIntervalUnit": {
+            "type": "string",
+            "description": "The unit of the time series interval."
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "objectiveLens": {
+            "type": "string",
+            "description": "Objective manufacturer and objective acronym specifying optical correction, primary use of microscopy method and magnification (may also include immersion medium and/or working distance or field of view)"
+        },
+        "channelDefinition": {
+            "type": "array",
+            "description": "Identification of the label or constrasts",
+            "items": {
+                "type": "string"
+            }
+        },
+        "modality": {
+            "type": "string",
+            "description": "The type of microscopy used to acquire images. For example: confocal, microscopy, spinning disk, wide-field, multi-phonon, light-sheet, super-resolution, "
+        }
+    },
+    "type": "object",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/imaging_condition_schema.json",
+    "description": "JSON-schema representing an investigation in MIACME",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

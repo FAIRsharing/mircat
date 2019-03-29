@@ -1,0 +1,48 @@
+{
+    "title": "MIACME data schema",
+    "version": "1.0",
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "extractedFeatures": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "@type": {
+            "type": "string",
+            "description": "The JSON-LD type",
+            "enum": [
+                "Data"
+            ]
+        },
+        "processedImages": {
+            "type": "string"
+        },
+        "rawImages": {
+            "type": "string"
+        }
+    },
+    "type": "object",
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/data_schema.json",
+    "description": "JSON-schema representing an investigation in MIACME",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

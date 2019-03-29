@@ -1,0 +1,9 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "@language": "en",
+        "EnvironmentalSample": "obo:NCBITaxon_1617257",
+        "sampleLocation": "obo:NCIT_C25341",
+        "sampleDescription": "obo:sep_00196"
+    }
+}

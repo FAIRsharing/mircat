@@ -1,0 +1,14 @@
+{
+    "@context": {
+        "effect": "obo:NCIT_C25492",
+        "ProjectDescription": "obo:OBI_0001615",
+        "controls": "obo:NCIT_C61299",
+        "@language": "en",
+        "ID": "obo:IAO_0000578",
+        "xref": "sio:SIO_001171",
+        "process": "obo:BFO_0000015",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "sio": "http://semanticscience.org/resource/",
+        "title": "obo:IAO_0000590"
+    }
+}

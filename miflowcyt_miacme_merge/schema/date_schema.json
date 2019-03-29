@@ -1,0 +1,50 @@
+{
+    "title": "MIACME date schema",
+    "id": "https://w3id.org/mircat/miflowcyt_miacme_merge/schema/date_schema.json",
+    "version": "1.0",
+    "required": [
+        "date",
+        "type"
+    ],
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "type": {
+            "description": "The type of date, used to specify the process which is being timestamped by the date attribute value, ideally comes from a controlled terminology.",
+            "$ref": "annotation_schema.json#"
+        },
+        "@type": {
+            "type": "string",
+            "description": "The JSON-LD type",
+            "enum": [
+                "Date"
+            ]
+        },
+        "date": {
+            "type": "string",
+            "format": "date-time",
+            "description": "A date following the ISO8601 standard."
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        }
+    },
+    "type": "object",
+    "additionalProperties": false,
+    "description": "Information about a calendar date or timestamp indicating day, month, year and time of an event.",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

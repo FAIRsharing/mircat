@@ -1,0 +1,10 @@
+{
+    "@context": {
+        "OntologyValueSource": "obo:NCIT_C21270",
+        "@language": "en",
+        "ontologySource": "obo:NCIT_C25683",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "ontologyValue": "obo:NCIT_C25712",
+        "comment": "obo:NCIT_C25393"
+    }
+}

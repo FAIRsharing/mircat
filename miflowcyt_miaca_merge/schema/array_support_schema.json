@@ -1,0 +1,48 @@
+{
+    "title": "MIACA array support type schema",
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "nameType": {
+            "description": "Type of vessel used,: i.e. single eppendorf tube, 96-well plate, etc.",
+            "$ref": "ontology_value_source_schema.json#"
+        },
+        "ID": {
+            "type": "string"
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "size": {
+            "description": "Size of reaction vessel, e.g. volume or surface area.",
+            "$ref": "array_support_size_schema.json#"
+        },
+        "@type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD type"
+        },
+        "vendor": {
+            "description": "Contact details of the source of the reaction vessels, e.g. company",
+            "$ref": "vendor_schema.json"
+        }
+    },
+    "type": "object",
+    "id": "https://w3id.org/mircat/miflowcyt_miaca_merge/schema/array_support_schema.json",
+    "description": "Description of array support types (reaction vessels) that are used during the project: i.e. single eppendorf tube, 96-well plazes, or [glass] slides, with details such as manufacturer, order number; size.",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

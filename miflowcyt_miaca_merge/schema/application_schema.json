@@ -1,0 +1,49 @@
+{
+    "id": "https://w3id.org/mircat/miflowcyt_miaca_merge/schema/application_schema.json",
+    "title": "MIACA application JSON schema",
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "abstract": {
+            "type": "string",
+            "description": "Application abstract, e. g. as taken from a publication"
+        },
+        "ID": {
+            "type": "string"
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "@type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD type"
+        },
+        "pubref": {
+            "type": "string",
+            "description": "reference to publication"
+        },
+        "bibref": {
+            "description": "Bibliographic reference for the data generated during the project. Cross reference for the data source. Example: Entry in a database of databases.",
+            "$ref": "open_cv_schema.json#"
+        }
+    },
+    "type": "object",
+    "additionalProperties": false,
+    "description": "Description of the specific application of this project within a larger context, if applicable. Controls are relevant in data analysis to determine the robustness and the dynamic range of the assay, and to produce the list of significant hits.",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

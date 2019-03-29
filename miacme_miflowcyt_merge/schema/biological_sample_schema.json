@@ -1,0 +1,49 @@
+{
+    "title": "MIFlowCyt Biological Sample",
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "sourceDescription": {
+            "type": "string",
+            "description": "The source of the biological sample shall be described (e.g., wild- type mouse, C57BL/6 spleen, C57BL/6 splenocytes). If the source is a cell line the description shall include its name, ATCC [17] (or equivalent) number, and cell type."
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "other": {
+            "type": "string",
+            "description": "Additional information about the biological sample should be provided if relevant. This may include relevant information such as in vivo or in vitro treatment, stimulation, preparation / enrichment protocol, culture/growth protocol, collection time/date, whether the sample was frozen/banked/fixed, etc."
+        },
+        "@type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD type"
+        },
+        "organism": {
+            "description": "The source organism for this biological sample",
+            "$ref": "organism_schema.json#"
+        },
+        "sampleDescription": {
+            "type": "string",
+            "description": "A description of the biological sample shall be provided, including the sample type, if relevant (e.g., C57BL/6 spleen, purified CD4+ lymphocytes, BALB/c thymocyte DNA, control patient PBMCs, protein lysate from lung cancer biopsy, peripheral blood from patient with Type I diabetes, liver biopsy, etc.)"
+        }
+    },
+    "type": "object",
+    "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/biological_sample_schema.json",
+    "description": "Biological Sample",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "Instrument": "obo:OBI_0000968",
+        "other": "obo:NCIT_C17649",
+        "model": "obo:MS_1000031",
+        "@language": "en",
+        "configurationAndSettings": "obo:MS_1000740",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "manufacturer": "obo:OBI_0000835"
+    }
+}

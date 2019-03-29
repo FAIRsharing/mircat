@@ -1,0 +1,15 @@
+{
+    "@context": {
+        "cloneNameOrNumber": "obo:SO_0000151",
+        "reagentCatalogueNumber": "obo:NCIT_C112406",
+        "analyteReporter": "obo:CHEBI_35209",
+        "@language": "en",
+        "other": "obo:NCIT_C17649",
+        "analyteDetector": "obo:CHMO_0002244",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "characteristicsBeingMeasured": "obo:BFO_0000005",
+        "FluorescenceReagent": "obo:OBI_0001879",
+        "analyte": "obo:OBI_0000275",
+        "reagentManufacturerName": "obo:IAO_0000590"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "cellLine": "obo:CLO_0000031",
+        "MaterialList": "obo:BFO_0000040",
+        "compositeReagent": "obo:REX_0000057",
+        "@language": "en",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "reagent": "obo:CHEBI_33893",
+        "ID": "obo:IAO_0000578"
+    }
+}

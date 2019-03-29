@@ -1,0 +1,8 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "DataAnalysis": "obo:ERO_0001309",
+        "@language": "en",
+        "listModeDataFile": "obo:OBI:0000021"
+    }
+}

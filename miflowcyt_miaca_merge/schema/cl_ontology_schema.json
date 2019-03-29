@@ -1,0 +1,49 @@
+{
+    "id": "https://w3id.org/mircat/miflowcyt_miaca_merge/schema/cl_ontology_schema.json",
+    "title": "MIACA CL ontology schema",
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "ontologyID": {
+            "type": "string",
+            "description": "ID of cell.obo"
+        },
+        "@type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD type"
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "ontologyName": {
+            "type": "string",
+            "description": "name"
+        },
+        "is_a": {
+            "type": "array",
+            "description": "derived from other ontologyID",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "type": "object",
+    "additionalProperties": false,
+    "description": "Controlled vocabulary for celltypes",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

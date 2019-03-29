@@ -1,0 +1,21 @@
+{
+    "@context": {
+        "sizeC": "obo:NCIT_C94953",
+        "physicalSizeZUnit": "obo:NCIT_C68553",
+        "physicalSizeYUnit": "obo:NCIT_C68553",
+        "@language": "en",
+        "sizeX": "obo:NCIT_C94953",
+        "physicalSizeZ": "obo:NCIT_C94953",
+        "dimensionsOrder": "obo:NCIT_C42680",
+        "sizeZ": "obo:NCIT_C94953",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "sizeT": "obo:NCIT_C94953",
+        "physicalSizeXUnit": "obo:NCIT_C68553",
+        "identifier": "obo:IAO_0000577",
+        "physicalSizeX": "obo:NCIT_C94953",
+        "type": "obo:NCIT_C25284",
+        "physicalSizeY": "obo:NCIT_C94953",
+        "Pixel": "obo:NCIT_C48367",
+        "sizeY": "obo:NCIT_C94953"
+    }
+}

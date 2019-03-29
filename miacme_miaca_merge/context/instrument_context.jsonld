@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "Instrument": "obo:OBI_0000968",
+        "instrumentType": "obo:PRIDE_0000163",
+        "instrumentName": "obo:IAO_0000590",
+        "@language": "en",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "instrumentModel": "obo:MS_1000031",
+        "vendor": "obo:NCIT_C68608",
+        "ID": "obo:IAO_0000578",
+        "instrumentSpec": "obo:NCIT_C44175"
+    }
+}

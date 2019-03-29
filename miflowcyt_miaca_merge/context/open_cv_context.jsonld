@@ -1,0 +1,9 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "OpenCv": "obo:NCIT_C44272",
+        "name": "obo:IAO_0000027",
+        "@language": "en",
+        "xref": "obo:NCIT_C42743"
+    }
+}

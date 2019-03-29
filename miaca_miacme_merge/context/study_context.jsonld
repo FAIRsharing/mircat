@@ -1,0 +1,23 @@
+{
+    "@context": {
+        "title": "obo:OBI_0001622",
+        "imaging_condition": "obo:NCIT_C17369",
+        "identifierSource": "obo:OBI_0000245",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "dates": "obo:STATO_0000093",
+        "Study": "obo:OBI_0000066",
+        "experimental_setup": "obo:XCO_0000000",
+        "contacts": "obo:OBI_0000202",
+        "data": "obo:IAO_0000027",
+        "MIACMEversion": "obo:IAO_0000129",
+        "identifier": "obo:IAO_0000578",
+        "acknowledges": "sdo:funder",
+        "type": "obo:PRIDE_0000457",
+        "publications": "obo:IAO_0000312",
+        "sdo": "https://schema.org/",
+        "MIACMEcompliance": "obo:OBI_0500023",
+        "description": "obo:OBI_0001615",
+        "conclusions": "obo:IAO_0000144",
+        "@language": "en"
+    }
+}

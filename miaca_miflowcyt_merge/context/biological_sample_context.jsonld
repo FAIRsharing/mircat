@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "sourceDescription": "obo:NCIT_C93859",
+        "@language": "en",
+        "other": "obo:NCIT_C17649",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "BiologicalSample": "obo:OBI_0000671",
+        "organism": "obo:OBI_0100026",
+        "sampleDescription": "obo:sep_00196"
+    }
+}

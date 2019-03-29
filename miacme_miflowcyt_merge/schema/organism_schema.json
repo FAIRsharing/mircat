@@ -1,0 +1,61 @@
+{
+    "title": "MIFlowCyt Organism",
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "gender": {
+            "type": "string",
+            "description": "The gender shall be provided if applicable for the particular organism."
+        },
+        "genotype": {
+            "type": "string",
+            "description": "Appropriate genotype characteristics shall be described (e.g., p53-/-)."
+        },
+        "phenotype": {
+            "type": "string",
+            "description": "Appropriate phenotype characteristics such as disease state shall be described (e.g., increased tumorigenesis)."
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "other": {
+            "type": "string",
+            "description": "Additional information about the source organism should be provided if relevant. This may include anatomic location of the source, visit time/date, or additional details and comments."
+        },
+        "age": {
+            "type": "string",
+            "description": "The age shall be provided if applicable for the particular organism (e.g., 6 weeks). It may also include the developmental state (e.g., Theiler stage 23)."
+        },
+        "taxonomy": {
+            "type": "string",
+            "description": "The source organism shall be specified by genus and species (e.g., Mus musculus). The terms should come from an appropriate standard such as the NCBI taxonomy database [12]. Taxonomy information should also contain the type of subspecies and organism strain, if applicable. A standard taxonomy may be extended or a proprietary taxonomy may be used, especially if detailed identification is relevant and beyond the scope of standard taxonomies."
+        },
+        "@type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD type"
+        },
+        "treatment": {
+            "type": "string",
+            "description": "All source organism treatments shall be described (e.g., treatment with cyclooxygenase-2 (COX-2) inhibitor)."
+        }
+    },
+    "type": "object",
+    "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/organism_schema.json",
+    "description": "Organism",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

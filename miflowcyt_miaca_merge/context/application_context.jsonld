@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "pubref": "obo:NCIT_C40976",
+        "abstract": "obo:IAO_0000315",
+        "@language": "en",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Application": "obo:IAO_0000311",
+        "bibref": "obo:NCIT_C25474",
+        "ID": "obo:IAO_0000578"
+    }
+}

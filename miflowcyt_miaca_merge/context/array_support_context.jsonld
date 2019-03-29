@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "nameType": "obo:OBI_0000967",
+        "@language": "en",
+        "ID": "obo:IAO_0000578",
+        "ArraySupport": "obo:OBI_0001865",
+        "size": "obo:PATO_0000117",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "vendor": "obo:NCIT_C68608"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "@context": {
+        "other": "obo:NCIT_C17649",
+        "@language": "en",
+        "qualityControlMeasures": "obo:MSIO_0000085",
+        "organization": "obo:OBI_0000245",
+        "experimentVariables": "obo:STATO_0000258",
+        "purpose": "obo:NCIT_C25634",
+        "keywords": "obo:NCIT_C43513",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Experiment": "obo:OBI_0000066",
+        "primaryContact": "obo:OBI_0000202",
+        "conclusions": "obo:IAO_0000144",
+        "date": "obo:STATO_0000093"
+    }
+}

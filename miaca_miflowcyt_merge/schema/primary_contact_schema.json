@@ -1,0 +1,41 @@
+{
+    "title": "MIFlowCyt Primary Contact",
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "emailAddress": {
+            "type": "string",
+            "description": "The primary contact's email address"
+        },
+        "name": {
+            "type": "string",
+            "description": "The primary contact's name"
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "@type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD type"
+        }
+    },
+    "type": "object",
+    "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/primary_contact_schema.json",
+    "description": "The description may include information for additional individuals involved in the experiment, including their contact details and their role.",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

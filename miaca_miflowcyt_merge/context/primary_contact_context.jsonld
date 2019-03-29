@@ -1,0 +1,9 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "name": "obo:IAO_0000590",
+        "PrimaryContact": "obo:NCBITaxon_9606",
+        "@language": "en",
+        "emailAddress": "obo:IAO_0000429"
+    }
+}

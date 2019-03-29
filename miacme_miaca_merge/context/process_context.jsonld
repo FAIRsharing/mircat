@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "Process": "obo:BFO_0000015",
+        "@language": "en",
+        "ID": "obo:IAO_0000578",
+        "successorID": "obo:NCIT_C53286",
+        "currentID": "obo:NCIT_C25471",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "processName": "obo:IAO_0000590"
+    }
+}

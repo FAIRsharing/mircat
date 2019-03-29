@@ -1,0 +1,12 @@
+{
+    "@context": {
+        "sampleCharacteristics": "obo:BFO_0000005",
+        "fluorescentReagentsDescription": "obo:ERO_0000006",
+        "sampleTreatmentsDescription": "efo:EFO_0003809",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "efo": "http://www.ebi.ac.uk/efo/",
+        "materialDescription": "obo:NCIT_C93859",
+        "Sample": "obo:OBI_0000747",
+        "@language": "en"
+    }
+}

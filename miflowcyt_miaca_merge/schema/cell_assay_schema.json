@@ -1,0 +1,58 @@
+{
+    "title": "MIACA cell assay schema",
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "treatment": {
+            "type": "array",
+            "description": "Description of the conditions that are applied to CellLine during culturing of cells. \u2018Treatment\u2019 also covers the perturbation. More than one perturbator can be applied in the same \u2018Treatment\u2019.",
+            "items": {
+                "$ref": "treatment_schema.json#"
+            }
+        },
+        "ID": {
+            "type": "string",
+            "description": "The cell assay identifier"
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "@type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD type"
+        },
+        "dataAcquisition": {
+            "type": "array",
+            "description": "Detection of the effect(s) induced by the perturbation",
+            "items": {
+                "$ref": "da_schema.json#"
+            }
+        },
+        "postTreatment": {
+            "type": "array",
+            "description": "Description of the conditions, i.e. lysis, fixation, staining, antibody incubation, etc., that may be applied after \u2018Treatment\u2019, and prior to data acquisition",
+            "items": {
+                "$ref": "treatment_schema.json#"
+            }
+        }
+    },
+    "type": "object",
+    "id": "https://w3id.org/mircat/miflowcyt_miaca_merge/schema/cell_assay_schema.json",
+    "description": "The actual experimental part describing the performed steps, like  treatments, perturbation(s) and data acquisition in necessary detail.",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

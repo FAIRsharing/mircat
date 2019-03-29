@@ -1,0 +1,17 @@
+{
+    "@context": {
+        "materialList": "obo:OBI_0000747",
+        "cellAssay": "obo:NCIT_C15959",
+        "application": "obo:IAO_0000311",
+        "source": "obo:NCBITaxon_9606",
+        "Project": "obo:OBI_0000011",
+        "@language": "en",
+        "arraySupport": "obo:OBI_0001865",
+        "processLine": "obo:BFO_0000015",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "projectDescription": "obo:OBI_0001615",
+        "ID": "obo:IAO_0000578",
+        "dataProcessing": "obo:OBI_0200000",
+        "instrument": "obo:OBI_0000968"
+    }
+}

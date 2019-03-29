@@ -1,0 +1,48 @@
+{
+    "title": "MIACME assay schema",
+    "version": "1.0",
+    "required": [
+        "type",
+        "cellInput"
+    ],
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "type": {
+            "type": "string",
+            "description": "The kind of assay."
+        },
+        "cellInput": {
+            "type": "string",
+            "description": "The manner in which the cell population is presented at the start of the assay"
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "@type": {
+            "type": "string",
+            "description": "The JSON-LD type",
+            "enum": [
+                "Assay"
+            ]
+        }
+    },
+    "type": "object",
+    "id": "https://w3id.org/mircat/miflowcyt_miacme_merge/schema/assay_schema.json",
+    "description": "JSON-schema representing the cell model in a cell migration experiment.",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

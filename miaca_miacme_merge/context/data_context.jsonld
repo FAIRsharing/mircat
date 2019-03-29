@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "@language": "en",
+        "edam": "http://edamontology.org/data_3424",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "extractedFeatures": "obo:NCIT_C73619",
+        "Data": "obo:IAO_0000027",
+        "processedImages": "obo:IAO_0000101",
+        "rawImages": "edam:data_3424"
+    }
+}

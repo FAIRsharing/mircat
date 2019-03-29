@@ -1,0 +1,153 @@
+{
+    "title": "MIACA (Minimum Information about a Cellular Assay) data processing schema",
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "rawData": {
+            "type": "array",
+            "processedData": {
+                "type": "array",
+                "description": "The raw data can be processed either manually or through automated computational methods. Processing commonly generates numbers and/or phenotypic descriptions.",
+                "items": {
+                    "properties": {
+                        "ID": {
+                            "type": "string",
+                            "description": "The identifier"
+                        },
+                        "parameters": {
+                            "type": "array",
+                            "description": "the list of parameter settings used to run the software used to generate the file"
+                        },
+                        "format": {
+                            "type": "string",
+                            "description": "ASCII, TIFF, WMA,\u2026"
+                        },
+                        "version": {
+                            "type": "string",
+                            "description": "the version of the softwareused to generate the file"
+                        },
+                        "type": {
+                            "type": "string",
+                            "description": "type"
+                        },
+                        "software": {
+                            "type": "string",
+                            "description": "the name of the software used to generate the file"
+                        },
+                        "reference": {
+                            "type": "string",
+                            "description": "reference to a publication"
+                        },
+                        "processName": {
+                            "type": "string",
+                            "description": "The name of the process"
+                        },
+                        "algorithm": {
+                            "type": "string",
+                            "description": "algorithm"
+                        },
+                        "link": {
+                            "type": "string",
+                            "description": "link to raw data"
+                        }
+                    },
+                    "type": "object"
+                }
+            },
+            "description": "Description of raw data.",
+            "items": {
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "description": "number, image, movie,\u2026"
+                    },
+                    "format": {
+                        "type": "string",
+                        "description": "ASCII, TIFF, WMA,\u2026"
+                    },
+                    "ID": {
+                        "type": "string",
+                        "description": "The identifier"
+                    },
+                    "link": {
+                        "type": "string",
+                        "description": "link to raw data"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "phenoDesc": {
+            "type": "array",
+            "description": "A phenotypic description is usually obtained by manual observation of images and/or interpretation of processed data.",
+            "items": {
+                "properties": {
+                    "timeSpace": {
+                        "type": "string",
+                        "description": "Time and space parameters"
+                    },
+                    "format": {
+                        "type": "string",
+                        "description": "ASCII, TIFF, WMA,\u2026"
+                    },
+                    "ID": {
+                        "type": "string",
+                        "description": "The identifier"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "processName": {
+                        "type": "string",
+                        "description": "The name of the process"
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "description of the phenotype"
+                    },
+                    "protocol": {
+                        "type": "string",
+                        "description": "for the characterization and classification of phenotypic observation"
+                    },
+                    "link": {
+                        "type": "string",
+                        "description": "link to raw data"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "ID": {
+            "type": "string",
+            "description": "The identifier"
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "@type": {
+            "type": "string",
+            "description": "The JSON-LD type",
+            "enum": [
+                "DataProcessing"
+            ]
+        }
+    },
+    "type": "object",
+    "id": "https://w3id.org/mircat/miflowcyt_miaca_merge/schema/data_processing_schema.json",
+    "description": "Description of the processes applied to analyze the raw-data in order to generate a hit list. Data analysis is usually carried out sequentially, applying a number of algorithms and analysis tools",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

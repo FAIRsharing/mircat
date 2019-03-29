@@ -1,0 +1,68 @@
+{
+    "title": "MIACA project description schema",
+    "required": [
+        "ID",
+        "process",
+        "effect",
+        "controls"
+    ],
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "effect": {
+            "type": "string",
+            "minLength": 1,
+            "description": "description of measured effect and the 'reporter' used for the measurement (e.g. antibody)"
+        },
+        "controls": {
+            "type": "array",
+            "minLength": 1,
+            "description": "controls are relevant in data analysis to determine the robustness and the dynamic range of the assay, and to produce the list of significant hits.e.g. measuring the effect of a perturbation on the induction of apoptosis (biological process), by measuring the level of activated caspase 3 (measured effect), with a antibody specific for the activated enzyme (reporter). One project consists of experiments (>=1) which are carried out in arrays (1 to n features). A proposed definition of experiment is given in The experiment concept above.",
+            "items": {
+                "type": "string"
+            }
+        },
+        "ID": {
+            "type": "string"
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "process": {
+            "type": "string",
+            "minLength": 1,
+            "description": "biological process that is addressed"
+        },
+        "@type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD type"
+        },
+        "xref": {
+            "description": "Refers to the term of the controlled vocabulary in an external database.",
+            "$ref": "xref_schema.json#"
+        },
+        "title": {
+            "type": "string",
+            "description": "Application title, e. g. as taken from a publication"
+        }
+    },
+    "type": "object",
+    "id": "https://w3id.org/mircat/miflowcyt_miaca_merge/schema/project_description_schema.json",
+    "description": "Description of biological process that is addressed and description of measured effect. Description (text) of the project (1) within a larger context.",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}
