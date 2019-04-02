@@ -42,7 +42,7 @@
     },
     "vendor": {
       "description": "Contact details of the source of the reaction vessels, e.g. company",
-      "$ref": "vendor_schema.json"
+      "$ref": "vendor_schema.json#"
     }
   }
 }
