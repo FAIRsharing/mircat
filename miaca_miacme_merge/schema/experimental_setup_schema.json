@@ -1,6 +1,10 @@
 {
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/experimental_setup_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema",
     "title": "MIACME experimental setup schema",
     "version": "1.0",
+    "description": "JSON-schema representing the experimental setup in a cell migration experiment.",
+    "type": "object",
     "required": [
         "basicApproach",
         "cellModel",
@@ -23,49 +27,45 @@
                 }
             ]
         },
-        "basicApproach": {
+        "@id": {
+            "description": "The JSON-LD identifier",
             "type": "string",
-            "description": "A description of the study type or approach used, such as in vitro, in vivo, in silico."
+            "format": "uri"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "enum": [
+                "ExperimentalSetup"
+            ]
+        },
+        "basicApproach": {
+            "description": "A description of the study type or approach used, such as in vitro, in vivo, in silico.",
+            "type": "string"
+        },
+        "cellModel": {
+            "description": "A description of the cells used in the experiment.",
+            "$ref": "cell_source_schema.json#"
         },
         "assay": {
             "description": "The migration/invasion assay for this investigation, and its specifications.",
             "$ref": "assay_schema.json#"
         },
-        "medium": {
-            "type": "string",
-            "description": "Solution used to provide nutritives and motility-assisting additives to migrating cells"
-        },
-        "@id": {
-            "type": "string",
-            "format": "uri",
-            "description": "The JSON-LD identifier"
-        },
-        "@type": {
-            "type": "string",
-            "description": "The JSON-LD type",
-            "enum": [
-                "ExperimentalSetup"
-            ]
+        "treatment": {
+            "description": "The manipulation/perturbation of which the (migratory) effect is being tested.",
+            "type": "string"
         },
         "microEnvironment": {
-            "type": "string",
-            "description": "The nature or components of the material surrounding/contacting the cells for which migration is tested, including substrate, ECM protein or synthetic counterpart, tissue, other cells or entire organism."
-        },
-        "cellModel": {
-            "description": "A description of the cells used in the experiment.",
-            "$ref": "cell_model_schema.json#"
+            "description": "The nature or components of the material surrounding/contacting the cells for which migration is tested, including substrate, ECM protein or synthetic counterpart, tissue, other cells or entire organism.",
+            "type": "string"
         },
         "organism": {
-            "type": "string",
-            "description": "The organism corresponding to the microEnvironment, if it is a tissue."
+            "description": "The organism corresponding to the microEnvironment, if it is a tissue.",
+            "type": "string"
         },
-        "treatment": {
-            "type": "string",
-            "description": "The manipulation/perturbation of which the (migratory) effect is being tested."
+        "medium": {
+            "description": "Solution used to provide nutritives and motility-assisting additives to migrating cells",
+            "type": "string"
         }
-    },
-    "type": "object",
-    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/experimental_setup_schema.json",
-    "description": "JSON-schema representing the experimental setup in a cell migration experiment.",
-    "$schema": "http://json-schema.org/draft-04/schema"
+    }
 }

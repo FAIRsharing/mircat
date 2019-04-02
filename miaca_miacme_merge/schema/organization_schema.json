@@ -1,7 +1,10 @@
 {
-    "title": "MIACME organization schema",
     "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/organization_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIACME organization schema",
     "version": "1.0",
+    "description": "JSON-schema representing an organization in MIACME. Legal or physical entity corresponding to a business or administration",
+    "type": "object",
     "properties": {
         "@context": {
             "description": "The JSON-LD context",
@@ -17,32 +20,29 @@
                 }
             ]
         },
-        "identifierSource": {
+        "@id": {
+            "description": "The JSON-LD identifier",
             "type": "string",
-            "description": "Information about the organisation or namespace responsible for minting the identifier."
+            "format": "uri"
         },
         "@type": {
-            "type": "string",
             "description": "The JSON-LD type",
+            "type": "string",
             "enum": [
                 "Organization"
             ]
         },
         "identifier": {
-            "type": "string",
-            "description": "Primary identifier for the organisation."
+            "description": "Primary identifier for the organisation.",
+            "type": "string"
         },
-        "@id": {
-            "type": "string",
-            "format": "uri",
-            "description": "The JSON-LD identifier"
+        "identifierSource": {
+            "description": "Information about the organisation or namespace responsible for minting the identifier.",
+            "type": "string"
         },
         "name": {
             "type": "string"
         }
     },
-    "type": "object",
-    "additionalProperties": false,
-    "description": "JSON-schema representing an organization in MIACME. Legal or physical entity corresponding to a business or administration",
-    "$schema": "http://json-schema.org/draft-04/schema"
+    "additionalProperties": false
 }
