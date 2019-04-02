@@ -1,5 +1,9 @@
 {
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/array_support_size_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema",
     "title": "MIACA array support size type schema",
+    "description": "Size of reaction vessel, e.g. volume or surface area.",
+    "type": "object",
     "properties": {
         "@context": {
             "description": "The JSON-LD context",
@@ -15,27 +19,23 @@
                 }
             ]
         },
-        "surfaceArea": {
+        "@id": {
+            "description": "The JSON-LD identifier",
             "type": "string",
-            "description": "surface area in mm\u00b2"
+            "format": "uri"
         },
         "@type": {
+            "description": "The JSON-LD type",
             "type": "string",
-            "format": "uri",
-            "description": "The JSON-LD type"
+            "format": "uri"
         },
-        "@id": {
-            "type": "string",
-            "format": "uri",
-            "description": "The JSON-LD identifier"
+        "surfaceArea": {
+            "description": "surface area in mm\u00b2",
+            "type": "string"
         },
         "dimension": {
-            "type": "number",
-            "description": "number of wells"
+            "description": "number of wells",
+            "type": "number"
         }
-    },
-    "type": "object",
-    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/array_support_size_schema.json",
-    "description": "Size of reaction vessel, e.g. volume or surface area.",
-    "$schema": "http://json-schema.org/draft-04/schema"
+    }
 }

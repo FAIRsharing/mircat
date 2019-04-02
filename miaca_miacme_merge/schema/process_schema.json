@@ -1,5 +1,9 @@
 {
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/process_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema",
     "title": "MIACA process",
+    "description": "The experiment workflow.",
+    "type": "object",
     "properties": {
         "@context": {
             "description": "The JSON-LD context",
@@ -15,35 +19,31 @@
                 }
             ]
         },
-        "ID": {
-            "type": "string",
-            "description": "identifier"
-        },
         "@id": {
+            "description": "The JSON-LD identifier",
             "type": "string",
-            "format": "uri",
-            "description": "The JSON-LD identifier"
-        },
-        "successorID": {
-            "type": "string",
-            "description": "ID of a successor element of the process step"
-        },
-        "currentID": {
-            "type": "string",
-            "description": "ID of the referenced step"
+            "format": "uri"
         },
         "@type": {
+            "description": "The JSON-LD type",
             "type": "string",
-            "format": "uri",
-            "description": "The JSON-LD type"
+            "format": "uri"
+        },
+        "ID": {
+            "description": "identifier",
+            "type": "string"
         },
         "processName": {
-            "type": "string",
-            "description": "e.g. cell propagation, siRNA transfection"
+            "description": "e.g. cell propagation, siRNA transfection",
+            "type": "string"
+        },
+        "currentID": {
+            "description": "ID of the referenced step",
+            "type": "string"
+        },
+        "successorID": {
+            "description": "ID of a successor element of the process step",
+            "type": "string"
         }
-    },
-    "type": "object",
-    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/process_schema.json",
-    "description": "The experiment workflow.",
-    "$schema": "http://json-schema.org/draft-04/schema"
+    }
 }

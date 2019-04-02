@@ -1,6 +1,10 @@
 {
     "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/cell_line_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema",
     "title": "MIACA cell line schema",
+    "description": "Cell line used during the project. An element to describe the cell line used during the project.",
+    "type": "object",
+    "additionalProperties": false,
     "required": [
         "cellLineIdentifier",
         "cellLineName",
@@ -24,46 +28,42 @@
                 }
             ]
         },
-        "@type": {
+        "@id": {
+            "description": "The JSON-LD identifier",
             "type": "string",
-            "format": "uri",
-            "description": "The JSON-LD type"
+            "format": "uri"
         },
-        "cellLineName": {
+        "@type": {
+            "description": "The JSON-LD type",
             "type": "string",
-            "description": "Description of the cell line used. (e.g. HeLa ATTC CCL2)"
+            "format": "uri"
         },
         "ID": {
             "type": "string"
         },
-        "@id": {
-            "type": "string",
-            "format": "uri",
-            "description": "The JSON-LD identifier"
-        },
-        "lineQC": {
-            "type": "string",
-            "description": "Mycoplasma test (Y/N) and other measures for quality control, e.g. virus testing"
-        },
-        "validation": {
-            "type": "string",
-            "description": "measures undertaken to validate cell line, e.g. DNA fingerprinting, genotyping, morphology testing"
+        "cellLineName": {
+            "description": "Description of the cell line used. (e.g. HeLa ATTC CCL2)",
+            "type": "string"
         },
         "cellSource": {
             "description": "Information about the cellLine if not ATCC",
             "$ref": "cell_source_schema.json#"
         },
         "passageNo": {
-            "type": "string",
-            "description": "is the number of generation of a CellLine due to passaging and growing"
+            "description": "is the number of generation of a CellLine due to passaging and growing",
+            "type": "string"
         },
         "modifications": {
-            "type": "string",
-            "description": "transgene/genetic manipulations, e.g. stably transfected, induced resistance"
+            "description": "transgene/genetic manipulations, e.g. stably transfected, induced resistance",
+            "type": "string"
+        },
+        "validation": {
+            "description": "measures undertaken to validate cell line, e.g. DNA fingerprinting, genotyping, morphology testing",
+            "type": "string"
+        },
+        "lineQC": {
+            "description": "Mycoplasma test (Y/N) and other measures for quality control, e.g. virus testing",
+            "type": "string"
         }
-    },
-    "type": "object",
-    "additionalProperties": false,
-    "description": "Cell line used during the project. An element to describe the cell line used during the project.",
-    "$schema": "http://json-schema.org/draft-04/schema"
+    }
 }

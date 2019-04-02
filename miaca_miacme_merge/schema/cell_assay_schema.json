@@ -1,5 +1,9 @@
 {
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/cell_assay_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema",
     "title": "MIACA cell assay schema",
+    "description": "The actual experimental part describing the performed steps, like  treatments, perturbation(s) and data acquisition in necessary detail.",
+    "type": "object",
     "properties": {
         "@context": {
             "description": "The JSON-LD context",
@@ -15,44 +19,40 @@
                 }
             ]
         },
-        "treatment": {
-            "type": "array",
-            "description": "Description of the conditions that are applied to CellLine during culturing of cells. \u2018Treatment\u2019 also covers the perturbation. More than one perturbator can be applied in the same \u2018Treatment\u2019.",
-            "items": {
-                "$ref": "treatment_schema.json#"
-            }
-        },
-        "ID": {
-            "type": "string",
-            "description": "The cell assay identifier"
-        },
         "@id": {
+            "description": "The JSON-LD identifier",
             "type": "string",
-            "format": "uri",
-            "description": "The JSON-LD identifier"
+            "format": "uri"
         },
         "@type": {
+            "description": "The JSON-LD type",
             "type": "string",
-            "format": "uri",
-            "description": "The JSON-LD type"
+            "format": "uri"
         },
-        "dataAcquisition": {
+        "ID": {
+            "description": "The cell assay identifier",
+            "type": "string"
+        },
+        "treatment": {
+            "description": "Description of the conditions that are applied to CellLine during culturing of cells. \u2018Treatment\u2019 also covers the perturbation. More than one perturbator can be applied in the same \u2018Treatment\u2019.",
             "type": "array",
-            "description": "Detection of the effect(s) induced by the perturbation",
             "items": {
-                "$ref": "da_schema.json#"
+                "$ref": "treatment_schema.json#"
             }
         },
         "postTreatment": {
-            "type": "array",
             "description": "Description of the conditions, i.e. lysis, fixation, staining, antibody incubation, etc., that may be applied after \u2018Treatment\u2019, and prior to data acquisition",
+            "type": "array",
             "items": {
                 "$ref": "treatment_schema.json#"
             }
+        },
+        "dataAcquisition": {
+            "description": "Detection of the effect(s) induced by the perturbation",
+            "type": "array",
+            "items": {
+                "$ref": "da_schema.json#"
+            }
         }
-    },
-    "type": "object",
-    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/cell_assay_schema.json",
-    "description": "The actual experimental part describing the performed steps, like  treatments, perturbation(s) and data acquisition in necessary detail.",
-    "$schema": "http://json-schema.org/draft-04/schema"
+    }
 }

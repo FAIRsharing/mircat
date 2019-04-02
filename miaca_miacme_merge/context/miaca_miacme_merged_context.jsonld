@@ -1,8 +1,8 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "project": "obo:OBI_0000011",
         "@language": "en",
+        "project": "obo:OBI_0000011",
         "MiacaMiacmeMerged": "obo:MS_1000900"
     }
 }

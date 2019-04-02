@@ -1,11 +1,15 @@
 {
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/instrument_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema",
     "title": "MIACA instrument schema",
+    "description": "Description of the instruments required for the assay, e.g. data acquisition station. Detailed descriptions of such instruments and their settings could be part of spezialized documents or be given in Treatment, Post-Treatment, or Data Acquisition.",
     "provenance": {
         "prov:wasAttributedTo": {
             "prov:agent": "http://orcid.org/0000-0001-9853-5668",
             "_comment": "an ORCID for now, need to check foaf:Person"
         }
     },
+    "type": "object",
     "properties": {
         "@context": {
             "description": "The JSON-LD context",
@@ -21,7 +25,32 @@
                 }
             ]
         },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "format": "uri"
+        },
+        "ID": {
+            "description": "Instrument identifier as stored by the database",
+            "type": "string"
+        },
+        "instrumentName": {
+            "description": "Instrument name",
+            "type": "string",
+            "@type": {
+                "type": "string",
+                "enum": [
+                    "instrumentName"
+                ]
+            }
+        },
         "instrumentType": {
+            "description": "Instrument type, e.g. liquid handling robot, centrifuge, FACS, Plate Reader, etc. ",
             "type": "array",
             "@type": {
                 "type": "string",
@@ -29,22 +58,12 @@
                     "OpenCV"
                 ]
             },
-            "description": "Instrument type, e.g. liquid handling robot, centrifuge, FACS, Plate Reader, etc. ",
             "items": {
                 "$ref": "open_cv_schema.json#"
             }
         },
-        "instrumentName": {
-            "type": "string",
-            "@type": {
-                "type": "string",
-                "enum": [
-                    "instrumentName"
-                ]
-            },
-            "description": "Instrument name"
-        },
         "vendor": {
+            "description": "Details to the vendor or manufacturer, Contact details of the source of the reaction vessels, e.g. company",
             "@type": {
                 "type": "string",
                 "enum": [
@@ -52,36 +71,17 @@
                     "Person"
                 ]
             },
-            "description": "Details to the vendor or manufacturer, Contact details of the source of the reaction vessels, e.g. company",
             "items": {
                 "$ref": "vendor_schema.json#"
             }
         },
-        "ID": {
-            "type": "string",
-            "description": "Instrument identifier as stored by the database"
-        },
-        "@id": {
-            "type": "string",
-            "format": "uri",
-            "description": "The JSON-LD identifier"
-        },
         "instrumentModel": {
-            "type": "string",
-            "description": "Instrument name"
-        },
-        "@type": {
-            "type": "string",
-            "format": "uri",
-            "description": "The JSON-LD type"
+            "description": "Instrument name",
+            "type": "string"
         },
         "instrumentSpec": {
-            "type": "array",
-            "description": "e.g. objective lenses, numerical aperture, filters"
+            "description": "e.g. objective lenses, numerical aperture, filters",
+            "type": "array"
         }
-    },
-    "type": "object",
-    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/instrument_schema.json",
-    "description": "Description of the instruments required for the assay, e.g. data acquisition station. Detailed descriptions of such instruments and their settings could be part of spezialized documents or be given in Treatment, Post-Treatment, or Data Acquisition.",
-    "$schema": "http://json-schema.org/draft-04/schema"
+    }
 }

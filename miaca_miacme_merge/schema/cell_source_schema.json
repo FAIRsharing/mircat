@@ -1,24 +1,11 @@
 {
     "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/cell_source_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema",
     "title": "MIACA cell source schema",
+    "description": "Cell source schema",
+    "type": "object",
+    "additionalProperties": false,
     "properties": {
-        "provider": {
-            "type": "string",
-            "description": "e.g. ATCC"
-        },
-        "reference": {
-            "type": "string",
-            "description": "reference to publication"
-        },
-        "@type": {
-            "type": "string",
-            "format": "uri",
-            "description": "The JSON-LD type"
-        },
-        "source": {
-            "description": "contact details refering to the CellLine",
-            "$ref": "source_person_merged_schema.json#"
-        },
         "@context": {
             "description": "The JSON-LD context",
             "anyOf": [
@@ -33,26 +20,23 @@
                 }
             ]
         },
-        "cellLineID": {
-            "type": "string",
-            "description": "Controlled vocabulary ID. Description of the cell line used. (e.g. HeLa ATTC CCL2)"
-        },
-        "tissue": {
-            "description": "is a collection of interconnected cells that perform a similar function within an organism",
-            "$ref": "ontology_value_source_schema.json#"
-        },
         "@id": {
+            "description": "The JSON-LD identifier",
             "type": "string",
-            "format": "uri",
-            "description": "The JSON-LD identifier"
+            "format": "uri"
         },
-        "strain": {
-            "description": "a variant of a cellType",
-            "$ref": "ontology_value_source_schema.json#"
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "format": "uri"
         },
-        "cellType": {
-            "description": "e.g. totipotent stem cell (CL:0000723)",
-            "$ref": "cl_ontology_schema.json#"
+        "provider": {
+            "description": "e.g. ATCC",
+            "type": "string"
+        },
+        "cellLineID": {
+            "description": "Controlled vocabulary ID. Description of the cell line used. (e.g. HeLa ATTC CCL2)",
+            "type": "string"
         },
         "species": {
             "description": "e.g. human",
@@ -61,10 +45,26 @@
         "organ": {
             "description": "e.g. kidney",
             "$ref": "ontology_value_source_schema.json#"
+        },
+        "cellType": {
+            "description": "e.g. totipotent stem cell (CL:0000723)",
+            "$ref": "cl_ontology_schema.json#"
+        },
+        "strain": {
+            "description": "a variant of a cellType",
+            "$ref": "ontology_value_source_schema.json#"
+        },
+        "tissue": {
+            "description": "is a collection of interconnected cells that perform a similar function within an organism",
+            "$ref": "ontology_value_source_schema.json#"
+        },
+        "reference": {
+            "description": "reference to publication",
+            "type": "string"
+        },
+        "source": {
+            "description": "contact details refering to the CellLine",
+            "$ref": "source_person_merged_schema.json#"
         }
-    },
-    "type": "object",
-    "additionalProperties": false,
-    "description": "Cell source schema",
-    "$schema": "http://json-schema.org/draft-04/schema"
+    }
 }

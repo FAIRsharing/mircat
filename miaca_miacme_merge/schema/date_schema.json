@@ -1,11 +1,10 @@
 {
-    "title": "MIACME date schema",
     "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/date_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIACME date schema",
     "version": "1.0",
-    "required": [
-        "date",
-        "type"
-    ],
+    "description": "Information about a calendar date or timestamp indicating day, month, year and time of an event.",
+    "type": "object",
     "properties": {
         "@context": {
             "description": "The JSON-LD context",
@@ -21,30 +20,31 @@
                 }
             ]
         },
-        "type": {
-            "description": "The type of date, used to specify the process which is being timestamped by the date attribute value, ideally comes from a controlled terminology.",
-            "$ref": "annotation_schema.json#"
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
         },
         "@type": {
-            "type": "string",
             "description": "The JSON-LD type",
+            "type": "string",
             "enum": [
                 "Date"
             ]
         },
         "date": {
+            "description": "A date following the ISO8601 standard.",
             "type": "string",
-            "format": "date-time",
-            "description": "A date following the ISO8601 standard."
+            "format": "date-time"
         },
-        "@id": {
-            "type": "string",
-            "format": "uri",
-            "description": "The JSON-LD identifier"
+        "type": {
+            "description": "The type of date, used to specify the process which is being timestamped by the date attribute value, ideally comes from a controlled terminology.",
+            "$ref": "opencv_schema.json#"
         }
     },
-    "type": "object",
     "additionalProperties": false,
-    "description": "Information about a calendar date or timestamp indicating day, month, year and time of an event.",
-    "$schema": "http://json-schema.org/draft-04/schema"
+    "required": [
+        "date",
+        "type"
+    ]
 }

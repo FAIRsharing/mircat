@@ -1,11 +1,11 @@
 {
     "@context": {
-        "is_a": "rdf:type",
-        "@language": "en",
         "obo": "http://purl.obolibrary.org/obo/",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "ClOntology": "obo:MI_0831",
+        "@language": "en",
         "ontologyName": "obo:IAO_0000590",
-        "ontologyID": "obo:IAO_0000578",
-        "ClOntology": "obo:MI_0831"
+        "is_a": "rdf:type",
+        "ontologyID": "obo:IAO_0000578"
     }
 }

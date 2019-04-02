@@ -1,6 +1,10 @@
 {
     "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/application_publication_merged_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema",
     "title": "MIACA application JSON schema - MIACME publication schema merging",
+    "description": "Merge between the MIACA application JSON schema and the MIACME publication schema",
+    "type": "object",
+    "additionalProperties": false,
     "properties": {
         "@context": {
             "description": "The JSON-LD context",
@@ -16,34 +20,38 @@
                 }
             ]
         },
-        "abstract": {
+        "@id": {
+            "description": "The JSON-LD identifier",
             "type": "string",
-            "description": "Application abstract, e. g. as taken from a publication"
+            "format": "uri"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "format": "uri"
         },
         "ID": {
             "type": "string"
         },
-        "@id": {
-            "type": "string",
-            "format": "uri",
-            "description": "The JSON-LD identifier"
-        },
-        "@type": {
-            "type": "string",
-            "format": "uri",
-            "description": "The JSON-LD type"
+        "abstract": {
+            "description": "Application abstract, e. g. as taken from a publication",
+            "type": "string"
         },
         "pubref": {
-            "type": "string",
-            "description": "reference to publication"
+            "description": "reference to publication",
+            "type": "string"
         },
         "bibref": {
             "description": "Bibliographic reference for the data generated during the project. Cross reference for the data source. Example: Entry in a database of databases.",
             "$ref": "open_cv_schema.json#"
         },
-        "date": {
-            "description": "The publication date.",
-            "$ref": "date_schema.json#"
+        "identifierSource": {
+            "description": "Information about the organisation or namespace responsible for minting the identifier.",
+            "type": "string"
+        },
+        "title": {
+            "description": "The title of the publication.",
+            "type": "string"
         },
         "authors": {
             "type": "array",
@@ -51,17 +59,9 @@
                 "$ref": "source_person_merged_schema.json#"
             }
         },
-        "title": {
-            "type": "string",
-            "description": "The title of the publication."
-        },
-        "identifierSource": {
-            "type": "string",
-            "description": "Information about the organisation or namespace responsible for minting the identifier."
+        "date": {
+            "description": "The publication date.",
+            "$ref": "date_schema.json#"
         }
-    },
-    "type": "object",
-    "additionalProperties": false,
-    "description": "Merge between the MIACA application JSON schema and the MIACME publication schema",
-    "$schema": "http://json-schema.org/draft-04/schema"
+    }
 }
