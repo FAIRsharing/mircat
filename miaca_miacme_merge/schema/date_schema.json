@@ -39,7 +39,7 @@
         },
         "type": {
             "description": "The type of date, used to specify the process which is being timestamped by the date attribute value, ideally comes from a controlled terminology.",
-            "$ref": "opencv_schema.json#"
+            "$ref": "open_cv_schema.json#"
         }
     },
     "additionalProperties": false,
