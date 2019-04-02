@@ -18,6 +18,7 @@
         "contacts": "obo:OBI_0000202",
         "studies": "obo:OBI_0000066",
         "acknowledges": "sdo:funder",
+        "sdo": "https://schema.org/",
         "conclusions": "obo:IAO_0000144",
         "dates": "obo:STATO_0000093",
         "MIACMEversion": "obo:IAO_0000129",
