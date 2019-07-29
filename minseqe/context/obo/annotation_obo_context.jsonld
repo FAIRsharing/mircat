@@ -1,0 +1,9 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Annotation": "obo:NCIT_C44272",
+        "@language": "en",
+        "value": "obo:IAO_0000027",
+        "valueIRI": "obo:NCIT_C42743"
+    }
+}

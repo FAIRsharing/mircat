@@ -1,0 +1,20 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "sdo": "https://schema.org/",
+        "Investigation": "obo:OBI_0000011",
+        "@language": "en",
+        "identifierSource": "obo:OBI_0000245",
+        "conclusions": "obo:IAO_0000144",
+        "MIACMEversion": "obo:IAO_0000129",
+        "identifier": "obo:IAO_0000578",
+        "contacts": "obo:OBI_0000202",
+        "MIACMEcompliance": "obo:OBI_0500023",
+        "studies": "obo:OBI_0000066",
+        "acknowledges": "sdo:funder",
+        "description": "obo:OBI_0001615",
+        "publications": "obo:IAO_0000311",
+        "dates": "obo:STATO_0000093",
+        "title": "obo:OBI_0001622"
+    }
+}

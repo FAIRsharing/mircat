@@ -1,0 +1,10 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "efo": "http://www.ebi.ac.uk/efo/",
+        "Treatment": "efo:EFO_0000727",
+        "@language": "en",
+        "factorValues": "obo:STATO_0000265",
+        "factor": "obo:OBI_0000750"
+    }
+}

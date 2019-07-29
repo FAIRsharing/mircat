@@ -1,0 +1,102 @@
+{
+  "id": "https://w3id.org/mircat/minseqe/schema/assay_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title" : "MINSEQE assay schema",
+  "version" : "1.0",
+  "description" : "JSON-schema representing a sequencing assay requirements as specified by MINSEQE section 4 of http://fged.org/site_media/pdf/MINSEQE_draft_2008.pdf",
+  "type" : "object",
+  "properties" : {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "enum": [
+        "Assay"
+      ]
+    },
+    "type": {
+      "description": "The kind of assay.",
+      "type": "string"
+    },
+    "sample_input": {
+      "description": "the biological material or library used as input to the sequencing assay",
+      "type": "array",
+      "items" : {
+          "$ref" : "sample_schema.json#" 
+      }
+    },
+    "library_source": {
+      "description": "The LIBRARY_SOURCE specifies the type of source material that is being sequenced. (from SRA xml schema https://github.com/enasequence/schema/blob/master/src/main/resources/uk/ac/ebi/ena/sra/schema/SRA.experiment.xsd)",
+      "type": "string",
+      "enum": [
+        "GENOMIC","GENOMIC SINGLE CELL","TRANSCRIPTOMIC","TRANSCRIPTOMIC SINGLE CELL","METAGENOMIC","METATRANSCRIPTOMIC","SYNTHETIC", "VIRAL RNA","OTHER"      ]
+    },
+    "library_layout": {
+      "description": "The library layout (from SRA xml schema https://github.com/enasequence/schema/blob/master/src/main/resources/uk/ac/ebi/ena/sra/schema/SRA.experiment.xsd)",
+      "type": "string",
+      "enum": [
+        "SINGLE","PAIRED"
+      ]
+    },
+    "library_strategy": {
+      "description": "Sequencing technique intended for this library. (from SRA xml schema https://github.com/enasequence/schema/blob/master/src/main/resources/uk/ac/ebi/ena/sra/schema/SRA.experiment.xsd)",
+      "type": "string",
+      "enum": [
+        "WGS","WGA","WXS","WCS","RNA-Seq","ssRNA-Seq","miRNA-Seq","ncRNA-Seq","FL-cDNA","EST","Hi-C","ATAC-seq","RAD-Seq","CLONE","POOLCLONE","AMPLICON","CLONEEND","FINISHING","ChIP-Seq","MNase-Seq","DNase-Hypersensitivity","Bisulfite-Seq","CTS","MRE-Seq","MeDIP-Seq",
+  "MBD-Seq","Tn-Seq","VALIDATION","FAIRE-seq","SELEX","RIP-Seq","ChIA-PET","Synthetic-Long-Read","Targeted-Capture","Tethered Chromatin Conformation Capture","NOMe-Seq","OTHER"]
+    },
+    "library_selection" : {
+      "description": " Method used to enrich the target in the sequence library preparation. (from SRA xml schema https://github.com/enasequence/schema/blob/master/src/main/resources/uk/ac/ebi/ena/sra/schema/SRA.experiment.xsd",
+      "type": "string",
+      "enum": ["RANDOM","PCR","RANDOM PCR","RT-PCR","HMPR","MF","repeat fractionation","size fractionation","MSLL","cDNA","cDNA_randomPriming",
+      "cDNA_oligo_dT", "PolyA", "Oligo-dT","Invers,e rRNA","Inverse rRNA selection","ChIP","ChIP-Seq","MNase","DNase","Hybrid Selection","Reduced Representation","Restriction Digest", "5-methylcytidine antibody","MBD2 protein methyl-CpG binding domain",
+     "CAGE","RACE" ,"MDA","padlock probes capture method","other","unspecified"
+      ]
+    },
+    "targeted_locus": {
+      "description": "The name of the gene specifically targeted during the library preparation step, typically during an environmental gene survey",
+      "type": "string",
+      "enum": [
+        "exome","COX1","matK","RBCL","28S rRNA","18S rRNA","16S rRNA","other"
+      ]
+    },
+    "probeset": {
+      "description": "The details about the pcr primers or probes used to target a specific genomic locus. it can be either a reference to a database identifier (typically probesetDB) or the actually probe sequence)",
+      "type": "array",
+      "items": {
+              "$ref" : "primers_schema.json#"
+      }
+    },
+    "sequencing_platform": {
+                  "description": "the sequencing type and instrument used for that assay",
+                   "$ref": "sequencing_instrument_schema.json#"
+    },
+    "data_output": {
+      "description": "the sequence dataset resulting from the sequencing assay on the input material(s)",
+      "type": "array",
+      "items" : {
+          "$ref" : "data_schema.json-schema#" 
+      }  
+  }
+  },
+  "additionalProperties": false,
+  "required":["sample_input","data_output"]
+}

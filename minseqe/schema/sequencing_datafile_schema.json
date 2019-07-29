@@ -1,0 +1,58 @@
+{
+  "id": "https://w3id.org/mircat/minseqe/schema/datafile_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title" : "MINSEQE datafile schema",
+  "version" : "1.0",
+  "description" : "JSON-schema representing an investigation using sequencing technique according to MINSEQE requirements, as described in section 2 of http://fged.org/site_media/pdf/MINSEQE_draft_2008.pdf",
+  "type" : "object",
+  "properties" : {
+     "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "enum": [
+        "Raw Data", "Derived Data"
+      ]
+    },
+    "filename": {
+      "type": "string"
+    },
+    "file_format": {
+      "type": "string",
+      "enum": ["sra","srf","sff","fastq","fasta","tab","454_native","454_native_seq","454_native_qual","Helicos_native","Illumina_native","Illumina_native_seq","Illumina_native_prb","Illumina_native_int","Illumina_native_qseq","Illumina_native_scarf","SOLiD_native","SOLiD_native_csfasta","SOLiD_native_qual","PacBio_HDF5","bam","cram","CompleteGenomics_native","OxfordNanopore_native"]
+    },    
+    "checksum": {
+      "type": "string"
+    },
+    "checksum_type": {
+      "type": "string",
+      "enum" : ["MD5","SHA256"]
+    },
+    "extractedFeatures": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required":["filename"],
+  "additionalProperties": false
+}

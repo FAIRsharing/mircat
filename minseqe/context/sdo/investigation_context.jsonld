@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "sdo": "https://schema.org/",
+    "Investigation": "sdo:Project",
+    "identifier": "sdo:identifier",
+    "title": "sdo:name",
+    "description": "sdo:description",
+    "contacts": "sdo:contactPoint"
+  }
+}

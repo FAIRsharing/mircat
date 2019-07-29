@@ -1,0 +1,19 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "sio": "http://semanticscience.org/resource/",
+        "Person": "obo:NCBITaxon_9606",
+        "@language": "en",
+        "lastName": "obo:IAO_0000590",
+        "identifierSource": "obo:OBI_0000245",
+        "affiliation": "obo:ERO_0000066",
+        "phone": "sio:SIO_001324",
+        "address": "obo:IAO_0000422",
+        "identifier": "obo:IAO_0000578",
+        "midInitials": "sio:SIO_001318",
+        "roles": "obo:OBI_0000202",
+        "email": "obo:IAO_0000429",
+        "firstName": "obo:IAO_0020016",
+        "fax": "sio:SIO_001321"
+    }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "https://w3id.org/mircat/minseqe/schema/organization_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title" : "MINSEQE organization schema",
+  "version" : "1.0",
+  "description" : "JSON-schema representing an organization in MINSEQE. Legal or physical entity corresponding to a business or administration",
+  "type" : "object",
+  "properties" : {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "enum": [
+        "Organization"
+      ]
+    },
+    "identifier": {
+      "description": "Primary identifier for the organisation.",
+      "type": "string"
+    },
+    "identifierSource": {
+      "description": "Information about the organisation or namespace responsible for minting the identifier.",
+      "type": "string"
+    },
+    "name" : {
+      "type" : "string"
+    }
+  },
+  "additionalProperties": false,
+  "required":["name"]
+}

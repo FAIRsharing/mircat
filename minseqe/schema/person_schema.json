@@ -1,0 +1,73 @@
+{
+  "id": "https://w3id.org/mircat/minseqe/schema/person_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title" : "MINSEQE person schema. A human being.",
+  "version" : "1.0",
+  "description" : "JSON-schema representing a person in MINSEQE",
+  "type" : "object",
+  "properties" : {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "enum": [
+        "Person"
+      ]
+    },
+    "identifier" : {
+      "description": "A persistent identifier of the person, it should be an ORCID.",
+      "type" : "string"
+    },
+    "identifierSource" : {
+      "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier.",
+      "type" : "string"
+    },
+    "lastName" : {
+      "description": "The family name.",
+      "type" : "string"
+    },
+    "firstName" : {
+      "description": "The given name.",
+      "type" : "string"
+    },
+    "midInitials" : { "type" : "string" },
+    "email" : {
+      "description": "The email address.",
+      "type" : "string", "format" : "email"
+    },
+    "phone" : { "type": "string"},
+    "fax" : { "type" : "string" },
+    "address" : { "type" : "string" },
+    "affiliation" : {
+      "description": "The organizations to which the person is associated with.",
+      "type": "array",
+      "items": {
+        "$ref": "organization_schema.json#"
+      }
+    },
+    "roles": {
+      "description": "The roles assumed by the person. Ideally from a controlled vocabulary or ontology.",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required":["lastName","firstName","email"]
+}

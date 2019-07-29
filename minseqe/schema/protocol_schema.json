@@ -1,0 +1,59 @@
+{
+  "id": "https://w3id.org/mircat/minseqe/schema/protocol_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MINSEQE Protocol schema",
+  "description": "The details about a Protocol for material acquisition, material transformation, data acquisition or data transformation",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+    "name": {
+      "description": "a short name for the protocol",
+      "type": "string"
+    },
+    "protocol_uri": {
+      "description" : "a web address to the protocol",
+      "type" : "string",
+      "format" : "uri"
+   },
+    "protocol_description": {
+      "description":"a textual description of the protocol, with its various steps, a list of reagents, a list of instruments, a list of software used",
+      "type" : "string"
+    },
+    "protocol_type": {
+      "description": "the main purpose or main objective of the protocol, for instance 'mRNA extraction' or 'principal component analysis' ",
+      "type": "string"
+    },
+    "parameters": {
+      "description": "a list of variables which may be adjusted by the operation when applying the protocol. for instance, 'chromatography column'",
+      "type": "array",
+      "items" : {
+                "$ref" : "parameter_schema.json#"
+            }
+    }
+  },
+  "additionalProperties": false,
+  "required":["name","type"]
+}

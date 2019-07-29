@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "sdo": "https://schema.org/",
+    "Minseqe": "sdo:CreativeWork"
+  }
+}
