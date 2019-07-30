@@ -93,7 +93,7 @@
       "description": "the sequence dataset resulting from the sequencing assay on the input material(s)",
       "type": "array",
       "items" : {
-          "$ref" : "data_schema.json-schema#" 
+          "$ref" : "sequencing_datafile_schema#" 
       }  
   }
   },

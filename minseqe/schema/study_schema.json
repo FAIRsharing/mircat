@@ -55,7 +55,7 @@
     "studyType" : {
       "description": "The type of study, its goals and objective",
       "type" : "string",
-      "enum" : ["Whole Genome Sequencing","Metagenomics","Transcriptome Analysis","Resequencing","Epigenetics","Synthetic Genomics","Forensic or Paleo-genomics","Gene Regulation Study","Cancer Genomics","Population Genomics","RNASeq","RNASeq","Pooled Clone Sequencing","Transcriptome Sequencing","Other"]
+      "enum" : ["Whole Genome Sequencing","Metagenomics","Transcriptome Analysis","Resequencing","Epigenetics","Synthetic Genomics","Forensic or Paleo-genomics","Gene Regulation Study","Cancer Genomics","Population Genomics","RNASeq","Pooled Clone Sequencing","Transcriptome Sequencing","Other"]
     },
     "contacts" : {
       "description": "The person(s) which contributed to the study, such as the Principal Investigator/corresponding author in publications or other researchers involved.",
@@ -103,7 +103,7 @@
       "description": "The grant(s) which funded and supported the investigation.",
       "type": "array",
       "items": {
-        "$ref": "grant_schema.json#"
+        "$ref": "fund_schema.json#"
       }
     },
     "conclusions" : {
