@@ -39,36 +39,31 @@
     },
     "taxonomic_information": {
       "description": "The source organism for this biological sample",
-      "$ref": "organism_schema.json#"
+      "$ref": "https://w3id.org/dats/schema/taxonomic_info_schema.json"
     },
     "sample_attributes": {
       "description": "",
       "type" : "array",
       "items" : {
-        "allOf" : {
-           "$ref": "category_values_pair_schema.json#"
-        }
+           "$ref": "https://w3id.org/dats/schema/category_values_pair_schema.json"
       }
     },
     "antibodies": {
       "description": "MINSEQE requirements, as evidenced from the statement found in sectoin 1 on MINSEQE document: 'Essential sample annotation, including the experimental factors and their values must be given. Experimental factors are the key experimental variables, for instance 'time' in a time series experiment or 'antibody' in a ChIP-Seq experiment",
       "type" : "array",
       "items" : {
-        "allOf" : {
-           "$ref": "category_values_pair_schema.json#"
-        }
+           "$ref": "https://w3id.org/dats/schema/category_values_pair_schema.json"
       }
     },
     "factor_values" : {
       "description" : "the factor levels for the relevant factors associated with this particular sample",
       "type" : "array",
       "items" : {
-        "allOf" : {
-           "$ref": "category_values_pair_schema.json#"
-        }      
+           "$ref": "https://w3id.org/dats/schema/category_values_pair_schema.json"   
     }
-    }
-  },
+  }
+ },
   "additionalProperties": false,
   "required":["name","taxonomic_information"]
 }
+ 

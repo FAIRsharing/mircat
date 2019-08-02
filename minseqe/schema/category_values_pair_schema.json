@@ -1,8 +1,8 @@
 {
-  "id": "https://w3id.org/minseqe/schema/category_values_pair_schema.json",
+  "id": "https://w3id.org/dats/schema/category_values_pair_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
-  "title": "MINSEQE schema extension mechanism:",
-  "description": "Extension mechanism for MINSEQE schema, which allows to add extra properties to the entities such as Study,Sample,Assay or Data. It should be used only for cases where there are no specific properties to deal with the desired property.",
+  "title": "DATS schema extension mechanism:",
+  "description": "Extension mechanism for DATS schema, which allows to add extra properties to the entities such as Study,Sample,Assay or Data. It should be used only for cases where there are no specific properties to deal with the desired property.",
   "type": "object",
   "properties": {
     "@context": {

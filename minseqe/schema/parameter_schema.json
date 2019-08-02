@@ -37,7 +37,7 @@
       "description": "the main purpose or main objective of the protocol, for instance 'mRNA extraction' or 'principal component analysis' ",
       "type" : "array",
       "items" : {
-           "$ref": "category_values_pair_schema.json#"
+           "$ref": "https://w3id.org/dats/schema/category_values_pair_schema.json"
     }
   }
   },

@@ -45,14 +45,14 @@
           "value": {
             "description": "A specific value assumed by the factor.",
              "anyOf" : [
-                { "$ref": "annotation_schema.json#"},
+                { "$ref": "https://w3id.org/dats/schema/annotation_schema.json"},
                 { "type": "string"},
                 { "type": "number"}
                 ]
             },
           "unit": {
             "description": "The unit for the factor value.",
-            "$ref": "annotation_schema.json#"
+            "$ref": "https://w3id.org/dats/schema/annotation_schema.json"
           }
         }
       }

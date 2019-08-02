@@ -89,7 +89,7 @@
       "description": "Dates relevant to the investigation.",
       "type": "array",
       "items": {
-        "$ref": "date_schema.json#"
+        "$ref": "https://w3id.org/dats/schema/date_info_schema.json"
       }
     },
     "MINSEQEversion": {

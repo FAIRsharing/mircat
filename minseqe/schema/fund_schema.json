@@ -1,5 +1,5 @@
 {
-  "id": "https://w3id.org/minseqe/schema/fund_schema.json",
+  "id": "https://w3id.org/mircat/minseqe/schema/fund_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "fund schema",
   "description": "An allocated sum of funds given by a government or other organization for a particular purpose.",
@@ -28,20 +28,20 @@
       "type": "string", "enum": [ "Grant" ]},
     "identifier": {
       "description": "The identifier of the grant.",
-      "$ref": "identifier_info_schema.json#"
+      "$ref": "https://w3id.org/dats/schema/identifier_info_schema.json"
     },
     "alternateIdentifiers": {
       "description": "Alternate identifiers for the grant.",
       "type": "array",
       "items": {
-        "$ref": "alternate_identifier_info_schema.json#"
+        "$ref": "https://w3id.org/dats/schema/alternate_identifier_info_schema.json"
       }
     },
     "relatedIdentifiers": {
       "description": "Related identifiers for the grant.",
       "type": "array",
       "items": {
-        "$ref": "related_identifier_info_schema.json#"
+        "$ref": "https://w3id.org/dats/schema/related_identifier_info_schema.json#"
       }
     },
     "name": {
@@ -83,14 +83,14 @@
       "description": "Relevant dates, such as the date when the grant was awarded, may be provided.",
       "type" : "array",
       "items": {
-        "$ref" : "date_info_schema.json#"
+        "$ref" : "https://w3id.org/dats/schema/date_info_schema.json#"
       }
     },
     "extraProperties": {
       "description": "Extra properties that do not fit in the previous specified attributes. ",
       "type": "array",
       "items": {
-        "$ref" : "category_values_pair_schema.json#"
+        "$ref" : "https://w3id.org/dats/schema/category_values_pair_schema.json#"
       }
     }
   },

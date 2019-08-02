@@ -1,5 +1,5 @@
 {
-  "id": "https://w3id.org/mircat/MINSEQE/schema/study_schema.json",
+  "id": "https://w3id.org/mircat/minseqe/schema/study_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title" : "MINSEQE study schema",
   "version" : "1.0",
@@ -89,7 +89,7 @@
       "description": "Dates relevant to the study.",
       "type": "array",
       "items": {
-        "$ref": "date_schema.json#"
+        "$ref": "https://w3id.org/dats/schema/date_info_schema.json"
       }
     },
     "publications" : {

@@ -56,7 +56,7 @@
     },
     "date": {
       "description": "The publication date.",
-      "$ref": "date_schema.json#"
+      "$ref": "https://w3id.org/dats/schema/date_info_schema.json"
     }
   },
   "additionalProperties": false,
