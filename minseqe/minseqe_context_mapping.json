@@ -1,5 +1,5 @@
 {
-    "networkName": "DATS",
+    "networkName": "minseqe",
     "contexts": {
         "study_schema.json": "https://w3id.org/mircat/minseqe/context/obo/study_obo_context.json-ld",
         "person_schema.json": "https://w3id.org/mircat/minseqe/context/obo/person_obo_context.json-ld",
