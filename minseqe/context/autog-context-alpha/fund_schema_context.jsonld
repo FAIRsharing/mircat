@@ -1,0 +1,16 @@
+{
+    "obo": {
+        "@context": {
+            "obo": "http://purl.obolibrary.org/obo/",
+            "fund": "obo:OBI_0001636",
+            "@language": "en",
+            "identifier": "obo:OBI_0001629",
+            "identifierSource": "obo:OBI_0000245",
+            "name": "obo:IAO_0000590",
+            "funds": "obo:EFO_0001736",
+            "funders": "obo:OBI_0000245",
+            "awardees": "obo:NCBITaxon_9606",
+            "dates": "obo:IAO_0000582"
+        }
+    }
+}

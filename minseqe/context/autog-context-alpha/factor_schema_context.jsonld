@@ -1,0 +1,13 @@
+{
+    "obo": {
+        "@context": {
+            "obo": "http://purl.obolibrary.org/obo/",
+            "@language": "en",
+            "factor": "obo:OBI_0000750",
+            "identifier": "obo:OBI_0001629",
+            "identifierSource": "obo:OBI_0000245",
+            "name": "obo:IAO_0000590",
+            "factorValues": "obo:STATO_0000265"
+        }
+    }
+}
