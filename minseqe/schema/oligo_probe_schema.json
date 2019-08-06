@@ -1,8 +1,9 @@
 {
-  "id": "https://w3id.org/mircat/minseqe/schema/parameter_schema.json",
+  "id": "https://w3id.org/mircat/minseqe/schema/oligo_probe_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
-  "title": "MINSEQE probeset schema",
-  "description": "The details about a probeset used during a library construction step in the context of a targeted gene survey",
+  "title": "MINSEQE oligo probe schema",
+  "version" : "1.0",
+  "description": "The details about a oligonucleotide probe used during a library construction step, e.g. in the context of a targeted gene survey",
   "type": "object",
   "properties": {
     "@context": {
@@ -40,7 +41,7 @@
     "probe_type": {
       "description": "the nature of the probe used to amplify a genomic locus during the library construction ",
       "type" : "string",
-      "enum" : ["forward_primer","reverse_primer","probe"]
+      "enum" : ["forward_primer", "reverse_primer", "probe", "multiplex identifier"]
     },
     "probe_sequence":{
       "description":"the nucleic acid sequence of the probe",
@@ -48,7 +49,7 @@
     }
   },
     "additionalProperties": false,
-   "required" : ["name"]
+   "required" : ["name","probe_type","probe_sequence"]
 }
 
 
