@@ -1,5 +1,5 @@
 {
-  "id": "https://w3id.org/mircat/minseqe/schema/datafile_schema.json",
+  "id": "https://w3id.org/mircat/minseqe/schema/sequencing_datafile_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title" : "MINSEQE datafile schema",
   "version" : "1.0",
