@@ -1,0 +1,128 @@
+{
+  "id": "https://w3id.org/mircat/minseqe/schema/study_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title" : "MINSEQE study schema",
+  "version" : "1.0",
+  "description" : "JSON-schema representing a study in MINSEQE. A planned activity that consists on study planning, study design execution,  documentation and which produces conclusion(s). Provenance: http://fged.org/site_media/pdf/MINSEQE_draft_2008.pdf, Section 5. General information about the experiment\namespace General information about the overall study must be given. This includes a summary of the experiment and its goals, contact information, and any associated publication.",
+  "type" : "object",
+  "properties" : {
+     "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "enum": [
+        "Study"
+      ]
+    },
+    "identifier" : {
+      "description": "Primary identifier for the study or experiment.",
+      "type" : "string"
+    },
+    "identifierSource" : {
+      "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier.",
+      "type" : "string"
+    },
+    "title" : {
+      "description": "A short sentence naming the study.",
+      "type" : "string"
+    },
+    "description" : {
+      "description": "A textual narrative comprised of one or more statements about the study.",
+      "type" : "string"
+    },
+    "studyDesign" : {
+      "description": "A textual description of the design of the experiment, indicating predictor variables, response variables, blocking variables if any.",
+      "type" : "string"
+    },
+    "studyType" : {
+      "description": "The type of study, its goals and objective",
+      "type" : "string",
+      "enum" : ["Whole Genome Sequencing","Metagenomics","Transcriptome Analysis","Resequencing","Epigenetics","Synthetic Genomics","Forensic or Paleo-genomics","Gene Regulation Study","Cancer Genomics","Population Genomics","RNASeq","Pooled Clone Sequencing","Transcriptome Sequencing","Other"]
+    },
+    "contacts" : {
+      "description": "The person(s) which contributed to the study, such as the Principal Investigator/corresponding author in publications or other researchers involved.",
+      "type" : "array",
+      "items" : {
+        "$ref": "person_schema.json#"
+      }
+    },
+    "protocols": {
+      "description" : "the list of protocols ",
+      "type" : "array",
+      "items" : {
+        "$ref": "protocol_schema.json#"
+      }      
+    },
+    "factors": {
+      "description": "Set of properties that in combination describe the experiment or experiments in the study.",
+      "type" : "array",
+      "items" : {
+        "$ref": "factor_schema.json#"
+      }
+    },
+    "assays": {
+      "description": "the assays",
+      "type": "array",
+      "items": {
+         "$ref": "assay_schema.json#"
+      }
+    },
+    "dates": {
+      "description": "Dates relevant to the study.",
+      "type": "array",
+      "items": {
+        "$ref": "https://w3id.org/dats/schema/date_info_schema.json"
+      }
+    },
+    "publications" : {
+      "description": "Scholarly articles associated with the investigation, usually describing the methods applied and conclusions reached by the investigation.",
+      "type" : "array",
+      "items" : {
+        "$ref": "publication_schema.json#"
+      }
+    },
+    "acknowledges" : {
+      "description": "The grant(s) which funded and supported the investigation.",
+      "type": "array",
+      "items": {
+        "$ref": "fund_schema.json#"
+      }
+    },
+    "conclusions" : {
+      "description": "A set of statements summarizing the findings of the study. It could be a URI referring to a nanopublication.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "MINSEQEversion": {
+      "description": "The version of MINSEQE this dataset description should be compliant with.",
+      "type": "string"
+    },
+    "MINSEQEcompliance": {
+      "description": "The result of the validation for MINSEQE compliance.",
+      "type": "string"
+    }
+  }
+  ,
+  "additionalProperties": false,
+  "required":["title","assays"]
+}

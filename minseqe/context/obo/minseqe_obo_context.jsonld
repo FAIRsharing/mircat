@@ -1,0 +1,8 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Minseqe": "obo:MS_1000900",
+        "@language": "en",
+        "investigation": "obo:OBI_0000011"
+    }
+}

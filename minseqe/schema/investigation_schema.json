@@ -1,0 +1,106 @@
+{
+  "id": "https://w3id.org/mircat/minseqe/schema/investigation_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title" : "MINSEQE investigation schema",
+  "version" : "1.0",
+  "description" : "JSON-schema representing an investigation using sequencing techniques. A planned activity that involves one or more studies.",
+  "type" : "object",
+  "properties" : {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "enum": [
+        "Investigation"
+      ]
+    },
+    "identifier" : {
+      "description": "Primary identifier for the investigation. Ideally, a persistent identifier but an internal user identifier at a minimum.",
+      "type" : "string"
+    },
+    "identifierSource" : {
+      "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier.",
+      "type" : "string"
+    },
+    "title" : {
+      "description": "The title of the investigation.",
+      "type" : "string"
+    },
+    "description" : {
+      "description": "A textual narrative comprised of one or more statements about the investigation.",
+      "type" : "string"
+    },
+    "contacts" : {
+      "description": "The person(s) who contributed to the investigation, such as the Principal Investigator, corresponding author in related publications or other researchers involved.",
+      "type" : "array",
+      "items" : {
+        "$ref": "person_schema.json#"
+
+      }
+    },
+    "studies" : {
+      "description": "The studies associated with the Investigation.",
+      "type" : "array",
+      "items" : {
+        "$ref": "study_schema.json#"
+
+      }
+    },
+    "publications" : {
+      "description": "Scholarly articles associated with the investigation, usually describing the methods applied and conclusions reached by the investigation.",
+      "type" : "array",
+      "items" : {
+        "$ref": "publication_schema.json#"
+      }
+    },
+    "acknowledges" : {
+      "description": "The grant(s) which funded and supported the investigation.",
+      "type": "array",
+      "items": {
+        "$ref": "fund_schema.json#"
+      }
+    },
+    "conclusions" : {
+      "description": "A set of statements summarizing the findings of the investigation. It could be a URI referring to a nanopublication.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dates": {
+      "description": "Dates relevant to the investigation.",
+      "type": "array",
+      "items": {
+        "$ref": "https://w3id.org/dats/schema/date_info_schema.json"
+      }
+    },
+    "MINSEQEversion": {
+      "description": "The version of MINSEQE this dataset description should be compliant with.",
+      "type": "string"
+    },
+    "MINSEQEcompliance": {
+      "description": "The result of the validation for MINSEQE compliance.",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required":[]
+}

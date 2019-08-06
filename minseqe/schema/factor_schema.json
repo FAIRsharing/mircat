@@ -1,0 +1,63 @@
+{
+  "id": "https://w3id.org/mircat/minseqe/schema/factor_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MINSEQE factor schema",
+  "version": "1.0",
+  "description": "JSON-schema representing a factor used in studies using sequencing to produce data according to MINSEQE requirements.",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "enum": [
+        "Organization"
+      ]
+    },
+    "factor": {
+      "description": "An independent variable, defined by experimentalist in observation or intervention study.",
+      "type": "string"
+    },
+    "factorValues": {
+      "description": "The set of values that the factor will assume.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "description": "A specific value assumed by the factor.",
+             "anyOf" : [
+                { "$ref": "https://w3id.org/dats/schema/annotation_schema.json"},
+                { "type": "string"},
+                { "type": "number"}
+                ]
+            },
+          "unit": {
+            "description": "The unit for the factor value.",
+            "$ref": "https://w3id.org/dats/schema/annotation_schema.json"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required":["factor","factorValues"]
+}

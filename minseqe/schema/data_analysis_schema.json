@@ -1,0 +1,68 @@
+{"id": "https://w3id.org/mircat/minseqe/schema/data_analysis_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title" : "MINSEQE data analysis schema",
+  "version" : "1.0",
+  "description" : "JSON-schema representing a data analysis requirements as specified by MINSEQE section 6 of http://fged.org/site_media/pdf/MINSEQE_draft_2008.pdf",
+  "type" : "object",
+  "properties" : {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "enum": [
+        "Assay"
+      ]
+    },
+    "analysis_type": {
+      "description": "The kind of analysis.",
+      "type": "string",
+      "enum" : [""]
+    },
+    "software" : {
+      "description": "The description of programs, code, software used for analysing the sequence.",
+      "type": "string"
+    },
+    "output_files": {
+      "description": "the name of the files resulting from the analysis.",
+      "type": "array",
+      "items": {
+          "$ref": "processed_datafile_schema.json#"
+      }
+    },
+    "input_files": {
+      "description": "the list of files used as input to the analysis",
+      "type": "array",
+      "items": {
+            "$ref": "sequencing_datafile_schema.json#"
+     }
+    },
+    "reference_genome": {
+      "description": "The name and taxonomic information of the reference genome used to assemble the reads",
+      "type": "string"      
+    },
+    "reference_genome_version": {
+       "description": "The description of the version of the reference genome",
+      "type": "string"        
+    }
+ },
+ "additionalProperties": false,
+ "required": ["name","analysis_type"]
+}

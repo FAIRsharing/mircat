@@ -1,0 +1,81 @@
+{
+  "id": "https://w3id.org/mircat/minseqe/schema/sequencing_instrument_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MINSEQE sequencing instrument schema",
+  "description": "The following details shall be specified about instruments used to sequence the biological materials.",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+    "platform": {
+      "description": "The instrument manufacturer shall be specified by stating its name (e.g. Illumina, Oxford Nanopore, 454, Ion Torrent). A URL pointing to manufacturer web pages may also be provided.",
+      "type": "string",
+      "enum": ["454","Illumina","Ion Torrent","AB Solid","Oxford Nanopore"]
+    },
+    "model": {
+      "description": "The instrument model shall be specified",
+      "type": "string",
+      "enum": ["454 GS","454 GS 20","454 GS FLX","454 GS FLX Plus","454 GS FLX Titanium","454 GS Junior","Illumina Genome Analyzer II",
+    "Illumina Genome Analyzer Iix",
+    "Illumina HiSeq 1000",
+    "Illumina HiSeq  2000",
+    "Illumina HiSeq",
+    "Illumina HiSeq 2500",
+    "Illumina HiSeq 3000",
+    "Illumina HiSeq 4000",
+    "Illumina HiScanSQ",
+    "Illumina MiSeq",
+    "HiSeq X Five",
+    "HiSeq X Ten",
+    "NextSeq 500",
+    "NextSeq 550",
+    "Ion Torrent PGM",
+    "Ion Torrent Proton",
+    "AB 3730xL Genetic Analyzer",
+    "AB SOLiD System",
+    "AB SOLiD System 2.0",
+    "AB SOLiD System 3.0",
+    "AB SOLiD 3 Plus System",
+    "AB SOLiD 4 System",
+    "AB SOLiD 4hq System",
+    "AB SOLiD 5500",
+    "AB SOLiD 5500xl",
+    "AB 5500 Genetic Analyzer",
+    "AB 5500xl Genetic analyzer",
+    "AB 5500xl-W Genetic Analysis System",
+    "AB 3730 Genetic Analyzer",
+    "AB 3130xL Genetic Analyzer",
+    "AB 3130 Genetic Analyzer",
+    "AB 310 Genetic Analyzer",
+    "unspecified",
+    "MinIon",
+    "GridIon"]
+    },
+    "other": {
+      "description": "Additional relevant instrument details should be provided and may include machine-specific information such as information about automated agitation, temperature control, controlled volume dispensing, sampling from microtiter plates, auto-boost, auto-flush, etc. Other custom settings shall be provided if relevant and may include setting name, description, and value.",
+      "type": "string"
+    }
+  }
+}

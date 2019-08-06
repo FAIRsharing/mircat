@@ -1,0 +1,64 @@
+{
+  "id": "https://w3id.org/mircat/minseqe/schema/publication_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MINSEQE publication schema",
+  "version" : "1.0",
+  "description": "A schema describing a publication.",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "enum": [
+        "Publication"
+      ]
+    },
+    "identifier": {
+      "description": "A persistent identifier for the publication, it should be a DOI or pubmed identifier",
+      "type": "string"
+    },
+    "identifierSource": {
+      "description": "Information about the organisation or namespace responsible for minting the identifier.",
+      "type": "string"
+    },
+    "title": {
+      "description" : "The title of the publication.",
+      "type" : "string"
+    },
+    "publicationVenue": {
+      "description": "The venue where the publication appears (journal, publishing platform etc).",
+      "type": "string"
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "$ref": "person_schema.json#"
+      }
+    },
+    "date": {
+      "description": "The publication date.",
+      "$ref": "https://w3id.org/dats/schema/date_info_schema.json"
+    }
+  },
+  "additionalProperties": false,
+  "required":["title"]
+}

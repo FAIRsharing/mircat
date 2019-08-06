@@ -1,0 +1,55 @@
+{
+  "id": "https://w3id.org/mircat/minseqe/schema/parameter_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MINSEQE probeset schema",
+  "description": "The details about a probeset used during a library construction step in the context of a targeted gene survey",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+    "name": {
+      "description": "a short name for the probeset",
+      "type": "string"
+    },
+    "database_xref": {
+        "description" : "a NCBI probesetDB database identifier",
+        "type":"string"
+    },
+    "probe_type": {
+      "description": "the nature of the probe used to amplify a genomic locus during the library construction ",
+      "type" : "string",
+      "enum" : ["forward_primer","reverse_primer","probe"]
+    },
+    "probe_sequence":{
+      "description":"the nucleic acid sequence of the probe",
+      "type": "string"
+    }
+  },
+    "additionalProperties": false,
+   "required" : ["name"]
+}
+
+
+
