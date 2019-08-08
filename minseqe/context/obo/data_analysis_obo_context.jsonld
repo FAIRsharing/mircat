@@ -1,15 +1,13 @@
 {
-    "obo": {
-        "@context": {
-            "obo": "http://purl.obolibrary.org/obo/",
-            "Data_analysis": "obo:OBI_0200000",
-            "@language": "en",
-            "analysis_type": "obo:OBI_0200000",
-            "software": "obo:IAO_0000010",
-            "output_files": "obo:IAO_0000100",
-            "input_files": "obo:OBI_0000973",
-            "reference_genome": "obo:GENO_0000914",
-            "reference_genome_version": "obo:GENEPIO_0001562"
-        }
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "Data_analysis": "obo:OBI_0200000",
+        "@language": "en",
+        "analysis_type": "obo:OBI_0200000",
+        "software": "obo:IAO_0000010",
+        "output_files": "obo:IAO_0000100",
+        "input_files": "obo:OBI_0000973",
+        "reference_genome": "obo:GENO_0000914",
+        "reference_genome_version": "obo:GENEPIO_0001562"
     }
 }

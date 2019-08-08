@@ -1,13 +1,11 @@
 {
-    "obo": {
-        "@context": {
-            "obo": "http://purl.obolibrary.org/obo/",
-            "sequencing_datafile": "obo:OBI_0000973",
-            "@language": "en",
-            "filename": "obo:IAO_0000590",
-            "file_format": "obo:IAO_0000098",
-            "checksum": "obo:MI_1212",
-            "checksum_type": "obo:IAO_0000064"
-        }
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "sequencing_datafile": "obo:OBI_0000973",
+        "@language": "en",
+        "filename": "obo:IAO_0000590",
+        "file_format": "obo:IAO_0000098",
+        "checksum": "obo:MI_1212",
+        "checksum_type": "obo:IAO_0000064"
     }
 }

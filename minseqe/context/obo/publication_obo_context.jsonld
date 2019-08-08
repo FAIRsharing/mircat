@@ -1,15 +1,13 @@
 {
-    "obo": {
-        "@context": {
-            "obo": "http://purl.obolibrary.org/obo/",
-            "publication": "obo:IAO_0000311",
-            "@language": "en",
-            "identifier": "obo:IAO_0000578",
-            "identifierSource": "obo:OBI_0000245",
-            "title": "obo:IAO_0000305",
-            "publicationVenue": "obo:MI_0885",
-            "authors": "obo:IAO_0000442",
-            "date": "obo:IAO_0000582"
-        }
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "publication": "obo:IAO_0000311",
+        "@language": "en",
+        "identifier": "obo:IAO_0000578",
+        "identifierSource": "obo:OBI_0000245",
+        "title": "obo:IAO_0000305",
+        "publicationVenue": "obo:MI_0885",
+        "authors": "obo:IAO_0000442",
+        "date": "obo:IAO_0000582"
     }
 }
