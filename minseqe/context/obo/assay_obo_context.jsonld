@@ -1,9 +1,19 @@
 {
-    "@context": {
-        "obo": "http://purl.obolibrary.org/obo/",
-        "Assay": "obo:OBI_0000070",
-        "@language": "en",
-        "type": "obo:FBcv_0003050",
-        "cellInput": "obo:CL_0000000"
+    "obo": {
+        "@context": {
+            "obo": "http://purl.obolibrary.org/obo/",
+            "Assay": "obo:OBI_0000070",
+            "@language": "en",
+            "type": "obo:GENEPIO_0000074",
+            "sample_input": "obo:OBI_0000747",
+            "library_source": "obo:GENEPIO_0001965",
+            "library_layout": "obo:",
+            "library_strategy": "obo:GENEPIO_0001973",
+            "library_selection": "obo:GENEPIO_0001940",
+            "targeted_locus": "obo:OGI_0000022",
+            "probeset": "obo:CHEBI_50406",
+            "sequencing_platform": "obo:GENEPIO_0000071",
+            "data_output": "obo:OBI_0000973"
+        }
     }
 }
