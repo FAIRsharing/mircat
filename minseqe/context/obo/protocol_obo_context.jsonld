@@ -1,14 +1,12 @@
-{
-    "obo": {
-        "@context": {
-            "obo": "http://purl.obolibrary.org/obo/",
-            "protocol": "obo:OBI_0000272",
-            "@language": "en",
-            "name": "obo:IAO_0000590",
-            "protocol_uri": "obo:data_1052",
-            "protocol_description": "obo:OBI_0001615",
-            "protocol_type": "obo:IAO_0000005",
-            "parameters": "obo:EFO_0002658"
-        }
+{        
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "protocol": "obo:OBI_0000272",
+        "@language": "en",
+        "name": "obo:IAO_0000590",
+        "protocol_uri": "obo:data_1052",
+        "protocol_description": "obo:OBI_0001615",
+        "protocol_type": "obo:IAO_0000005",
+        "parameters": "obo:EFO_0002658"
     }
 }
