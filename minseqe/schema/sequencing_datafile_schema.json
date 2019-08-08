@@ -28,9 +28,7 @@
     "@type": {
       "description": "The JSON-LD type",
       "type": "string",
-      "enum": [
-        "Raw Data", "Derived Data"
-      ]
+      "enum": ["Raw Data"]
     },
     "filename": {
       "type": "string"
