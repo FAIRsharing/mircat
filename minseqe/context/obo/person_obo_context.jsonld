@@ -1,20 +1,18 @@
 {
-    "obo": {
-        "@context": {
-            "obo": "http://purl.obolibrary.org/obo/",
-            "person": "obo:NCBITaxon_9606",
-            "@language": "en",
-            "identifier": "obo:IAO_0000578",
-            "identifierSource": "obo:OBI_0000245",
-            "lastName": "obo:IAO_0000590",
-            "firstName": "obo:IAO_0020016",
-            "midInitials": "obo:SIO_001318",
-            "email": "obo:IAO_0000429",
-            "phone": "obo:OMIABIS_0000021",
-            "fax": "obo:MS_1001756",
-            "address": "obo:IAO_0000422",
-            "affiliation": "obo:ERO_0000066",
-            "roles": "obo:OBI_0000202"
-        }
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "person": "obo:NCBITaxon_9606",
+        "@language": "en",
+        "identifier": "obo:IAO_0000578",
+        "identifierSource": "obo:OBI_0000245",
+        "lastName": "obo:IAO_0000590",
+        "firstName": "obo:IAO_0020016",
+        "midInitials": "obo:SIO_001318",
+        "email": "obo:IAO_0000429",
+        "phone": "obo:OMIABIS_0000021",
+        "fax": "obo:MS_1001756",
+        "address": "obo:IAO_0000422",
+        "affiliation": "obo:ERO_0000066",
+        "roles": "obo:OBI_0000202"
     }
 }
