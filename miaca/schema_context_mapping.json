@@ -32,7 +32,7 @@
         "material_list_schema.json": "https://w3id.org/mircat/miaca/context/obo/material_list_obo_context.jsonld",
         "source_schema.json": "https://w3id.org/mircat/miaca/context/obo/source_obo_context.jsonld",
         "application_schema.json": "https://w3id.org/mircat/miaca/context/obo/application_obo_context.jsonld",
-        "CL_ontology_schema.json": "https://w3id.org/mircat/miaca/context/obo/CL_ontology_obo_context.jsonld",
+        "CL_ontology_schema.json": "https://w3id.org/mircat/miaca/context/obo/cl_ontology_obo_context.jsonld",
         "project_schema.json": "https://w3id.org/mircat/miaca/context/obo/project_obo_context.jsonld",
         "ontology_value_source_schema.json": "https://w3id.org/mircat/miaca/context/obo/ontology_value_source_obo_context.jsonld",
         "treatment_schema.json": "https://w3id.org/mircat/miaca/context/obo/treatment_obo_context.jsonld",
