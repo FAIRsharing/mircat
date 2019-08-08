@@ -2,6 +2,7 @@
   "id": "https://w3id.org/mircat/minseqe/schema/protocol_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "MINSEQE Protocol schema",
+   "version" : "1.0",
   "description": "The details about a Protocol for material acquisition, material transformation, data acquisition or data transformation",
   "type": "object",
   "properties": {

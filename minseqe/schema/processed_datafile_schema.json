@@ -35,7 +35,7 @@
     },
     "file_format": {
       "type": "string",
-      "enum": ["tab","csv","txt","xls","xlsx"]
+      "enum": ["tab","bam","bai","cram","crai","vcf","vcf_aggregate","bcf","tabix","wig","bed","gff","fasta","fastq","flatfile","chromosome_list","sample_list","readme_file","phenotype_file","BioNano_native","Kallisto_native","agp","unlocalised_list","info","manifest","other"]
     },    
     "checksum": {
       "type": "string"
@@ -43,12 +43,6 @@
     "checksum_type": {
       "type": "string",
       "enum" : ["MD5","SHA256"]
-    },
-    "extractedFeatures": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
     }
   },
   "required":["filename"],

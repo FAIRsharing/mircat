@@ -1,7 +1,7 @@
 {
   "id": "https://w3id.org/mircat/minseqe/schema/assay_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
-  "title" : "MINSEQE assay schema",
+  "title": "MINSEQE assay schema",
   "version" : "1.0",
   "description" : "JSON-schema representing a sequencing assay requirements as specified by MINSEQE section 4 of http://fged.org/site_media/pdf/MINSEQE_draft_2008.pdf",
   "type" : "object",
@@ -82,7 +82,7 @@
       "description": "The details about the pcr primers or probes used to target a specific genomic locus. it can be either a reference to a database identifier (typically probesetDB) or the actually probe sequence)",
       "type": "array",
       "items": {
-              "$ref" : "primers_schema.json#"
+           "$ref" : "oligo_probe_schema.json#"
       }
     },
     "sequencing_platform": {

@@ -1,7 +1,7 @@
 {
   "id": "https://w3id.org/mircat/minseqe/schema/sequencing_datafile_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
-  "title" : "MINSEQE datafile schema",
+  "title": "MINSEQE datafile schema",
   "version" : "1.0",
   "description" : "JSON-schema representing an investigation using sequencing technique according to MINSEQE requirements, as described in section 2 of http://fged.org/site_media/pdf/MINSEQE_draft_2008.pdf",
   "type" : "object",
@@ -28,9 +28,7 @@
     "@type": {
       "description": "The JSON-LD type",
       "type": "string",
-      "enum": [
-        "Raw Data", "Derived Data"
-      ]
+      "enum": ["Raw Data"]
     },
     "filename": {
       "type": "string"
@@ -45,12 +43,6 @@
     "checksum_type": {
       "type": "string",
       "enum" : ["MD5","SHA256"]
-    },
-    "extractedFeatures": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
     }
   },
   "required":["filename"],

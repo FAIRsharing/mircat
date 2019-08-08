@@ -1,0 +1,21 @@
+{
+    "obo": {
+        "@context": {
+            "obo": "http://purl.obolibrary.org/obo/",
+            "investigation": "obo:",
+            "@language": "en",
+            "identifier": "obo:IAO_0000578",
+            "identifierSource": "obo:OBI_0000245",
+            "title": "obo:IAO_0000305",
+            "description": "obo:OBI_0001615",
+            "contacts": "obo:OBI_0000202",
+            "studies": "obo:OBI_0000066",
+            "publications": "obo:IAO_0000312",
+            "acknowledges": "obo:OBI_0001636",
+            "conclusions": "obo:IAO_0000144",
+            "dates": "obo:STATO_0000093",
+            "MINSEQEversion": "obo:IAO_0000129",
+            "MINSEQEcompliance": "obo:OBI_0500023"
+        }
+    }
+}

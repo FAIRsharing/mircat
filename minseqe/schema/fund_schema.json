@@ -1,8 +1,8 @@
 {
   "id": "https://w3id.org/mircat/minseqe/schema/fund_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
-  "title": "fund schema",
-  "description": "An allocated sum of funds given by a government or other organization for a particular purpose.",
+  "title": "MINSEQE fund schema",
+  "description": "Allocated funds given by a government or an organization for a particular research purpose.",
   "type": "object",
   "properties": {
     "@context": {

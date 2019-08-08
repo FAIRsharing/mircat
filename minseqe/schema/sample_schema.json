@@ -1,7 +1,8 @@
 {
   "id": "https://w3id.org/mircat/minseqe/schema/sample_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
-  "title": "MINSEQE Biological Sample schema",
+  "title": "MINSEQE sample schema",
+   "version" : "1.0",
   "description": "Biological Sample description compliant with MINSEQE requirements as described in Section 1 of MINSEQE specifications, http://fged.org/site_media/pdf/MINSEQE_draft_2008.pdf",
   "type": "object",
   "properties": {
