@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "primers": "obo:CHEBI_50406",
+        "@language": "en",
+        "name": "obo:IAO_0000590",
+        "database_xref": "obo:IAO_0000578",
+        "probe_type": "obo:ERO_0001203",
+        "probe_sequence": "obo:FLU_0000855"
+    }
+}

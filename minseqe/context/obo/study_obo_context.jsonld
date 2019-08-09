@@ -1,23 +1,23 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "sdo": "https://schema.org/",
         "Study": "obo:OBI_0000066",
         "@language": "en",
-        "identifierSource": "obo:OBI_0000245",
-        "conclusions": "obo:IAO_0000144",
-        "data": "obo:IAO_0000027",
-        "MINSEQEversion": "obo:IAO_0000129",
         "identifier": "obo:IAO_0000578",
-        "dates": "obo:STATO_0000093",
-        "contacts": "obo:OBI_0000202",
-        "experimental_setup": "obo:XCO_0000000",
-        "MINSEQEcompliance": "obo:OBI_0500023",
-        "type": "obo:PRIDE_0000457",
-        "acknowledges": "sdo:funder",
-        "description": "obo:OBI_0001615",
-        "publications": "obo:IAO_0000312",
+        "identifierSource": "obo:OBI_0000245",
         "title": "obo:OBI_0001622",
-        "imaging_condition": "obo:NCIT_C17369"
+        "description": "obo:OBI_0001615",
+        "studyDesign": "obo:OBI_0500000",
+        "studyType": "obo:IAO_0000005",
+        "contacts": "obo:OBI_0000202",
+        "protocols": "obo:OBI_0000272",
+        "factors": "obo:OBI_0000750",
+        "assays": "obo:OBI_0000070",
+        "dates": "obo:STATO_0000093",
+        "publications": "obo:IAO_0000312",
+        "acknowledges": "obo:OBI_0001636",
+        "conclusions": "obo:IAO_0000144",
+        "MINSEQEversion": "obo:IAO_0000129",
+        "MINSEQEcompliance": "obo:OBI_0500023"
     }
 }

@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "processed_datafile": "obo:IAO_0000100",
+        "@language": "en",
+        "filename": "obo:IAO_0000590",
+        "file_format": "obo:IAO_0000098",
+        "checksum": "obo:MI_1212",
+        "checksum_type": "obo:IAO_0000064"
+    }
+}

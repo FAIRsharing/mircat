@@ -1,0 +1,9 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "sequencing_instrument": "obo:OBI_0400103",
+        "@language": "en",
+        "platform": "obo:GENEPIO_0000071",
+        "model": "obo:IAO_0000017"
+    }
+}
