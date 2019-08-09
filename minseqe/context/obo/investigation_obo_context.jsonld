@@ -1,7 +1,7 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "investigation": "obo:",
+        "Investigation": "obo:PRIDE_0000097",
         "@language": "en",
         "identifier": "obo:IAO_0000578",
         "identifierSource": "obo:OBI_0000245",

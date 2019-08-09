@@ -1,7 +1,7 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "Data_analysis": "obo:OBI_0200000",
+        "DataAnalysis": "obo:OBI_0200000",
         "@language": "en",
         "analysis_type": "obo:OBI_0200000",
         "software": "obo:IAO_0000010",
