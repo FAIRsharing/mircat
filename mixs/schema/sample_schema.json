@@ -1,0 +1,70 @@
+{
+  "id": "https://w3id.org/mircat/minseqe/schema/sample_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MINSEQE sample schema",
+   "version" : "1.0",
+  "description": "Biological Sample description compliant with MINSEQE requirements as described in Section 1 of MINSEQE specifications, http://fged.org/site_media/pdf/MINSEQE_draft_2008.pdf",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+   "name": {
+      "description": "a short name or handle for the biological sample.",
+      "type": "string"
+    },
+    "sample_description": {
+      "description": "A textual description of the biological sample",
+      "type": "string"
+    },
+    "taxonomic_information": {
+      "description": "The source organism for this biological sample",
+      "$ref": "https://w3id.org/dats/schema/taxonomic_info_schema.json"
+    },
+    "sample_attributes": {
+      "description": "",
+      "type" : "array",
+      "items" : {
+           "$ref": "https://w3id.org/dats/schema/category_values_pair_schema.json"
+      }
+    },
+    "antibodies": {
+      "description": "MINSEQE requirements, as evidenced from the statement found in sectoin 1 on MINSEQE document: 'Essential sample annotation, including the experimental factors and their values must be given. Experimental factors are the key experimental variables, for instance 'time' in a time series experiment or 'antibody' in a ChIP-Seq experiment",
+      "type" : "array",
+      "items" : {
+           "$ref": "https://w3id.org/dats/schema/category_values_pair_schema.json"
+      }
+    },
+    "factor_values" : {
+      "description" : "the factor levels for the relevant factors associated with this particular sample",
+      "type" : "array",
+      "items" : {
+           "$ref": "https://w3id.org/dats/schema/category_values_pair_schema.json"   
+    }
+  }
+ },
+  "additionalProperties": false,
+  "required":["name","taxonomic_information"]
+}
+ 
