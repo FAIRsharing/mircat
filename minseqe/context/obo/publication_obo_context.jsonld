@@ -1,7 +1,7 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "publication": "obo:IAO_0000311",
+        "Publication": "obo:IAO_0000311",
         "@language": "en",
         "identifier": "obo:IAO_0000578",
         "identifierSource": "obo:OBI_0000245",

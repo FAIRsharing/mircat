@@ -1,0 +1,24 @@
+{
+    "obo": {
+        "@context": {
+            "obo": "http://purl.obolibrary.org/obo/",
+            "Sample": "obo:OBI_0000747",
+            "@language": "en",
+            "name": "obo:IAO_0000590",
+            "sample_description": "obo:OBI_0001615",
+            "taxonomic_information": "obo:OBI_0100026",
+            "sample_attributes": "obo:PATO_0000001",
+            "factor_values": "obo:STATO_0000265",
+            "project_name": "obo:PRIDE_0000097",
+            "investigation_type": "obo:GENEPIO_0000156",
+            "sequencing_method": "obo:GENEPIO_0000071",
+            "collection_date": "obo:OBI_0001619",
+            "geographic location (country and/or sea)":"obo:OBI_0001627",
+            "geographic location (altitude)":"obo:",
+            "geographic location (latitude)": "obo:OBI_0001620",
+            "geographic location (longitude)": "obo:OBI_0001621",
+            "geographic location (elevation)": "obo:OMIT_0001950",
+            "geographic location (region and locality)": "obo:OMIT_0007037"
+        }
+    }
+}

@@ -1,7 +1,7 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "fund": "obo:OBI_0001636",
+        "Fund": "obo:OBI_0001636",
         "@language": "en",
         "identifier": "obo:OBI_0001629",
         "identifierSource": "obo:OBI_0000245",

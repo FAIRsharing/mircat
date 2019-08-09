@@ -1,7 +1,7 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "person": "obo:NCBITaxon_9606",
+        "Person": "obo:NCBITaxon_9606",
         "@language": "en",
         "identifier": "obo:IAO_0000578",
         "identifierSource": "obo:OBI_0000245",
