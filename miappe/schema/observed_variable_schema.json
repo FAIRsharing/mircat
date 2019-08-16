@@ -1,0 +1,89 @@
+{
+  "id": "https://w3id.org/mircat/miappe/schema/observed_variable_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIAPPE observed variable schema",
+  "version" : "1.2",
+  "description" : "JSON-schema representing an observed variable according to MIAPPE requirements",
+  "type" : "object",
+  "properties" : {
+     "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type, MD-82:An observed variable describes how a measurement has been made. It typically takes the form of a measured characteristic of the observation unit (plant or environmental trait), associated to the method and unit of measurement. Multiple variables with the same combination of trait, method and scale can be used in association with different plant parts (leaf 1, leaf 2), when this distinction is necessary for observations referring to different parts of the same observation unit.",
+      "type": "string",
+      "enum": ["ObservedVariable"]
+    },
+    "variable_ID" : {
+      "description": "DM-83: Code used to identify the variable in the data file. We recommend using a variable definition from the Crop Ontology where possible. Otherwise, the Crop Ontology naming convention is recommended: <trait abbreviation>_<method abbreviation>_<scale abbreviation>). A variable ID must be unique within a given investigation.",
+      "type" : "string"
+    },
+     "variable_name" : {
+      "description": "DM-84: Name of the variable.",
+      "type" : "string"
+    },
+     "variable_accession_number" : {
+      "description": "DM-85: Accession number of the variable in the Crop Ontology",
+      "type" : "string",
+      "pattern": "^CO_322:\\d+$"
+    },
+     "trait" : {
+      "description": "DM-86: Name of the (plant or environmental) trait under observation.",
+      "type" : "string"
+    },
+     "trait_accession_number" : {
+      "description": "DM-87: Accession number of the trait in a suitable controlled vocabulary (Crop Ontology, Trait Ontology).",
+      "type" : "string",
+      "pattern": "^CO_322:\\d+$"
+    },
+     "method" : {
+      "description": "DM-88: Name of the method of observation",
+      "type" : "string"
+    },
+     "method_accession_number" : {
+      "description": "DM-89: Accession number of the method in a suitable controlled vocabulary (Crop Ontology, Trait Ontology).",
+      "type" : "string",
+      "pattern": "^CO_322:\\d+$"
+    },
+     "method_description" : {
+      "description": "DM-90: Textual description of the method, which may extend a method defined in an external reference with specific parameters, e.g. growth stage, inoculation precise organ (leaf number)",
+      "type" : "string"
+    },
+     "reference_associated_to_method" : {
+      "description": "DM-91: URI/DOI of reference describing the method.",
+      "type" : "string",
+      "format": "uri"
+    },
+     "scale" : {
+      "description": "DM-92: Name of the scale associated with the variable",
+      "type" : "string"
+    },
+     "scale_accession_number" : {
+      "description": "DM-93: Accession number of the scale in a suitable controlled vocabulary (Crop Ontology).",
+       "type" : "string",
+      "pattern": "^CO_322:\\d+$"
+    },
+      "time_scale" : {
+      "description": "DM-94: Name of the scale or unit of time with which observations of this type were recorded in the data file (for time series studies).",
+      "type" : "string"
+    }
+  },
+  "required":["variable_ID","trait","scale","method"],
+  "additionalProperties": false
+}

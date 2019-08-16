@@ -1,0 +1,28 @@
+{
+    "obo": {
+        "@context": {
+            "obo": "http://purl.obolibrary.org/obo/",
+            "BiologicalMaterial": "obo:UBERON_0000465",
+            "@language": "en",
+            "biological_material_ID": "obo:IAO_0000578",
+            "organism": "obo:OBI_0100026",
+            "genus": "obo:NCBITaxon_genus",
+            "species": "obo:NCBITaxon_species",
+            "infraspecific_name": "obo:",
+            "biological_material_latitude" : "obo:OBI_0001620",
+            "biological_material_longitude" : "obo:OBI_0001621",
+            "biological_material_altitude" : "obo:",
+            "biological_material_coordinate_uncertainty" : "obo:",
+            "biological_material_preprocessing" : "obo:OBI_0000094",
+            "material_source_ID" : "obo:IAO_0000578",
+            "material_source_DOI" : "obo:MS_1001922",
+            "material_source_latitude" : "obo:OBI_0001620",
+            "material_source_longitude" : "obo:OBI_0001621",
+            "material_source_altitude" : "obo:",
+            "material_source_coordinate_uncertainty" : "obo:",
+            "material_source_description" : "obo:IAO_0000300",
+            "collection_date": "obo:OBI_0001619",
+            "external_ID": "obo:IAO_0000578"
+        }
+    }
+}

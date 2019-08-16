@@ -1,0 +1,49 @@
+{
+  "id": "https://w3id.org/mircat/miappe/schema/datafile_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIAPPE datafile schema",
+  "version" : "1.2",
+  "description" : "JSON-schema representing an investigation using sequencing technique according to MIAPPE requirements",
+  "type" : "object",
+  "properties" : {
+     "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type, MD-36:  A file or digital object holding observation data recorded during one or more assays of the study, typically in tabular form. Multiple data files may be provided per study, and each file can include observations for several observation units and several observed variables.",
+      "type": "string",
+      "enum": ["Datafile"]
+    },
+    "data_file_link": {
+        "description": "MD-37: Link to the data file (or digital object) in a public database or in a persistent institutional repository; or identifier of the data file when submitted together with the MIAPPE submission.",
+      "type": "string",
+      "format": "url"
+    },
+    "data_file_description": {
+        "description": "DM-38: Description of the format of the data file. May be a standard file format name, or a description of organization of the data in a tabular file.",
+      "type": "string"
+    },
+    "data_file_version": {
+        "description": "DM-39: The version of the dataset (the actual data). ",
+      "type": "string"
+    }
+  },
+  "required":["data_file_link,data_file_description","data_file_version"],
+  "additionalProperties": false
+}

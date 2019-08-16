@@ -1,0 +1,19 @@
+{
+    "obo": {
+        "@context": {
+            "obo": "http://purl.obolibrary.org/obo/",
+            "Investigation": "obo:PRIDE_0000097",
+            "@language": "en",
+            "investigation_unique_ID": "obo:IAO_0000578",
+            "identifierSource": "obo:OBI_0000245",
+            "investigation_title": "obo:IAO_0000305",
+            "investigation_description": "obo:OBI_0001615",
+            "submission_date": "obo:STATO_0000093",
+            "release_date": "obo:STATO_0000093",
+            "licence": "obo:SWO_0000002 ",
+            "MIAPPE_version": "obo:IAO_0000129",
+            "associated_publications": "obo:IAO_0000311",
+            "MIAPPE_compliance": "obo:"
+        }
+    }
+}

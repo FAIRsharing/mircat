@@ -1,0 +1,13 @@
+{
+    "obo": {
+        "@context": {
+            "obo": "http://purl.obolibrary.org/obo/",
+            "ObservationUnit": "obo:STATO_0000162",
+            "@language": "en",
+            "observation_unit_ID": "obo:IAO_0000578",
+            "observation_unit_type": "obo:ENVO_01000408",
+            "spatial_distribution": "obo:",
+            "external_ID": "obo:"
+        }
+    }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "https://w3id.org/mircat/miappe/schema/event_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIAPPE event schema",
+  "version" : "1.2",
+  "description" : "JSON-schema representing an event according to MIAPPE requirements",
+  "type" : "object",
+  "properties" : {
+     "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "(The JSON-LD type), MD-64:  An event is discrete occurrence at a particular time in the experiment (which can be natural, such as rain, or unnatural, such as planting, watering, etc). Events may be the realization of Factors or parts of Factors, or may be confounding to Factors. Can be applied at the whole study level or to only a subset of observation units.",
+      "type": "string",
+      "enum": ["Event"]
+    },
+    "event_type": {
+        "description": "MD-65: Accession number of the event type in a suitable controlled vocabulary (Crop Ontology).",
+      "type": "string",
+      "format": "url"
+    },
+    "event_accession_number": {
+        "description": "MD-66: Accession number of the event type in a suitable controlled vocabulary (Crop Ontology).",
+      "type": "string",
+      "format": "url",
+      "pattern":"^CO_715:\\d+$"
+    },
+    "event_description": {
+        "description": "DM-67: Description of the event, including details such as amount applied and possibly duration of the event. ",
+      "type": "string"
+    },
+   "event_date": {
+      "description" : "DM-68: Date and time of the event.",
+            "type": "array",
+        "items":{
+             "type": "string",
+             "pattern": "(^[0-9]{4}(-[0-9]{2}(-[0-9]{2}(T[0-9]{2}:[0-9]{2}(:[0-9]{2})?Z?([+-][0-9]{1,2})?)?)?)?(/[0-9]{4}(-[0-9]{2}(-[0-9]{2}(T[0-9]{2}:[0-9]{2}(:[0-9]{2})?Z?([+-][0-9]{1,2})?)?)?)?)?$)|(^not collected$)|(^not provided$)|(^restricted access$)"
+      }
+  }
+  },
+  "required":["event_type","event_date"],
+  "additionalProperties": false
+}

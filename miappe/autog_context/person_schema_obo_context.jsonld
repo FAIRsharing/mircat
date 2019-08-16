@@ -1,0 +1,15 @@
+{
+    "obo": {
+        "@context": {
+            "obo": "http://purl.obolibrary.org/obo/",
+            "Person": "obo:NCBITaxon_9606",
+            "@language": "en",
+            "person_name": "obo:OPMI_0000098",
+            "person_email": "obo:IAO_0000429",
+            "person_ID": "obo:IAO_0000578",
+            "identifierSource": "obo:OBI_0000245",
+            "person_role": "obo:OBI_0000202",
+            "person_affiliation": "obo:ERO_0000066"
+        }
+    }
+}

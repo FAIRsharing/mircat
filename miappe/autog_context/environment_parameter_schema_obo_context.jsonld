@@ -1,0 +1,11 @@
+{
+    "obo": {
+        "@context": {
+            "obo": "http://purl.obolibrary.org/obo/",
+            "EnvironmentParameter": "obo:",
+            "@language": "en",
+            "environment_parameter": "obo:BFO:0000019",
+            "environment_parameter_value": "obo:"
+        }
+    }
+}

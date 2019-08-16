@@ -1,0 +1,91 @@
+{
+  "id": "https://w3id.org/mircat/miappe/schema/investigation_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title" : "MIAPPE investigation schema",
+  "version" : "1.2",
+  "description" : "JSON-schema representing a MIAPPE investigation",
+  "type" : "object",
+  "properties" : {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "(The JSON-LD type) DM-1: Investigations are research programmes with defined aims. They can exist at various scales (for example, they could encompass a grant-funded programme of work, the various components comprising a peer-reviewed publication, or a single experiment)." ,
+      "type": "string",
+      "enum": [
+        "Investigation"
+      ]
+    },
+    "investigation_unique_ID" : {
+      "description": "DM-2: Primary identifier for the investigation. Ideally, a persistent identifier but an internal user identifier at a minimum.",
+      "type" : "string"
+    },
+    "identifierSource" : {
+      "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier.",
+      "type" : "string"
+    },
+    "investigation_title" : {
+      "description": "DM-3: Human-readable string summarising the investigation.",
+      "type" : "string"
+    },
+    "investigation_description" : {
+      "description": "DM-4: Human-readable text describing the investigation in more detail.",
+      "type" : "string"
+    },
+    "submission_date": {
+        "description" : "DM-5: Date of submission of the dataset presently being described to a host repository. Date/Time (ISO 8601, optional time zone)",
+        "type": "string",
+        "format": "date-time"
+    }, 
+    "release_date": {
+        "description" : "DM-6: Date of first public release of the dataset presently being described. Date/Time (ISO 8601, optional time zone)",
+        "type": "string",
+        "format": "date-time"
+    },
+    "licence" : {
+      "description": "DM-7: A set of statements summarizing the findings of the investigation. It could be a URI referring to a nanopublication.",
+      "type": "string"
+    },  
+    "MIAPPE_version": {
+      "description": "DM-8: The version of MIAPPE used.",
+      "type": "string"
+    },
+    "associated_publications" : {
+      "description": "DM-9: An identifier for a literature publication where the investigation is described. Use of DOIs is recommended.",
+      "type" : "array",
+      "items" : {
+        "$ref": "publication_schema.json#"
+      }
+    },
+    "MIAPPE_compliance": {
+      "description": "The result of the validation for MIAPPE compliance.",
+      "type": "string"
+    }
+  },
+  "studies" : {
+      "description": "The studies associated with the Investigation.",
+      "type" : "array",
+      "items" : {
+        "$ref": "study_schema.json#"
+
+      }
+    },
+  "additionalProperties": false,
+  "required":["investigation_title","MIAPPE_version"]
+}

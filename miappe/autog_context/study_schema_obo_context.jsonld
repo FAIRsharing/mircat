@@ -1,0 +1,31 @@
+{
+    "obo": {
+        "@context": {
+            "obo": "http://purl.obolibrary.org/obo/",
+            "Study": "obo:OBI_0000066",
+            "@language": "en",
+            "study_unique_ID": "obo:IAO_0000578",
+            "identifierSource": "obo:OBI_0000245",
+            "study_title": "obo:OBI_0001622",
+            "study_description": "obo:OBI_0001615",
+            "start_date_of_study": "obo:OPMI_0000295",
+            "end_date_of_study": "obo:",
+            "contact_institution": "obo:EFO_000173",
+            "geographic location (country)": "obo:OBI_0001627",
+            "experiment_site_name": "obo:AGRO_00000360",
+            "geographic location (latitude)": "obo:OBI_0001620",
+            "geographic location (longitude)": "obo:OBI_0001621",
+            "geographic location (altitude)": "obo:",
+            "description_of_the_experimental_design": "obo:OBI_0001615",
+            "type_of_study_design": "obo:OBI_0500000",
+            "observation_unit_level_hierarchy": "obo:",
+            "observation_unit_description": "obo:",
+            "description_of_growth_facility": "obo:EO_0007231",
+            "type_of_growth_facility": "obo:EO_0007231",
+            "cultural_practices": "obo:",
+            "map_of_experimental_design": "obo:",
+            "MIAPPE_version": "obo:IAO_0000129",
+            "MIAPPE+compliance": "obo:"
+        }
+    }
+}

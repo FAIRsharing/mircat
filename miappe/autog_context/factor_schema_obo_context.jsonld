@@ -1,0 +1,12 @@
+{
+    "obo": {
+        "@context": {
+            "obo": "http://purl.obolibrary.org/obo/",
+            "Factor": "obo:OBI_0000750",
+            "@language": "en",
+            "experimental_factor_type": "obo:OBI_0000750",
+            "experimental_factor_description": "obo:IAO_0000300",
+            "experimental_factor_values": "obo:STATO_0000265"
+        }
+    }
+}
