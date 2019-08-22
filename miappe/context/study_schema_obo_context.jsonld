@@ -23,6 +23,12 @@
             "description_of_growth_facility": "obo:EO_0007231",
             "type_of_growth_facility": "obo:EO_0007231",
             "cultural_practices": "obo:",
+            "biomaterials": "obo:OBI_0100026",
+            "factors": "obo:OBI_0000750",
+            "events":"obo:OBI_0000011",
+            "observationVariables":"obo:STATO_0000221",
+            "observationUnits":"obo:STATO_0000162",
+            "dataFiles":"obo:EFO_0004095",
             "map_of_experimental_design": "obo:",
             "MIAPPE_version": "obo:IAO_0000129",
             "MIAPPE+compliance": "obo:"

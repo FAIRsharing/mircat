@@ -13,6 +13,8 @@
             "licence": "obo:SWO_0000002 ",
             "MIAPPE_version": "obo:IAO_0000129",
             "associated_publications": "obo:IAO_0000311",
+            "studies":"obo:OBI_0000066",
+            "persons":"obo:NCBITaxon_9606",
             "MIAPPE_compliance": "obo:"
         }
     }

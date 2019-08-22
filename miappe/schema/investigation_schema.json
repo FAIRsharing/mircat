@@ -70,7 +70,7 @@
       "description": "DM-9: An identifier for a literature publication where the investigation is described. Use of DOIs is recommended.",
       "type" : "array",
       "items" : {
-        "$ref": "publication_schema.json#"
+        "type": "string"
       }
     },
     "MIAPPE_compliance": {
@@ -87,7 +87,7 @@
       }
     },
   "persons" : {
-      "description": "The studies associated with the Investigation.",
+      "description": "The persons associated with the Investigation.",
       "type" : "array",
       "items" : {
         "$ref": "person_schema.json#"
