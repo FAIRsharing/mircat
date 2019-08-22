@@ -50,8 +50,29 @@
       "items" : {
            "$ref": "https://w3id.org/dats/schema/category_values_pair_schema.json"
       }
-  }
- },
+  },
+    "events": {
+        "description": "The events associated with the observation unit.",
+      "type" : "array",
+      "items" : {
+        "$ref": "event_schema.json#"
+      }
+    },
+ "samples": {
+        "description": "The samples associated with the observation unit.",
+      "type" : "array",
+      "items" : {
+        "$ref": "sample_schema.json#"
+      }
+    }
+ } ,
+    "biomaterials": {
+        "description": "The biological materials associated with the study.",
+      "type" : "array",
+      "items" : {
+        "$ref": "biological_material_schema.json#"
+      }
+    },
   "additionalProperties": false,
   "required": ["observation_unit_ID","observation_unit_type"]
 }

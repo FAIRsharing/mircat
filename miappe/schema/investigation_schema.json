@@ -86,6 +86,14 @@
 
       }
     },
+  "persons" : {
+      "description": "The studies associated with the Investigation.",
+      "type" : "array",
+      "items" : {
+        "$ref": "person_schema.json#"
+
+      }
+    },
   "additionalProperties": false,
   "required":["investigation_title","MIAPPE_version"]
 }

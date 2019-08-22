@@ -144,6 +144,56 @@
           "format": "url"
       }
     },
+    "environmentParameters": {
+        "description": "The environment parameters associated with the study.",
+      "type" : "array",
+      "items" : {
+        "$ref": "environment_parameter_schema.json#"
+
+      }
+    },
+    "events": {
+        "description": "The events associated with the study.",
+      "type" : "array",
+      "items" : {
+        "$ref": "event_schema.json#"
+      }
+    },
+    "factors": {
+        "description": "The factors associated with the study.",
+      "type" : "array",
+      "items" : {
+        "$ref": "factor_schema.json#"
+      }
+    },
+    "biomaterials": {
+        "description": "The biological materials associated with the study.",
+      "type" : "array",
+      "items" : {
+        "$ref": "biological_material_schema.json#"
+      }
+    },
+    "observationVariables": {
+        "description": "The observated variables associated with the study.",
+      "type" : "array",
+      "items" : {
+        "$ref": "observed_variable_schema.json#"
+      }
+    },
+    "observationUnits": {
+        "description": "The observation units associated with the study.",
+      "type" : "array",
+      "items" : {
+        "$ref": "observation_unit_schema.json#"
+      }
+    },
+     "dataFiles": {
+        "description": "The data file associated with the study.",
+      "type" : "array",
+      "items" : {
+        "$ref": "datafile_schema.json#"
+      }
+    },
     "MIAPPE_version": {
       "description": "The version of MIAPPE this dataset description should be compliant with.",
       "type": "string"
