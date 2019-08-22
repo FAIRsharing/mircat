@@ -1,0 +1,21 @@
+{
+    "obo": {
+        "@context": {
+            "obo": "http://purl.obolibrary.org/obo/",
+            "ObservedVariable": "obo:",
+            "@language": "en",
+            "variable_ID": "obo:IAO_0000578",
+            "variable_name": "obo:",
+            "variable_accession_number": "obo:IAO_0000578",
+            "trait": "obo:TO_0000387",
+            "trait_accession_number": "obo:IAO_0000578",
+            "method": "obo:",
+            "method_accession_number": "obo:IAO_0000578",
+            "method_description": "obo:IAO_0000300",
+            "reference_associated_to_method": "obo:",
+            "scale": "obo:ERO_0001806",
+            "scale_accession_number": "obo:IAO_0000578",
+            "time_scale": "obo:"
+        }
+    }
+}

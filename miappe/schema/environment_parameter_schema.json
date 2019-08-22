@@ -1,0 +1,53 @@
+{
+  "id": "https://w3id.org/mircat/miappe/schema/environment_parameter_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIAPPE Environment Parameter schema",
+  "version" : "1.2",
+  "description": "The details about a parameter defined by a protocol (e.g. an incubation temperature or a reagent concentration)",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "(The JSON-LD type) DM-57: Environmental parameters that were kept constant throughout the study and did not change between observation units or assays. Environment characteristics that vary over time, i.e. environmental variables, should be recorded as Observed Variables (see below).",
+      "type": "string",
+      "enum": [
+        "EnvironmentParameter"
+      ]
+    },
+    "environment_parameter": {
+      "description": "DM-58: Name of the environment parameter constant within the experiment.",
+      "type": "array",
+      "items": {
+          "type":"string"
+      },
+      "minItem": 1
+    },
+     "environment_parameter_value": {
+      "description": "DM-59: Value of the environment parameter (defined above) constant within the experiment.",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required":["environment_parameter","environment_parameter_value"]
+}
+
+
+

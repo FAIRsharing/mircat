@@ -1,0 +1,71 @@
+{
+  "id": "https://w3id.org/mircat/miappe/schema/person_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title" : "MIAPPE person schema. A human being.",
+  "version" : "1.2",
+  "description" : "JSON-schema representing a person according to MIAPPE",
+  "type" : "object",
+  "properties" : {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "(The JSON-LD type) DM-30: A human involved in the investigation or specifically any of its studies.",
+      "type": "string",
+      "enum": [
+        "Person"
+      ]
+    },
+    "person_name" : {
+      "description": "DM-31: The name of the person (either full name or as used in scientific publications)",
+      "type" : "string"
+    },
+     "person_email" : {
+      "description": "DM-32: The name of the person (either full name or as used in scientific publications)",
+      "type" : "string",
+      "pattern": "^[A-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[A-Z0-9.-]+$"
+    },
+    "person_ID" : {
+      "description": "DM-33: An identifier for the data submitter. If that submitter is an individual, ORCID identifiers are recommended.",
+      "type" : "string"
+    },
+    "identifierSource" : {
+      "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier.",
+      "type" : "string"
+    },
+    "person_role": {
+      "description": "DM-34: Type of contribution of the person to the investigation.",
+      "type": "array",
+      "items": {
+          "type":"string",
+        "minItems" : 1
+      } 
+    },
+    "person_affiliation" : {
+      "description": "DM-35: The institution the person belongs to",
+      "type": "array",
+      "items": {
+        "type":"string",
+        "minItems" : 1
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required":["person_name","person_afiiliation","person_role"]
+}

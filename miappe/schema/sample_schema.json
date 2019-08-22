@@ -1,0 +1,67 @@
+{
+  "id": "https://w3id.org/mircat/miappe/schema/sample_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIAPPE sample schema",
+   "version" : "1.2",
+  "description": "DM-75: A sample is a portion of plant tissue harvested, non-harvested or extracted from an observation unit for the purpose of sub-plant observations and/or molecular studies. A sample must be used when there is a physical sample that needs to be stored and traced. Otherwise, observations made at the sub-plant level should be recorded as plant level observations using the observed variables to characterize the object of the observation (e.g. Berry sugar content, Fruit weight, Grain Protein content, Leaf 1 width, Leaf 2 width, Leaf 2 length).",
+  "type" : "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "enum": ["Sample"]
+    },
+    "sample_ID" : {
+      "description": "DM-76: Unique identifier for the sample.",
+      "type" : "string"
+    },
+     "plant_structure_developmental_stage": {
+      "description": "DM-77: The stage in the life of a plant structure during which the sample was taken, in the form of an accession number to a suitable controlled vocabulary (Plant Ontology, BBCH scale)",
+      "type": "string"
+    },
+    "plant_anatomical_entity": {
+      "description": "DM-78: A description of  the plant part (e.g. leaf) or the plant product (e.g. resin) from which the sample was taken, in the form of an accession number to a suitable controlled vocabulary (Plant Ontology). ",
+      "type": "string"
+    },
+    "sample_description": {
+      "description": "DM-79:A textual description of the biological sample",
+      "type": "string",
+      "pattern": "^PO:\\d+$"
+    },
+    "collection_date": {
+        "description" : "DM-80: The date and time when the sample was collected / harvested",
+        "type": "string",
+        "format": "date-time",
+        "pattern": "(^[0-9]{4}(-[0-9]{2}(-[0-9]{2}(T[0-9]{2}:[0-9]{2}(:[0-9]{2})?Z?([+-][0-9]{1,2})?)?)?)?(/[0-9]{4}(-[0-9]{2}(-[0-9]{2}(T[0-9]{2}:[0-9]{2}(:[0-9]{2})?Z?([+-][0-9]{1,2})?)?)?)?)?$)|(^not collected$)|(^not provided$)|(^restricted access$)"
+    }, 
+    "external_ID": {
+      "description": "DM-81: An identifier for the sample in a persistent repository, comprising the name of the repository and the accession number of the observation unit therein. Submission to the EBI Biosamples repository is recommended. URI are recommended when possible.",
+      "type" : "array",
+      "items" : {
+           "$ref": "https://w3id.org/dats/schema/category_values_pair_schema.json"
+      }
+  }
+ },
+  "additionalProperties": false,
+  "required": ["sample_ID","plant_anatomical_entity","collection_date"]
+}
+ 

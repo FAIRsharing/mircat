@@ -1,0 +1,13 @@
+{
+    "obo": {
+        "@context": {
+            "obo": "http://purl.obolibrary.org/obo/",
+            "Event": "obo:OBI_0000011",
+            "@language": "en",
+            "event_type": "obo:IAO_0000005",
+            "event_accession_number": "obo:IAO_0000578",
+            "event_description": "obo:OBI_0001615",
+            "event_date": "obo:STATO_0000093"
+        }
+    }
+}

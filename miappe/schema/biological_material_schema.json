@@ -1,0 +1,166 @@
+{
+  "id": "https://w3id.org/mircat/miappe/schema/biological_material_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIAPPE biological material schema",
+   "version" : "1.2",
+  "description": "DM-40: The biological material being studied (e.g. plants grown from a certain bag or seed, or plants grown in a particular field). The original source of that material (e.g., the seeds or the original plant cloned) is called the material source, which, when held by a material repository, should have its stock identified. ",
+  "type" : "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "(The JSON-LD identifier)",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "enum": ["Biological Material"]
+    },
+    "biological_material_ID" : {
+      "description": "DM-41: Code used to identify the biological material in the data file. Should be unique within the Investigation. Can correspond to experimental plant ID, seed lot ID, etc… This material identification is different from a BiosampleID which corresponds to Observation Unit or Samples sections below.",
+      "type" : "string"
+    },
+     "organism": {
+      "description": "DM-42: An identifier for the organism at the species level. Use of the NCBI taxon ID is recommended.",
+      "type": "string",
+      "pattern": ""
+    },
+      "genus": {
+      "description": "DM-43: Genus name for the organism under study, according to standard scientific nomenclature.",
+      "type": "string",
+      "pattern": ""
+    },
+      "species": {
+      "description": "DM-44: Species name (formally: specific epithet) for the organism under study, according to standard scientific nomenclature.",
+      "type": "string",
+      "pattern": ""
+    },
+      "infraspecific_name": {
+      "description": "DM-44': Name of any subtaxa level, including variety, crossing name, etc. It can be used to store any additional taxonomic identifier. Either free text description or key-value pair list format (the key is the name of the rank and the value is the value of  the rank). Ranks can be among the following terms: subspecies, cultivar, variety, subvariety, convariety, group, subgroup, hybrid, line, form, subform. For MCPD compliance, the following abbreviations are allowed: ‘subsp.’ (subspecies); ‘convar.’ (convariety); ‘var.’ (variety); ‘f.’ (form); ‘Group’ (cultivar group).",
+      "type": "string",
+      "pattern": ""
+    },
+  "biological_material_latitude":{
+      "description": "DM-45: Latitude of the studied biological material. [Alternative identifier for in situ material]",
+           "type": "array",
+        "items":{
+            "type": "string",
+            "pattern": "(^.*[+-]?[0-9]+.?[0-9]*.*$)|(^not collected$)|(^not provided$)|(^restricted access$)"
+      },
+      "maxItem":1
+  },
+    "biological_material_longitude":{
+      "description": "DM-46: Longitude of the studied biological material. [Alternative identifier for in situ material]",
+      "type": "array",
+        "items":{   
+                "type": "string",
+                "pattern": "(^.*[+-]?[0-9]+.?[0-9]*.*$)|(^not collected$)|(^not provided$)|(^restricted access$)"
+      },
+      "maxItem":1
+  },
+  "biological_material_altitude":{
+      "description": "DM-47: Altitude of the studied biological material, provided in meters (m). [Alternative identifier for in situ material]",
+            "type": "array",
+        "items":{
+            "type": "string",
+            "pattern": "(0|((0\\.)|([1-9][0-9]*\\.?))[0-9]*)([Ee][+-]?[0-9]+)?"
+      },
+      "maxItem":1
+  },
+  "biological_material_coordinate_uncertainty":{
+      "description": "DM-48: Description of any process or treatment applied uniformly to the biological material, prior to the study itself. Can be provided as free text or as an accession number from a suitable controlled vocabulary.",
+            "type": "array",
+        "items":{
+            "type": "string",
+            "pattern": "(0|((0\\.)|([1-9][0-9]*\\.?))[0-9]*)([Ee][+-]?[0-9]+)?"
+      },
+            "maxItem":1
+  },
+    "biological_material_preprocessing": {
+      "description": "DM-49: Description of any process or treatment applied uniformly to the biological material, prior to the study itself. Can be provided as free text or as an accession number from a suitable controlled vocabulary.",
+      "type": "array",
+      "items": {
+          "type":"string",
+          "pattern": "^EO:\\d+$"
+      }
+    },
+    "material_source_ID" : {
+      "description": "DM-50: Material source ID (Holding institute/stock centre, accession): An identifier for the source of the biological material, in the form of a key-value pair comprising the name/identifier of the repository from which the material was sourced plus the accession number of the repository for that material. Where an accession number has not been assigned, but the material has been derived from the crossing of known accessions, the material can be defined as follows: 'mother_accession X father_accession', or, if father is unknown, as 'mother_accession X UNKNOWN'. For in situ material, the region of provenance may be used when an accession is not available.",
+     "type": "array",
+        "items":{
+            "type": "string"
+      },
+      "maxItem":1
+    },
+  "material_source_DOI": {
+      "description": "DM-51: Digital Object Identifier (DOI) of the material source",
+     "type": "array",
+        "items":{
+            "type": "string",
+            "pattern": "^doi:.*$"
+      },
+      "maxItem":1
+    },
+  "material_source_latitude":{
+      "description": "DM-52: Latitude of the studied biological material. [Alternative identifier for in situ material]",
+           "type": "array",
+        "items":{
+            "type": "string",
+            "pattern": "(^.*[+-]?[0-9]+.?[0-9]*.*$)|(^not collected$)|(^not provided$)|(^restricted access$)"
+      },
+      "maxItem":1
+  },
+    "material_source_longitude":{
+      "description": "DM-46: Longitude of the studied biological material. [Alternative identifier for in situ material]",
+      "type": "array",
+        "items":{   
+                "type": "string",
+                "pattern": "(^.*[+-]?[0-9]+.?[0-9]*.*$)|(^not collected$)|(^not provided$)|(^restricted access$)"
+      },
+      "maxItem":1
+  },
+  "material_source_altitude":{
+      "description": "DM-47: Altitude of the studied biological material, provided in meters (m). [Alternative identifier for in situ material]",
+            "type": "array",
+        "items":{
+            "type": "string",
+            "pattern": "(0|((0\\.)|([1-9][0-9]*\\.?))[0-9]*)([Ee][+-]?[0-9]+)?"
+      },
+      "maxItem":1
+  },
+  "material_source_coordinate_uncertainty":{
+      "description": "DM-48: Description of any process or treatment applied uniformly to the biological material, prior to the study itself. Can be provided as free text or as an accession number from a suitable controlled vocabulary.",
+            "type": "array",
+        "items":{
+            "type": "string",
+            "pattern": "(0|((0\\.)|([1-9][0-9]*\\.?))[0-9]*)([Ee][+-]?[0-9]+)?"
+      },
+            "maxItem":1
+  },
+    "material_source_description": {
+      "description": "DM-56:Description of the material source",
+     "type": "array",
+        "items":{
+            "type": "string"
+      },
+      "maxItem":1
+    }
+ },
+  "additionalProperties": false,
+  "required": ["biological_material_ID","organism"]
+}
+ 
