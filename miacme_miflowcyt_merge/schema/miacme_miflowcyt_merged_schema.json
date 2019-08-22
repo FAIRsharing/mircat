@@ -49,7 +49,7 @@
         }
     },
     "type": "object",
-    "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/miacme_miflowcyt_merged_schema.json",
+    "id": "https://w3id.org/mircat/miacme_miflowcyt_merge/schema/miacme_miflowcyt_merged_schema.json",
     "description": "Merge between the MIACME schema and the MIFlowCyt (Minimum Information about a Flow Cytometry Experiment) main schema",
     "$schema": "http://json-schema.org/draft-04/schema"
 }
