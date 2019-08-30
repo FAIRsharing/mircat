@@ -1,0 +1,28 @@
+{
+    "obo": {
+        "@context": {
+            "ppeo": "http://purl.org/ppeo/PPEO.owl#",
+            "BiologicalMaterial": "ppeo:biological_material",
+            "@language": "en",
+            "biological_material_ID": "ppeo:hasMaterialIdentifier",
+            "organism": "ppeo:",
+            "genus": "ppeo:",
+            "species": "ppeo:",
+            "infraspecific_name": "ppeo:",
+            "biological_material_latitude" : "ppeo:hasLatitude",
+            "biological_material_longitude" : "ppeo:hasLongitude",
+            "biological_material_altitude" : "ppeo:hasAltitude",
+            "biological_material_coordinate_uncertainty" : "ppeo:",
+            "biological_material_preprocessing" : "ppeo:",
+            "material_source_ID" : "ppeo:hasMaterialIdentifier",
+            "material_source_DOI" : "ppeo:hasDOI",
+            "material_source_latitude" : "ppeo:hasLatitude",
+            "material_source_longitude" : "ppeo:hasLongitude",
+            "material_source_altitude" : "ppeo:hasAltitude",
+            "material_source_coordinate_uncertainty" : "ppeo",
+            "material_source_description" : "ppeo:IAO_0000300",
+            "collection_date": "ppeo:hasCollectionDate",
+            "external_ID": "ppeo:IAO_0000578"
+        }
+    }
+}

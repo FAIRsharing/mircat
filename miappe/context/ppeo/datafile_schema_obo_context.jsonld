@@ -1,0 +1,12 @@
+{
+    "obo": {
+        "@context": {
+            "obo": "http://purl.obolibrary.org/obo/",
+            "Datafile": "obo:EFO_0004095",
+            "@language": "en",
+            "data_file_link": "obo:data_1052",
+            "data_file_description": "obo:IAO_0000300",
+            "data_file_version": "obo:IAO_0000129"
+        }
+    }
+}

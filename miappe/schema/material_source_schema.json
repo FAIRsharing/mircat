@@ -1,0 +1,105 @@
+   {
+  "id": "https://w3id.org/mircat/miappe/schema/material_source_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIAPPE material source schema",
+   "version" : "1.2",
+  "description": "DM-40: The biological material being studied (e.g. plants grown from a certain bag or seed, or plants grown in a particular field). The original source of that material (e.g., the seeds or the original plant cloned) is called the material source, which, when held by a material repository, should have its stock identified. ",
+  "type" : "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "(The JSON-LD identifier)",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "enum": ["Material Source"]
+    },
+   "material_source_ID" : {
+      "description": "DM-50: Material source ID (Holding institute/stock centre, accession): An identifier for the source of the biological material, in the form of a key-value pair comprising the name/identifier of the repository from which the material was sourced plus the accession number of the repository for that material. Where an accession number has not been assigned, but the material has been derived from the crossing of known accessions, the material can be defined as follows: 'mother_accession X father_accession', or, if father is unknown, as 'mother_accession X UNKNOWN'. For in situ material, the region of provenance may be used when an accession is not available.",
+     "type": "array",
+        "items":{
+            "type": "string"
+      },
+      "maxItem":1
+    },
+  "material_source_DOI": {
+      "description": "DM-51: Digital Object Identifier (DOI) of the material source",
+     "type": "array",
+        "items":{
+            "type": "string",
+            "pattern": "^doi:.*$"
+      },
+      "maxItem":1
+    },
+  "material_source_latitude":{
+      "description": "DM-52: Latitude of the studied biological material. [Alternative identifier for in situ material]",
+           "type": "array",
+        "items":{
+            "type": "string",
+            "pattern": "(^.*[+-]?[0-9]+.?[0-9]*.*$)|(^not collected$)|(^not provided$)|(^restricted access$)"
+      },
+      "maxItem":1
+  },
+    "material_source_longitude":{
+      "description": "DM-46: Longitude of the studied biological material. [Alternative identifier for in situ material]",
+      "type": "array",
+        "items":{   
+                "type": "string",
+                "pattern": "(^.*[+-]?[0-9]+.?[0-9]*.*$)|(^not collected$)|(^not provided$)|(^restricted access$)"
+      },
+      "maxItem":1
+  },
+    "location": {
+            "description": "The geographical extension and span covered by the dataset and its measured dimensions/variables.  (PPEO: has_location). NOTE: THIS IS AN ALTERNATIVE TO USING HARD CODED keys",
+            "type" : "array",
+            "items" : {
+                "$ref" : "https://w3id.org/dats/schema/place_schema.json#"
+            },
+            "maxItem":1
+        },
+  "material_source_altitude":{
+      "description": "DM-47: Altitude of the studied biological material, provided in meters (m). [Alternative identifier for in situ material]",
+            "type": "array",
+        "items":{
+            "type": "string",
+            "pattern": "(0|((0\\.)|([1-9][0-9]*\\.?))[0-9]*)([Ee][+-]?[0-9]+)?"
+      },
+      "maxItem":1
+  },
+  "material_source_coordinate_uncertainty":{
+      "description": "DM-48: Description of any process or treatment applied uniformly to the biological material, prior to the study itself. Can be provided as free text or as an accession number from a suitable controlled vocabulary.",
+            "type": "array",
+        "items":{
+            "type": "string",
+            "pattern": "(0|((0\\.)|([1-9][0-9]*\\.?))[0-9]*)([Ee][+-]?[0-9]+)?"
+      },
+            "maxItem":1
+  },
+    "material_source_description": {
+      "description": "DM-56:Description of the material source",
+     "type": "array",
+        "items":{
+            "type": "string"
+      },
+      "maxItem":1
+    }
+ },
+ "additionalProperties": false,
+  "required": ["material_source_ID","material_source_DOI"]
+}

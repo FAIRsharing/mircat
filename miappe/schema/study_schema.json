@@ -45,11 +45,11 @@
       "type" : "string"
     },
     "study_description" : {
-      "description": "DM-13: Human-readable text describing the study",
+      "description": "DM-13: Human-readable text describing the study. (PPEO: has_start_date_time)",
       "type" : "string"
     },
   "start_date_of_study": {
-      "description" : "DM-14: Date and, if relevant, time when the experiment started",
+      "description" : "DM-14: Date and, if relevant, time when the experiment started (PPEO: has_start_date_time)",
             "type": "array",
         "items":{
              "type": "string",
@@ -66,8 +66,21 @@
   },
     "contact_institution" : {
       "description": "DM-16: Name and address of the institution responsible for the study.",
-      "type" : "string"
+      "type": "array",
+      "items": {
+        "$ref" : "https://w3id.org/dats/schema/organization_schema.json#",
+        "minItems" : 1
+      }
     },
+     "location": {
+            "description": "The geographical extension and span covered by the dataset and its measured dimensions/variables.  (PPEO: has_location). NOTE: THIS IS AN ALTERNATIVE TO USING HARD CODED KEYS",
+            "type" : "array",
+            "items" : {
+                "$ref" : "https://w3id.org/dats/schema/place_schema.json#"
+            },
+            "maxItem":1
+        },
+
 "geographic location (country)": {
       "description":"DM-17: The country where the experiment took place, either as a full name or preferably as a 2-letter code.",
             "type": "array",

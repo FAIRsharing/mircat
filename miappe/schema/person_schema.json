@@ -61,11 +61,13 @@
       "description": "DM-35: The institution the person belongs to",
       "type": "array",
       "items": {
-        "type":"string",
+        "$ref" : "https://w3id.org/dats/schema/organization_schema.json#",
         "minItems" : 1
       }
     }
   },
   "additionalProperties": false,
-  "required":["person_name","person_afiiliation","person_role"]
+  "required":["person_name","person_affiliation","person_role"]
 }
+
+ 

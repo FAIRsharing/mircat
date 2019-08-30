@@ -1,0 +1,15 @@
+{
+    "obo": {
+        "@context": {
+            "obo": "http://purl.obolibrary.org/obo/",
+            "Sample": "obo:OBI_0000747",
+            "@language": "en",
+            "sample_ID": "obo:IAO_0000578",
+            "plant_structure_developmental_stage": "obo:PO_0009012",
+            "plant_anatomical_entity": "obo:PO_0025131",
+            "sample_description": "obo:IAO_0000300",
+            "collection_date": "obo:OBI_0001619",
+            "external_ID": "obo:IAO_0000578"
+        }
+    }
+}

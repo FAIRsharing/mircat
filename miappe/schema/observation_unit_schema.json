@@ -35,7 +35,7 @@
       "type" : "string"
     },
      "observation_unit_type": {
-      "description": "DM-71: Type of observation unit in textual form, usually one of the following: study, block, sub-block, plot, sub-plot, pot, plant. Use of other observation unit types is possible but not recommended. The observation unit type cannot be used to indicate sub-plant levels. However, observations can still be made on the sub-plant level, as long as the details are indicated in the associated observed variable (see observed variables).  Alternatively, it is possible to use samples for more detailed tracing of sub-plant units, attaching the observations to them instead.",
+      "description": "DM-71: Type of observation unit in textual form, usually one of the following: study, block, sub-block, plot, sub-plot, pot, plant. Use of other observation unit types is possible but not recommended. The observation unit type cannot be used to indicate sub-plant levels. However, observations can still be made on the sub-plant level, as long as the details are indicated in the associated observed variable (see observed variables).  Alternatively, it is possible to use samples for more detailed tracing of sub-plant units, attaching the observations to them instead. (PPEO: has_observation_level, which PPEO:has_type)",
       "type": "string",
       "enum": ["study", "block", "sub-block", "plot", "sub-plot", "pot", "plant"]
     },
@@ -51,7 +51,7 @@
            "$ref": "https://w3id.org/dats/schema/category_values_pair_schema.json"
       }
   },
-    "events": {
+   "events": {
         "description": "The events associated with the observation unit.",
       "type" : "array",
       "items" : {
@@ -67,7 +67,7 @@
     }
  } ,
     "biomaterials": {
-        "description": "The biological materials associated with the study.",
+        "description": "The biological materials associated with the study. (PPEO: has_biological_material)",
       "type" : "array",
       "items" : {
         "$ref": "biological_material_schema.json#"
