@@ -1,0 +1,1 @@
+MINSEQE JSON Schemas
