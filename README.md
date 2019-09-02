@@ -9,6 +9,8 @@ The representation for each of the following reporting guidelines can be accesse
 - Minimum Information About a Cellular Assay ([MIACA](http://w3id.org/mircat/miaca/))
 - Minimum Information About Cell Migration Assays ([MIACME](http://w3id.org/mircat/miacme/))
 - Minimum Information about Flow Cytometry ([MiFlowCyt](http://w3id.org/mircat/miflowcyt/))
+- Minimum Information about SEQuencing Experiment ([MINSEQE](http://w3id.org/mircat/minseqe/))
+- Minimum Information about a Plant Phenotyping Experiment ([MIAPPE](http://w3id.org/mircat/miappe/))
 
 ## Contact
 
