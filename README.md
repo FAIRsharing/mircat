@@ -13,3 +13,4 @@ The representation for each of the following reporting guidelines can be accesse
 ## Contact
 
 - [Philippe Rocca-Serra](http://github.com/proccaserra)
+- [Dominique Batista](http://github.com/terazus)
