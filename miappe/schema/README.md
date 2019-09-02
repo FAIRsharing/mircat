@@ -1,0 +1,1 @@
+# MIAPPE JSON schema

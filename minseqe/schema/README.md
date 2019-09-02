@@ -1,1 +1,1 @@
-MINSEQE JSON Schemas
+# MINSEQE JSON Schemas
