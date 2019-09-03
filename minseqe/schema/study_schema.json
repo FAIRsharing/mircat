@@ -85,6 +85,13 @@
          "$ref": "assay_schema.json#"
       }
     },
+     "analysis": {
+      "description": "the analysis",
+      "type": "array",
+      "items": {
+         "$ref": "data_analysis_schema.json#"
+      }
+    },
     "dates": {
       "description": "Dates relevant to the study.",
       "type": "array",
@@ -121,8 +128,7 @@
       "description": "The result of the validation for MINSEQE compliance.",
       "type": "string"
     }
-  }
-  ,
+  },
   "additionalProperties": false,
   "required":["title","assays"]
 }

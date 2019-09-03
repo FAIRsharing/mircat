@@ -28,13 +28,13 @@
       "description": "The JSON-LD type",
       "type": "string",
       "enum": [
-        "Assay"
+        "Data Analysis"
       ]
     },
     "analysis_type": {
       "description": "The kind of analysis.",
       "type": "string",
-      "enum" : ["REFERENCE_ALIGNMENT","SEQUENCE_VARIATION","SEQUENCE_ASSEMBLY","SEQUENCE_FLATFILE","SEQUENCE_ANNOTATION","REFERENCE_SEQUENCE","SAMPLE_PHENOTYPE","PROCESSED_READS","AMR_ANTIBIOGRAM","PATHOGEN_ANALYSIS","TRANSCRIPTOME_ASSEMBLY""TAXONOMIC_REFERENCE_SET"]
+      "enum" : ["REFERENCE_ALIGNMENT","SEQUENCE_VARIATION","SEQUENCE_ASSEMBLY","SEQUENCE_FLATFILE","SEQUENCE_ANNOTATION","REFERENCE_SEQUENCE","SAMPLE_PHENOTYPE","PROCESSED_READS","AMR_ANTIBIOGRAM","PATHOGEN_ANALYSIS","TRANSCRIPTOME_ASSEMBLY","TAXONOMIC_REFERENCE_SET"]
     },
     "software" : {
       "description": "The description of programs, code, software used for analysing the sequence.",
