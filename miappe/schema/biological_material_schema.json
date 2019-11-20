@@ -32,12 +32,15 @@
     },
     "biological_material_ID" : {
       "description": "DM-41: Code used to identify the biological material in the data file. Should be unique within the Investigation. Can correspond to experimental plant ID, seed lot ID, etc… This material identification is different from a BiosampleID which corresponds to Observation Unit or Samples sections below.",
-      "type" : "string"
+      "type" : "string",
+      "EBI_USI_mapping": "biomaterial_core.biomaterial_id"
     },
      "organism": {
       "description": "DM-42: An identifier for the organism at the species level. Use of the NCBI taxon ID is recommended.",
       "type": "string",
-      "pattern": ""
+      "pattern": "",
+      "EBI_USI_mapping": "biomaterial_core.ncbitax_id",
+      "mapping_comment": "data type clash + validation at risk when tree_of_life id or other tax systems are used"
     },
       "genus": {
       "description": "DM-43: Genus name for the organism under study, according to standard scientific nomenclature.",
