@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it using the metadata from this file.
+title: MIRcat metadata models
+abstract: Machine-Actionable Metadata Models for MIRcat (Minimum Information Requirement Catalogue)
+version: 0.1.0
+repository-code: https://github.com/FAIRsharing/mircat
+license: BSD 3
+license-url: https://github.com/FAIRsharing/mircat/blob/master/LICENSE
+authors:
+  -
+    name: "Batista Dominique"
+    alias: Terazus
+    city: Oxford
+    email: dominique.batista@oerc.ox.ac.uk
+    orcid: https://orcid.org/0000-0002-2109-489X
+  -
+    name: "Alejandra Gonzalez-Beltran"
+    city: Oxford
+    email: alejandra.gonzalez-beltran@stfc.ac.uk
+    orcid: https://orcid.org/0000-0003-3499-8262
+contact:
+  -
+    name: "Batista Dominique"
+    alias: Terazus
+    city: Oxford
+    email: dominique.batista@oerc.ox.ac.uk
+    orcid: https://orcid.org/0000-0002-2109-489X
+  - name: "Phillipe Rocca-Serra"
+    alias: PRS
+    city: Oxford
+    email: philippe.rocca-serra@oerc.ox.ac.uk
+    orcid: https://orcid.org/0000-0001-9853-5668
